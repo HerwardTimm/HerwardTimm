@@ -430,6 +430,61 @@
 </head>
 <body>
 
+<!-- ============================================================
+     Phase 2 · Fokussierter Lern-Player (Chrome um die bestehende Engine)
+     Schlanke Player-Topbar statt Website-Header + großem Kopf.
+     Werte (Titel, Folie X/Y, %) werden aus den vorhandenen Engine-
+     Elementen gespiegelt — die Engine selbst bleibt unverändert.
+     ============================================================ -->
+<style>
+  body.lern-player > .site-header,
+  body.lern-player > .site-footer,
+  body.lern-player #lern-kopf { display: none !important; }
+  body.lern-player { background: var(--cream); }
+  .player-topbar {
+    position: sticky; top: 0; z-index: 60; height: 56px;
+    display: flex; align-items: center; gap: 16px; padding: 0 18px;
+    background: #1f342a; color: #eaf1ec;
+  }
+  .player-topbar .pt-exit {
+    display: inline-flex; align-items: center; gap: 7px;
+    color: #bccabf; text-decoration: none; font-size: .9rem;
+    padding: 7px 11px; border-radius: 8px; white-space: nowrap;
+  }
+  .player-topbar .pt-exit:hover { background: rgba(255,255,255,.08); color: #fff; }
+  .player-topbar .pt-div { width: 1px; height: 26px; background: rgba(255,255,255,.12); }
+  .player-topbar .pt-titles { min-width: 0; }
+  .player-topbar .pt-title { font-weight: 600; font-size: .98rem; color: #fff; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 42vw; }
+  .player-topbar .pt-meta { font-size: .76rem; color: #7f9387; margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 42vw; }
+  .player-topbar .pt-sp { flex: 1; }
+  .player-topbar .pt-stat { font-size: .85rem; color: #bccabf; white-space: nowrap; }
+  .player-topbar .pt-stat b { color: #fff; font-weight: 600; }
+  .player-topbar .pt-fs {
+    background: rgba(255,255,255,.08); border: 0; color: #eaf1ec;
+    border-radius: 8px; padding: 8px 13px; font: inherit; font-size: .85rem;
+    cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+  }
+  .player-topbar .pt-fs:hover { background: rgba(255,255,255,.16); }
+  body.lern-player .learn-layout { padding-top: 26px; }
+  @media (max-width: 680px) {
+    .player-topbar .pt-meta, .player-topbar .pt-fs .pt-fs-txt { display: none; }
+    .player-topbar .pt-title { max-width: 38vw; }
+  }
+</style>
+
+<header class="player-topbar" id="player-topbar" role="banner">
+  <a class="pt-exit" href="dashboard.html" aria-label="Lern-Ansicht beenden">✕ <span>Beenden</span></a>
+  <span class="pt-div"></span>
+  <div class="pt-titles">
+    <div class="pt-title" id="pt-title">Schulung</div>
+    <div class="pt-meta" id="pt-meta">Lern-Ansicht</div>
+  </div>
+  <span class="pt-sp"></span>
+  <span class="pt-stat" id="pt-count">—</span>
+  <span class="pt-stat"><b id="pt-pct">0 %</b></span>
+  <button class="pt-fs" type="button" onclick="if(window.openFullscreen)window.openFullscreen();" aria-label="Folie im Vollbild anzeigen">⤢ <span class="pt-fs-txt">Vollbild</span></button>
+</header>
+
 <!-- Identitäts-Banner: zeigt dem Lerner an, auf wen die Schulung läuft.
      Vertrauenssignal + Klarheit, dass kein nachträgliches Selbst-Deklarieren
      mehr nötig ist. Sichtbar, sobald das Profil geladen ist. -->
@@ -473,7 +528,7 @@ if (window.requireLogin && !window.requireLogin()) {
 }
 </script>
 
-<section class="section section--tight" style="background: var(--sage-mint-soft); padding-top: 48px; padding-bottom: 48px;">
+<section id="lern-kopf" class="section section--tight" style="background: var(--sage-mint-soft); padding-top: 48px; padding-bottom: 48px;">
   <div class="container">
     <a href="dashboard.html" class="btn-link" style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em;">← <span data-i18n="lernen.zurueck-bereich">Mein Bereich</span></a>
     <div style="display:flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-top: 16px; flex-wrap: wrap;">
@@ -1238,6 +1293,33 @@ window.addEventListener('i18n:change', () => {
 });
 
 loadManifest();
+</script>
+
+<!-- Phase 2 · Player-Topbar mit Engine-Werten spiegeln (read-only, ändert die Engine nicht) -->
+<script>
+(function () {
+  document.body.classList.add('lern-player');
+  function txt(id) { var e = document.getElementById(id); return e ? e.textContent.trim() : ''; }
+  var ptTitle = document.getElementById('pt-title');
+  var ptMeta  = document.getElementById('pt-meta');
+  var ptCount = document.getElementById('pt-count');
+  var ptPct   = document.getElementById('pt-pct');
+  function sync() {
+    var t = txt('kopf-titel'); if (t && t !== '…') ptTitle.textContent = t;
+    var m = txt('kopf-meta');  if (m && m !== '…') ptMeta.textContent  = m;
+    var c = txt('counter');    if (c && c !== '—') ptCount.textContent = c;
+    var bf = document.getElementById('bar-fill');
+    if (bf && bf.style.width) ptPct.textContent = bf.style.width.replace(/\s+/g, '');
+  }
+  var ids = ['kopf-titel', 'kopf-meta', 'counter', 'bar-fill'];
+  var obs = new MutationObserver(sync);
+  ids.forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) obs.observe(el, { childList: true, characterData: true, subtree: true, attributes: true, attributeFilter: ['style'] });
+  });
+  document.addEventListener('DOMContentLoaded', sync);
+  setTimeout(sync, 300); setTimeout(sync, 1200); setTimeout(sync, 3000);
+})();
 </script>
 </body>
 </html>
