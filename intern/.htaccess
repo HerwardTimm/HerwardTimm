@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "HerwardTimm Admin – geschuetzter Bereich"
+AuthUserFile /home/u455374964/domains/herwardtimm.com/public_html/intern/.htpasswd
+Require valid-user
