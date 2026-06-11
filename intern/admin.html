@@ -802,7 +802,7 @@
      ============================================================ */
   // Anfragen-Badge für die Sidebar (echte aus localStorage + 6 Demo)
   try {
-    var _anz = ((window.Store && Store.get('anfragen', [])) || []).length + 6;
+    var _anz = 6; try { _anz = (Store.get('anfragen', []) || []).length + 6; } catch (e) {}
     window.AS_BADGES = Object.assign(window.AS_BADGES || {}, { 'admin-anfragen': _anz });
   } catch (e) {}
 
@@ -936,7 +936,7 @@
 
     (function () {
       var host = document.getElementById('adm-activity'); if (!host) return;
-      var log = ((window.Store && Store.get('auditLog', [])) || []).slice()
+      var log = (function(){ try { return Store.get('auditLog', []) || []; } catch (e) { return []; } })().slice()
         .sort(function (a, b) { return (b.timestamp || '').localeCompare(a.timestamp || ''); }).slice(0, 5);
       var items;
       if (log.length) {

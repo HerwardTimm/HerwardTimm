@@ -23,16 +23,25 @@
   //           Eigene, schlanke Navigation; getrennt vom Kundenbereich.
   //  Die admin.html wird zusätzlich serverseitig per Passwort geschützt.
   // ====================================================================
-  const NAV_CUSTOMER = [
-    { head: 'Lernen', items: [
-      { key: 'mein-bereich',     label: 'Mein Bereich',      href: 'dashboard.html',        ic: '◧' },
-      { key: 'katalog',          label: 'Schulungs-Katalog', href: 'schulungen.html',       ic: '▦' },
-      { key: 'meine-schulungen', label: 'Meine Schulungen',  href: 'meine-schulungen.html', ic: '▤', badge: 'progressCount' }
-    ]},
-    { head: null, items: [
-      { key: 'hilfe', label: 'Hilfe & Support', href: 'anfrage.html', ic: '?' }
-    ]}
-  ];
+  // Kundenbereich — rollenabhängig zusammengesetzt (siehe navFor):
+  //  - Beide Rollen: Lernen-Gruppe + Hilfe.
+  //  - Nur 'verwalter': zusätzlich die Verwalten-Gruppe (Firmen-Management).
+  const NAV_CUST_LERNEN = { head: 'Lernen', items: [
+    { key: 'mein-bereich',     label: 'Mein Bereich',      href: 'dashboard.html',        ic: '◧' },
+    { key: 'katalog',          label: 'Schulungs-Katalog', href: 'schulungen.html',       ic: '▦' },
+    { key: 'meine-schulungen', label: 'Meine Schulungen',  href: 'meine-schulungen.html', ic: '▤', badge: 'progressCount' }
+  ]};
+  const NAV_CUST_VERWALTEN = { head: 'Verwalten', items: [
+    { key: 'overview',   label: 'Firma · Übersicht',     href: 'dashboard.html#overview',   ic: '◳' },
+    { key: 'employees',  label: 'Mitarbeiter',           href: 'dashboard.html#employees',  ic: '⦿' },
+    { key: 'licenses',   label: 'Schulungen & Lizenzen', href: 'dashboard.html#licenses',   ic: '▥' },
+    { key: 'matrix',     label: 'Mitarbeiter-Dashboard', href: 'dashboard.html#matrix',     ic: '▤' },
+    { key: 'sharepoint', label: 'Dokumente',             href: 'dashboard.html#sharepoint', ic: '❒' },
+    { key: 'werkzeuge',  label: 'Werkzeuge & Vorlagen',  href: 'werkzeuge.html',            ic: '✎' }
+  ]};
+  const NAV_CUST_HILFE = { head: null, items: [
+    { key: 'hilfe', label: 'Hilfe & Support', href: 'anfrage.html', ic: '?' }
+  ]};
 
   const NAV_ADMIN = [
     { head: 'Steuerung', items: [
@@ -52,7 +61,14 @@
     ]}
   ];
 
-  function navFor(cfg) { return cfg.variant === 'admin' ? NAV_ADMIN : NAV_CUSTOMER; }
+  function navFor(cfg) {
+    if (cfg.variant === 'admin') return NAV_ADMIN;
+    var groups = [NAV_CUST_LERNEN];
+    var role = (window.getRole ? window.getRole() : 'verwalter');
+    if (role === 'verwalter') groups.push(NAV_CUST_VERWALTEN);
+    groups.push(NAV_CUST_HILFE);
+    return groups;
+  }
 
   function el(tag, attrs, html) {
     const n = document.createElement(tag);
@@ -75,7 +91,7 @@
   function progressCount() {
     // Anzahl laufender (gekaufter, nicht abgeschlossener) Schulungen.
     try {
-      const purchases = (window.Store && window.Store.get('purchases', [])) || [];
+      const purchases = Store.get('purchases', []) || [];
       const n = purchases.filter(p => !p.completed).length;
       return n > 0 ? String(n) : null;
     } catch (e) { return null; }
@@ -90,7 +106,9 @@
     brand.appendChild(el('a', { className: 'as-brand__logo', href: isAdmin ? 'admin.html' : 'dashboard.html', style: 'text-decoration:none' },
       '<span class="as-brand__mark">HT</span><span class="as-brand__name">HerwardTimm</span>'));
     const acctTitle = isAdmin ? 'HerwardTimm e.K.' : ((profile && profile.firma) || 'Mein Konto');
-    const acctRole  = isAdmin ? 'Admin · Inhaber' : 'Firmen-Konto';
+    const acctRole  = isAdmin
+      ? 'Admin · Inhaber'
+      : ((window.getRole && window.getRole() === 'mitarbeiter') ? 'Mitarbeiter:in' : 'Firmen-Verwalter');
     brand.appendChild(el('div', { className: 'as-account' },
       `<div><div class="as-account__firma">${esc(acctTitle)}</div><div class="as-account__role">${esc(acctRole)}</div></div>` +
       `<span class="as-account__caret">▾</span>`));

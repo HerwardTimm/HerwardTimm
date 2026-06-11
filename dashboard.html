@@ -490,5 +490,121 @@
 <!-- App-Shell („Plattform-Gefühl"): feste Sidebar + Topbar für den Mein-Bereich -->
 <script src="assets/app-shell.js"></script>
 <script>mountAppShell({ active: 'mein-bereich', crumb: 'Lernen / Start', title: 'Mein Bereich' });</script>
+
+<!-- ============================================================
+     Rollen-System im Kundenbereich
+     - Verwalter: sieht alle Verwaltungs-Tabs + Aktionen.
+     - Mitarbeiter: sieht nur den persönlichen Lernbereich.
+     - Hash-Deeplinks aus der Sidebar (#employees …) schalten die Tabs.
+     - Demo-Umschalter + Rollenvergabe an Mitarbeitende.
+     ============================================================ -->
+<style>
+  .role-switch { display:inline-flex; align-items:center; gap:7px; font-size:.82rem; color:var(--text-soft); }
+  .role-switch select { padding:7px 10px; border:1px solid var(--border-soft); border-radius:8px; font:inherit; font-size:.82rem; background:#fff; }
+  .role-card { background:#fff; border:1px solid var(--border-soft); border-radius:12px; padding:18px 20px; margin-bottom:18px; }
+  .role-row { display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid var(--border-soft); }
+  .role-row:last-child { border-bottom:0; }
+  .role-row .ava { width:32px; height:32px; border-radius:50%; background:var(--sage-mint-soft); color:var(--sage-dark); display:flex; align-items:center; justify-content:center; font-weight:600; font-size:.8rem; flex:none; }
+  .role-row .nm { font-weight:600; color:var(--sage-darker); font-size:.92rem; }
+  .role-row .pos { font-size:.78rem; color:var(--text-soft); }
+  .role-row select { margin-left:auto; padding:6px 10px; border:1px solid var(--border-soft); border-radius:8px; font:inherit; font-size:.82rem; background:#fff; }
+  .mgmt-only { }
+  body.role-mitarbeiter .mgmt-only { display:none !important; }
+</style>
+<script>
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    var role = (window.getRole ? window.getRole() : 'verwalter');
+    document.body.classList.add(role === 'mitarbeiter' ? 'role-mitarbeiter' : 'role-verwalter');
+
+    var MGMT = ['overview', 'employees', 'licenses', 'matrix', 'sharepoint'];
+
+    // ---- Manager-Header-Aktionen + Verwaltungs-Tabs als mgmt-only markieren ----
+    var headerActions = document.querySelector('#dash-company') &&
+      document.querySelector('#dash-company').closest('.container') &&
+      document.querySelector('#dash-company').closest('.container').querySelector('div[style*="display:flex"][style*="gap:10px"], div[style*="display:flex; gap:10px"]');
+    // Robust: alle Buttons in der Kopf-Aktionsleiste finden
+    var actionRow = document.querySelector('#dash-company');
+    if (actionRow) {
+      var cont = actionRow.closest('.container');
+      if (cont) {
+        var btnRow = cont.querySelector('div:last-child');
+        if (btnRow && btnRow.querySelector('button, a')) btnRow.classList.add('mgmt-only');
+      }
+    }
+    MGMT.forEach(function (p) {
+      var tab = document.querySelector('.dash-tab[data-p="' + p + '"]');
+      if (tab) tab.classList.add('mgmt-only');
+    });
+
+    // ---- Hash-Deeplinks → Tab umschalten (Sidebar „Verwalten") ----
+    function goToTab(name) {
+      var btn = document.querySelector('.dash-tab[data-p="' + name + '"]');
+      if (!btn) return;
+      if (role === 'mitarbeiter' && MGMT.indexOf(name) !== -1) name = 'mein-bereich', btn = document.querySelector('.dash-tab[data-p="mein-bereich"]');
+      if (btn) btn.click();
+      // Sidebar-Aktivzustand mitführen
+      document.querySelectorAll('.as-nav__link').forEach(function (a) {
+        var h = a.getAttribute('href') || '';
+        a.classList.toggle('is-active', h === 'dashboard.html#' + name || (name === 'mein-bereich' && h === 'dashboard.html'));
+      });
+    }
+    window.addEventListener('hashchange', function () {
+      var n = location.hash.slice(1); if (n) goToTab(n);
+    });
+    if (location.hash.slice(1)) goToTab(location.hash.slice(1));
+
+    // ---- Demo-Rollen-Umschalter im Kopf ----
+    var subEl = document.getElementById('dash-sub');
+    if (subEl && role === 'mitarbeiter') subEl.textContent = 'Ihr persönlicher Lernbereich';
+    var host = document.getElementById('dash-company');
+    if (host && host.closest('.container')) {
+      var sw = document.createElement('div');
+      sw.className = 'role-switch';
+      sw.style.cssText = 'margin-top:10px;';
+      sw.innerHTML = 'Demo-Ansicht: <select id="role-switch-sel">' +
+        '<option value="verwalter"' + (role === 'verwalter' ? ' selected' : '') + '>Firmen-Verwalter</option>' +
+        '<option value="mitarbeiter"' + (role === 'mitarbeiter' ? ' selected' : '') + '>Mitarbeiter:in</option></select>';
+      host.parentNode.appendChild(sw);
+      document.getElementById('role-switch-sel').addEventListener('change', function () {
+        if (window.setRole) window.setRole(this.value);
+        location.hash = '';
+        location.reload();
+      });
+    }
+
+    // ---- Rollenvergabe an Mitarbeitende (nur Verwalter, im Mitarbeiter-Tab) ----
+    if (role === 'verwalter') {
+      var empPanel = document.querySelector('.dash-panel[data-p="employees"]');
+      if (empPanel && !document.getElementById('role-mgmt-card')) {
+        var seeded = []; try { seeded = Store.get('seedProfiles', []) || []; } catch (e) {}
+        var card = document.createElement('div');
+        card.className = 'role-card'; card.id = 'role-mgmt-card';
+        card.innerHTML = '<h3 style="margin:0 0 4px; font-size:1.05rem;">Rollen &amp; Zugriff</h3>' +
+          '<p class="text-muted" style="margin:0 0 12px; font-size:.85rem;">Legen Sie fest, wer Ihre Firma verwalten darf (Verwalter) und wer nur seine eigenen Schulungen sieht (Mitarbeiter).</p>' +
+          '<div id="role-mgmt-list"></div>';
+        empPanel.insertBefore(card, empPanel.firstChild);
+        var list = card.querySelector('#role-mgmt-list');
+        function ini(n) { var p = (n || '').trim().split(/\s+/); return ((p[0] || '')[0] || '') + ((p[p.length - 1] || '')[0] || ''); }
+        list.innerHTML = seeded.map(function (s, i) {
+          var nm = (s.vorname + ' ' + s.nachname).trim();
+          var r = s.role || 'mitarbeiter';
+          return '<div class="role-row"><span class="ava">' + ini(nm).toUpperCase() + '</span>' +
+            '<div><div class="nm">' + nm + '</div><div class="pos">' + (s.position || '') + ' · ' + (s.firma || '') + '</div></div>' +
+            '<select data-email="' + s.email + '">' +
+            '<option value="mitarbeiter"' + (r === 'mitarbeiter' ? ' selected' : '') + '>Mitarbeiter:in</option>' +
+            '<option value="verwalter"' + (r === 'verwalter' ? ' selected' : '') + '>Firmen-Verwalter</option></select></div>';
+        }).join('');
+        list.querySelectorAll('select[data-email]').forEach(function (sel) {
+          sel.addEventListener('change', function () {
+            if (window.setMemberRole) window.setMemberRole(sel.dataset.email, sel.value);
+            if (window.toast) window.toast('Rolle aktualisiert: ' + sel.value, 'success');
+          });
+        });
+      }
+    }
+  });
+})();
+</script>
 </body>
 </html>

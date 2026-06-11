@@ -911,8 +911,16 @@ const DEMO_PROFILE = {
   vorname: 'Demo',
   nachname: 'Nutzer',
   firma: 'Demo-Firma GmbH',
-  position: 'Geschäftsführer'
+  position: 'Geschäftsführer',
+  role: 'verwalter'
 };
+
+// Rollen im Kundenbereich:
+//  - 'verwalter'   : Firmen-Verwalter — sieht Mitarbeiter, Lizenzen, Dokumente,
+//                    Werkzeuge, Dashboards; kann zuweisen und Rollen vergeben.
+//  - 'mitarbeiter' : Lernende:r — sieht nur den eigenen Lernbereich.
+// Erstanmelder einer Firma ist standardmäßig Verwalter.
+const ROLES = ['verwalter', 'mitarbeiter'];
 
 /**
  * Liefert das aktuelle Profil oder null, wenn der Nutzer nicht eingeloggt ist.
@@ -954,6 +962,8 @@ function setProfile(p) {
     nachname: (p.nachname || '').trim(),
     firma: (p.firma || '').trim(),
     position: (p.position || '').trim(),
+    // Rolle: explizit übergeben > bestehende > Standard 'verwalter' (Erstanmelder)
+    role: (p.role || (existing && existing.role) || 'verwalter'),
     createdAt: existing && existing.createdAt ? existing.createdAt : new Date().toISOString(),
     updatedAt: new Date().toISOString()
   };
@@ -976,6 +986,35 @@ function setProfile(p) {
 function isLoggedIn() {
   const p = getProfile();
   return !!(p && p.email && p.vorname);
+}
+
+/** Aktuelle Rolle ('verwalter' | 'mitarbeiter'); Standard 'verwalter'. */
+function getRole() {
+  const p = getProfile();
+  return (p && p.role) || 'verwalter';
+}
+/** True, wenn der aktuelle Nutzer Firmen-Verwalter ist. */
+function isVerwalter() {
+  return getRole() === 'verwalter';
+}
+/** Setzt die Rolle des AKTUELLEN Profils (z. B. Demo-Umschalter). */
+function setRole(role) {
+  if (ROLES.indexOf(role) === -1) return null;
+  const p = getProfile();
+  if (!p) return null;
+  p.role = role;
+  p.updatedAt = new Date().toISOString();
+  Store.set('profile', p);
+  return p;
+}
+/** Setzt die Rolle eines Mitarbeitenden (Seed-Profil) per E-Mail — nur Verwalter. */
+function setMemberRole(email, role) {
+  if (ROLES.indexOf(role) === -1) return false;
+  const seeded = Store.get('seedProfiles', []) || [];
+  let changed = false;
+  seeded.forEach(s => { if ((s.email || '').toLowerCase() === (email || '').toLowerCase()) { s.role = role; changed = true; } });
+  if (changed) Store.set('seedProfiles', seeded);
+  return changed;
 }
 
 /**
@@ -1111,14 +1150,14 @@ function seedDemoData() {
   if (Store.get('seedDone')) return;
 
   const demoUsers = [
-    { email: 'anna.petersen@nordlicht-elektro.example', vorname: 'Anna',  nachname: 'Petersen', firma: 'Nordlicht Elektrotechnik GmbH', position: 'Monteurin' },
-    { email: 'peer.lutz@nordlicht-elektro.example',     vorname: 'Peer',  nachname: 'Lutz',     firma: 'Nordlicht Elektrotechnik GmbH', position: 'Geschäftsführer' },
-    { email: 's.brandt@nordlicht-elektro.example',      vorname: 'Sven',  nachname: 'Brandt',   firma: 'Nordlicht Elektrotechnik GmbH', position: 'Mitarbeiter' },
-    { email: 'k.sommer@beispiel-tischlerei.example',   vorname: 'Klara', nachname: 'Sommer',   firma: 'Beispiel Tischlerei GbR',       position: 'Tischlerin' },
-    { email: 't.reuter@beispiel-tischlerei.example',   vorname: 'Tim',   nachname: 'Reuter',   firma: 'Beispiel Tischlerei GbR',       position: 'Geselle' },
-    { email: 'm.klein@muster-buero.example',           vorname: 'Maria', nachname: 'Klein',    firma: 'Muster Bürotechnik',            position: 'Sachbearbeitung' },
-    { email: 'd.hagen@beispiel-logistik.example',      vorname: 'David', nachname: 'Hagen',    firma: 'Beispiel Logistik OHG',          position: 'Disponent' },
-    { email: 'l.wieland@muster-pharma.example',             vorname: 'Lena',  nachname: 'Wieland',  firma: 'Muster Pharma GmbH',               position: 'Laborantin' }
+    { email: 'anna.petersen@nordlicht-elektro.example', vorname: 'Anna',  nachname: 'Petersen', firma: 'Nordlicht Elektrotechnik GmbH', position: 'Monteurin', role: 'mitarbeiter' },
+    { email: 'peer.lutz@nordlicht-elektro.example',     vorname: 'Peer',  nachname: 'Lutz',     firma: 'Nordlicht Elektrotechnik GmbH', position: 'Geschäftsführer', role: 'verwalter' },
+    { email: 's.brandt@nordlicht-elektro.example',      vorname: 'Sven',  nachname: 'Brandt',   firma: 'Nordlicht Elektrotechnik GmbH', position: 'Mitarbeiter', role: 'mitarbeiter' },
+    { email: 'k.sommer@beispiel-tischlerei.example',   vorname: 'Klara', nachname: 'Sommer',   firma: 'Beispiel Tischlerei GbR',       position: 'Tischlerin', role: 'mitarbeiter' },
+    { email: 't.reuter@beispiel-tischlerei.example',   vorname: 'Tim',   nachname: 'Reuter',   firma: 'Beispiel Tischlerei GbR',       position: 'Geselle', role: 'mitarbeiter' },
+    { email: 'm.klein@muster-buero.example',           vorname: 'Maria', nachname: 'Klein',    firma: 'Muster Bürotechnik',            position: 'Sachbearbeitung', role: 'mitarbeiter' },
+    { email: 'd.hagen@beispiel-logistik.example',      vorname: 'David', nachname: 'Hagen',    firma: 'Beispiel Logistik OHG',          position: 'Disponent', role: 'mitarbeiter' },
+    { email: 'l.wieland@muster-pharma.example',             vorname: 'Lena',  nachname: 'Wieland',  firma: 'Muster Pharma GmbH',               position: 'Laborantin', role: 'mitarbeiter' }
   ];
   const now = Date.now();
   demoUsers.forEach((u, i) => {
@@ -1284,6 +1323,11 @@ window.isLoggedIn = isLoggedIn;
 window.isDemoProfile = isDemoProfile;
 window.ensureDemoProfile = ensureDemoProfile;
 window.DEMO_PROFILE = DEMO_PROFILE;
+window.getRole = getRole;
+window.isVerwalter = isVerwalter;
+window.setRole = setRole;
+window.setMemberRole = setMemberRole;
+window.ROLES = ROLES;
 window.requireLogin = requireLogin;
 window.logAuditEvent = logAuditEvent;
 window.generateCertId = generateCertId;
