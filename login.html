@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login · HerwardTimm</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .login-step { display: none; }
+  .login-step.active { display: block; }
+  .login-actions { display: flex; flex-direction: column; gap: 10px; }
+  .login-actions .or-sep {
+    text-align: center; font-size: 0.78rem; color: var(--text-mute);
+    text-transform: uppercase; letter-spacing: 0.16em; margin: 6px 0;
+    position: relative;
+  }
+  .login-actions .or-sep::before, .login-actions .or-sep::after {
+    content: ""; position: absolute; top: 50%; width: 38%;
+    height: 1px; background: var(--border-soft);
+  }
+  .login-actions .or-sep::before { left: 0; }
+  .login-actions .or-sep::after { right: 0; }
+  .privacy-note {
+    background: var(--sage-mint-soft); padding: 12px 14px;
+    border-left: 2px solid var(--gold); font-size: 0.82rem;
+    color: var(--text-soft); line-height: 1.5; margin: 18px 0 22px;
+    border-radius: 0 6px 6px 0;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
+  .identity-preview {
+    background: var(--sage-mint-soft); border-radius: 8px;
+    padding: 14px 16px; margin: 14px 0 22px; font-size: 0.88rem;
+    line-height: 1.5;
+  }
+  .identity-preview strong { color: var(--sage-darker); display: block; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180">
+    </a>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li>
+      <li><a href="anfrage.html" data-i18n="nav.pauschalbetreuung">Pauschalbetreuung</a></li>
+      <li><a href="preise.html">Preise</a></li>
+      <li><a href="termin.html" data-i18n="nav.termin">Termin</a></li>
+      <li><a href="ueber-uns.html" data-i18n="nav.ueber-uns">Über uns</a></li>
+      <li><a href="login.html" class="active" data-i18n="nav.login">Login</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="section" style="background: var(--sage-mint-soft); min-height: calc(100vh - 84px - 320px);">
+  <div class="container" style="max-width: 520px;">
+    <div class="card" style="padding: 48px; background: var(--white); border-top: 2px solid var(--gold);">
+
+      <!-- ============ Schritt 1: E-Mail ============ -->
+      <div id="step-email" class="login-step active">
+        <div style="text-align: center; margin-bottom: 28px;">
+          <span class="eyebrow" style="padding-left:0;">Kundenbereich</span>
+          <h1 style="text-align: center; margin: 8px 0 12px;">Anmelden</h1>
+          <div class="brand-divider"></div>
+          <p class="text-muted text-center" style="margin: 14px 0 0;">Geben Sie Ihre E-Mail ein — Sie erhalten einen Magic-Link. Oder loggen Sie sich mit einem Klick in den Demo-Modus ein (keine E-Mail nötig).</p>
+        </div>
+
+        <div class="form-group">
+          <label for="login-email">E-Mail-Adresse</label>
+          <input type="email" id="login-email" placeholder="anna.petersen@firma.de" required autocomplete="email">
+        </div>
+
+        <div class="login-actions">
+          <button class="btn btn-primary btn-block btn-lg" id="send-link">Magic-Link senden</button>
+          <div class="or-sep">oder</div>
+          <button class="btn btn-accent btn-block btn-lg" id="direct-login">Direkt einloggen (Demo)</button>
+        </div>
+
+        <p class="text-muted" style="font-size:.8rem; margin-top: 22px; text-align: center; line-height: 1.6;">
+          Noch kein Konto? Sie werden im nächsten Schritt durch die einmalige Profil-Anlage geführt.
+        </p>
+      </div>
+
+      <!-- ============ Schritt 2a: Magic-Link gesendet ============ -->
+      <div id="step-sent" class="login-step" style="text-align: center;">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 14px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span class="eyebrow" style="padding-left:0;">Magic-Link gesendet</span>
+        <h2 style="font-size: 1.5rem; margin: 12px 0;">Schauen Sie in Ihr Postfach</h2>
+        <p class="text-muted">Wir haben einen Login-Link an <strong id="sent-to" style="color: var(--sage-darker);"></strong> geschickt. Bitte schauen Sie auch im Spam-Ordner.</p>
+        <div class="privacy-note" style="text-align:left;">
+          <strong style="color: var(--gold-dark);">Demo-Hinweis · </strong>Es wurde keine echte E-Mail versandt. Im Live-Betrieb landet der Link in Ihrem Postfach und führt direkt in Ihren Schulungsbereich.
+        </div>
+        <button class="btn btn-accent btn-block btn-lg" id="continue-after-link">Demo-Login fortsetzen</button>
+        <button class="btn btn-link" id="back-from-sent" style="margin-top: 14px;">← Andere E-Mail verwenden</button>
+      </div>
+
+      <!-- ============ Schritt 2b: Profil anlegen ============ -->
+      <div id="step-profile" class="login-step">
+        <div style="text-align: center; margin-bottom: 22px;">
+          <span class="eyebrow" style="padding-left:0;">Erstanmeldung</span>
+          <h1 style="text-align: center; margin: 8px 0 12px;">Profil anlegen</h1>
+          <div class="brand-divider"></div>
+          <p class="text-muted text-center" style="margin: 14px 0 0; font-size: 0.92rem;">Ihre Daten erscheinen automatisch auf Ihren Schulungsnachweisen — Sie müssen sie nicht jedes Mal erneut eintippen.</p>
+        </div>
+
+        <div class="identity-preview">
+          <strong>E-Mail</strong>
+          <span id="profile-email-readonly">—</span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="p-vorname">Vorname *</label>
+            <input type="text" id="p-vorname" placeholder="Anna" required autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="p-nachname">Nachname *</label>
+            <input type="text" id="p-nachname" placeholder="Petersen" required autocomplete="family-name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="p-firma">Firma *</label>
+          <input type="text" id="p-firma" placeholder="Muster GmbH" required autocomplete="organization">
+        </div>
+
+        <div class="form-group">
+          <label for="p-position">Position <span class="text-muted" style="font-weight:400; font-size:0.85em;">(optional)</span></label>
+          <input type="text" id="p-position" placeholder="z. B. Lagerist:in, Sachbearbeitung" autocomplete="organization-title">
+        </div>
+
+        <div class="privacy-note">
+          Ihre Daten werden ausschließlich zur Erstellung der Schulungsnachweise und für den Audit-Log (Pflicht nach §6 ArbSchG, §4 DGUV V1) verwendet. Wir geben sie nicht an Dritte weiter.
+          <a href="datenschutz.html" style="color: var(--sage-dark);">Datenschutzerklärung lesen →</a>
+        </div>
+
+        <button class="btn btn-primary btn-block btn-lg" id="create-account">Konto anlegen &amp; einloggen</button>
+        <button class="btn btn-link" id="back-from-profile" style="margin-top: 12px; display:block; width:100%; text-align:center;">← Andere E-Mail verwenden</button>
+      </div>
+
+      <div style="border-top: 1px solid var(--border-soft); margin-top: 36px; padding-top: 24px; text-align: center;">
+        <p class="text-muted" style="font-size: 0.85rem; margin: 0;">Sind Sie Mitarbeiter:in von HerwardTimm?</p>
+        <a href="admin.html" class="btn btn-ghost btn-sm" style="margin-top: 12px;">Zum Admin-Bereich</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;"><img src="assets/logo-weiss.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" class="logo-weiss" width="200"></div>
+        <p style="font-size: 0.92rem;">Sifa-Beratung und Arbeitssicherheit für KMUs in Norddeutschland.</p>
+      </div>
+      <div><h4 data-i18n="footer.plattform">Plattform</h4><ul class="footer-list"><li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li><li><a href="anfrage.html" data-i18n="nav.pauschalbetreuung">Pauschalbetreuung</a></li><li><a href="termin.html" data-i18n="nav.termin">Termin</a></li><li><a href="login.html" data-i18n="nav.login">Login</a></li></ul></div>
+      <div><h4 data-i18n="footer.unternehmen">Unternehmen</h4><ul class="footer-list"><li><a href="ueber-uns.html" data-i18n="nav.ueber-uns">Über uns</a></li></ul></div>
+      <div><h4 data-i18n="footer.rechtliches">Rechtliches</h4><ul class="footer-list"><li><a href="impressum.html" data-i18n="footer.impressum">Impressum</a></li><li><a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a></li><li><a href="agb.html" data-i18n="footer.agb">AGB</a></li><li><a href="widerruf.html" data-i18n="footer.widerruf">Widerruf</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 HerwardTimm</span><span data-i18n="footer.demo-version">Demo-Version</span></div>
+  </div>
+</footer>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script>
+/* ============================================================
+   Login-Flow (zweistufig, DGUV-konform)
+   ------------------------------------------------------------
+   1) E-Mail eingeben → Magic-Link senden ODER Direkt einloggen.
+   2a) Magic-Link → Postfach-Hinweis + Fortsetzen-Knopf (Demo).
+   2b) Direkt-Login:
+       - Wenn Profil zu dieser E-Mail bekannt → ins Dashboard.
+       - Wenn nicht → Profil anlegen Formular.
+   Nach erfolgreichem Login geht der Lerner zu seiner Returncite
+   (Parameter ?return=) oder zur Mitarbeiter-Übersicht.
+   ============================================================ */
+(function () {
+  // Wenn schon eingeloggt — direkt weiterleiten (außer wenn Force-Login per ?fresh=1)
+  const urlParams = new URLSearchParams(location.search);
+  const returnTo = urlParams.get('return');
+  const fresh = urlParams.get('fresh') === '1';
+
+  if (!fresh && window.isLoggedIn && window.isLoggedIn()) {
+    location.replace(returnTo || 'meine-schulungen.html');
+    return;
+  }
+
+  function $(id) { return document.getElementById(id); }
+  function showStep(id) {
+    document.querySelectorAll('.login-step').forEach(s => s.classList.remove('active'));
+    $(id).classList.add('active');
+  }
+  function validEmail(s) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s); }
+
+  // Direkt-Login: prüft, ob Profil zur E-Mail existiert
+  function tryDirectLogin(email) {
+    const seeded = (window.Store.get('seedProfiles', []) || []);
+    const seedMatch = seeded.find(p => (p.email || '').toLowerCase() === email);
+    const own = window.getProfile && window.getProfile();
+    if (own && own.email === email) {
+      window.logAuditEvent && window.logAuditEvent('login', null, { email, mode: 'direct' });
+      location.href = returnTo || 'meine-schulungen.html';
+      return true;
+    }
+    if (seedMatch) {
+      window.setProfile(seedMatch);
+      window.logAuditEvent && window.logAuditEvent('login', null, { email, mode: 'direct-seed' });
+      window.toast && window.toast(`Willkommen zurück, ${seedMatch.vorname}.`, 'success');
+      setTimeout(() => location.href = returnTo || 'meine-schulungen.html', 500);
+      return true;
+    }
+    return false;
+  }
+
+  // Schritt 1 → Magic-Link
+  // TODO GO-LIVE: Demo-Stub — es wird KEIN echter Magic-Link verschickt; die
+  // Seite zeigt nur den "gesendet"-Hinweis. Vor Live-Gang an den echten
+  // Mailversand anbinden (Token erzeugen, Link mailen, Token-Login bauen).
+  // Der Demo-Hinweis im step-sent-Block bleibt aktiv, solange dies ein Stub ist.
+  $('send-link').addEventListener('click', () => {
+    const email = $('login-email').value.trim().toLowerCase();
+    if (!validEmail(email)) { window.toast('Bitte eine gültige E-Mail-Adresse eingeben.', 'error'); return; }
+    $('sent-to').textContent = email;
+    showStep('step-sent');
+  });
+
+  // Schritt 1 → Direkt einloggen
+  // Demo-Convenience: ein Klick reicht.
+  //   - Eigenes Profil existiert      → durchreichen wie bisher.
+  //   - E-Mail matcht Seed-Profil     → Seed laden, durchreichen.
+  //   - Sonst (auch bei leerem Feld)  → Default-Demo-Profil anlegen,
+  //                                     direkt ins Dashboard.
+  // KEIN Profil-Anlage-Formular im Demo-Pfad mehr — dort kommt der
+  // „echte" Nutzer nur noch über den Magic-Link-Knopf hin.
+  // GO-LIVE-AUTH: Vor Live-Gang den Demo-Fallback entfernen.
+  $('direct-login').addEventListener('click', () => {
+    const email = $('login-email').value.trim().toLowerCase();
+    if (email && validEmail(email) && tryDirectLogin(email)) return;
+    // Kein bestehendes Profil → automatischer Demo-Modus.
+    window.ensureDemoProfile && window.ensureDemoProfile();
+    window.toast && window.toast('Demo-Modus aktiv. Sie sind angemeldet.', 'success', 1800);
+    setTimeout(() => location.href = returnTo || 'dashboard.html', 400);
+  });
+
+  // Schritt 2a → nach Magic-Link "fortsetzen" → ggf. Profil anlegen oder Dashboard
+  $('continue-after-link').addEventListener('click', () => {
+    const email = $('sent-to').textContent.trim().toLowerCase();
+    if (tryDirectLogin(email)) return;
+    $('profile-email-readonly').textContent = email;
+    showStep('step-profile');
+  });
+
+  $('back-from-sent').addEventListener('click', () => showStep('step-email'));
+  $('back-from-profile').addEventListener('click', () => showStep('step-email'));
+
+  // Schritt 2b → Konto anlegen
+  $('create-account').addEventListener('click', () => {
+    const email    = $('profile-email-readonly').textContent.trim().toLowerCase();
+    const vorname  = $('p-vorname').value.trim();
+    const nachname = $('p-nachname').value.trim();
+    const firma    = $('p-firma').value.trim();
+    const position = $('p-position').value.trim();
+    if (!vorname || !nachname || !firma) {
+      window.toast('Bitte Vorname, Nachname und Firma ausfüllen.', 'error');
+      return;
+    }
+    window.setProfile({ email, vorname, nachname, firma, position });
+    window.logAuditEvent('login', null, { email, mode: 'profile_created' });
+    window.toast(`Willkommen, ${vorname}! Ihr Profil wurde angelegt.`, 'success', 3000);
+    setTimeout(() => location.href = returnTo || 'meine-schulungen.html', 700);
+  });
+
+  // Enter im E-Mail-Feld = Direkt-Login (häufiger genutzter Pfad in der Demo)
+  $('login-email').addEventListener('keydown', e => {
+    if (e.key === 'Enter') $('direct-login').click();
+  });
+})();
+</script>
+</body>
+</html>

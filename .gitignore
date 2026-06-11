@@ -1,0 +1,33 @@
+# ============================================================
+#  Deploy-Repo: NUR Live-Dateien gehören ins Repo.
+#  Dev-Quellen, Build-Tools und OS-/OneDrive-Müll bleiben draußen.
+# ============================================================
+
+# Dev-Quellen & Build (nicht fürs Live-Deployment nötig)
+src/
+tests/
+tools/
+.github/
+package.json
+package-lock.json
+tsconfig.json
+vitest.config.ts
+.eslintrc.json
+node_modules/
+
+# Interne Arbeitsdateien
+_review/
+_screenshots/
+README.md
+
+# Umgebung / Secrets
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+.vitest/
+
+# OS- / OneDrive-Müll
+.DS_Store
+.fuse_hidden*

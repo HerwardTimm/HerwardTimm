@@ -1,0 +1,386 @@
+{
+  "slug": "gefahrstoffe",
+  "titel": "Gefahrstoffe am Arbeitsplatz",
+  "pflichtgrundlage": "GefStoffV §14, §12 ArbSchG, TRGS 555",
+  "dauer_minuten": 45,
+  "anzahl_folien": 44,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Gefahrstoffe am Arbeitsplatz",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Gefahrstoffe am Arbeitsplatz\". GHS, Sicherheitsdatenblatt und sicherer Umgang mit Chemikalien. Diese Schulung ist Ihre Pflichtunterweisung nach GefStoffV §14  ·  §12 ArbSchG  ·  TRGS 555 und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Grundlagen Gefahrstoffe",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Grundlagen Gefahrstoffe. Was Gefahrstoffe sind, welche Gefährdungen sie verursachen und wo sie im Betrieb vorkommen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Was ist ein Gefahrstoff?",
+      "bild": "folie-05.png",
+      "sprechertext": "Gefahrstoffe sind weiter verbreitet als gedacht. Wichtig ist das Verständnis der Aufnahmewege — besonders die Haut wird unterschätzt. CMR-Stoffe (krebserzeugend, mutagen, reproduktionstoxisch) unterliegen besonders strengen Regeln. Das Gefahrstoffverzeichnis ist Pflicht und Grundlage der Gefährdungsbeurteilung. HerwardTimm e.K. unterstützt bei Verzeichnis und Substitutionsprüfung.\n\n▸ Trainer-Tipp: Der häufigste Irrtum: 'Das ist nur Putzmittel.' Gerade die ständig genutzten Mittel verursachen über die Jahre die meisten Gefahrstoff-Erkrankungen — vor allem Haut- und Atemwegsleiden."
+    },
+    {
+      "nummer": 6,
+      "titel": "Gefährdungsbeurteilung und Substitution",
+      "bild": "folie-06.png",
+      "sprechertext": "Die Gefährdungsbeurteilung nach §6 GefStoffV ist der Ausgangspunkt. Zentrale Pflicht ist die Substitutionsprüfung: gefährliche Stoffe sind durch ungefährlichere zu ersetzen, wo technisch möglich. Der Arbeitsplatzgrenzwert (AGW) ist die zulässige Luftkonzentration; seine Einhaltung wird ggf. durch Messungen geprüft. Diese Themen betreffen primär Arbeitgeber/Sifa, aber Beschäftigte sollten Substitutionsmöglichkeiten melden.\n\n▸ Trainer-Tipp: Substitution ist gesetzlich vorrangig, wird aber oft übersprungen, weil 'haben wir immer so gemacht'. Wenn es ein harmloseres Mittel gibt, ist sein Einsatz nicht optional, sondern Pflicht."
+    },
+    {
+      "nummer": 7,
+      "titel": "Modul 2 — Kennzeichnung GHS",
+      "bild": "folie-07.png",
+      "sprechertext": "Modul 2 — Kennzeichnung GHS. Die Gefahrenpiktogramme, H- und P-Sätze und das richtige Lesen von Etiketten. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 8,
+      "titel": "Die 9 GHS-Gefahrenpiktogramme",
+      "bild": "folie-08.png",
+      "sprechertext": "Die GHS-/CLP-Piktogramme sind weltweit einheitlich (rote Raute, schwarzes Symbol, weißer Grund). Sie lösten ab 2015 die alten orangefarbenen Gefahrensymbole vollständig ab. Wichtig: ein Produkt kann mehrere Piktogramme tragen. Die Piktogramme allein reichen nicht — sie verweisen auf die H- und P-Sätze für Details.\n\n▸ Trainer-Tipp: Die Piktogramme sind die schnellste Information. Wer sie auf einen Blick deuten kann, weiß sofort, womit er es zu tun hat — noch bevor er das Etikett im Detail liest."
+    },
+    {
+      "nummer": 9,
+      "titel": "H-Sätze, P-Sätze und Signalwörter",
+      "bild": "folie-09.png",
+      "sprechertext": "H- und P-Sätze sind das Detailwissen hinter den Piktogrammen. Man muss sie nicht auswendig kennen, aber wissen, wo man sie findet und dass man bei H-Sätzen mit hoher Nummer (z. B. H350 krebserzeugend) besonders vorsichtig sein muss. Das Umfüllverbot in Lebensmittelbehälter ist absolut zentral — Verwechslungen führen regelmäßig zu schweren Verätzungen und Vergiftungen.\n\n▸ Trainer-Tipp: Das Umfüllen in unbeschriftete oder gar Getränkeflaschen ist eine der gefährlichsten Unsitten überhaupt. Jeder umgefüllte Behälter braucht mindestens Produktname und Gefahrenkennzeichnung."
+    },
+    {
+      "nummer": 10,
+      "titel": "Modul 3 — Sicherheitsdatenblatt & Betriebsanweisung",
+      "bild": "folie-10.png",
+      "sprechertext": "Modul 3 — Sicherheitsdatenblatt & Betriebsanweisung. Wo die wichtigen Informationen stehen und wie Sie sie im Alltag nutzen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 11,
+      "titel": "Das Sicherheitsdatenblatt (SDB)",
+      "bild": "folie-11.png",
+      "sprechertext": "Das Sicherheitsdatenblatt (SDB) ist europaweit auf 16 Abschnitte standardisiert. Beschäftigte müssen es nicht komplett lesen, aber wissen, dass es existiert und wo die Erste-Hilfe-Angaben (Abschnitt 4) und PSA-Vorgaben (Abschnitt 8) stehen — im Notfall zählt jede Sekunde. Der Lieferant muss das SDB kostenlos und aktuell bereitstellen. Es ist die fachliche Basis für die Betriebsanweisung.\n\n▸ Trainer-Tipp: Das SDB ist die Fachinformation des Herstellers — es ist aber lang und technisch. Für den Alltag wird daraus die kurze, verständliche Betriebsanweisung gemacht. Beide gehören griffbereit."
+    },
+    {
+      "nummer": 12,
+      "titel": "Vom SDB zur sicheren Tätigkeit",
+      "bild": "folie-12.png",
+      "sprechertext": "Diese Kette zeigt, wie aus der Hersteller-Information konkrete Sicherheit am Arbeitsplatz wird. Die Betriebsanweisung nach §14 GefStoffV ist betriebs- und arbeitsplatzbezogen, in verständlicher Sprache, und folgt einem festen Aufbau (Gefahren, Schutzmaßnahmen, Verhalten im Gefahrfall, Erste Hilfe, Entsorgung). Sie ist Grundlage der jährlichen Unterweisung.\n\n▸ Trainer-Tipp: Die Betriebsanweisung ist Ihr wichtigstes Alltagsdokument — eine Seite, klare Sprache, mit Piktogrammen. Sie hängt idealerweise direkt am Arbeitsplatz aus."
+    },
+    {
+      "nummer": 13,
+      "titel": "Modul 4 — Sicherer Umgang & Notfall",
+      "bild": "folie-13.png",
+      "sprechertext": "Modul 4 — Sicherer Umgang & Notfall. Schutzmaßnahmen, Lagerung, Entsorgung und richtiges Handeln im Notfall. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 14,
+      "titel": "STOP-Prinzip bei Gefahrstoffen",
+      "bild": "folie-14.png",
+      "sprechertext": "Das STOP-Prinzip erweitert das TOP-Prinzip um die Substitution an erster Stelle, die bei Gefahrstoffen besonders betont wird (§7 GefStoffV). Die Reihenfolge ist verbindlich: erst Stoff ersetzen, dann technische Maßnahmen (Absaugung!), dann organisatorische, zuletzt PSA. In der Praxis wird oft zuerst zur PSA gegriffen — das ist die schwächste und letzte Stufe.\n\n▸ Trainer-Tipp: Bei Gefahrstoffen kommt vor das TOP-Prinzip noch die Substitution (S). Atemschutz und Handschuhe sind die LETZTE Stufe — nicht die erste Antwort."
+    },
+    {
+      "nummer": 15,
+      "titel": "Lagerung und Umgang",
+      "bild": "folie-15.png",
+      "sprechertext": "Lagerung und Handhabung folgen klaren Regeln. Besonders gefährlich ist das versehentliche Mischen unverträglicher Stoffe — z. B. chlorhaltiger Reiniger mit säurehaltigem führt zu giftigem Chlorgas. Das passiert in der Praxis regelmäßig in Sanitärbereichen. Zusammenlagerungsverbote (TRGS 510) und das Verbot von Essen/Trinken im Gefahrstoffbereich sind zentral. Entsorgung nur über die vorgesehenen Wege, nie über Ausguss oder Hausmüll.\n\n▸ Trainer-Tipp: Das Mischen von Reinigern (z. B. Chlorreiniger + Säure) setzt giftige Gase frei — ein realer, häufiger Notfall in der Reinigung. Nie eigenmächtig kombinieren."
+    },
+    {
+      "nummer": 16,
+      "titel": "Notfall: Verschütten, Haut- und Augenkontakt",
+      "bild": "folie-16.png",
+      "sprechertext": "Die Erste-Hilfe-Maßnahmen stehen konkret im SDB (Abschnitt 4) und in der Betriebsanweisung. Wichtigste Reflexe: bei Haut-/Augenkontakt sofort und ausgiebig mit Wasser spülen. Beim Verschlucken NICHT pauschal Erbrechen auslösen (bei ätzenden Stoffen verschlimmert das die Schädigung). Der Giftnotruf der regionalen Giftinformationszentrale gibt fachkundige Auskunft. Jeder Vorfall gehört ins Verbandbuch.\n\n▸ Trainer-Tipp: Bei Augenkontakt zählt jede Sekunde — sofort spülen, mindestens 10 Minuten, erst dann zum Arzt. Die Augendusche muss bekannt, erreichbar und funktionsfähig sein."
+    },
+    {
+      "nummer": 17,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-17.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei realistische Szenarien aus dem Betrieb. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 18,
+      "titel": "Fallbeispiel 1: Der umgefüllte Reiniger",
+      "bild": "folie-18.png",
+      "sprechertext": "Dieser Fall steht für eine der gefährlichsten und häufigsten Unsitten. Das Umfüllen in Getränkeflaschen führt regelmäßig zu schweren Verätzungen — besonders tragisch, wenn Unbeteiligte betroffen sind. Die Lehre: absolute Null-Toleranz beim Umfüllen in Lebensmittelbehälter, konsequente Kennzeichnung.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 19,
+      "titel": "Fallbeispiel 2: Die gemischten Reiniger",
+      "bild": "folie-19.png",
+      "sprechertext": "Das Mischen unverträglicher Reiniger ist ein realer und häufiger Notfall, besonders in Reinigung und Gastronomie. Chlorgas reizt die Atemwege schwer und kann zu Lungenödem führen. Die Lehre: niemals eigenmächtig Produkte kombinieren, Betriebsanweisung beachten, im Zweifel fragen.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 20,
+      "titel": "Fallbeispiel 3: Das ständige Hautekzem",
+      "bild": "folie-20.png",
+      "sprechertext": "Chronische Gefahrstoff-Erkrankungen entstehen schleichend über Monate und Jahre. Haut- und Atemwegserkrankungen durch Lösemittel sind anerkennbare Berufskrankheiten. Die Lehre: PSA konsequent tragen, Substitution prüfen (wasserbasierte Systeme), technische Absaugung nutzen und frühe Symptome ernst nehmen. HerwardTimm e.K. unterstützt bei Hautschutzplan und Substitution.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 21,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-21.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen aus allen Modulen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 22,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-22.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. §14 GefStoffV: vor Aufnahme der Tätigkeit und danach mindestens jährlich, mündlich anhand der Betriebsanweisung."
+    },
+    {
+      "nummer": 23,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-23.png",
+      "sprechertext": "§14 GefStoffV: vor Aufnahme der Tätigkeit und danach mindestens jährlich, mündlich anhand der Betriebsanweisung."
+    },
+    {
+      "nummer": 24,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-24.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Gefahrstoffe können über Haut, Atemwege, Verschlucken und Augen aufgenommen werden — die Haut wird oft unterschätzt."
+    },
+    {
+      "nummer": 25,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-25.png",
+      "sprechertext": "Gefahrstoffe können über Haut, Atemwege, Verschlucken und Augen aufgenommen werden — die Haut wird oft unterschätzt."
+    },
+    {
+      "nummer": 26,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-26.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. GHS05 (Ätzwirkung) steht für ätzende Stoffe — z. B. Rohrreiniger, starke Säuren und Laugen."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "GHS05 (Ätzwirkung) steht für ätzende Stoffe — z. B. Rohrreiniger, starke Säuren und Laugen."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. H-Sätze (Hazard Statements) beschreiben die Gefahr, P-Sätze (Precaution) die Schutzmaßnahmen."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "H-Sätze (Hazard Statements) beschreiben die Gefahr, P-Sätze (Precaution) die Schutzmaßnahmen."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Niemals in Lebensmittel-/Getränkebehälter — Verwechslungsgefahr mit schweren Folgen. Umgefüllte Gefäße immer kennzeichnen (§8 GefStoffV)."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "Niemals in Lebensmittel-/Getränkebehälter — Verwechslungsgefahr mit schweren Folgen. Umgefüllte Gefäße immer kennzeichnen (§8 GefStoffV)."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Das SDB ist europaweit auf 16 standardisierte Abschnitte festgelegt; Abschnitt 4 = Erste Hilfe, Abschnitt 8 = PSA."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Das SDB ist europaweit auf 16 standardisierte Abschnitte festgelegt; Abschnitt 4 = Erste Hilfe, Abschnitt 8 = PSA."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Substitution — den gefährlichen Stoff ersetzen oder vermeiden — hat absoluten Vorrang vor allen anderen Maßnahmen."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Substitution — den gefährlichen Stoff ersetzen oder vermeiden — hat absoluten Vorrang vor allen anderen Maßnahmen."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Es entsteht giftiges Chlorgas — Atemwegsreizung bis Lungenödem. Reiniger niemals eigenmächtig mischen."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Es entsteht giftiges Chlorgas — Atemwegsreizung bis Lungenödem. Reiniger niemals eigenmächtig mischen."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Sofort mindestens 10–15 Minuten mit Augendusche/Wasser spülen, dann augenärztliche Behandlung. Jede Sekunde zählt."
+    },
+    {
+      "nummer": 39,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-39.png",
+      "sprechertext": "Sofort mindestens 10–15 Minuten mit Augendusche/Wasser spülen, dann augenärztliche Behandlung. Jede Sekunde zählt."
+    },
+    {
+      "nummer": 40,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-40.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die kurze, verständliche Betriebsanweisung nach §14 GefStoffV — sie übersetzt das SDB in den Arbeitsalltag."
+    },
+    {
+      "nummer": 41,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-41.png",
+      "sprechertext": "Die kurze, verständliche Betriebsanweisung nach §14 GefStoffV — sie übersetzt das SDB in den Arbeitsalltag."
+    },
+    {
+      "nummer": 42,
+      "titel": "Zusammenfassung",
+      "bild": "folie-42.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 43,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-43.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 44,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-44.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Wie oft ist die Gefahrstoff-Unterweisung Pflicht?",
+      "optionen": [
+        "Einmalig",
+        "Alle 2 Jahre",
+        "Vor Aufnahme und danach mind. jährlich",
+        "Nur bei Unfall"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "§14 GefStoffV: vor Aufnahme der Tätigkeit und danach mindestens jährlich, mündlich anhand der Betriebsanweisung."
+    },
+    {
+      "frage": "Welche Aufnahmewege gibt es für Gefahrstoffe?",
+      "optionen": [
+        "Nur Einatmen",
+        "Haut, Einatmen, Verschlucken, Augen",
+        "Nur über die Haut",
+        "Nur Verschlucken"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Gefahrstoffe können über Haut, Atemwege, Verschlucken und Augen aufgenommen werden — die Haut wird oft unterschätzt."
+    },
+    {
+      "frage": "Was bedeutet das GHS-Piktogramm mit der Ätzwirkung (GHS05)?",
+      "optionen": [
+        "entzündbar",
+        "ätzend für Haut/Augen/Metall",
+        "giftig",
+        "umweltgefährlich"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "GHS05 (Ätzwirkung) steht für ätzende Stoffe — z. B. Rohrreiniger, starke Säuren und Laugen."
+    },
+    {
+      "frage": "Wofür stehen H-Sätze?",
+      "optionen": [
+        "Hilfsmittel",
+        "Beschreiben die Gefahr (Hazard)",
+        "Herstellerangaben",
+        "Haltbarkeit"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "H-Sätze (Hazard Statements) beschreiben die Gefahr, P-Sätze (Precaution) die Schutzmaßnahmen."
+    },
+    {
+      "frage": "Wohin darf ein Gefahrstoff NIEMALS umgefüllt werden?",
+      "optionen": [
+        "In gekennzeichnete Gefäße",
+        "In Originalbehälter",
+        "In Lebensmittel-/Getränkeflaschen",
+        "In Auffangwannen"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Niemals in Lebensmittel-/Getränkebehälter — Verwechslungsgefahr mit schweren Folgen. Umgefüllte Gefäße immer kennzeichnen (§8 GefStoffV)."
+    },
+    {
+      "frage": "Wie viele Abschnitte hat ein Sicherheitsdatenblatt?",
+      "optionen": [
+        "8",
+        "12",
+        "16",
+        "20"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Das SDB ist europaweit auf 16 standardisierte Abschnitte festgelegt; Abschnitt 4 = Erste Hilfe, Abschnitt 8 = PSA."
+    },
+    {
+      "frage": "Was steht beim STOP-Prinzip an erster Stelle?",
+      "optionen": [
+        "PSA",
+        "Substitution",
+        "Organisation",
+        "Technik"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Substitution — den gefährlichen Stoff ersetzen oder vermeiden — hat absoluten Vorrang vor allen anderen Maßnahmen."
+    },
+    {
+      "frage": "Was passiert, wenn man chlorhaltigen Reiniger mit Säure mischt?",
+      "optionen": [
+        "Nichts",
+        "Es entsteht giftiges Chlorgas",
+        "Es wird wirksamer",
+        "Es wird harmlos"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Es entsteht giftiges Chlorgas — Atemwegsreizung bis Lungenödem. Reiniger niemals eigenmächtig mischen."
+    },
+    {
+      "frage": "Was tun bei Augenkontakt mit einem Gefahrstoff?",
+      "optionen": [
+        "Reiben",
+        "Sofort 10–15 Min mit Wasser spülen, dann Augenarzt",
+        "Nur kurz abtupfen",
+        "Abwarten"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Sofort mindestens 10–15 Minuten mit Augendusche/Wasser spülen, dann augenärztliche Behandlung. Jede Sekunde zählt."
+    },
+    {
+      "frage": "Welches Dokument hängt idealerweise direkt am Arbeitsplatz aus?",
+      "optionen": [
+        "Das komplette SDB",
+        "Die Betriebsanweisung",
+        "Der Lieferschein",
+        "Das Gefahrstoffverzeichnis"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die kurze, verständliche Betriebsanweisung nach §14 GefStoffV — sie übersetzt das SDB in den Arbeitsalltag."
+    }
+  ]
+}

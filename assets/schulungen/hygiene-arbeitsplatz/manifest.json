@@ -1,0 +1,362 @@
+{
+  "slug": "hygiene-arbeitsplatz",
+  "titel": "Hygiene am Arbeitsplatz",
+  "pflichtgrundlage": "BioStoffV, IfSG",
+  "dauer_minuten": 35,
+  "anzahl_folien": 40,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Hygiene am Arbeitsplatz",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Hygiene am Arbeitsplatz\". Infektionsschutz und Hygiene im Betrieb — besonders in Reinigung, Pflege und Lebensmittel. Diese Schulung ist Ihre Pflichtunterweisung nach Biostoffverordnung  ·  IfSG  ·  §12 ArbSchG und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Grundlagen",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Grundlagen. Wie Infektionen übertragen werden. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Infektionswege und Biostoffe",
+      "bild": "folie-05.png",
+      "sprechertext": "Infektionswege: Kontakt/Schmier (häufigster), Tröpfchen/Aerosol, über Wunden, über Lebensmittel. Biostoffe sind nach BioStoffV zu beurteilen; die Unterweisung ist jährlich Pflicht. Hände sind der Hauptübertragungsweg — daher der Schwerpunkt Händehygiene.\n\n▸ Trainer-Tipp: Über 80 % der ansteckenden Erreger werden über die Hände weitergegeben. Wer die Händehygiene beherrscht, hat den größten Hebel in der Hand — im Wortsinn."
+    },
+    {
+      "nummer": 6,
+      "titel": "Modul 2 — Händehygiene",
+      "bild": "folie-06.png",
+      "sprechertext": "Modul 2 — Händehygiene. Richtig waschen, desinfizieren, pflegen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 7,
+      "titel": "Hände richtig waschen",
+      "bild": "folie-07.png",
+      "sprechertext": "Korrektes Händewaschen (anfeuchten, 20–30 Sek einseifen inkl. Zwischenräume/Daumen/Nägel, spülen, mit Einmalhandtuch trocknen) ist die Basis. Hautpflege beugt Rissen vor, die selbst Eintrittspforten für Keime sind.\n\n▸ Trainer-Tipp: 20–30 Sekunden klingt lang — es ist die Zeit, die Keime wirklich entfernt. Daumen, Fingerzwischenräume und Nägel werden am häufigsten vergessen."
+    },
+    {
+      "nummer": 8,
+      "titel": "Händedesinfektion und Hautschutz",
+      "bild": "folie-08.png",
+      "sprechertext": "Händedesinfektion ist bei sauberen Händen wirksamer und schonender als Waschen, korrekt angewendet (genug Mittel, 30 Sek alle Flächen). Bei sichtbarer Verschmutzung zuerst waschen. Häufige Hygiene belastet die Haut — Hautschutzplan/Pflege einhalten. Handschmuck ablegen.\n\n▸ Trainer-Tipp: Desinfektionsmittel muss die ganze Einwirkzeit (meist 30 Sek) nass auf der Haut bleiben — kurz drüberwischen wirkt nicht. Und: die Haut dabei pflegen."
+    },
+    {
+      "nummer": 9,
+      "titel": "Modul 3 — Reinigung & Desinfektion",
+      "bild": "folie-09.png",
+      "sprechertext": "Modul 3 — Reinigung & Desinfektion. Unterschied, Hygieneplan und Schutz. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 10,
+      "titel": "Reinigung ist nicht Desinfektion",
+      "bild": "folie-10.png",
+      "sprechertext": "Reinigung (entfernt Schmutz/Keime, Basis) und Desinfektion (gezielte Keimreduktion) sind zu unterscheiden. Der Hygieneplan steuert beides (was/wann/womit/wer). Dosierung und Einwirkzeit beachten, Mittel nie mischen, passende PSA tragen, Utensilien trennen (Farbsystem).\n\n▸ Trainer-Tipp: Die meiste Hygiene ist schlichte Reinigung — Desinfektion nur gezielt dort, wo sie nötig ist. Und nie Reiniger mischen: das setzt giftige Gase frei."
+    },
+    {
+      "nummer": 11,
+      "titel": "Modul 4 — Branchen & Notfall",
+      "bild": "folie-11.png",
+      "sprechertext": "Modul 4 — Branchen & Notfall. Lebensmittel, Pflege und Verletzungen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 12,
+      "titel": "Branchenpflichten und Notfall",
+      "bild": "folie-12.png",
+      "sprechertext": "Branchenspezifisch: Lebensmittel (§43-IfSG-Belehrung, Kühlkette, Trennung roh/gar), Pflege (Schutzkleidung, Nadelstich-Prävention, Impfangebote). Bei ansteckender Krankheit zuhause bleiben. Nadelstich/Schnitt: Blutung fördern, spülen, desinfizieren, sofort melden (mögliche Postexpositionsprophylaxe). Meldepflichten nach IfSG.\n\n▸ Trainer-Tipp: Zwei Dinge zum Mitnehmen: Bei ansteckender Krankheit nicht 'durchhalten' und alle anstecken. Und nach einem Nadelstich sofort melden — nicht abwarten."
+    },
+    {
+      "nummer": 13,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-13.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei Szenarien. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 14,
+      "titel": "Fallbeispiel 1: Krank in der Kantinenküche",
+      "bild": "folie-14.png",
+      "sprechertext": "Magen-Darm-Erkrankungen im Lebensmittelbereich sind hochriskant; das IfSG sieht Tätigkeitsverbote vor. 'Durchhalten' gefährdet viele. Zuhause bleiben, melden, erst nach Symptomfreiheit zurück.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 15,
+      "titel": "Fallbeispiel 2: Der Nadelstich",
+      "bild": "folie-15.png",
+      "sprechertext": "Nadelstichverletzungen sind ein ernstes Infektionsrisiko mit zeitkritischer PEP. Sofort: Blutung fördern, spülen, desinfizieren, melden, Betriebsarzt/D-Arzt. Prävention: Sicherheitssysteme, Abwurfbehälter, kein Recapping.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 16,
+      "titel": "Fallbeispiel 3: Die gemischten Reiniger",
+      "bild": "folie-16.png",
+      "sprechertext": "Das Mischen unverträglicher Reiniger (Säure + Chlor) erzeugt giftiges Chlorgas — eine häufige Gefahr in der Reinigung. Nie mischen, Dosierung/Einwirkzeit beachten, lüften, PSA. Schnittstelle Hygiene/Gefahrstoffe.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 17,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-17.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 18,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-18.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die Kontakt-/Schmierinfektion über Hände und Flächen — daher ist Händehygiene die wirksamste Maßnahme."
+    },
+    {
+      "nummer": 19,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-19.png",
+      "sprechertext": "Die Kontakt-/Schmierinfektion über Hände und Flächen — daher ist Händehygiene die wirksamste Maßnahme."
+    },
+    {
+      "nummer": 20,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-20.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. 20–30 Sekunden, inklusive Fingerzwischenräume, Daumen und Nägel."
+    },
+    {
+      "nummer": 21,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-21.png",
+      "sprechertext": "20–30 Sekunden, inklusive Fingerzwischenräume, Daumen und Nägel."
+    },
+    {
+      "nummer": 22,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-22.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Bei sauberen, kontaminierten Händen wirkt Desinfektion schneller/gründlicher; bei sichtbarem Schmutz erst waschen."
+    },
+    {
+      "nummer": 23,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-23.png",
+      "sprechertext": "Bei sauberen, kontaminierten Händen wirkt Desinfektion schneller/gründlicher; bei sichtbarem Schmutz erst waschen."
+    },
+    {
+      "nummer": 24,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-24.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Reinigung entfernt Schmutz und den Großteil der Keime (Basis); Desinfektion reduziert Keime gezielt dort, wo nötig."
+    },
+    {
+      "nummer": 25,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-25.png",
+      "sprechertext": "Reinigung entfernt Schmutz und den Großteil der Keime (Basis); Desinfektion reduziert Keime gezielt dort, wo nötig."
+    },
+    {
+      "nummer": 26,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-26.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Nein — z. B. Säure + Chlor ergibt giftiges Chlorgas. Niemals mischen, Betriebsanweisung beachten."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Nein — z. B. Säure + Chlor ergibt giftiges Chlorgas. Niemals mischen, Betriebsanweisung beachten."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Bei Magen-Darm-Erkrankungen besteht im Lebensmittelbereich ein Tätigkeitsverbot (IfSG) — zuhause bleiben, melden."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "Bei Magen-Darm-Erkrankungen besteht im Lebensmittelbereich ein Tätigkeitsverbot (IfSG) — zuhause bleiben, melden."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. §43 IfSG: vor erstmaliger Tätigkeit und danach alle zwei Jahre."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "§43 IfSG: vor erstmaliger Tätigkeit und danach alle zwei Jahre."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Blutung fördern, gründlich spülen, desinfizieren und sofort melden (Betriebsarzt/D-Arzt) — wegen möglicher PEP."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Blutung fördern, gründlich spülen, desinfizieren und sofort melden (Betriebsarzt/D-Arzt) — wegen möglicher PEP."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Unter Ringen/Uhren sammeln sich Keime und Feuchtigkeit — daher bei Hygienearbeit ablegen."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Unter Ringen/Uhren sammeln sich Keime und Feuchtigkeit — daher bei Hygienearbeit ablegen."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Der Hygieneplan legt verbindlich fest, was, wann, womit und von wem gereinigt/desinfiziert wird."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Der Hygieneplan legt verbindlich fest, was, wann, womit und von wem gereinigt/desinfiziert wird."
+    },
+    {
+      "nummer": 38,
+      "titel": "Zusammenfassung",
+      "bild": "folie-38.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 39,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-39.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 40,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-40.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Welcher ist der häufigste Infektionsweg?",
+      "optionen": [
+        "Luft",
+        "Kontakt/Schmierinfektion über Hände/Flächen",
+        "Wasser",
+        "Boden"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die Kontakt-/Schmierinfektion über Hände und Flächen — daher ist Händehygiene die wirksamste Maßnahme."
+    },
+    {
+      "frage": "Wie lange Hände einseifen?",
+      "optionen": [
+        "3 Sek",
+        "20–30 Sekunden",
+        "2 Minuten",
+        "Egal"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "20–30 Sekunden, inklusive Fingerzwischenräume, Daumen und Nägel."
+    },
+    {
+      "frage": "Wann wird desinfiziert statt gewaschen?",
+      "optionen": [
+        "Bei sichtbarem Schmutz",
+        "Bei sauberen, aber kontaminierten Händen",
+        "Nie",
+        "Immer zuerst"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Bei sauberen, kontaminierten Händen wirkt Desinfektion schneller/gründlicher; bei sichtbarem Schmutz erst waschen."
+    },
+    {
+      "frage": "Was ist der Unterschied Reinigung/Desinfektion?",
+      "optionen": [
+        "Kein Unterschied",
+        "Reinigung entfernt Schmutz/Keime, Desinfektion tötet Keime gezielt",
+        "Desinfektion ist nur Wischen",
+        "Reinigung ist gefährlicher"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Reinigung entfernt Schmutz und den Großteil der Keime (Basis); Desinfektion reduziert Keime gezielt dort, wo nötig."
+    },
+    {
+      "frage": "Darf man Reiniger mischen?",
+      "optionen": [
+        "Ja",
+        "Nein — Gas-/Gefahrstoffgefahr",
+        "Nur saure",
+        "Nur für mehr Wirkung"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Nein — z. B. Säure + Chlor ergibt giftiges Chlorgas. Niemals mischen, Betriebsanweisung beachten."
+    },
+    {
+      "frage": "Was gilt bei Magen-Darm im Lebensmittelbereich?",
+      "optionen": [
+        "Weiterarbeiten",
+        "Zuhause bleiben (IfSG-Tätigkeitsverbot)",
+        "Nur Handschuhe",
+        "Maske reicht"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Bei Magen-Darm-Erkrankungen besteht im Lebensmittelbereich ein Tätigkeitsverbot (IfSG) — zuhause bleiben, melden."
+    },
+    {
+      "frage": "Wie oft IfSG-Belehrung im Lebensmittelbereich?",
+      "optionen": [
+        "Einmalig",
+        "Vor Tätigkeit und alle 2 Jahre",
+        "Jährlich",
+        "Nie"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "§43 IfSG: vor erstmaliger Tätigkeit und danach alle zwei Jahre."
+    },
+    {
+      "frage": "Erste Schritte nach Nadelstichverletzung?",
+      "optionen": [
+        "Abwarten",
+        "Blutung fördern, spülen, desinfizieren, sofort melden",
+        "Pflaster drauf",
+        "Weiterarbeiten"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Blutung fördern, gründlich spülen, desinfizieren und sofort melden (Betriebsarzt/D-Arzt) — wegen möglicher PEP."
+    },
+    {
+      "frage": "Warum Handschmuck ablegen?",
+      "optionen": [
+        "Optik",
+        "Darunter sammeln sich Keime",
+        "Gewicht",
+        "Vorschrift für Pausen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Unter Ringen/Uhren sammeln sich Keime und Feuchtigkeit — daher bei Hygienearbeit ablegen."
+    },
+    {
+      "frage": "Was steuert der Hygieneplan?",
+      "optionen": [
+        "Den Urlaub",
+        "Was/wann/womit/von wem gereinigt und desinfiziert wird",
+        "Die Preise",
+        "Die Pausen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Der Hygieneplan legt verbindlich fest, was, wann, womit und von wem gereinigt/desinfiziert wird."
+    }
+  ]
+}

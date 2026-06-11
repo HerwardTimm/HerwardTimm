@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zertifikat · HerwardTimm</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header no-print">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="dashboard.html" data-i18n="nav.mein-bereich">Mein Bereich</a></li>
+      <li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="section--tight no-print" style="background: var(--sage-mint-soft); padding: 28px 0;">
+  <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+    <a href="dashboard.html" class="btn-link" style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em;">← Zurück zum Kundenbereich</a>
+    <div style="display: flex; gap: 10px;">
+      <button class="btn btn-ghost btn-sm" onclick="window.close()">Schließen</button>
+      <button class="btn btn-accent" onclick="window.print()">Drucken / Als PDF speichern</button>
+    </div>
+  </div>
+</section>
+
+<section class="cert-print-wrap" style="padding: 40px 24px 80px; background: var(--sage-mint-soft);">
+  <div class="cert-page">
+    <span class="cert-corner tl"></span>
+    <span class="cert-corner tr"></span>
+    <span class="cert-corner bl"></span>
+    <span class="cert-corner br"></span>
+
+    <div class="cert-head">
+      <div class="logo" style="justify-content: center;">
+        <img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="200">
+      </div>
+      <div class="cert-tagline">Arbeitsschutz mit System · einfach &amp; rechtssicher</div>
+    </div>
+
+    <div class="cert-title">Teilnahmebescheinigung</div>
+    <div class="cert-subtitle">Unterweisung nach Arbeitsschutzgesetz</div>
+    <div class="cert-divider"></div>
+
+    <div class="cert-body">
+      <p style="margin-bottom: 0; letter-spacing: 0.04em;">Hiermit wird bescheinigt, dass</p>
+      <div class="cert-name" id="cert-name">Max Mustermann</div>
+      <p style="margin-bottom: 0;">Mitarbeitende(r) (<span id="cert-email" style="font-family:'Inter',sans-serif; font-size:0.9rem; color:var(--text-soft);">—</span>) der Firma <strong id="cert-company" style="color: var(--sage-darker);">Muster GmbH</strong></p>
+      <p style="margin: 18px 0 0; letter-spacing: 0.04em;">an der folgenden Pflichtunterweisung erfolgreich teilgenommen hat:</p>
+      <div class="cert-course" id="cert-course">Brandschutz und Verhalten im Brandfall</div>
+      <p style="margin: 0 0 10px; color: var(--text-soft); font-size: 0.93rem; letter-spacing: 0.02em;">
+        Pflichtgrundlage: <strong id="cert-basis" style="color: var(--sage-dark); font-weight: 500;">§10 ArbSchG · ASR A2.2</strong>
+      </p>
+      <p style="margin: 0; color: var(--text-soft); font-size: 0.93rem; letter-spacing: 0.02em;">
+        Quiz-Ergebnis: <strong id="cert-score" style="color: var(--sage-dark); font-weight: 500;">5/5 Fragen richtig beantwortet</strong>
+      </p>
+    </div>
+
+    <div class="cert-meta">
+      <div>
+        <div class="signature">Jerome Fölsch</div>
+        <div class="label">Unterzeichnet</div>
+        <div class="value">HerwardTimm · Sifa</div>
+      </div>
+      <div>
+        <div class="signature" style="visibility: hidden;">.</div>
+        <div class="label">Datum</div>
+        <div class="value" id="cert-date">19. Mai 2026</div>
+      </div>
+      <div>
+        <div class="signature" style="visibility: hidden;">.</div>
+        <div class="label">Gültig bis</div>
+        <div class="value" id="cert-valid-until">—</div>
+      </div>
+      <div>
+        <div class="signature" style="visibility: hidden;">.</div>
+        <div class="label">Zertifikat-ID</div>
+        <div class="value" id="cert-id">HTK-MMB17</div>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; justify-content:center; gap:16px; margin-top:26px; padding-top:20px; border-top:1px solid var(--border-soft);">
+      <div id="cert-qr" style="width:88px; height:88px; flex:none;"></div>
+      <div style="font-size:0.8rem; color:var(--text-soft); line-height:1.5; text-align:left;">
+        <strong style="color:var(--sage-darker); display:block; margin-bottom:2px;">Echtheit online prüfen</strong>
+        QR scannen oder aufrufen:<br>
+        <span id="cert-verify-url" style="color:var(--sage-dark); word-break:break-all;"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script src="assets/qrcode.js"></script>
+<script src="assets/zertifikat.bundle.js"></script>
+<script>
+/* ============================================================
+   Zertifikat-Auto-Befüllung aus Profil (Juni 2026)
+   ------------------------------------------------------------
+   Das Bundle liest Werte aus URL-Parametern (Legacy-Pfad).
+   Wir überschreiben Teilnehmer / Firma / Email IMMER aus dem
+   Profil, falls vorhanden — so kann der Lerner die Identität
+   nicht mehr nachträglich umschreiben.
+   ============================================================ */
+(function () {
+  const profile = window.getProfile ? window.getProfile() : null;
+  if (profile && profile.email) {
+    document.getElementById('cert-name').textContent =
+      `${profile.vorname} ${profile.nachname}`.trim();
+    document.getElementById('cert-company').textContent = profile.firma;
+    document.getElementById('cert-email').textContent = profile.email;
+  } else {
+    // A-C1: Kein/Muster-Profil → KEIN echt wirkendes Zertifikat zulassen.
+    // Sichtbares Wasserzeichen + Hinweis (auch im Druck), damit die
+    // Vorschau nicht als gültiger Nachweis missverstanden werden kann.
+    const page = document.querySelector('.cert-page');
+    if (page) {
+      if (!page.style.position) page.style.position = 'relative';
+      const wm = document.createElement('div');
+      wm.textContent = 'MUSTER / DEMO';
+      wm.setAttribute('aria-hidden', 'true');
+      wm.style.cssText = 'position:absolute;inset:0;display:flex;align-items:center;justify-content:center;'
+        + 'font-family:Inter,sans-serif;font-weight:800;font-size:clamp(46px,12vw,120px);'
+        + 'color:rgba(176,138,30,0.16);transform:rotate(-24deg);letter-spacing:0.08em;'
+        + 'pointer-events:none;z-index:5;-webkit-print-color-adjust:exact;print-color-adjust:exact;';
+      page.appendChild(wm);
+      const note = document.createElement('p');
+      note.textContent = 'Musteransicht — kein gültiger Nachweis. Bitte zuerst anmelden, um ein personalisiertes Zertifikat zu erstellen.';
+      note.style.cssText = 'position:relative;z-index:6;text-align:center;color:#8a5e00;'
+        + 'font-family:Inter,sans-serif;font-size:0.8rem;margin:14px 0 0;';
+      page.appendChild(note);
+    }
+    // Fallback: Email aus URL nur anzeigen (identifiziert keine Person verbindlich).
+    const params = new URLSearchParams(location.search);
+    const email = params.get('email');
+    if (email) document.getElementById('cert-email').textContent = email;
+  }
+  // Kein Drucken-Button-Bug: nochmal print() falls Query ?print=1
+  if (new URLSearchParams(location.search).get('print') === '1') {
+    setTimeout(() => window.print(), 600);
+  }
+})();
+</script>
+</body>
+</html>

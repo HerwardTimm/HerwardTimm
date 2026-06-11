@@ -1,0 +1,24 @@
+{
+  "_hinweis": "Offizielle Piktogramme. Codes entsprechen den Werten aus der Edge Function 'ba-generate' (Felder ghs_piktogramme, gebotszeichen). Dateiname = Code.",
+  "ghs": {
+    "GHS01": { "datei": "ghs/GHS01.png", "bedeutung": "Explodierende Bombe" },
+    "GHS02": { "datei": "ghs/GHS02.png", "bedeutung": "Flamme (entzündbar)" },
+    "GHS03": { "datei": "ghs/GHS03.png", "bedeutung": "Flamme über Kreis (brandfördernd)" },
+    "GHS04": { "datei": "ghs/GHS04.png", "bedeutung": "Gasflasche (Gase unter Druck)" },
+    "GHS05": { "datei": "ghs/GHS05.png", "bedeutung": "Ätzwirkung" },
+    "GHS06": { "datei": "ghs/GHS06.png", "bedeutung": "Totenkopf (giftig)" },
+    "GHS07": { "datei": "ghs/GHS07.png", "bedeutung": "Ausrufezeichen (Reiz-/Gesundheitsgefahr)" },
+    "GHS08": { "datei": "ghs/GHS08.png", "bedeutung": "Gesundheitsgefahr" },
+    "GHS09": { "datei": "ghs/GHS09.png", "bedeutung": "Umwelt (gewässergefährdend)" }
+  },
+  "gebotszeichen": {
+    "M003": { "datei": "gebotszeichen/M003.png", "bedeutung": "Gehörschutz benutzen" },
+    "M004": { "datei": "gebotszeichen/M004.png", "bedeutung": "Augenschutz benutzen" },
+    "M008": { "datei": "gebotszeichen/M008.png", "bedeutung": "Fußschutz benutzen" },
+    "M009": { "datei": "gebotszeichen/M009.png", "bedeutung": "Handschutz benutzen" },
+    "M010": { "datei": "gebotszeichen/M010.png", "bedeutung": "Schutzkleidung benutzen" },
+    "M014": { "datei": "gebotszeichen/M014.png", "bedeutung": "Kopfschutz benutzen" },
+    "M017": { "datei": "gebotszeichen/M017.png", "bedeutung": "Atemschutz benutzen" },
+    "M018": { "datei": "gebotszeichen/M018.png", "bedeutung": "Auffanggurt benutzen" }
+  }
+}

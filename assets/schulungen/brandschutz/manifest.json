@@ -1,0 +1,416 @@
+{
+  "slug": "brandschutz",
+  "titel": "Brandschutz und Verhalten im Brandfall",
+  "pflichtgrundlage": "§10 ArbSchG, ASR A2.2, DGUV I 205-023",
+  "dauer_minuten": 50,
+  "anzahl_folien": 49,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Brandschutz und Verhalten im Brandfall",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Brandschutz und Verhalten im Brandfall\". Jährliche Pflichtunterweisung für alle Beschäftigten. Diese Schulung ist Ihre Pflichtunterweisung nach §10 ArbSchG  ·  ASR A2.2  ·  DGUV Information 205-023 und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Brandgrundlagen",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Brandgrundlagen. Wie entstehen Brände, welche Faktoren sind verantwortlich und was sind die Brandklassen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Das Verbrennungsdreieck — drei Faktoren",
+      "bild": "folie-05.png",
+      "sprechertext": "Das Verbrennungsdreieck erklärt, warum manche Löschmittel bei manchen Bränden funktionieren und bei anderen nicht. Wasser kühlt (entzieht Wärme), Schaum erstickt (verdrängt Sauerstoff), Pulver unterbricht die chemische Kettenreaktion. Bei Metallbränden hilft Wasser nicht, weil das Metall den Sauerstoff aus dem Wasser zieht. Bei elektrischen Bränden ist Wasser zusätzlich gefährlich wegen Leitfähigkeit. Diese Grundlagen helfen, im Ernstfall ruhig und richtig zu entscheiden.\n\n▸ Trainer-Tipp: Das Verbrennungsdreieck ist die Grundlage jeder Brandbekämpfung. Wenn Sie einen kleinen Brand bekämpfen müssen, denken Sie an die drei Faktoren — welchen können Sie am schnellsten unterbinden?"
+    },
+    {
+      "nummer": 6,
+      "titel": "Häufigste Brandursachen am Arbeitsplatz",
+      "bild": "folie-06.png",
+      "sprechertext": "Diese Zahlen stammen aus der IFS-Brandschadenstatistik 2023. Wichtig: Elektrobrände sind der Spitzenreiter, weshalb die jährliche DGUV V3-Prüfung ortsveränderlicher elektrischer Betriebsmittel so wichtig ist. Lithium-Akkus sind die am schnellsten wachsende Brandursache der letzten Jahre – nicht unterschätzen. In der Industrie sind Schweißarbeiten ohne ordnungsgemäßen Erlaubnisschein eine häufige Ursache für Großbrände. Selbstentzündung trifft besonders Reinigungs- und Lackierbetriebe – ölgetränkte Lappen NIE in Plastikeimer ohne Deckel werfen.\n\n▸ Trainer-Tipp: Die Statistik zeigt: 55 % aller Brände wären durch sorgsames Verhalten und Wartung vermeidbar gewesen. Brandschutz ist überwiegend kein technisches, sondern ein organisatorisches Problem."
+    },
+    {
+      "nummer": 7,
+      "titel": "Brandklassen — Übersicht nach DIN EN 2",
+      "bild": "folie-07.png",
+      "sprechertext": "Die Brandklassen sind nach DIN EN 2 standardisiert und gelten europaweit. Jeder Feuerlöscher trägt deutlich sichtbar das Piktogramm der zugelassenen Klassen. Wichtig zu merken: B und F sehen ähnlich aus (beide brennende Flüssigkeit), benötigen aber unterschiedliche Löschmittel — ein B-Löscher (Schaum) auf einem Fettbrand kann zur Explosion führen. Bei Lithium-Akkubrand ist KEIN normaler Löscher wirklich geeignet — schließen, fluten (außerhalb), Feuerwehr.\n\n▸ Trainer-Tipp: Standardlöscher ABC (Pulver) oder ABF deckt 90 % der Bürobrände ab. In Kantinen und Küchen zusätzlich F. In Werkstätten je nach Lagerung und Schweißarbeiten ggf. D."
+    },
+    {
+      "nummer": 8,
+      "titel": "Brandlasten erkennen und reduzieren",
+      "bild": "folie-08.png",
+      "sprechertext": "Brandlasten sind der unsichtbare Risikofaktor in vielen Betrieben. Ein Papierlager mit 800 Aktenordnern und Kartonage hat eine enorm hohe Brandlast – im Brandfall sind dort innerhalb von 3 Minuten Temperaturen von über 800°C erreichbar. Hauptsünde: Brandschutztüren werden mit Türstoppern offengehalten, weil das praktischer ist. Das ist nicht nur eine Ordnungswidrigkeit – im Brandfall ist es lebensgefährlich. Brandschutztüren sind selbstschließend konstruiert; jeder Eingriff darin ist verboten. Wenn der ständige Durchgang notwendig ist, gibt es zugelassene Feststellanlagen, die im Brandfall automatisch auslösen.\n\n▸ Trainer-Tipp: Eine offenstehende Brandschutztür ist gleichbedeutend mit gar keiner Brandschutztür. Der Aufwand, sie nach Bedarf zu öffnen, ist gering — der Nutzen im Ernstfall lebenswichtig."
+    },
+    {
+      "nummer": 9,
+      "titel": "Modul 2 — Vorbeugender Brandschutz",
+      "bild": "folie-09.png",
+      "sprechertext": "Modul 2 — Vorbeugender Brandschutz. Pflichten, Brandschutzkonzept, Brandschutzhelfer und Brandabschnitte. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 10,
+      "titel": "Pflichten des Arbeitgebers",
+      "bild": "folie-10.png",
+      "sprechertext": "Die Arbeitgeberpflichten sind in ASR A2.2 detailliert beschrieben. Wichtig ist: das Brandschutzkonzept ist keine einmalige Sache, sondern lebt mit dem Betrieb. Bei Umbau, Erweiterung oder neuer Tätigkeit muss es aktualisiert werden. Räumungsübungen sind oft unbeliebt, aber unverzichtbar – im echten Brandfall handeln Menschen oft instinktiv falsch (z. B. Aufzug nehmen), wenn sie nicht den realen Ablauf geübt haben. HerwardTimm e.K. plant und begleitet Räumungsübungen.\n\n▸ Trainer-Tipp: Brandschutzhelfer:innen sind keine 'Feuerwehrleute' — sie sind ausgebildete Beschäftigte, die im Frühstadium eines Brandes helfen, die Räumung zu organisieren und Erste Hilfe bei Rauchgasvergiftung leisten können."
+    },
+    {
+      "nummer": 11,
+      "titel": "Pflichten der Beschäftigten",
+      "bild": "folie-11.png",
+      "sprechertext": "Diese Folie hängt eng mit der vorherigen zusammen. Beschäftigtenpflichten ergeben sich aus §15/16 ArbSchG: aktiv Schutzmaßnahmen nutzen, Mängel melden, Mitwirken. Wichtig: jede:r ist nach §16 verpflichtet, unmittelbare Gefahren zu melden. Wer ein heißes Verlängerungskabel sieht und nichts sagt, hat eine Mitverantwortung beim späteren Brand. Es gibt einige Anti-Beispiele, die ich gerne im Gespräch teile: der Aktenvernichter, der über Nacht eingeschaltet blieb; der Wasserkocher ohne Abschaltautomatik; das überladene Vielfachsteckdose im Büro.\n\n▸ Trainer-Tipp: Brandschutz beginnt im Kopf jeder einzelnen Person. Wenn alle ihre Aufgaben kennen und konsequent handeln, ist ein Großbrand fast unwahrscheinlich."
+    },
+    {
+      "nummer": 12,
+      "titel": "Brandschutzhelfer:in — was tut sie konkret?",
+      "bild": "folie-12.png",
+      "sprechertext": "Brandschutzhelfer:innen werden in einem 4-stündigen Theorie- und Praxiskurs ausgebildet. Sie üben die Bedienung verschiedener Löschertypen unter realen Bedingungen (Übungsfeuer). Die Auffrischung ist nicht gesetzlich vorgeschrieben, aber dringend empfohlen alle 3–5 Jahre. HerwardTimm e.K. bietet diese Schulung als eigenes Modul.\n\n▸ Trainer-Tipp: Brandschutzhelfer:innen sind nicht zu verwechseln mit Brandschutzbeauftragten. Letztere haben formale Aufgaben und sind in mittleren bis großen Betrieben Pflicht."
+    },
+    {
+      "nummer": 13,
+      "titel": "Modul 3 — Brandschutzeinrichtungen",
+      "bild": "folie-13.png",
+      "sprechertext": "Modul 3 — Brandschutzeinrichtungen. Feuerlöscher, Brandmelder, Fluchtwege, Sammelplätze. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 14,
+      "titel": "Der Feuerlöscher — Aufbau und Typen",
+      "bild": "folie-14.png",
+      "sprechertext": "Feuerlöscher sind erstaunlich technisch — sie bestehen aus mehreren Komponenten, die alle funktionieren müssen. Deshalb die 2-Jahres-Prüfung durch einen Sachkundigen. Der Aufkleber muss deutlich sichtbar sein; abgelaufene Löscher sind im Brandfall möglicherweise wirkungslos und müssen sofort ersetzt werden. Wichtig zu wissen: ein 6-kg-Löscher leert sich in 9–15 Sekunden — wer das nicht weiß, ist überrascht, wie schnell er leer ist. Deshalb gezielt einsetzen: an die Glut, am Brandherd, nicht in die Flammen.\n\n▸ Trainer-Tipp: Üben Sie das Ziehen des Sicherungsstifts und das Drücken des Auslösegriffs an einem Übungslöscher — das ist Teil der Brandschutzhelfer-Ausbildung. Im Ernstfall haben Sie keine Zeit, die Bedienungsanleitung zu lesen."
+    },
+    {
+      "nummer": 15,
+      "titel": "Feuerlöscher bedienen — vier Schritte",
+      "bild": "folie-15.png",
+      "sprechertext": "Die vier Schritte sind verallgemeinert — bei manchen Löschern entfällt der zweite Schritt (Anschlagen ist nur bei Aufladelöschern nötig). Wichtig sind aber: Sicherungsstift ziehen (sonst geht nichts!), zielen auf den Brandherd unten (Flammen löschen nicht, der Brennstoff brennt weiter), in kurzen Stößen sprühen (sonst ist der Löscher in 5 Sekunden leer). Bei Außenbrand immer mit dem Wind im Rücken stehen, sonst bekommt man das Löschmittel ins Gesicht. Bei Innenbrand mit dem Rücken zum Fluchtweg.\n\n▸ Trainer-Tipp: Merksatz: 'Sichern, Schlagen, Zielen, Löschen.' Üben Sie die Reihenfolge an einem Übungslöscher mindestens einmal — Wissen aus dem Kopf reicht im Stress nicht aus."
+    },
+    {
+      "nummer": 16,
+      "titel": "Verhalten am Feuerlöscher",
+      "bild": "folie-16.png",
+      "sprechertext": "Die Do/Don't-Liste ist wichtig, weil Feuerlöscher zwar einfach scheinen, aber bei falscher Anwendung gefährlich werden können. CO₂-Löscher beispielsweise sind großartig für elektrische Brände (rückstandsfrei), aber in kleinen Räumen können sie zur Erstickungsgefahr werden. Personenbrand wird mit Löschdecke oder ggf. Wasser gelöscht, NIEMALS CO₂ ins Gesicht. Rauchgasvergiftung ist die unterschätzte Hauptgefahr — die meisten Brandtoten ersticken am Rauch, bevor sie überhaupt vom Feuer erreicht werden.\n\n▸ Trainer-Tipp: Über 90 % der Brandtoten sterben an Rauchgasvergiftung, nicht durch die Flammen selbst. Wenn Sie in dichten Rauch geraten, ziehen Sie sich zurück — auch wenn Sie einen Löscher in der Hand haben."
+    },
+    {
+      "nummer": 17,
+      "titel": "Flucht- und Rettungswege",
+      "bild": "folie-17.png",
+      "sprechertext": "Fluchtwege sind durch das ArbStättV ausführlich geregelt. Wichtige Eckpunkte: Mindestbreite, maximale Länge, Beleuchtung, Türschlagrichtung. In Verwaltungsgebäuden gilt häufig die ASR A2.3 als Konkretisierung. Achten Sie auf die Türschlagrichtung – Türen, die gegen die Fluchtrichtung aufschlagen, können bei Panik zum Stau führen und sind in vielen Fällen verboten. Sicherheitsbeleuchtung wird oft übersehen – sie muss bei Stromausfall mindestens 60 Minuten leuchten und einmal pro Monat getestet werden.\n\n▸ Trainer-Tipp: Die Pflicht zum Freihalten von Fluchtwegen ist ABSOLUT. 'Nur kurz' gilt nicht. Wenn die Behörde während einer Begehung einen verstellten Fluchtweg findet, drohen Bußgelder bis 5.000 € sofort."
+    },
+    {
+      "nummer": 18,
+      "titel": "Modul 4 — Verhalten im Brandfall",
+      "bild": "folie-18.png",
+      "sprechertext": "Modul 4 — Verhalten im Brandfall. Die fünf Sofortmaßnahmen, Rauchausbreitung, Räumung und Sammelplatz. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 19,
+      "titel": "Brandfall — die fünf Sofortmaßnahmen",
+      "bild": "folie-19.png",
+      "sprechertext": "Die fünf Maßnahmen sind das offizielle Schema. Wichtig sind die Prioritäten: Personenschutz hat absoluten Vorrang. Im Zweifel bleibt das Gebäude stehen — Menschen müssen es nicht. Häufige Fehler: man läuft zurück, um eine Tasche zu holen; man hilft beim Löschen, ohne dass alarmiert ist; man nutzt den Aufzug. All das nicht. Auch wichtig: BEVOR Sie den Notruf 112 wählen, denken Sie 5 Sekunden über die fünf W nach: WER ruft an, WAS ist passiert, WO ist es, WIE VIELE sind betroffen, WARTEN auf Rückfragen.\n\n▸ Trainer-Tipp: Diese fünf Schritte sind die offizielle Reihenfolge nach DGUV. In der Praxis können Schritte parallel laufen — wenn Sie zu zweit sind, alarmiert eine:r, die/der andere rettet. Alleine gilt: erst alarmieren, dann handeln."
+    },
+    {
+      "nummer": 20,
+      "titel": "Notruf 112 — die fünf W",
+      "bild": "folie-20.png",
+      "sprechertext": "Die fünf W sind das offizielle Schema des Bundesamtes für Bevölkerungsschutz und Katastrophenhilfe. Wichtig zu vermitteln: die Leitstelle führt Sie durchs Gespräch. Wer denkt 'ich melde mich nochmal, wenn ich alles weiß' verliert wertvolle Zeit. Heutige Leitstellen können auch Position per Handy orten — aber das ist Backup, kein Ersatz für klare Information. Nicht zu unterschätzen: Adresse präzise – Hausnummer, ggf. Hinterhof, Geschoss. Bei Industriegebieten am besten Halle, Tor und Maschinen-Standort.\n\n▸ Trainer-Tipp: Wenn Sie die Adresse nicht ausspruchsbereit haben, ist das kein Problem — die Leitstelle hilft. Wichtig ist, den Notruf abzusetzen, dann Fragen beantworten."
+    },
+    {
+      "nummer": 21,
+      "titel": "Sammelplatz und Räumung",
+      "bild": "folie-21.png",
+      "sprechertext": "Der Sammelplatz ist meist außerhalb des Gefahrenbereichs der Feuerwehr, mit ausreichend Abstand zum Gebäude. Im Brandschutzkonzept festgelegt. Wichtig ist: alle gehen DORTHIN, nicht 'irgendwohin'. Die Vollständigkeitsprüfung ist Aufgabe der Brandschutzhelfer:innen oder Führungskräfte. Wer fehlt, wird sofort der Einsatzleitung gemeldet – im schlimmsten Fall kann das Leben retten, wenn jemand bewusstlos in einem Raum liegt. Räumungsübungen müssen mindestens alle 2 Jahre stattfinden, in besonderen Betrieben (Schulen, Heime) jährlich.\n\n▸ Trainer-Tipp: Bei der nächsten Räumungsübung üben Sie bewusst: am Sammelplatz bleiben, Vollständigkeit melden, auf Freigabe warten. Diese drei Punkte sind in 80 % der echten Räumungen die Schwachstellen."
+    },
+    {
+      "nummer": 22,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-22.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei realistische Szenarien aus dem Betrieb. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 23,
+      "titel": "Fallbeispiel 1: Der Mehrfachstecker",
+      "bild": "folie-23.png",
+      "sprechertext": "Dieses Szenario ist häufiger als gedacht. Reihenschaltung von Mehrfachsteckern (»Daisy-Chain«) ist die Brandursache Nr. 1 im Bürobereich. Die Leitung wird überlastet, Stecker werden heiß, Kunststoff schmilzt, Brand entsteht. Private Geräte ohne Freigabe sind nicht versichert und nicht durch DGUV V3 geprüft. Wenn Sie als letzte:r das Büro verlassen, gilt ein erweiterter Sorgfaltsmaßstab nach §15 ArbSchG – aber die Hauptverantwortung bleibt beim Arbeitgeber, der die Gefährdungsbeurteilung Elektrik führen muss.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 24,
+      "titel": "Fallbeispiel 2: Der ölgetränkte Lappen",
+      "bild": "folie-24.png",
+      "sprechertext": "Selbstentzündung ölgetränkter Lappen ist physikalisch-chemisch wohlbekannt: das Öl oxidiert, dabei wird Wärme frei. In einem geschlossenen Behälter ohne Luftzirkulation steigt die Temperatur, bis Selbstzündung erfolgt. Bei Leinöl reichen wenige Stunden, bei Mineralölen länger. Vorschrift TRGS 510 verlangt zwingend Sicherheitsbehälter mit selbstschließendem Deckel. Außerdem: kein Plastikeimer (brennbar!), nur Metall. Bei Schweißarbeiten ist zudem eine 24-Stunden-Brandwache nach Arbeitsende vorgeschrieben.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 25,
+      "titel": "Fallbeispiel 3: Die nicht funktionierende Brandschutztür",
+      "bild": "folie-25.png",
+      "sprechertext": "Brandschutztüren sind selbstschließend konstruiert und durch jede dauerhafte Offenhaltung wirkungslos. Bauordnung und Brandschutzkonzept verlangen geschlossene Brandabschnitte – sonst breitet sich Feuer und Rauch ungehindert aus. Die Lösung in der Praxis ist nie 'Keil drin lassen', sondern eine zugelassene Feststellanlage, die im Brandfall automatisch löst (Rauchmelder gekoppelt). Das ist gesetzeskonform und praktikabel. Eskalation: kollegial ansprechen, schriftlich melden, ggf. bei Behörde anzeigen. §17 ArbSchG schützt Beschäftigte explizit vor Benachteiligung bei solchen Meldungen.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 26,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-26.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen aus allen Modulen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. 112 ist europaweit der einheitliche Notruf für Feuerwehr und Rettungsdienst. 110 ist die Polizei."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "112 ist europaweit der einheitliche Notruf für Feuerwehr und Rettungsdienst. 110 ist die Polizei."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Wasser auf brennendes Öl erzeugt eine Fettexplosion mit Stichflammen von mehreren Metern. Brandklasse F immer mit Fettbrandlöscher oder Löschdecke."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Wasser auf brennendes Öl erzeugt eine Fettexplosion mit Stichflammen von mehreren Metern. Brandklasse F immer mit Fettbrandlöscher oder Löschdecke."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Alarmieren – Retten – Schließen – Löschen – Räumen. Personenschutz hat absoluten Vorrang vor Sachschutz."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Alarmieren – Retten – Schließen – Löschen – Räumen. Personenschutz hat absoluten Vorrang vor Sachschutz."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Nach ASR A2.2 sind mindestens 5 % der Beschäftigten als Brandschutzhelfer:in auszubilden — in Betrieben mit erhöhter Brandgefahr entsprechend mehr."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Nach ASR A2.2 sind mindestens 5 % der Beschäftigten als Brandschutzhelfer:in auszubilden — in Betrieben mit erhöhter Brandgefahr entsprechend mehr."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Tragbare Feuerlöscher werden alle 2 Jahre durch eine sachkundige Person geprüft. Der Aufkleber auf dem Löscher zeigt das Prüfdatum."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Tragbare Feuerlöscher werden alle 2 Jahre durch eine sachkundige Person geprüft. Der Aufkleber auf dem Löscher zeigt das Prüfdatum."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. F001 ist das standardisierte Hinweisschild auf einen Feuerlöscher (DIN EN ISO 7010)."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "F001 ist das standardisierte Hinweisschild auf einen Feuerlöscher (DIN EN ISO 7010)."
+    },
+    {
+      "nummer": 39,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-39.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. §15 ArbSchG verpflichtet jede:n Beschäftigte:n, auch für die Sicherheit anderer zu sorgen. Wer eine Stolper- oder Brandstelle sieht, muss handeln oder melden."
+    },
+    {
+      "nummer": 40,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-40.png",
+      "sprechertext": "§15 ArbSchG verpflichtet jede:n Beschäftigte:n, auch für die Sicherheit anderer zu sorgen. Wer eine Stolper- oder Brandstelle sieht, muss handeln oder melden."
+    },
+    {
+      "nummer": 41,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-41.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Brandschutztüren sind selbstschließend. Dauerhafte Offenhaltung ist nur mit zugelassener Feststellanlage erlaubt, die im Brandfall automatisch löst."
+    },
+    {
+      "nummer": 42,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-42.png",
+      "sprechertext": "Brandschutztüren sind selbstschließend. Dauerhafte Offenhaltung ist nur mit zugelassener Feststellanlage erlaubt, die im Brandfall automatisch löst."
+    },
+    {
+      "nummer": 43,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-43.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Die fünf W: WER, WAS, WO, WIE VIELE, WARTEN auf Rückfragen. Bankdaten sind irrelevant — die Leitstelle braucht Information zum Einsatz, nicht zur Abrechnung."
+    },
+    {
+      "nummer": 44,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-44.png",
+      "sprechertext": "Die fünf W: WER, WAS, WO, WIE VIELE, WARTEN auf Rückfragen. Bankdaten sind irrelevant — die Leitstelle braucht Information zum Einsatz, nicht zur Abrechnung."
+    },
+    {
+      "nummer": 45,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-45.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. DGUV V1 schreibt Räumungsübungen mindestens alle 2 Jahre vor. In besonderen Betrieben (Schulen, Pflegeheime) jährlich oder häufiger."
+    },
+    {
+      "nummer": 46,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-46.png",
+      "sprechertext": "DGUV V1 schreibt Räumungsübungen mindestens alle 2 Jahre vor. In besonderen Betrieben (Schulen, Pflegeheime) jährlich oder häufiger."
+    },
+    {
+      "nummer": 47,
+      "titel": "Zusammenfassung",
+      "bild": "folie-47.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 48,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-48.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 49,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-49.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Welcher Notruf gilt in Deutschland für Feuerwehr und Rettungsdienst?",
+      "optionen": [
+        "110",
+        "112",
+        "115",
+        "118"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "112 ist europaweit der einheitliche Notruf für Feuerwehr und Rettungsdienst. 110 ist die Polizei."
+    },
+    {
+      "frage": "Welches Löschmittel ist NICHT für brennendes Öl in der Friteuse geeignet?",
+      "optionen": [
+        "Fettbrandlöscher (F)",
+        "Löschdecke",
+        "Wasser",
+        "Pulverlöscher"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Wasser auf brennendes Öl erzeugt eine Fettexplosion mit Stichflammen von mehreren Metern. Brandklasse F immer mit Fettbrandlöscher oder Löschdecke."
+    },
+    {
+      "frage": "Welche Reihenfolge haben die fünf Sofortmaßnahmen im Brandfall?",
+      "optionen": [
+        "Löschen, Räumen, Alarmieren, Retten, Schließen",
+        "Alarmieren, Retten, Schließen, Löschen, Räumen",
+        "Räumen, Alarmieren, Löschen, Retten, Schließen",
+        "Retten, Löschen, Alarmieren, Schließen, Räumen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Alarmieren – Retten – Schließen – Löschen – Räumen. Personenschutz hat absoluten Vorrang vor Sachschutz."
+    },
+    {
+      "frage": "Wie viele Brandschutzhelfer:innen müssen mindestens ausgebildet sein?",
+      "optionen": [
+        "1 % der Beschäftigten",
+        "5 % der Beschäftigten",
+        "10 % der Beschäftigten",
+        "Eine:r reicht immer"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Nach ASR A2.2 sind mindestens 5 % der Beschäftigten als Brandschutzhelfer:in auszubilden — in Betrieben mit erhöhter Brandgefahr entsprechend mehr."
+    },
+    {
+      "frage": "Wie oft müssen Feuerlöscher geprüft werden?",
+      "optionen": [
+        "Jährlich",
+        "Alle 2 Jahre",
+        "Alle 5 Jahre",
+        "Nur nach Gebrauch"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Tragbare Feuerlöscher werden alle 2 Jahre durch eine sachkundige Person geprüft. Der Aufkleber auf dem Löscher zeigt das Prüfdatum."
+    },
+    {
+      "frage": "Was bedeutet das Piktogramm F001 (rotes Schild mit Flamme)?",
+      "optionen": [
+        "Brandschutztür",
+        "Feuerlöscher",
+        "Notausgang",
+        "Erste Hilfe"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "F001 ist das standardisierte Hinweisschild auf einen Feuerlöscher (DIN EN ISO 7010)."
+    },
+    {
+      "frage": "Wer ist verantwortlich, dass Fluchtwege jederzeit frei sind?",
+      "optionen": [
+        "Nur die Geschäftsführung",
+        "Nur die Sifa",
+        "Jede:r Beschäftigte gemäß §15 ArbSchG",
+        "Nur die Brandschutzhelfer:innen"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "§15 ArbSchG verpflichtet jede:n Beschäftigte:n, auch für die Sicherheit anderer zu sorgen. Wer eine Stolper- oder Brandstelle sieht, muss handeln oder melden."
+    },
+    {
+      "frage": "Was darf eine Brandschutztür?",
+      "optionen": [
+        "Mit Keil dauerhaft offen stehen, wenn praktisch",
+        "Nur durch zugelassene Feststellanlage offengehalten werden",
+        "In beide Richtungen aufschlagen",
+        "Mit Glasausschnitt versehen sein, wenn doppelt verglast"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Brandschutztüren sind selbstschließend. Dauerhafte Offenhaltung ist nur mit zugelassener Feststellanlage erlaubt, die im Brandfall automatisch löst."
+    },
+    {
+      "frage": "Welche Information gehört NICHT zwingend in den Notruf an 112?",
+      "optionen": [
+        "Wer ruft an?",
+        "Was ist passiert?",
+        "Bankverbindung der Firma",
+        "Wie viele Personen sind betroffen?"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Die fünf W: WER, WAS, WO, WIE VIELE, WARTEN auf Rückfragen. Bankdaten sind irrelevant — die Leitstelle braucht Information zum Einsatz, nicht zur Abrechnung."
+    },
+    {
+      "frage": "Welche Häufigkeit gilt für Räumungsübungen in Normalbetrieben?",
+      "optionen": [
+        "Jährlich",
+        "Mindestens alle 2 Jahre",
+        "Alle 5 Jahre",
+        "Nur einmalig"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "DGUV V1 schreibt Räumungsübungen mindestens alle 2 Jahre vor. In besonderen Betrieben (Schulen, Pflegeheime) jährlich oder häufiger."
+    }
+  ]
+}

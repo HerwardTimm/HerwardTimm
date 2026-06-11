@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Online-Schulungen Hero">
+  <defs>
+    <linearGradient id="hero_g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#44524B"/>
+      <stop offset="0.5" stop-color="#5F7066"/>
+      <stop offset="1" stop-color="#7E9389"/>
+    </linearGradient>
+    <radialGradient id="hero_glow" cx="0.65" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hero_pat" patternUnits="userSpaceOnUse" width="60" height="60">
+      <circle cx="30" cy="30" r="1.1" fill="#ffffff" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1800" height="900" fill="url(#hero_g)"/>
+  <rect width="1800" height="900" fill="url(#hero_pat)"/>
+  <rect width="1800" height="900" fill="url(#hero_glow)"/>
+  <!-- Drei dezente konzentrische Bögen rechts -->
+  <g transform="translate(1380,470)" fill="none" stroke="#E8D6AE" stroke-opacity="0.25" stroke-width="1.2">
+    <circle r="180"/>
+    <circle r="240"/>
+    <circle r="300"/>
+  </g>
+  <!-- Abstrakte Folien-Stapel-Andeutung -->
+  <g transform="translate(1280,300)" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.18">
+    <rect x="0" y="0" width="320" height="200" rx="2"/>
+    <rect x="-26" y="26" width="320" height="200" rx="2"/>
+    <rect x="-52" y="52" width="320" height="200" rx="2"/>
+  </g>
+  <line x1="100" y1="780" x2="200" y2="780" stroke="#C99B45" stroke-width="2.2"/>
+</svg>

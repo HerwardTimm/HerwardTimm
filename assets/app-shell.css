@@ -1,0 +1,215 @@
+/* ============================================================
+   App-Shell — „Plattform-Gefühl" für die eingeloggten Bereiche
+   ------------------------------------------------------------
+   Feste, dunkelgrüne Seitennavigation + App-Topbar (Breadcrumb,
+   Titel, Suche, Konto) + Arbeitsbereich statt scrollender
+   Landingpage. Markenlook (Grün/Gold/Creme) bleibt erhalten.
+
+   Wird per assets/app-shell.js in die bestehenden Seiten injiziert
+   (additiv, nicht-destruktiv). Die Klassen sind mit `as-` (App-Shell)
+   geprefixt, um Kollisionen mit dem bestehenden CSS zu vermeiden.
+   ============================================================ */
+
+:root {
+  --as-sidebar:        #1f342a;   /* dunkles Markengrün */
+  --as-sidebar-2:      #2c463a;   /* etwas heller, für Karten */
+  --as-sidebar-line:   rgba(255,255,255,.08);
+  --as-sidebar-txt:    #bccabf;
+  --as-sidebar-txt-mut:#7f9387;
+  --as-sidebar-head:   #6f8678;
+  --as-gold:           #d8b478;
+  --as-shell-bg:       #f4f6f2;   /* Arbeitsbereich-Hintergrund */
+  --as-topbar-h:       64px;
+  --as-sidebar-w:      248px;
+}
+
+/* Body im Shell-Modus: kein Body-Scroll, Layout via Grid */
+body.as-active {
+  margin: 0;
+  background: var(--as-shell-bg);
+}
+
+/* Die alte Website-Navigation + Footer werden im Shell-Modus versteckt */
+body.as-active > .site-header,
+body.as-active > .site-footer { display: none !important; }
+
+.as-shell {
+  display: grid;
+  grid-template-columns: var(--as-sidebar-w) 1fr;
+  min-height: 100vh;
+}
+
+/* ===================== SIDEBAR ===================== */
+.as-sidebar {
+  grid-column: 1;
+  background: var(--as-sidebar);
+  color: var(--as-sidebar-txt);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 40;
+}
+
+.as-brand {
+  padding: 18px 20px 16px;
+  border-bottom: 1px solid var(--as-sidebar-line);
+}
+.as-brand__logo { display: flex; align-items: center; gap: 10px; }
+.as-brand__mark {
+  width: 34px; height: 34px; border-radius: 9px;
+  background: var(--as-gold); color: var(--as-sidebar);
+  font-weight: 800; font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.as-brand__name { color: #f0ede4; font-weight: 700; font-size: 16px; letter-spacing: .01em; }
+
+.as-account {
+  margin-top: 14px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(255,255,255,.06);
+  border: 1px solid var(--as-sidebar-line);
+  border-radius: 9px; padding: 9px 12px; cursor: default;
+}
+.as-account__firma { color: #e7efe9; font-weight: 600; font-size: 13.5px; line-height: 1.1; }
+.as-account__role  { color: var(--as-sidebar-txt-mut); font-size: 11px; margin-top: 2px; }
+.as-account__caret { color: var(--as-sidebar-txt-mut); font-size: 12px; }
+
+.as-nav { flex: 1; padding: 14px 12px; overflow: auto; }
+.as-nav__head {
+  font: 600 10.5px/1 'IBM Plex Mono', ui-monospace, monospace;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--as-sidebar-head); padding: 10px 12px 8px;
+}
+.as-nav__link {
+  display: flex; align-items: center; gap: 11px;
+  padding: 10px 12px; border-radius: 8px;
+  color: var(--as-sidebar-txt); font-size: 14px; margin-bottom: 2px;
+  text-decoration: none; transition: background .14s, color .14s;
+}
+.as-nav__link:hover { background: rgba(255,255,255,.05); color: #eaf1ec; }
+.as-nav__link .as-ic { width: 18px; text-align: center; flex: none; font-size: 15px; }
+.as-nav__link.is-active {
+  background: rgba(216,180,120,.14); color: #fff; font-weight: 600;
+  box-shadow: inset 3px 0 0 var(--as-gold);
+}
+.as-nav__badge {
+  margin-left: auto; background: #c2922f; color: #241a06;
+  font-weight: 700; font-size: 10.5px; border-radius: 10px; padding: 2px 7px;
+}
+
+.as-side-foot { padding: 12px; border-top: 1px solid var(--as-sidebar-line); }
+.as-user {
+  display: flex; align-items: center; gap: 11px;
+  padding: 10px 8px; border-radius: 8px;
+}
+.as-user__avatar {
+  width: 34px; height: 34px; border-radius: 9px; flex: none;
+  background: var(--as-sidebar-2); color: #e7efe9;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 13px;
+}
+.as-user__name { color: #eaf1ec; font-weight: 600; font-size: 13.5px; line-height: 1.1; }
+.as-user__role { color: var(--as-sidebar-txt-mut); font-size: 11px; margin-top: 2px; }
+.as-user__gear {
+  margin-left: auto; color: var(--as-sidebar-txt-mut); font-size: 15px;
+  background: none; border: 0; cursor: pointer; padding: 4px; line-height: 1;
+  text-decoration: none;
+}
+.as-user__gear:hover { color: #eaf1ec; }
+
+/* ===================== MAIN / TOPBAR ===================== */
+.as-main {
+  grid-column: 2;
+  min-width: 0;
+  display: flex; flex-direction: column;
+}
+
+.as-topbar {
+  position: sticky; top: 0; z-index: 30;
+  height: var(--as-topbar-h);
+  display: flex; align-items: center; gap: 16px;
+  padding: 0 26px;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: saturate(140%) blur(6px);
+  border-bottom: 1px solid var(--border, #C9D6CE);
+}
+.as-topbar__titles { min-width: 0; }
+.as-topbar__crumb {
+  font: 600 11px/1 'IBM Plex Mono', ui-monospace, monospace;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--text-mute, #677A70);
+}
+.as-topbar__title {
+  margin: 4px 0 0; font-size: 19px; line-height: 1.1;
+  color: var(--text, #243029); font-weight: 700;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.as-spacer { flex: 1; }
+
+.as-search {
+  position: relative; display: flex; align-items: center;
+  min-width: 200px; max-width: 280px; flex: 1;
+}
+.as-search__ic {
+  position: absolute; left: 12px; color: var(--text-mute, #677A70);
+  font-size: 14px; pointer-events: none;
+}
+.as-search input {
+  width: 100%; padding: 9px 12px 9px 32px;
+  border: 1px solid var(--border-soft, #E4ECE7); border-radius: 9px;
+  font: inherit; font-size: .9rem; background: #fff; color: var(--text);
+}
+.as-search input:focus-visible { outline: 2px solid var(--gold, #C99B45); outline-offset: 1px; }
+
+.as-buy {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--as-gold); color: #2a1e05;
+  border: 0; border-radius: 9px; padding: 9px 14px;
+  font: inherit; font-weight: 700; font-size: .88rem; cursor: pointer;
+  text-decoration: none; white-space: nowrap;
+}
+.as-buy:hover { background: #cfa765; }
+
+.as-burger {
+  display: none; background: none; border: 0; cursor: pointer;
+  color: var(--text, #243029); padding: 6px; line-height: 1;
+}
+
+/* Demo-Banner sitzt im Shell direkt unter der Topbar */
+body.as-active #demo-mode-banner { border-top: 0; }
+
+/* Arbeitsbereich: bestehender Seiteninhalt wird hier hineingehängt */
+.as-content { flex: 1; }
+/* Bestehende Sektionen behalten ihren Look, aber ohne Vollbild-Hero-Wirkung */
+.as-content > .section,
+.as-content > .section--tight,
+.as-content > section { }
+
+/* Scrim für mobiles Drawer-Menü */
+.as-scrim {
+  position: fixed; inset: 0; background: rgba(20,30,25,.5);
+  z-index: 39; display: none;
+}
+body.as-drawer-open .as-scrim { display: block; }
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 900px) {
+  .as-shell { grid-template-columns: 1fr; }
+  .as-sidebar {
+    position: fixed; left: 0; top: 0; width: var(--as-sidebar-w);
+    transform: translateX(-100%); transition: transform .22s ease;
+    box-shadow: 0 20px 50px rgba(0,0,0,.4);
+  }
+  body.as-drawer-open .as-sidebar { transform: translateX(0); }
+  .as-main { grid-column: 1; }
+  .as-burger { display: inline-flex; }
+  .as-topbar__title { font-size: 17px; }
+  .as-search { display: none; }
+}
+@media (max-width: 560px) {
+  .as-topbar { padding: 0 14px; gap: 10px; }
+  .as-buy { padding: 9px 11px; }
+  .as-buy__txt { display: none; }
+}

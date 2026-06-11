@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termin buchen · HerwardTimm</title>
+<meta name="description" content="Erstgespräch zur Arbeitssicherheit buchen — vor Ort oder per Videocall. Unverbindlich und in wenigen Minuten terminiert.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Termin buchen · HerwardTimm">
+<meta property="og:description" content="Erstgespräch zur Arbeitssicherheit — vor Ort oder per Videocall, unverbindlich.">
+<meta property="og:image" content="https://herwardtimm.de/assets/og-image.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<script defer data-domain="herwardtimm.de" src="https://plausible.io/js/script.js"></script>
+  <link rel="canonical" href="https://herwardtimm.de/termin.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Termin buchen · HerwardTimm">
+  <meta name="twitter:description" content="Erstgespräch zur Arbeitssicherheit buchen — vor Ort oder per Videocall. Unverbindlich und in wenigen Minuten terminiert.">
+  <meta name="twitter:image" content="https://herwardtimm.de/assets/og-image.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180">
+    </a>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li>
+      <li><a href="anfrage.html" data-i18n="nav.pauschalbetreuung">Pauschalbetreuung</a></li>
+      <li><a href="preise.html">Preise</a></li>
+      <li><a href="termin.html" class="active" data-i18n="nav.termin">Termin</a></li>
+      <li><a href="ueber-uns.html" data-i18n="nav.ueber-uns">Über uns</a></li>
+      <li><a href="login.html" data-i18n="nav.login">Login</a></li>
+      <li><a href="anfrage.html" class="nav-cta" data-i18n="nav.sifa-anfragen">Sifa anfragen</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">Termin buchen</span>
+    <h1>Wann passt es Ihnen am besten?</h1>
+    <p>Wir bieten feste Slots dienstags und donnerstags. Wählen Sie eine Uhrzeit, sagen Sie uns kurz, worum es geht — wir melden uns mit der Bestätigung.</p>
+  </div>
+</section>
+
+<section class="section section--tight" style="padding-bottom: 80px;">
+  <div class="container" style="display: grid; grid-template-columns: 1fr 360px; gap: 32px; align-items: flex-start;">
+
+    <div>
+      <h2 style="margin-bottom: 12px;">Verfügbare Slots in den nächsten 4 Wochen</h2>
+      <p class="text-muted">Dienstags und donnerstags je 9:00, 11:00, 14:00 und 16:00. Ein Termin dauert in der Regel 30–60 Minuten je nach Anlass.</p>
+      <div id="calendar"></div>
+      <p class="text-muted" style="margin-top: 24px; font-size: 0.92rem; padding: 18px 22px; background: var(--sage-mint-soft); border-left: 2px solid var(--gold); border-radius: 0; line-height: 1.65;">
+        <strong style="color: var(--sage-dark); font-weight: 500;">Hinweis · </strong>Im Live-Betrieb erfolgt die Buchung über ein Tool wie <strong>Calendly</strong>, <strong>Bookable</strong> oder ein vergleichbares Kalender-System. Die Slots werden dann live mit Jeromes Outlook abgeglichen.
+      </p>
+    </div>
+
+    <aside style="position: sticky; top: 100px;">
+      <div class="card">
+        <h3 style="margin-bottom: 8px;">Ausgewählter Termin</h3>
+        <div id="selected-slot" style="padding: 14px; background: var(--bg); border-radius: 8px; color: var(--text-soft); margin-bottom: 20px;">
+          Bitte oben einen Slot auswählen.
+        </div>
+        <div class="form-group">
+          <label for="anlass">Anlass</label>
+          <select id="anlass">
+            <option value="Erstgespräch">Erstgespräch (60 Min)</option>
+            <option value="Begehung">Begehung vor Ort (90 Min)</option>
+            <option value="Nachbetreuung">Nachbetreuung / Folgetermin (30 Min)</option>
+            <option value="Audit-Vorbereitung">Audit-Vorbereitung (60 Min)</option>
+            <option value="GBU-Workshop">GBU-Workshop (90 Min)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="bookerName">Name</label>
+          <input type="text" id="bookerName" placeholder="Anna Petersen">
+        </div>
+        <div class="form-group">
+          <label for="bookerEmail">E-Mail</label>
+          <input type="email" id="bookerEmail" placeholder="anna@firma.de">
+        </div>
+        <div class="form-group">
+          <label for="bookerNote">Kurz worum es geht</label>
+          <textarea id="bookerNote" rows="3" placeholder="z. B. Erstgespräch zur Sifa-Pauschale"></textarea>
+        </div>
+        <button class="btn btn-accent btn-block btn-lg" id="book-btn" disabled>Termin buchen</button>
+      </div>
+
+      <div class="card mt-2" style="background: var(--sage-mint-soft); border-top: 2px solid var(--gold);">
+        <h4 style="font-size: .8rem; color: var(--sage-dark);">Lieber per Telefon?</h4>
+        <p class="text-muted" style="font-size: 0.9rem; margin: 10px 0 16px; line-height: 1.6;">Sie erreichen uns Mo–Fr 8:00–17:00 unter:</p>
+        <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 500; color: var(--sage-darker); letter-spacing: 0.02em;">+49 171 9987436</div>
+        <div style="font-size: 0.88rem; color: var(--text-soft); margin-top: 6px;">info@herwardtimm.de</div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;"><img src="assets/logo-weiss.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" class="logo-weiss" width="200"></div>
+        <p style="font-size: 0.92rem;">Sifa-Beratung und Arbeitssicherheit für KMUs in Norddeutschland.</p>
+      </div>
+      <div><h4 data-i18n="footer.plattform">Plattform</h4><ul class="footer-list"><li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li><li><a href="anfrage.html" data-i18n="nav.pauschalbetreuung">Pauschalbetreuung</a></li><li><a href="preise.html">Preise</a></li><li><a href="termin.html" data-i18n="nav.termin">Termin</a></li><li><a href="login.html" data-i18n="nav.login">Login</a></li></ul></div>
+      <div><h4 data-i18n="footer.unternehmen">Unternehmen</h4><ul class="footer-list"><li><a href="ueber-uns.html" data-i18n="nav.ueber-uns">Über uns</a></li><li><a href="ratgeber.html">Ratgeber</a></li><li><a href="ueber-uns.html#kontakt" data-i18n="footer.kontakt">Kontakt</a></li></ul></div>
+      <div><h4 data-i18n="footer.rechtliches">Rechtliches</h4><ul class="footer-list"><li><a href="impressum.html" data-i18n="footer.impressum">Impressum</a></li><li><a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a></li><li><a href="agb.html" data-i18n="footer.agb">AGB</a></li><li><a href="widerruf.html" data-i18n="footer.widerruf">Widerruf</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 HerwardTimm</span><span data-i18n="footer.demo-version">Demo-Version</span></div>
+  </div>
+</footer>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script>
+  // ============ KALENDER GENERIEREN ============
+  const cal = document.getElementById('calendar');
+  const today = new Date();
+  const startDate = new Date(today);
+  // auf nächsten Montag setzen
+  while (startDate.getDay() !== 1) startDate.setDate(startDate.getDate() + 1);
+
+  const weekdays = ['So','Mo','Di','Mi','Do','Fr','Sa'];
+  const slotHours = [9, 11, 14, 16];
+  let selected = null;
+
+  function makeWeek(weekStart, weekNum) {
+    const weekStartLabel = weekStart.toLocaleDateString('de-DE', { day: '2-digit', month: 'long' });
+    const weekEnd = new Date(weekStart); weekEnd.setDate(weekEnd.getDate() + 4);
+    const weekEndLabel = weekEnd.toLocaleDateString('de-DE', { day: '2-digit', month: 'long' });
+
+    let slots = '';
+    for (let dayOffset = 0; dayOffset < 5; dayOffset++) {
+      const d = new Date(weekStart); d.setDate(d.getDate() + dayOffset);
+      // Nur Di + Do
+      if (d.getDay() !== 2 && d.getDay() !== 4) continue;
+      const dayLabel = `${weekdays[d.getDay()]}, ${d.toLocaleDateString('de-DE', { day:'2-digit', month:'2-digit' })}`;
+      slotHours.forEach(h => {
+        const id = `${d.toISOString().slice(0,10)}-${h}`;
+        // ein paar Slots als "belegt" markieren (für Realismus)
+        const isBooked = (weekNum === 0 && d.getDay() === 2 && h === 11)
+                     || (weekNum === 1 && d.getDay() === 4 && h === 14)
+                     || (weekNum === 2 && d.getDay() === 2 && h === 9);
+        slots += `<button class="cal-slot" data-id="${id}" data-label="${dayLabel} · ${h}:00 Uhr" ${isBooked ? 'disabled title="Bereits gebucht"' : ''}>
+          <strong>${dayLabel}</strong>
+          <small>${h}:00 ${isBooked ? '— belegt' : '— frei'}</small>
+        </button>`;
+      });
+    }
+    return `<div class="cal-week">
+      <div class="cal-week-head">
+        <h3>KW ${getWeekNumber(weekStart)} · ${weekStartLabel} – ${weekEndLabel}</h3>
+        <span class="text-muted" style="font-size:.85rem;">${weekNum === 0 ? 'Diese Woche' : weekNum === 1 ? 'Nächste Woche' : 'In ' + (weekNum+1) + ' Wochen'}</span>
+      </div>
+      <div class="cal-grid">${slots}</div>
+    </div>`;
+  }
+
+  function getWeekNumber(d) {
+    d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+    d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+    const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+    return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  }
+
+  let html = '';
+  for (let w = 0; w < 4; w++) {
+    const ws = new Date(startDate); ws.setDate(ws.getDate() + w * 7);
+    html += makeWeek(ws, w);
+  }
+  cal.innerHTML = html;
+
+  cal.addEventListener('click', (e) => {
+    const btn = e.target.closest('.cal-slot');
+    if (!btn || btn.disabled) return;
+    cal.querySelectorAll('.cal-slot.selected').forEach(s => s.classList.remove('selected'));
+    btn.classList.add('selected');
+    selected = { id: btn.dataset.id, label: btn.dataset.label };
+    document.getElementById('selected-slot').innerHTML = `<strong style="color: var(--petrol);">${selected.label}</strong>`;
+    document.getElementById('book-btn').disabled = false;
+  });
+
+  document.getElementById('book-btn').addEventListener('click', () => {
+    const name = document.getElementById('bookerName').value.trim();
+    const email = document.getElementById('bookerEmail').value.trim();
+    if (!name || !email) { toast('Bitte Name und E-Mail angeben.', 'error'); return; }
+    if (!selected) return;
+    const data = {
+      id: selected.id,
+      slot: selected.label,
+      anlass: document.getElementById('anlass').value,
+      name, email,
+      note: document.getElementById('bookerNote').value.trim(),
+      date: new Date().toISOString()
+    };
+    // TODO GO-LIVE: Demo-Stub — die Buchung wird NUR lokal (localStorage)
+    // gespeichert; es gibt keine echte Kalender-Anbindung und KEINE
+    // Bestätigungs-Mail. Vor Live-Gang an Calendly/Bookable mit Outlook-Sync
+    // anbinden, danach den Hinweis-Banner oben (Calendly/Bookable) entfernen.
+    Store.push('bookings', data);
+    toast(`Termin gebucht: ${selected.label}`, 'success', 4500);
+    document.getElementById('selected-slot').innerHTML = `
+      <strong style="color: var(--success);">✓ Gebucht: ${selected.label}</strong>
+      <p style="font-size:.85rem; margin: 6px 0 0; color: var(--text-soft);">
+        Sie erhalten in Kürze eine Bestätigung an ${email}.
+      </p>
+    `;
+    document.getElementById('book-btn').disabled = true;
+  });
+</script>
+</body>
+</html>

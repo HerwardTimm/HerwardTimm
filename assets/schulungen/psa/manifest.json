@@ -1,0 +1,380 @@
+{
+  "slug": "psa",
+  "titel": "Persönliche Schutzausrüstung (PSA)",
+  "pflichtgrundlage": "PSA-BV, §3 ArbSchG, DGUV R 112",
+  "dauer_minuten": 40,
+  "anzahl_folien": 43,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Persönliche Schutzausrüstung (PSA)",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Persönliche Schutzausrüstung (PSA)\". Auswahl, Tragen, Pflege und Prüfung Ihrer Schutzausrüstung. Diese Schulung ist Ihre Pflichtunterweisung nach PSA-Benutzungsverordnung  ·  §3 ArbSchG  ·  DGUV Regel 112-xxx und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Grundlagen PSA",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Grundlagen PSA. Welche Rolle PSA spielt und welche Rechte und Pflichten damit verbunden sind. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "PSA im TOP-Prinzip — die letzte Stufe",
+      "bild": "folie-05.png",
+      "sprechertext": "PSA steht bewusst am Ende des TOP-Prinzips, weil sie nur die einzelne Person schützt und nur wirkt, wenn sie korrekt getragen wird. Technische Maßnahmen schützen automatisch und alle. Das heißt nicht, dass PSA unwichtig ist — dort, wo Restgefahren bleiben, ist sie unverzichtbar. Aber sie ersetzt nie die vorrangige Gefahrenbeseitigung.\n\n▸ Trainer-Tipp: PSA ist die LETZTE Maßnahme, nicht die erste. Wer Ihnen PSA gibt, ohne vorher technische und organisatorische Maßnahmen zu prüfen, hat das TOP-Prinzip übersprungen."
+    },
+    {
+      "nummer": 6,
+      "titel": "Rechte und Pflichten rund um PSA",
+      "bild": "folie-06.png",
+      "sprechertext": "Die PSA-Benutzungsverordnung (PSA-BV) regelt die Pflichten. Wichtig: PSA ist immer kostenlos und individuell passend bereitzustellen. Das 'drückt'-Argument ist kein Grund zum Weglassen, sondern Anlass für ein anderes Modell. Beschäftigte sind nach §15 ArbSchG zum bestimmungsgemäßen Tragen verpflichtet; Verweigerung kann arbeitsrechtliche Folgen haben. Eigene PSA nur mit Freigabe, da sonst Haftungs- und Eignungsfragen offen sind.\n\n▸ Trainer-Tipp: PSA ist Recht UND Pflicht zugleich: Der Arbeitgeber muss sie passend und kostenlos stellen, Sie müssen sie konsequent tragen. Beides zusammen ergibt erst den Schutz."
+    },
+    {
+      "nummer": 7,
+      "titel": "Modul 2 — Schutzkategorien & Arten",
+      "bild": "folie-07.png",
+      "sprechertext": "Modul 2 — Schutzkategorien & Arten. Die drei Kategorien und die wichtigsten PSA-Arten von Kopf bis Fuß. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 8,
+      "titel": "Die drei PSA-Schutzkategorien",
+      "bild": "folie-08.png",
+      "sprechertext": "Die Einteilung in drei Kategorien (PSA-Verordnung EU 2016/425) richtet sich nach dem Risiko. Kategorie I ist gegen geringe Risiken (z. B. oberflächliche mechanische Verletzungen), Kategorie III gegen schwerste oder tödliche Gefahren. Für Kategorie III gelten besondere Pflichten: theoretische Unterweisung UND praktische Übung, regelmäßige Prüfungen. Atemschutz und Absturzsicherung sind die klassischen Kategorie-III-Beispiele.\n\n▸ Trainer-Tipp: Kategorie III ist die kritische: hier geht es um Leben und Tod (Absturz, Ersticken). Diese PSA erfordert nicht nur Unterweisung, sondern echte praktische Übung — Theorie allein reicht nicht."
+    },
+    {
+      "nummer": 9,
+      "titel": "PSA von Kopf bis Fuß",
+      "bild": "folie-09.png",
+      "sprechertext": "PSA deckt den Körper von Kopf bis Fuß ab, jeweils passend zur Gefährdung. Wichtig ist die richtige Auswahl: Handschuhe etwa gibt es spezialisiert für mechanische, chemische oder thermische Gefährdungen — ein falscher Handschuh kann gefährlicher sein als keiner (falsche Sicherheit). Gehörschutz ist ab 80 dB(A) anzubieten, ab 85 dB(A) zu tragen. Atemschutz und Absturzsicherung sind Kategorie III mit Übungspflicht.\n\n▸ Trainer-Tipp: Die richtige PSA hängt von der konkreten Gefährdung ab — ein Chemikalienhandschuh schützt nicht vor Schnitten, ein Schnittschutzhandschuh nicht vor Säure. Die Gefährdungsbeurteilung legt fest, was passt."
+    },
+    {
+      "nummer": 10,
+      "titel": "Modul 3 — Auswahl, Tragen, Pflege",
+      "bild": "folie-10.png",
+      "sprechertext": "Modul 3 — Auswahl, Tragen, Pflege. Passform, richtiges Anlegen, Reinigung und Lagerung. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 11,
+      "titel": "PSA richtig nutzen — der Ablauf",
+      "bild": "folie-11.png",
+      "sprechertext": "Der korrekte Umgang entscheidet über die Schutzwirkung. Die Sichtprüfung vor Gebrauch ist Pflicht — gerade bei Kategorie III (Absturzsicherung: Risse im Gurt, Korrosion an Karabinern). Beim Atemschutz ist der Dichtsitz entscheidend (Bartträger!). Das zwischenzeitliche Absetzen ist ein Hauptrisiko. Pflege und sachgerechte Lagerung verlängern die Lebensdauer und erhalten die Schutzwirkung.\n\n▸ Trainer-Tipp: Der häufigste Fehler ist das Absetzen 'nur für einen Moment' — gerade dann passiert der Unfall. PSA wirkt nur bei lückenlosem Tragen während der gesamten Gefährdung."
+    },
+    {
+      "nummer": 12,
+      "titel": "Umgang mit PSA",
+      "bild": "folie-12.png",
+      "sprechertext": "Die Do/Don't-Liste fasst die Praxis zusammen. Besonders wichtig: beschädigte PSA verliert ihre Schutzwirkung, auch ohne sichtbaren Defekt (Helm nach Schlag). Falsche Handschuhwahl erzeugt trügerische Sicherheit. Atemschutz funktioniert nur bei dichtem Sitz — Bärte verhindern das. PSA ist personenbezogen und sollte aus Hygienegründen nicht geteilt werden.\n\n▸ Trainer-Tipp: Ein Helm, der einen Schlag abbekommen hat, ist auch ohne sichtbaren Riss möglicherweise unbrauchbar — der Kunststoff kann unsichtbar geschädigt sein. Im Zweifel austauschen."
+    },
+    {
+      "nummer": 13,
+      "titel": "Modul 4 — Prüfung & Kennzeichnung",
+      "bild": "folie-13.png",
+      "sprechertext": "Modul 4 — Prüfung & Kennzeichnung. CE-Kennzeichnung, Prüffristen und der Umgang mit Mängeln. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 14,
+      "titel": "CE-Kennzeichnung und Prüffristen",
+      "bild": "folie-14.png",
+      "sprechertext": "Die CE-Kennzeichnung zeigt, dass die PSA die EU-Anforderungen erfüllt. Bei Kategorie III folgt eine vierstellige Kennnummer der notifizierten Stelle. Wichtig sind die Prüffristen: vor jedem Gebrauch Sichtprüfung durch den Nutzer, zusätzlich regelmäßige Prüfung durch befähigte Personen (z. B. Absturzsicherung jährlich). Auch PSA altert — Helme, Auffanggurte und Atemfilter haben begrenzte Lebensdauer.\n\n▸ Trainer-Tipp: Die CE-Kennzeichnung ist Ihr erstes Erkennungszeichen für geprüfte PSA. Bei Kategorie III steht zusätzlich eine vierstellige Nummer dabei — das ist die überwachende Prüfstelle."
+    },
+    {
+      "nummer": 15,
+      "titel": "Mängel erkennen und melden",
+      "bild": "folie-15.png",
+      "sprechertext": "Mängelerkennung ist die tägliche Verantwortung der Nutzer:innen. Defekte PSA muss sofort ausgesondert werden. Besonders kritisch bei Kategorie III: ein gerissener Auffanggurt oder ein durch Sturz belasteter Karabiner kann versagen. Die Meldung von Mängeln ist nach §17 ArbSchG geschützt. Bis Ersatz vorhanden ist, darf die gefährdende Tätigkeit nicht ausgeführt werden.\n\n▸ Trainer-Tipp: Lieber eine Tätigkeit kurz unterbrechen, bis Ersatz-PSA da ist, als mit defekter Ausrüstung weiterzuarbeiten. Das Melden ist durch §17 ArbSchG geschützt — niemand darf deswegen benachteiligt werden."
+    },
+    {
+      "nummer": 16,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-16.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei realistische Szenarien aus dem Betrieb. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 17,
+      "titel": "Fallbeispiel 1: Der Helm, der drückt",
+      "bild": "folie-17.png",
+      "sprechertext": "Dieser Fall zeigt das klassische Passform-Problem. Die Lösung ist nie das Weglassen, sondern die Beschaffung passender PSA. Das 'nur-wenn-beobachtet'-Verhalten ist besonders gefährlich, weil Unfälle gerade in unbeobachteten Momenten passieren. Führungskräfte müssen eine Kultur schaffen, in der das Anfordern passender PSA selbstverständlich ist.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 18,
+      "titel": "Fallbeispiel 2: Die falschen Handschuhe",
+      "bild": "folie-18.png",
+      "sprechertext": "Falsche Handschuhwahl ist ein unterschätztes Risiko. Ein für die Gefährdung ungeeigneter Handschuh erzeugt trügerische Sicherheit und kann die Belastung sogar erhöhen (Stoff saugt Chemikalie auf). Die richtige Auswahl ergibt sich aus der Gefährdungsbeurteilung und dem SDB. Handschuhe sind hochspezialisiert: mechanisch, chemisch, thermisch — nie verwechseln.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 19,
+      "titel": "Fallbeispiel 3: Der gestürzte Auffanggurt",
+      "bild": "folie-19.png",
+      "sprechertext": "Auffangsysteme dürfen nach einer Sturzbelastung nicht weiterverwendet werden — die Fasern und Verbindungselemente können unsichtbar geschädigt sein. Der Vorfall zeigt eine doppelte Lücke: fehlende Meldung und fehlende Prüfung. Kategorie-III-PSA erfordert Dokumentation, jährliche Prüfung durch befähigte Personen und konsequentes Aussondern nach Belastung.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 20,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-20.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen aus allen Modulen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 21,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-21.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. PSA ist die letzte Stufe — sie schützt nur die einzelne Person und nur, wenn getragen. Technik und Organisation haben Vorrang."
+    },
+    {
+      "nummer": 22,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-22.png",
+      "sprechertext": "PSA ist die letzte Stufe — sie schützt nur die einzelne Person und nur, wenn getragen. Technik und Organisation haben Vorrang."
+    },
+    {
+      "nummer": 23,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-23.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. PSA-BV §2: der Arbeitgeber stellt PSA kostenlos und individuell passend bereit."
+    },
+    {
+      "nummer": 24,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-24.png",
+      "sprechertext": "PSA-BV §2: der Arbeitgeber stellt PSA kostenlos und individuell passend bereit."
+    },
+    {
+      "nummer": 25,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-25.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Passende PSA anfordern. Unbequemlichkeit ist kein Grund zum Weglassen, sondern für ein anderes Modell."
+    },
+    {
+      "nummer": 26,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-26.png",
+      "sprechertext": "Passende PSA anfordern. Unbequemlichkeit ist kein Grund zum Weglassen, sondern für ein anderes Modell."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Kategorie III (hohes/tödliches Risiko, z. B. Atemschutz, Absturzsicherung) erfordert Unterweisung MIT praktischer Übung."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Kategorie III (hohes/tödliches Risiko, z. B. Atemschutz, Absturzsicherung) erfordert Unterweisung MIT praktischer Übung."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Ab 80 dB(A) ist Gehörschutz anzubieten, ab 85 dB(A) zu tragen (LärmVibrationsArbSchV)."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Ab 80 dB(A) ist Gehörschutz anzubieten, ab 85 dB(A) zu tragen (LärmVibrationsArbSchV)."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Austauschen — der Kunststoff kann unsichtbar geschädigt sein und beim nächsten Aufprall versagen."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Austauschen — der Kunststoff kann unsichtbar geschädigt sein und beim nächsten Aufprall versagen."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. CE mit vierstelliger Nummer kennzeichnet Kategorie-III-PSA und nennt die überwachende notifizierte Stelle."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "CE mit vierstelliger Nummer kennzeichnet Kategorie-III-PSA und nennt die überwachende notifizierte Stelle."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Mindestens jährlich durch eine befähigte Person — zusätzlich Sichtprüfung vor jeder Nutzung."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Mindestens jährlich durch eine befähigte Person — zusätzlich Sichtprüfung vor jeder Nutzung."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Stoff saugt die Chemikalie auf und hält sie an der Haut — schlimmer als ohne Handschuh. Nötig sind chemikalienbeständige Handschuhe (siehe SDB)."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "Stoff saugt die Chemikalie auf und hält sie an der Haut — schlimmer als ohne Handschuh. Nötig sind chemikalienbeständige Handschuhe (siehe SDB)."
+    },
+    {
+      "nummer": 39,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-39.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Nach Sturzbelastung sofort aussondern, durch befähigte Person prüfen/ersetzen und den Vorfall melden — innere Schäden sind unsichtbar."
+    },
+    {
+      "nummer": 40,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-40.png",
+      "sprechertext": "Nach Sturzbelastung sofort aussondern, durch befähigte Person prüfen/ersetzen und den Vorfall melden — innere Schäden sind unsichtbar."
+    },
+    {
+      "nummer": 41,
+      "titel": "Zusammenfassung",
+      "bild": "folie-41.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 42,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-42.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 43,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-43.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Wo steht PSA im TOP-Prinzip?",
+      "optionen": [
+        "An erster Stelle",
+        "An letzter Stelle",
+        "Vor der Technik",
+        "Spielt keine Rolle"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "PSA ist die letzte Stufe — sie schützt nur die einzelne Person und nur, wenn getragen. Technik und Organisation haben Vorrang."
+    },
+    {
+      "frage": "Wer bezahlt die PSA?",
+      "optionen": [
+        "Der Beschäftigte",
+        "Die Krankenkasse",
+        "Der Arbeitgeber (kostenlos)",
+        "Die BG"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "PSA-BV §2: der Arbeitgeber stellt PSA kostenlos und individuell passend bereit."
+    },
+    {
+      "frage": "»Der Helm drückt« — was ist die richtige Konsequenz?",
+      "optionen": [
+        "Helm weglassen",
+        "Nur tragen, wenn jemand zusieht",
+        "Passendes Modell/Größe anfordern",
+        "Selbst umbauen"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Passende PSA anfordern. Unbequemlichkeit ist kein Grund zum Weglassen, sondern für ein anderes Modell."
+    },
+    {
+      "frage": "Welche PSA-Kategorie erfordert praktische Übung?",
+      "optionen": [
+        "Kategorie I",
+        "Kategorie II",
+        "Kategorie III",
+        "keine"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Kategorie III (hohes/tödliches Risiko, z. B. Atemschutz, Absturzsicherung) erfordert Unterweisung MIT praktischer Übung."
+    },
+    {
+      "frage": "Ab welchem Lärmpegel ist Gehörschutz zu tragen?",
+      "optionen": [
+        "ab 65 dB(A)",
+        "ab 80 dB(A) anbieten, ab 85 dB(A) tragen",
+        "ab 100 dB(A)",
+        "nie"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Ab 80 dB(A) ist Gehörschutz anzubieten, ab 85 dB(A) zu tragen (LärmVibrationsArbSchV)."
+    },
+    {
+      "frage": "Was tun mit einem Helm nach einem harten Schlag?",
+      "optionen": [
+        "Weiterbenutzen, wenn kein Riss sichtbar",
+        "Austauschen",
+        "Nur reinigen",
+        "Aufkleber drauf"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Austauschen — der Kunststoff kann unsichtbar geschädigt sein und beim nächsten Aufprall versagen."
+    },
+    {
+      "frage": "Was zeigt die CE-Kennzeichnung mit vierstelliger Nummer?",
+      "optionen": [
+        "Die Größe",
+        "Geprüfte PSA der Kategorie III mit überwachender Stelle",
+        "Das Herstelljahr",
+        "Den Preis"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "CE mit vierstelliger Nummer kennzeichnet Kategorie-III-PSA und nennt die überwachende notifizierte Stelle."
+    },
+    {
+      "frage": "Wie oft ist PSA gegen Absturz mindestens zu prüfen?",
+      "optionen": [
+        "Nie",
+        "Alle 5 Jahre",
+        "Mindestens jährlich durch befähigte Person",
+        "Nur bei Kauf"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Mindestens jährlich durch eine befähigte Person — zusätzlich Sichtprüfung vor jeder Nutzung."
+    },
+    {
+      "frage": "Warum sind Stoffhandschuhe bei Lösemitteln gefährlich?",
+      "optionen": [
+        "Sie sind zu warm",
+        "Sie saugen das Lösemittel auf und halten es an der Haut",
+        "Sie sind zu teuer",
+        "Gar nicht"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Stoff saugt die Chemikalie auf und hält sie an der Haut — schlimmer als ohne Handschuh. Nötig sind chemikalienbeständige Handschuhe (siehe SDB)."
+    },
+    {
+      "frage": "Ein Auffanggurt hat einen Sturz aufgefangen. Was nun?",
+      "optionen": [
+        "Weiterbenutzen",
+        "Aussondern, prüfen lassen/ersetzen, Sturz melden",
+        "Nur abwischen",
+        "Eine Woche ruhen lassen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Nach Sturzbelastung sofort aussondern, durch befähigte Person prüfen/ersetzen und den Vorfall melden — innere Schäden sind unsichtbar."
+    }
+  ]
+}

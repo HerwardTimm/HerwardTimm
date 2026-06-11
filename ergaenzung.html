@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standort-Angaben ausfüllen (Betriebsspezifische Ergänzung) · HerwardTimm</title>
+<meta name="description" content="Einfache Standort-Angaben für die arbeitsplatzbezogene Ergänzung (§4 DGUV V1): in wenigen Minuten beantworten, an HerwardTimm senden oder als PDF speichern.">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/tools.css">
+<script defer data-domain="herwardtimm.de" src="https://plausible.io/js/script.js"></script>
+<style>
+  .erg-help { background: var(--sage-mint-soft); border-left: 3px solid var(--gold); border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; }
+  .erg-help strong { color: var(--sage-dark); }
+  .erg-q { padding: 14px 0; border-bottom: 1px solid var(--border-soft); }
+  .erg-q:last-child { border-bottom: none; }
+  .erg-q .frage { font-weight: 600; color: var(--text); font-size: 1rem; }
+  .erg-q .hilfe { font-size: 0.85rem; color: var(--text-mute); margin: 2px 0 8px; }
+  .erg-q input[type=text], .erg-q textarea { width: 100%; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: 0.95rem; padding: 9px 12px; }
+  .erg-q textarea { resize: vertical; min-height: 56px; line-height: 1.5; }
+  .erg-q input:focus, .erg-q textarea:focus { outline: 2px solid var(--gold-soft); border-color: var(--sage); }
+  .erg-sec { font-weight: 700; color: var(--sage-dark); font-size: 1.05rem; margin: 28px 0 6px; padding-bottom: 6px; border-bottom: 2px solid var(--gold); }
+  .erg-yesno { display: inline-flex; gap: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 8px; }
+  .erg-yesno label { padding: 7px 16px; cursor: pointer; font-size: 0.9rem; color: var(--text-soft); }
+  .erg-yesno label.on { background: var(--sage-dark); color: #fff; }
+  .erg-confirm { display: flex; gap: 10px; align-items: flex-start; background: var(--sage-mint-soft); border-radius: 8px; padding: 14px 16px; margin-top: 16px; }
+  .erg-confirm input { margin-top: 3px; width: 18px; height: 18px; }
+  .erg-saved { color: var(--success); font-size: 0.82rem; font-weight: 600; visibility: hidden; }
+  /* Druck: nur die Zusammenfassung als Dokument */
+  .print-only { display: none; }
+  @media print {
+    .no-print { display: none !important; }
+    .tool-wrap { padding: 0; background: #fff; }
+    .tool-page { box-shadow: none; max-width: none; padding: 0; border-top: none; }
+    .erg-form { display: none !important; }
+    .print-only { display: block !important; }
+  }
+  /* Druck-Dokument */
+  .erg-out-title { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.7rem; color: var(--text); }
+  .erg-out-row { display: grid; grid-template-columns: 230px 1fr; border-bottom: 1px solid #ccc; padding: 7px 0; }
+  .erg-out-row .k { font-weight: 600; color: #333; }
+  .erg-out-sec { font-weight: 700; margin: 16px 0 4px; color: #000; border-bottom: 2px solid #C99B45; padding-bottom: 3px; }
+</style>
+</head>
+<body data-tool-key="ht-ergaenzung">
+
+<header class="site-header no-print">
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180"></a>
+    <ul class="nav-menu">
+      <li><a href="dashboard.html">Mein Bereich</a></li>
+      <li><a href="werkzeuge.html">Werkzeuge</a></li>
+      <li><a href="so-dokumentieren-wir.html">Dokumentation</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="tool-actions no-print">
+  <div class="container inner">
+    <div>
+      <a href="werkzeuge.html" class="btn-link" style="font-size:0.82rem; text-transform:uppercase; letter-spacing:0.08em;">← Alle Werkzeuge</a>
+      <div id="tool-status" class="erg-saved"></div>
+    </div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="btn btn-ghost btn-sm" onclick="toolReset()">Zurücksetzen</button>
+      <button class="btn btn-ghost btn-sm" onclick="window.print()">Als PDF speichern</button>
+      <button class="btn btn-cta btn-sm" onclick="ergSenden()">✉ An HerwardTimm senden</button>
+    </div>
+  </div>
+</section>
+
+<section class="tool-wrap">
+  <div class="tool-page">
+    <div class="tool-eyebrow no-print">HerwardTimm e.K. · Ihr Standort</div>
+    <div class="tool-title no-print">Ein paar Angaben zu Ihrem Standort</div>
+
+    <div class="erg-help no-print">
+      <strong>Kein Fachwissen nötig.</strong> Beantworten Sie einfach, was bei Ihnen vor Ort gilt — so, wie Sie es einem neuen Kollegen erklären würden. Wir (Ihre Fachkraft für Arbeitssicherheit) machen daraus den korrekten Nachweis. Nicht sicher? Feld frei lassen, wir klären es gemeinsam. Am Ende auf <strong>„An HerwardTimm senden"</strong> klicken — fertig.
+    </div>
+
+    <!-- ============ FORMULAR (Bildschirm) ============ -->
+    <div class="erg-form">
+
+      <div class="erg-sec">Ihr Betrieb</div>
+      <div class="erg-q">
+        <div class="frage">Firma</div>
+        <input type="text" data-k="firma" placeholder="z. B. Muster GmbH">
+      </div>
+      <div class="erg-q">
+        <div class="frage">Standort / Adresse</div>
+        <div class="hilfe">Welcher Standort ist gemeint?</div>
+        <input type="text" data-k="standort" placeholder="z. B. Hauptstraße 1, Lübeck">
+      </div>
+      <div class="erg-q">
+        <div class="frage">Ihr Name</div>
+        <div class="hilfe">Wer füllt das aus?</div>
+        <input type="text" data-k="verantwortlich" placeholder="Vor- und Nachname">
+      </div>
+
+      <div class="erg-sec">Im Notfall — wohin?</div>
+      <div class="erg-q">
+        <div class="frage">Wo geht es im Notfall raus?</div>
+        <div class="hilfe">Beschreiben Sie die Fluchtwege/Notausgänge in einfachen Worten.</div>
+        <input type="text" data-k="fluchtwege" placeholder="z. B. Haupteingang vorne und Tür im Lager hinten">
+      </div>
+      <div class="erg-q">
+        <div class="frage">Wo treffen sich alle draußen? (Sammelplatz)</div>
+        <div class="hilfe">Der Ort, an dem sich nach Räumung alle sammeln.</div>
+        <input type="text" data-k="sammelplatz" placeholder="z. B. Mitarbeiterparkplatz neben dem Eingang">
+      </div>
+      <div class="erg-q">
+        <div class="frage">Wo hängen die Feuerlöscher?</div>
+        <input type="text" data-k="feuerloescher" placeholder="z. B. Flur Erdgeschoss und in der Werkstatt">
+      </div>
+
+      <div class="erg-sec">Erste Hilfe</div>
+      <div class="erg-q">
+        <div class="frage">Wo ist der Verbandkasten / das Erste-Hilfe-Material?</div>
+        <input type="text" data-k="ersthilfe" placeholder="z. B. Küche, an der Wand neben der Tür">
+      </div>
+      <div class="erg-q">
+        <div class="frage">Gibt es benannte Ersthelfer?</div>
+        <div class="hilfe">Falls ja: Wer? (Namen)</div>
+        <span class="erg-yesno" data-toggle="ersthelfer_ja">
+          <label data-v="ja">Ja</label><label data-v="nein">Nein / weiß nicht</label>
+        </span>
+        <input type="hidden" data-k="ersthelfer_ja">
+        <input type="text" data-k="ersthelfer" placeholder="Namen der Ersthelfer">
+      </div>
+      <div class="erg-q">
+        <div class="frage">Gibt es einen Brandschutzhelfer?</div>
+        <div class="hilfe">Falls ja: Wer?</div>
+        <span class="erg-yesno" data-toggle="bsh_ja">
+          <label data-v="ja">Ja</label><label data-v="nein">Nein / weiß nicht</label>
+        </span>
+        <input type="hidden" data-k="bsh_ja">
+        <input type="text" data-k="bsh" placeholder="Name">
+      </div>
+
+      <div class="erg-sec">Notfallnummern</div>
+      <div class="erg-q">
+        <div class="frage">Wichtige Nummern</div>
+        <div class="hilfe">112 ist schon eingetragen. Ergänzen Sie interne Nummern, falls vorhanden.</div>
+        <input type="text" data-k="nummern" value="Notruf 112 · Giftnotruf 0551 19240 · intern: ">
+      </div>
+
+      <div class="erg-sec">Besonderheiten (optional)</div>
+      <div class="erg-q">
+        <div class="frage">Gibt es bei Ihnen besondere Gefahren oder Geräte?</div>
+        <div class="hilfe">Nur wenn Ihnen etwas einfällt — z. B. Maschinen, Chemikalien, Stapler, Lärm. Sonst frei lassen.</div>
+        <textarea data-k="besonderheiten" rows="2" placeholder="z. B. Tischkreissäge in der Werkstatt, Reinigungsmittel im Putzraum"></textarea>
+      </div>
+
+      <div class="erg-confirm">
+        <input type="checkbox" data-k="bestaetigt" id="best">
+        <label for="best" style="font-size:0.92rem; color:var(--text-soft);">Diese Angaben wurden mit den Mitarbeitenden besprochen. (Häkchen setzen, wenn erfolgt — sonst holt Ihre Fachkraft das beim Termin nach.)</label>
+      </div>
+
+      <p class="text-muted" style="font-size:0.82rem; margin-top:22px; line-height:1.6;">Was passiert danach? Wir prüfen Ihre Angaben, ergänzen das Fachliche und legen den fertigen, prüfungssicheren Nachweis in Ihrem Bereich ab — er wird bei einer Begehung als arbeitsplatzbezogene Ergänzung (§4 DGUV V1) anerkannt. Arbeitshilfe, keine Rechtsberatung im Einzelfall (Stand 2026).</p>
+    </div>
+
+    <!-- ============ DRUCK-DOKUMENT (PDF) ============ -->
+    <div class="print-only" id="erg-print">
+      <div class="erg-out-title">Betriebsspezifische Ergänzung zur Unterweisung</div>
+      <p style="font-size:0.85rem; color:#444; margin:4px 0 14px;">Arbeitsplatzbezogene Angaben gemäß §4 DGUV Vorschrift 1 · HerwardTimm e.K.</p>
+      <div id="erg-print-body"></div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:34px;">
+        <div style="border-top:1px solid #000; padding-top:6px; font-size:0.78rem; color:#444;">Datum, Unterschrift Betrieb</div>
+        <div style="border-top:1px solid #000; padding-top:6px; font-size:0.78rem; color:#444;">geprüft durch HerwardTimm (Sifa)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script src="assets/tools.js"></script>
+<script>
+  // Ja/Nein-Umschalter -> in verstecktes Feld schreiben (von tools.js gespeichert)
+  document.querySelectorAll('.erg-yesno').forEach(grp => {
+    const key = grp.dataset.toggle;
+    const hidden = document.querySelector('[data-k="' + key + '"]');
+    function paint(){ grp.querySelectorAll('label').forEach(l => l.classList.toggle('on', l.dataset.v === hidden.value)); }
+    grp.querySelectorAll('label').forEach(l => l.addEventListener('click', () => { hidden.value = l.dataset.v; paint(); toolSave(true); }));
+    paint();
+  });
+
+  // Felder einsammeln (für Druck & Versand)
+  function ergData(){
+    const g = k => { const el = document.querySelector('[data-k="' + k + '"]'); return el ? (el.type === 'checkbox' ? (el.checked ? 'Ja' : 'Nein') : el.value) : ''; };
+    return {
+      firma: g('firma'), standort: g('standort'), verantwortlich: g('verantwortlich'),
+      fluchtwege: g('fluchtwege'), sammelplatz: g('sammelplatz'), feuerloescher: g('feuerloescher'),
+      ersthilfe: g('ersthilfe'),
+      ersthelfer: (g('ersthelfer_ja') === 'nein' ? 'nicht benannt / unklar' : g('ersthelfer')),
+      bsh: (g('bsh_ja') === 'nein' ? 'nicht benannt / unklar' : g('bsh')),
+      nummern: g('nummern'), besonderheiten: g('besonderheiten'),
+      bestaetigt: g('bestaetigt')
+    };
+  }
+
+  // Druck-Dokument aufbauen
+  function buildPrint(){
+    const d = ergData();
+    const row = (k, v) => '<div class="erg-out-row"><div class="k">' + k + '</div><div>' + (v && v.trim() ? escapeHtml(v) : '—') + '</div></div>';
+    const host = document.getElementById('erg-print-body');
+    host.innerHTML =
+      '<div class="erg-out-sec">Betrieb</div>' +
+      row('Firma', d.firma) + row('Standort', d.standort) + row('Ausgefüllt von', d.verantwortlich) +
+      '<div class="erg-out-sec">Im Notfall</div>' +
+      row('Fluchtwege / Notausgänge', d.fluchtwege) + row('Sammelplatz', d.sammelplatz) + row('Feuerlöscher', d.feuerloescher) +
+      '<div class="erg-out-sec">Erste Hilfe</div>' +
+      row('Erste-Hilfe-Material', d.ersthilfe) + row('Ersthelfer', d.ersthelfer) + row('Brandschutzhelfer', d.bsh) +
+      '<div class="erg-out-sec">Notfallnummern</div>' + row('Nummern', d.nummern) +
+      '<div class="erg-out-sec">Besonderheiten</div>' + row('Besondere Gefahren / Geräte', d.besonderheiten) +
+      '<div class="erg-out-sec">Bestätigung</div>' + row('Mit Mitarbeitenden besprochen', d.bestaetigt);
+  }
+  function escapeHtml(s){ return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  window.addEventListener('beforeprint', buildPrint);
+
+  // Übermittlung: im Live-Betrieb POST ans Backend; in der Demo komfortabler mailto-Entwurf
+  window.ERG_ENDPOINT = ""; // live: URL der Edge-Function eintragen
+  window.ergSenden = async function(){
+    toolSave(true);
+    const d = ergData();
+    const status = document.getElementById('tool-status');
+    if(window.ERG_ENDPOINT){
+      try{
+        const r = await fetch(window.ERG_ENDPOINT, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(d)});
+        if(!r.ok) throw 0;
+        status.textContent = 'An HerwardTimm gesendet ✓'; status.style.visibility='visible';
+        return;
+      }catch(e){ /* Fallback unten */ }
+    }
+    // Demo / Fallback: vorausgefüllte E-Mail
+    const L = (k,v)=> k+': '+(v&&v.trim()?v:'—')+'\n';
+    const body =
+      'Betriebsspezifische Ergänzung — Angaben zum Standort\n\n'+
+      L('Firma',d.firma)+L('Standort',d.standort)+L('Ausgefüllt von',d.verantwortlich)+'\n'+
+      L('Fluchtwege/Notausgänge',d.fluchtwege)+L('Sammelplatz',d.sammelplatz)+L('Feuerlöscher',d.feuerloescher)+'\n'+
+      L('Erste-Hilfe-Material',d.ersthilfe)+L('Ersthelfer',d.ersthelfer)+L('Brandschutzhelfer',d.bsh)+'\n'+
+      L('Notfallnummern',d.nummern)+L('Besonderheiten',d.besonderheiten)+L('Mit Mitarbeitenden besprochen',d.bestaetigt);
+    const href = 'mailto:info@herwardtimm.de'+
+      '?subject='+encodeURIComponent('Betriebsspezifische Ergänzung — '+(d.firma||'Standort'))+
+      '&body='+encodeURIComponent(body);
+    window.location.href = href;
+    status.textContent = 'E-Mail-Entwurf geöffnet — bitte absenden.'; status.style.visibility='visible';
+    setTimeout(()=>{ status.style.visibility='hidden'; }, 6000);
+  };
+</script>
+</body>
+</html>

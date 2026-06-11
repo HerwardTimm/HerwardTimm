@@ -1,0 +1,374 @@
+{
+  "slug": "stapler-auffrischung",
+  "titel": "Stapler-Auffrischung",
+  "pflichtgrundlage": "DGUV V68, DGUV G 308-001, §12 ArbSchG",
+  "dauer_minuten": 40,
+  "anzahl_folien": 42,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Stapler-Auffrischung",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Stapler-Auffrischung\". Jährliche Unterweisung für Fahrer von Flurförderzeugen. Diese Schulung ist Ihre Pflichtunterweisung nach DGUV V68  ·  DGUV Grundsatz 308-001  ·  §12 ArbSchG und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Grundlagen & Pflichten",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Grundlagen & Pflichten. Wer darf fahren, welche Pflichten gelten. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Wer darf einen Stapler fahren?",
+      "bild": "folie-05.png",
+      "sprechertext": "Die Fahrberechtigung ruht auf drei Säulen: dokumentierte Ausbildung, gesundheitliche Eignung und ein schriftlicher Fahrauftrag des Unternehmers. Die jährliche Unterweisung ist Voraussetzung für den Erhalt. Fahren ohne Auftrag oder mit fremdem Gerät ist ein häufiger und folgenschwerer Verstoß.\n\n▸ Trainer-Tipp: Die drei Säulen sind Pflicht: ohne Ausbildung, Eignung UND schriftlichen Fahrauftrag ist das Fahren nicht erlaubt — auch nicht 'mal eben'."
+    },
+    {
+      "nummer": 6,
+      "titel": "Verantwortung und häufige Verstöße",
+      "bild": "folie-06.png",
+      "sprechertext": "Staplerfahrer tragen persönliche Verantwortung. Die häufigsten schweren Unfälle: Kippen (Geschwindigkeit, Kurven, Last zu hoch), Anfahren von Personen, Personentransport auf der Gabel. Das Rückhaltesystem ist beim Kippen lebensrettend — der Reflex abzuspringen ist tödlich.\n\n▸ Trainer-Tipp: Anschnallen rettet beim Kippen Leben: Wer versucht, vom kippenden Stapler abzuspringen, wird oft vom Schutzdach erschlagen. Im Gerät bleiben, festhalten, wegdrücken."
+    },
+    {
+      "nummer": 7,
+      "titel": "Modul 2 — Einsatzprüfung & Technik",
+      "bild": "folie-07.png",
+      "sprechertext": "Modul 2 — Einsatzprüfung & Technik. Tägliche Prüfung und Lastdiagramm. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 8,
+      "titel": "Tägliche Einsatzprüfung vor Fahrtbeginn",
+      "bild": "folie-08.png",
+      "sprechertext": "Die arbeitstägliche Prüfung (DGUV V68 §37) ist Pflicht vor Schichtbeginn. Geprüft werden Sicht-, Funktions- und Sicherheitselemente. Festgestellte Mängel bedeuten Fahrverbot bis zur Behebung. Die Prüfung sollte dokumentiert werden.\n\n▸ Trainer-Tipp: Die tägliche Prüfung dauert 3 Minuten und ist Pflicht. Ein dokumentierter Mangel, der ignoriert wird, fällt im Schadensfall auf Fahrer:in und Betrieb zurück."
+    },
+    {
+      "nummer": 9,
+      "titel": "Lastdiagramm und Standsicherheit",
+      "bild": "folie-09.png",
+      "sprechertext": "Standsicherheit ist das zentrale physikalische Thema. Tragfähigkeit sinkt mit Abstand des Lastschwerpunkts und mit Hubhöhe. Kippgefahr entsteht durch Geschwindigkeit in Kurven, hohe Last beim Wenden, Gefälle. Grundregel: Last tief transportieren, langsam und vorausschauend fahren, Lastdiagramm einhalten.\n\n▸ Trainer-Tipp: Das Lastdiagramm ist kein Vorschlag. Wer es überschreitet, riskiert das Kippen — besonders tückisch bei hoher Last in der Kurve."
+    },
+    {
+      "nummer": 10,
+      "titel": "Modul 3 — Sicheres Fahren",
+      "bild": "folie-10.png",
+      "sprechertext": "Modul 3 — Sicheres Fahren. Verkehrsregeln, Stapeln, Sichtfahren. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 11,
+      "titel": "Verkehrsregeln in der Halle",
+      "bild": "folie-11.png",
+      "sprechertext": "Der innerbetriebliche Verkehr mit Mischbetrieb (Stapler + Fußgänger) ist Hauptunfallquelle. Wichtige Regeln: angepasste Geschwindigkeit, Vorfahrt, Schrittgeschwindigkeit an Kreuzungen, Rückwärtsfahren oder Einweiser bei Sichtbehinderung, Abstand und Hupen. Fußgänger genießen besonderen Schutz.\n\n▸ Trainer-Tipp: Wenn die Last die Sicht nimmt: rückwärtsfahren ist erlaubt und richtig. Niemals 'blind' vorwärts mit Sichtbehinderung durch die Halle."
+    },
+    {
+      "nummer": 12,
+      "titel": "Heben und Stapeln",
+      "bild": "folie-12.png",
+      "sprechertext": "Heben und Stapeln erfordert Präzision. Last mittig und vollständig aufnehmen, tief transportieren, nur im Stand heben/senken. Die größte Gefahr: Personen unter angehobener Last. Regal- und Bodentragfähigkeit müssen bekannt sein.\n\n▸ Trainer-Tipp: Niemals unter eine angehobene Last treten oder Personen dort arbeiten lassen — fällt die Last, ist es meist tödlich."
+    },
+    {
+      "nummer": 13,
+      "titel": "Modul 4 — Gefahren & Notfall",
+      "bild": "folie-13.png",
+      "sprechertext": "Modul 4 — Gefahren & Notfall. Kippen, Personenschutz, Mängel. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 14,
+      "titel": "Notfall und Mängelmanagement",
+      "bild": "folie-14.png",
+      "sprechertext": "Im Notfall zählt richtiges Verhalten. Beim Kippen ist Anschnallen + im Gerät bleiben lebensrettend. Mängel führen zur sofortigen Stilllegung. E-Stapler-Akkus bergen Brandrisiken beim Laden. Beinaheunfälle melden, um Ursachen abzustellen.\n\n▸ Trainer-Tipp: Beinaheunfälle sind Gold wert: Wenn die Last fast gekippt wäre, melden Sie es — beim nächsten Mal kippt sie vielleicht wirklich."
+    },
+    {
+      "nummer": 15,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-15.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei Szenarien aus dem Lager. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 16,
+      "titel": "Fallbeispiel 1: Der schnelle Kurvenschwung",
+      "bild": "folie-16.png",
+      "sprechertext": "Seitliches Kippen durch hohe Last + Kurvengeschwindigkeit ist der Klassiker. Der Absprung-Reflex ist tödlich. Tief transportieren und langsam fahren verhindert es.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 17,
+      "titel": "Fallbeispiel 2: Der Kollege auf der Gabel",
+      "bild": "folie-17.png",
+      "sprechertext": "Anheben von Personen auf Gabel/Palette ist eine häufige Unfallursache mit oft tödlichem Ausgang. Nur zugelassene Arbeitsbühnen mit Absturzsicherung sind erlaubt.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 18,
+      "titel": "Fallbeispiel 3: Die ignorierte Bremse",
+      "bild": "folie-18.png",
+      "sprechertext": "Ein sicherheitsrelevanter Mangel (Bremse!) bedeutet sofortiges Fahrverbot. Weiterfahren trotz bekanntem Mangel begründet grobe Fahrlässigkeit und persönliche Haftung.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 19,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-19.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 20,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-20.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. DGUV V68: dokumentierte Ausbildung, gesundheitliche Eignung und schriftlicher Fahrauftrag des Unternehmers."
+    },
+    {
+      "nummer": 21,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-21.png",
+      "sprechertext": "DGUV V68: dokumentierte Ausbildung, gesundheitliche Eignung und schriftlicher Fahrauftrag des Unternehmers."
+    },
+    {
+      "nummer": 22,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-22.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Mindestens jährlich (§12 ArbSchG / DGUV V68) — hält die Fahrberechtigung gültig."
+    },
+    {
+      "nummer": 23,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-23.png",
+      "sprechertext": "Mindestens jährlich (§12 ArbSchG / DGUV V68) — hält die Fahrberechtigung gültig."
+    },
+    {
+      "nummer": 24,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-24.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Im Gerät bleiben, festhalten, gegen die Kipprichtung drücken. Abspringen ist die häufigste Todesursache."
+    },
+    {
+      "nummer": 25,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-25.png",
+      "sprechertext": "Im Gerät bleiben, festhalten, gegen die Kipprichtung drücken. Abspringen ist die häufigste Todesursache."
+    },
+    {
+      "nummer": 26,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-26.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Nur mit zugelassener, gesicherter Arbeitsbühne — niemals auf blanker Gabel/Palette."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Nur mit zugelassener, gesicherter Arbeitsbühne — niemals auf blanker Gabel/Palette."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die zulässige Tragfähigkeit abhängig von Lastschwerpunkt und Hubhöhe — verbindlich einzuhalten."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "Die zulässige Tragfähigkeit abhängig von Lastschwerpunkt und Hubhöhe — verbindlich einzuhalten."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Last tief und nahe am Boden transportieren — das senkt den Schwerpunkt und die Kippgefahr."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "Last tief und nahe am Boden transportieren — das senkt den Schwerpunkt und die Kippgefahr."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Rückwärtsfahren oder einen Einweiser nutzen — nie blind vorwärts mit verdeckter Sicht."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Rückwärtsfahren oder einen Einweiser nutzen — nie blind vorwärts mit verdeckter Sicht."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Arbeitstäglich vor Schichtbeginn — Sicht-, Funktions- und Sicherheitsprüfung."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Arbeitstäglich vor Schichtbeginn — Sicht-, Funktions- und Sicherheitsprüfung."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Sicherheitsrelevanter Mangel = Fahrverbot. Gerät stilllegen, kennzeichnen, melden."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Sicherheitsrelevanter Mangel = Fahrverbot. Gerät stilllegen, kennzeichnen, melden."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Bergab rückwärts mit der Last bergseitig — sonst droht das Kippen nach vorn."
+    },
+    {
+      "nummer": 39,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-39.png",
+      "sprechertext": "Bergab rückwärts mit der Last bergseitig — sonst droht das Kippen nach vorn."
+    },
+    {
+      "nummer": 40,
+      "titel": "Zusammenfassung",
+      "bild": "folie-40.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 41,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-41.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 42,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-42.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Welche drei Voraussetzungen braucht das Staplerfahren?",
+      "optionen": [
+        "Nur Ausbildung",
+        "Ausbildung + Eignung + schriftlicher Fahrauftrag",
+        "Nur Fahrauftrag",
+        "Führerschein Klasse B"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "DGUV V68: dokumentierte Ausbildung, gesundheitliche Eignung und schriftlicher Fahrauftrag des Unternehmers."
+    },
+    {
+      "frage": "Wie oft ist die Stapler-Unterweisung Pflicht?",
+      "optionen": [
+        "Einmalig",
+        "Alle 2 Jahre",
+        "Mindestens jährlich",
+        "Nie"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Mindestens jährlich (§12 ArbSchG / DGUV V68) — hält die Fahrberechtigung gültig."
+    },
+    {
+      "frage": "Was tun beim seitlichen Kippen des Staplers?",
+      "optionen": [
+        "Abspringen",
+        "Angeschnallt im Gerät bleiben und festhalten",
+        "Lenken",
+        "Gabel heben"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Im Gerät bleiben, festhalten, gegen die Kipprichtung drücken. Abspringen ist die häufigste Todesursache."
+    },
+    {
+      "frage": "Personentransport auf der Gabel ist…",
+      "optionen": [
+        "erlaubt bei kurzer Strecke",
+        "nur mit zugelassener Arbeitsbühne",
+        "immer erlaubt",
+        "mit Helm erlaubt"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Nur mit zugelassener, gesicherter Arbeitsbühne — niemals auf blanker Gabel/Palette."
+    },
+    {
+      "frage": "Was zeigt das Lastdiagramm?",
+      "optionen": [
+        "Den Preis",
+        "Zulässige Last je Schwerpunkt und Hubhöhe",
+        "Die Geschwindigkeit",
+        "Den Tankstand"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die zulässige Tragfähigkeit abhängig von Lastschwerpunkt und Hubhöhe — verbindlich einzuhalten."
+    },
+    {
+      "frage": "Wie transportiert man eine Last sicher?",
+      "optionen": [
+        "Möglichst hoch",
+        "Tief, nahe am Boden",
+        "In der Kurve heben",
+        "Vorgeneigt"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Last tief und nahe am Boden transportieren — das senkt den Schwerpunkt und die Kippgefahr."
+    },
+    {
+      "frage": "Was tun bei Sichtbehinderung durch die Last?",
+      "optionen": [
+        "Schneller fahren",
+        "Rückwärtsfahren oder Einweiser",
+        "Trotzdem vorwärts",
+        "Hupen reicht"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Rückwärtsfahren oder einen Einweiser nutzen — nie blind vorwärts mit verdeckter Sicht."
+    },
+    {
+      "frage": "Wann erfolgt die Einsatzprüfung?",
+      "optionen": [
+        "Monatlich",
+        "Arbeitstäglich vor Fahrtbeginn",
+        "Nur bei Defekt",
+        "Jährlich"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Arbeitstäglich vor Schichtbeginn — Sicht-, Funktions- und Sicherheitsprüfung."
+    },
+    {
+      "frage": "Bremse ist beim Check schwammig. Was nun?",
+      "optionen": [
+        "Vorsichtig fahren",
+        "Stilllegen, melden, nicht fahren",
+        "Bis Mittag fahren",
+        "Selbst reparieren"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Sicherheitsrelevanter Mangel = Fahrverbot. Gerät stilllegen, kennzeichnen, melden."
+    },
+    {
+      "frage": "Wie bergab mit Last fahren?",
+      "optionen": [
+        "Vorwärts, Last voraus",
+        "Rückwärts, Last bergseitig",
+        "Egal",
+        "Schnell"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Bergab rückwärts mit der Last bergseitig — sonst droht das Kippen nach vorn."
+    }
+  ]
+}

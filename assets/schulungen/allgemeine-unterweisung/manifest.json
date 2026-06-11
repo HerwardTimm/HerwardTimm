@@ -1,0 +1,446 @@
+{
+  "slug": "allgemeine-unterweisung",
+  "titel": "Allgemeine Sicherheitsunterweisung",
+  "pflichtgrundlage": "§12 ArbSchG, §4 DGUV V1",
+  "dauer_minuten": 55,
+  "anzahl_folien": 54,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Allgemeine Sicherheitsunterweisung",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Allgemeine Sicherheitsunterweisung\". Jährliche Pflichtunterweisung für alle Beschäftigten. Diese Schulung ist Ihre Pflichtunterweisung nach §12 ArbSchG  ·  §4 DGUV V1 und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Rechtliche Grundlagen",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Rechtliche Grundlagen. Warum wir unterweisen, wer beteiligt ist und welche Pflichten Sie persönlich treffen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Warum überhaupt unterweisen?",
+      "bild": "folie-05.png",
+      "sprechertext": "Beginnen Sie diese Folie damit, deutlich zu machen, dass Unterweisung kein lästiger Verwaltungsakt ist. Sie ist Grundlage für jeden Anspruch auf Versicherungsleistungen der Berufsgenossenschaft. Wer ohne dokumentierte Unterweisung arbeitet und verunglückt, verliert im schlimmsten Fall Leistungen oder muss langwierige Nachweise führen. Außerdem haftet der Arbeitgeber bei nachweislich unterlassener Unterweisung persönlich – auch strafrechtlich. Stellen Sie klar: jährlich ist Mindestmaß, in vielen Branchen sind kürzere Intervalle vorgeschrieben.\n\n▸ Trainer-Tipp: Diese Unterweisung ist keine Formalität – sie ist Ihr Rechtsanspruch und gleichzeitig Ihre Pflicht. Sie hilft dem Arbeitgeber, seine Fürsorgepflicht zu erfüllen, und schützt Sie vor Gefährdungen, die Ihnen sonst entgehen würden."
+    },
+    {
+      "nummer": 6,
+      "titel": "Wer trägt welche Verantwortung?",
+      "bild": "folie-06.png",
+      "sprechertext": "Diese Rollenfolie ist erfahrungsgemäß die am häufigsten missverstandene. Viele Beschäftigte denken: 'Arbeitsschutz ist nicht mein Job, das macht die Fachkraft.' Falsch. §15 macht jede:n Beschäftigte:n zur Sorgfaltspflichtigen. Gleichzeitig dürfen Beschäftigte nicht überfordert werden – Unmögliches darf nicht verlangt werden. Wichtig ist die schriftliche Pflichtenübertragung an Führungskräfte: ohne sie haftet weiterhin der Arbeitgeber persönlich. Erklären Sie auch den Unterschied zwischen Sifa (Fachkraft) und Sicherheitsbeauftragten: letztere haben keine Weisungsbefugnis, sind aber wichtige Augen und Ohren im Alltag.\n\n▸ Trainer-Tipp: Arbeitsschutz ist Teamarbeit. Der Arbeitgeber hat die Hauptverantwortung – aber Sie sind nach §15 nicht nur passiv Geschützte, sondern aktiv Mitwirkende. Wer schweigt, obwohl er ein Problem sieht, macht sich nach §16 mitschuldig."
+    },
+    {
+      "nummer": 7,
+      "titel": "Wer macht was — Aufgabenübersicht",
+      "bild": "folie-07.png",
+      "sprechertext": "Die Tabelle ist nicht trivial – sie zeigt eine zentrale Realität: jede Rolle braucht einen schriftlichen Nachweis. Fehlt der Nachweis, ist die Rolle rechtlich nicht wirksam belegt, und im Schadensfall fällt die Verantwortung auf den Arbeitgeber zurück. Häufig fehlt gerade die schriftliche Pflichtenübertragung an Führungskräfte – das ist Standard-Fund bei Audits. HerwardTimm e.K. unterstützt Sie, alle Bestellurkunden und Pflichtenübertragungen aktuell zu halten.\n\n▸ Trainer-Tipp: Drucken Sie sich diese Übersicht aus und hängen Sie sie in Ihrem Pausenraum aus. Bei der nächsten Begehung wird genau danach gefragt: wer ist bestellt, wo liegt der Nachweis, was steht in der Pflichtenübertragung?"
+    },
+    {
+      "nummer": 8,
+      "titel": "Was passiert ohne Unterweisung?",
+      "bild": "folie-08.png",
+      "sprechertext": "Diese Folie soll ernsthaft sein, ohne dramatisch zu wirken. Die Zahlen sind real und gut belegt. Wichtig zu kommunizieren: bei strafrechtlicher Verfolgung kann sich der Arbeitgeber nicht auf 'die Mitarbeiter wussten das doch' rausreden – ohne dokumentierten Unterweisungsnachweis gilt: nicht unterwiesen = nicht geschützt. Auch wichtig: Beschäftigte verlieren NICHT ihren Versicherungsschutz, nur weil Arbeitgeber Pflicht verletzt hat. Aber: Beschäftigte können sich nicht mehr darauf berufen, etwas nicht gewusst zu haben, wenn sie die Unterweisung ausdrücklich verweigert haben.\n\n▸ Trainer-Tipp: Bußgeld ist das harmloseste Risiko. Strafrechtlich relevant wird es, wenn jemand verletzt wird oder stirbt. Dann fragt der Staatsanwalt: 'Wurde unterwiesen?' und der Geschäftsführer muss persönlich antworten."
+    },
+    {
+      "nummer": 9,
+      "titel": "Modul 2 — Gefährdungen erkennen",
+      "bild": "folie-09.png",
+      "sprechertext": "Modul 2 — Gefährdungen erkennen. Die 11 Gefährdungsfaktoren, das TOP-Prinzip, Gefährdungsbeurteilung und Risiko-Matrix. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 10,
+      "titel": "Die 11 Gefährdungsfaktoren",
+      "bild": "folie-10.png",
+      "sprechertext": "Die elf Faktoren sind das Werkzeug, mit dem in der Gefährdungsbeurteilung jeder Arbeitsplatz systematisch durchleuchtet wird. Bitten Sie die Teilnehmenden, in Gedanken durchzugehen, welche Faktoren an ihrem Arbeitsplatz vorkommen. Im Büro sind das mindestens 7, 8, 9, 10. In Werkstatt/Produktion oft alle elf. Wichtig ist: kein Faktor ist 'kleiner' oder 'unwichtiger' – Lärmschwerhörigkeit ist die häufigste anerkannte Berufskrankheit, psychische Erkrankungen die teuerste Ausfallursache überhaupt.\n\n▸ Trainer-Tipp: Diese elf Faktoren sind das offizielle Raster nach LASI-Leitlinie LV28. Im Alltag denken Menschen meist nur an Faktoren 1–6 und übersehen die unsichtbaren Themen 7–11. Genau dort liegen heute aber die größten Risiken in Büro- und Dienstleistungsbetrieben."
+    },
+    {
+      "nummer": 11,
+      "titel": "Mechanische Gefahren — der Klassiker",
+      "bild": "folie-11.png",
+      "sprechertext": "Mechanische Gefahren sind oft offensichtlich und werden gerade deshalb unterschätzt. Erklären Sie: Stolpern, Rutschen, Stürzen (SRS) ist die mit weitem Abstand häufigste Unfallart in Büro- und Verwaltungsumgebungen. Ursache fast immer trivial: Kabel quer im Gang, halb geöffnete Schublade, Karton an der falschen Stelle. Das zu erkennen und zu beheben kostet Sekunden, kann aber wochenlangen Arbeitsausfall ersparen. Stehen Sie als Beschäftigte:r in der Pflicht: wenn Sie eine Stolperstelle sehen, beseitigen Sie sie sofort oder melden Sie sie.\n\n▸ Trainer-Tipp: Mechanische Gefahren sind sichtbar und scheinen banal — gerade deshalb werden sie unterschätzt. Eine offene Schublade, ein Kabel im Gang oder ein verlegter Karton sind in 70 % der Stolperunfälle der ausschlaggebende Faktor."
+    },
+    {
+      "nummer": 12,
+      "titel": "TOP-Prinzip — die Reihenfolge der Schutzmaßnahmen",
+      "bild": "folie-12.png",
+      "sprechertext": "Das TOP-Prinzip ist eine der wichtigsten Regeln im Arbeitsschutz. Es sortiert Maßnahmen nach Wirksamkeit. Technische Maßnahmen schützen automatisch, dauerhaft und alle. Organisatorische Maßnahmen sind wirksam, hängen aber von Disziplin ab. PSA schützt nur, wenn sie tatsächlich getragen wird und passt – und schützt ausschließlich die einzelne Person. Die Reihenfolge ist gesetzlich verbindlich nach §4 ArbSchG. In der Praxis wird sie häufig umgekehrt durchlaufen: man verteilt schnell PSA, statt die Gefahr an der Quelle zu beseitigen. Das ist kein Detail – das ist ein klassischer Audit-Befund.\n\n▸ Trainer-Tipp: Wenn Ihr Vorgesetzter Ihnen einen Gehörschutz in die Hand drückt, ohne vorher zu prüfen, ob die Lärmquelle gedämmt werden kann, ist das streng genommen ein Verstoß. Achten Sie darauf, ob tatsächlich erst T, dann O und erst zum Schluss P geprüft wird."
+    },
+    {
+      "nummer": 13,
+      "titel": "Gefährdungsbeurteilung — 7 Schritte",
+      "bild": "folie-13.png",
+      "sprechertext": "Die Gefährdungsbeurteilung nach §5 ArbSchG ist die Grundlage des gesamten betrieblichen Arbeitsschutzes. Sie wird oft als Formsache abgehakt – das ist ein Fehler. Schritt 3 (Bewertung) und Schritt 6 (Wirksamkeitskontrolle) sind die häufigsten Schwachstellen in Audits. Die Bewertung erfolgt mit einer Risiko-Matrix (siehe nächste Folie). Wirksamkeitskontrolle bedeutet: nach Einführung einer Maßnahme prüfen, ob sie tatsächlich greift – nicht nur, ob das Schild aufgehängt wurde. HerwardTimm e.K. erstellt und pflegt für Sie die Gefährdungsbeurteilungen.\n\n▸ Trainer-Tipp: Die Gefährdungsbeurteilung ist KEIN einmaliges Dokument für die Schublade. Sie ist ein lebendiger Prozess. Schritt 6 (Wirksamkeitskontrolle) wird in der Praxis am häufigsten ausgelassen — und genau dort fragen Behörden zuerst nach."
+    },
+    {
+      "nummer": 14,
+      "titel": "Risiko-Matrix — wie wird bewertet?",
+      "bild": "folie-14.png",
+      "sprechertext": "Diese 4×4-Matrix ist Standard nach BAuA. Es gibt auch 5×5-Versionen, der Mechanismus ist identisch: Schadensschwere mal Eintrittswahrscheinlichkeit ergibt eine Punktzahl. Aus der Punktzahl folgt die Dringlichkeit. Wichtig: 'katastrophal × ständig' (16) ist nicht akzeptabel und muss sofort durch technische Maßnahmen reduziert werden. Bei 6–8 (hoch) hat der Arbeitgeber Handlungsspielraum, muss aber zeitnah handeln. Diese Matrix ist auch für Beschäftigte hilfreich, wenn Sie selbst eine Gefährdung melden: nennen Sie konkret die Schadensschwere und die Häufigkeit, das beschleunigt die Reaktion erheblich.\n\n▸ Trainer-Tipp: Die Matrix übersetzt Bauchgefühl in eine reproduzierbare Bewertung. Wenn drei Personen unabhängig zum gleichen Risiko-Punkt kommen, ist die Bewertung tragfähig. Bei Auseinandergehen: lieber höher einstufen."
+    },
+    {
+      "nummer": 15,
+      "titel": "Modul 3 — Praxis am Arbeitsplatz",
+      "bild": "folie-15.png",
+      "sprechertext": "Modul 3 — Praxis am Arbeitsplatz. Verkehrswege, Stolperfallen, PSA, Datenschutz und das Verhalten im Alltag. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 16,
+      "titel": "Verkehrswege und Stolperfallen",
+      "bild": "folie-16.png",
+      "sprechertext": "Stolpern, Rutschen, Stürzen ist die mit Abstand häufigste Unfallart. Statistisch passiert ein solcher Unfall in deutschen Büros etwa alle 3 Minuten irgendwo. Die Ursachen sind banal: Kabel, Schubladen, Kartons, Wasserlachen. Wichtig ist: jede:r Beschäftigte ist nach §15 ArbSchG verpflichtet, Stolperstellen entweder selbst zu beseitigen oder zu melden. Notausgänge stellen einen Sonderfall dar: hier reicht nicht 'mal eben Möbel davor'. Wenn ein Notausgang gerade dann verstellt ist, wenn er gebraucht wird, ist das tatsächlich lebensgefährlich – und kann strafrechtlich verfolgt werden.\n\n▸ Trainer-Tipp: Wenn Sie einen verstellten Notausgang sehen, ist das kein 'nervig', sondern eine Straftat des Arbeitgebers (§22 OWiG). Sie sind verpflichtet, sofort zu melden."
+    },
+    {
+      "nummer": 17,
+      "titel": "Verhalten in Verkehrswegen",
+      "bild": "folie-17.png",
+      "sprechertext": "Die Do/Don't-Übersicht eignet sich gut als Aushang im Pausenraum. Wichtige Botschaft: das sind keine 'Empfehlungen' – das sind die Konkretisierungen Ihrer Pflichten nach §15 ArbSchG. Wenn Sie wiederholt gegen diese Regeln verstoßen und es kommt zum Unfall, kann das arbeitsrechtliche Konsequenzen haben (Abmahnung bis Kündigung). Genauso aber: wenn Sie Mängel sehen und melden, sind Sie nach §17 ArbSchG ausdrücklich vor Benachteiligung geschützt.\n\n▸ Trainer-Tipp: Diese Liste klingt banal, ist aber Quelle Nr. 1 der echten Unfallstatistik. Wer hier konsequent handelt, halbiert die Wahrscheinlichkeit eines meldepflichtigen Unfalls im Betrieb."
+    },
+    {
+      "nummer": 18,
+      "titel": "Persönliche Schutzausrüstung (PSA)",
+      "bild": "folie-18.png",
+      "sprechertext": "PSA ist sowohl Recht als auch Pflicht. Der Arbeitgeber muss sie kostenlos und in passender Form bereitstellen. Beschäftigte müssen sie tragen. Wichtig: PSA wirkt nur, wenn sie wirklich getragen wird – ein im Spind liegender Gehörschutz ist nutzlos. Es ist auch nicht erlaubt, eigene PSA mitzubringen, weil dann Haftungsfragen entstehen, wenn die mitgebrachte PSA versagt. Wir haben ein eigenes ausführliches PSA-Modul, das auf Schutzkategorien, Prüffristen, Pflege und individuelle Anpassung im Detail eingeht. Wenn Sie im Betrieb mit PSA der Kategorie III arbeiten (Absturzsicherung, Atemschutz), ist diese Schulung Pflicht.\n\n▸ Trainer-Tipp: „Ich trag den Helm nicht, weil er drückt“ ist kein gültiger Einwand. Dann muss eine andere Größe oder ein anderes Modell bestellt werden. Der Arbeitgeber muss die PSA individuell anpassen, und Sie sind im Gegenzug verpflichtet, sie konsequent zu tragen."
+    },
+    {
+      "nummer": 19,
+      "titel": "Verhalten am Bildschirm und mobiles Arbeiten",
+      "bild": "folie-19.png",
+      "sprechertext": "Bildschirmarbeit ist Teil der allgemeinen Unterweisung, weil sie viele Beschäftigte betrifft. Die Pflicht des Arbeitgebers besteht aus drei Komponenten: ergonomisch korrekter Arbeitsplatz, regelmäßige Vorsorgeangebote (Untersuchungen), und Bildschirmbrille bei Bedarf. Im mobilen Arbeiten (Homeoffice) gelten die gleichen Regeln – das wird oft vergessen. Der Arbeitgeber darf nicht in die Wohnung kommen, aber er muss die Bedingungen schriftlich erfassen und mit Ihnen besprechen.\n\n▸ Trainer-Tipp: Bildschirmarbeit wirkt harmlos, ist aber die Berufskrankheit-Nummer-1-Quelle in Verwaltungsberufen. Rückenbeschwerden und Sehprobleme sind oft die ersten Vorboten. Wir haben eine eigene Schulung „Bildschirmarbeit“ für die Tiefe."
+    },
+    {
+      "nummer": 20,
+      "titel": "Datenschutz — kurz und konkret",
+      "bild": "folie-20.png",
+      "sprechertext": "Datenschutz ist Teil der allgemeinen Unterweisung, weil er alle betrifft. Die DSGVO macht keine Unterschiede zwischen Buchhaltung und Lager – wer mit personenbezogenen Daten umgeht (und das tut praktisch jeder), muss die Grundregeln kennen. Wichtige Faustregel: was Sie selbst nicht über sich im Internet sehen wollen, geben Sie auch nicht von anderen weiter. Bei Datenpanne (versehentliche Mail an falschen Empfänger, USB-Stick verloren, gehackt) gilt: SOFORT der Datenschutzbeauftragten/Geschäftsführung melden. Die 72-Stunden-Frist beginnt mit Kenntnis, nicht mit der Meldung an Sie.\n\n▸ Trainer-Tipp: Datenschutz ist Arbeitsschutz im weiteren Sinne — ein Datenleck führt schnell zu Bußgeldern, Vertrauensverlust und in besonders schweren Fällen sogar Personenschaden, wenn z. B. Gesundheitsdaten an Unbefugte gelangen."
+    },
+    {
+      "nummer": 21,
+      "titel": "Modul 4 — Notfall und Verhalten",
+      "bild": "folie-21.png",
+      "sprechertext": "Modul 4 — Notfall und Verhalten. Brand, Erste Hilfe, Meldewege, Beinaheunfälle und das Verbandbuch. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 22,
+      "titel": "Brandfall — die fünf Sofortmaßnahmen",
+      "bild": "folie-22.png",
+      "sprechertext": "Die fünf Sofortmaßnahmen sind das Standard-Schema nach DGUV Information 205-023. Die häufigsten Fehler in echten Bränden: man verliert Zeit mit dem Sammeln persönlicher Sachen, man nutzt den Aufzug, oder man kehrt ins Gebäude zurück. Tun Sie all das nicht. Notruf 112 ist europaweit einheitlich, Mobilfunk frei. Bei Brand auch in zweiten Gebäudeteilen warnen – Rauch breitet sich schneller aus als Hitze.\n\n▸ Trainer-Tipp: Im Brandfall gilt: Personenschutz vor Sachschutz. Wenn Sie nicht sicher löschen können, retten Sie sich und andere und überlassen Sie das Löschen der Feuerwehr. Sammeln Sie KEINE persönlichen Sachen — Sekunden retten Leben."
+    },
+    {
+      "nummer": 23,
+      "titel": "Brandklassen und Löschmittel",
+      "bild": "folie-23.png",
+      "sprechertext": "Die Brandklassen sind nach DIN EN 2 international standardisiert. Wichtig zu wissen: jeder Feuerlöscher trägt Piktogramme der Brandklassen, für die er geeignet ist. Wer Wasser auf brennendes Öl gießt, erzeugt eine Fettexplosion mit Stichflamme von mehreren Metern – häufige Ursache schwerer Verbrennungen in Privatküchen, aber auch in Betriebskantinen. Wir haben eine eigene Brandschutz-Schulung, die das vertieft.\n\n▸ Trainer-Tipp: ABF-Löscher decken die häufigsten Brände in Verwaltung und Gastronomie ab. In Werkstätten zusätzlich Pulver für Klasse C, in Speziallaboren D. Die Auswahl trifft die Brandschutzfachkraft."
+    },
+    {
+      "nummer": 24,
+      "titel": "Erste Hilfe — was muss ich wissen?",
+      "bild": "folie-24.png",
+      "sprechertext": "Erste Hilfe ist Teamsache. Es muss genug Ersthelfer:innen geben, sie müssen aktuell ausgebildet sein (alle 2 Jahre Auffrischung), und sie müssen im Notfall erreichbar sein. Achten Sie darauf, ob die Ersthelfer:innen tatsächlich im Aushang stehen und die Auffrischung absolviert haben. Das Verbandbuch ist rechtlich wichtig: jede Verletzung, auch kleine, gehört dort dokumentiert. Aufbewahrungsfrist 5 Jahre. Die Berufsgenossenschaft zahlt Folgeschäden nur, wenn der Zusammenhang dokumentiert ist.\n\n▸ Trainer-Tipp: Das Verbandbuch wird häufig vernachlässigt, ist aber rechtlich enorm wichtig. Aus einem kleinen Schnitt kann drei Wochen später eine Wundinfektion werden — und dann brauchen Sie den Nachweis, dass das ein Arbeitsunfall war."
+    },
+    {
+      "nummer": 25,
+      "titel": "Meldewege und Beinaheunfälle",
+      "bild": "folie-25.png",
+      "sprechertext": "Meldungen sind die wichtigste Lernschleife des Arbeitsschutzsystems. Ohne Meldung weiß niemand, dass etwas passiert ist – und beim nächsten Mal trifft es jemanden. Wichtig: §17 ArbSchG schützt Beschäftigte vor Benachteiligung bei Meldung. Wer in seinem Betrieb wegen einer Meldung schlechter gestellt wird, hat einen klagbaren Anspruch. HerwardTimm e.K. wertet anonymisierte Beinaheunfälle regelmäßig aus und passt Gefährdungsbeurteilungen entsprechend an. Beinaheunfälle sind das stärkste Frühwarnsystem überhaupt – nehmen Sie sich die 5 Minuten und melden.\n\n▸ Trainer-Tipp: Meldungen werden manchmal aus falsch verstandener Loyalität unterlassen — man will den Kollegen nicht 'verpetzen'. Das ist ein Fehler. §17 ArbSchG schützt Sie ausdrücklich. Beinaheunfälle sind besonders wertvoll: sie zeigen Risiken auf, BEVOR jemand verletzt wird."
+    },
+    {
+      "nummer": 26,
+      "titel": "Meldekette — vom Wahrnehmen bis zur Auswertung",
+      "bild": "folie-26.png",
+      "sprechertext": "Die Meldekette ist standardisiert und gilt für Unfälle, Beinaheunfälle und Mängel gleichermaßen. Wichtig ist: jeder Schritt ist nachvollziehbar dokumentiert. Wenn Schritt 4 nicht passiert, kann Schritt 5 nicht erfolgen, und Schritt 6 (die eigentliche Verbesserung) bleibt aus. Häufig hängt die Kette an Schritt 3: viele Beschäftigte melden nicht, weil sie nicht wissen, an wen. Klären Sie das vorab und hängen Sie die Ansprechpartner an gut sichtbaren Stellen aus.\n\n▸ Trainer-Tipp: Jeder Schritt darf gerne von verschiedenen Personen übernommen werden — wichtig ist nur, dass die Kette nicht abbricht. Schritt 5 (Auswertung) ist häufig der Schwachpunkt."
+    },
+    {
+      "nummer": 27,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-27.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei realistische Szenarien aus dem Betrieb — wie würden Sie handeln? Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 28,
+      "titel": "Fallbeispiel 1: Der vergessene Notausgang",
+      "bild": "folie-28.png",
+      "sprechertext": "Dieses Beispiel zeigt den klassischen Konflikt zwischen Bequemlichkeit/Termindruck und Sicherheitspflicht. Wichtig: §15 ArbSchG verpflichtet jede:n Beschäftigte:n, für die eigene UND die Sicherheit anderer zu sorgen. Wegsehen ist keine Option. Die Kollegin im Beispiel verhält sich nicht regelkonform – Sie sind nicht verpflichtet, ihrem Rat zu folgen. Konkret: bei verstelltem Notausgang ist sofortige Handlung geboten, weil im Brandfall Sekunden zählen.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 29,
+      "titel": "Fallbeispiel 2: Frau Müller und das Handekzem",
+      "bild": "folie-29.png",
+      "sprechertext": "Hauterkrankungen sind die häufigste anerkannte Berufskrankheit in Deutschland (BK 5101) – noch vor Lärmschwerhörigkeit. Die Aussage der Vorarbeiterin („gehört zum Beruf“) ist sachlich falsch und gefährlich. Frühe Symptome müssen ernst genommen werden, weil das Vollbild oft zur Berufsaufgabe führt. §16 ArbSchG verpflichtet Beschäftigte, gesundheitliche Beeinträchtigungen zu melden. Der Arbeitgeber muss nach §5 ArbMedVV arbeitsmedizinische Vorsorge anbieten – das ist KEIN Schwächezeichen, sondern Standard. HerwardTimm e.K. unterstützt bei Erstellung des Hautschutzplans nach TRGS 401.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 30,
+      "titel": "Fallbeispiel 3: Der Beinaheunfall auf der Werkstattbühne",
+      "bild": "folie-30.png",
+      "sprechertext": "Beinaheunfälle sind das wichtigste Lernsignal des Arbeitsschutzsystems. Wenn sie systematisch erfasst werden, sinkt die Unfallhäufigkeit nachweislich um 30–50 %. Wenn sie ignoriert werden, kommt der erste echte Unfall meistens binnen weniger Monate. Das Beispiel zeigt eine klassische Fehlerkultur: Glück haben gilt als 'Beweis', dass alles OK ist. In Wirklichkeit zeigt es ein System mit unzureichenden technischen Schutzmaßnahmen (TOP-Prinzip P statt T: Leiter statt Bühne). Wer meldet, ist nicht der 'Spielverderber' – er rettet möglicherweise den nächsten Kollegen.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 31,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-31.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen aus allen Modulen — Mix aus Faktenwissen, Verständnis und Anwendung. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. §12 Abs. 1 ArbSchG und §4 DGUV V1 schreiben mindestens jährliche Unterweisung vor — zusätzlich bei jeder relevanten Änderung (neue Tätigkeit, neues Gerät, neuer Stoff, nach Unfall)."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "§12 Abs. 1 ArbSchG und §4 DGUV V1 schreiben mindestens jährliche Unterweisung vor — zusätzlich bei jeder relevanten Änderung (neue Tätigkeit, neues Gerät, neuer Stoff, nach Unfall)."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Das TOP-Prinzip ist verbindlich nach §4 ArbSchG: erst technisch (Gefahr beseitigen), dann organisatorisch (Abläufe regeln), zuletzt persönlich (PSA). PSA wirkt nur, wenn sie getragen wird und schützt nur die einzelne Person."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Das TOP-Prinzip ist verbindlich nach §4 ArbSchG: erst technisch (Gefahr beseitigen), dann organisatorisch (Abläufe regeln), zuletzt persönlich (PSA). PSA wirkt nur, wenn sie getragen wird und schützt nur die einzelne Person."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. 112 ist europaweit der einheitliche Notruf für Feuerwehr und Rettungsdienst. 110 ist die Polizei. Bei Brand und medizinischen Notfällen immer 112 — auch aus dem Mobilfunknetz kostenfrei erreichbar."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "112 ist europaweit der einheitliche Notruf für Feuerwehr und Rettungsdienst. 110 ist die Polizei. Bei Brand und medizinischen Notfällen immer 112 — auch aus dem Mobilfunknetz kostenfrei erreichbar."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Beinaheunfälle sind die wertvollsten Frühwarnsignale. §17 ArbSchG schützt Sie ausdrücklich vor Benachteiligung. Wenn nichts gemeldet wird, trifft es beim nächsten Mal vielleicht jemanden."
+    },
+    {
+      "nummer": 39,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-39.png",
+      "sprechertext": "Beinaheunfälle sind die wertvollsten Frühwarnsignale. §17 ArbSchG schützt Sie ausdrücklich vor Benachteiligung. Wenn nichts gemeldet wird, trifft es beim nächsten Mal vielleicht jemanden."
+    },
+    {
+      "nummer": 40,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-40.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Bei nachweislich unterlassener Unterweisung haftet der Arbeitgeber bzw. die zuständige Führungskraft zivil- und ggf. strafrechtlich persönlich. Die Berufsgenossenschaft kann zusätzlich Regress fordern. Deshalb ist diese Schulung kein optionaler Service."
+    },
+    {
+      "nummer": 41,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-41.png",
+      "sprechertext": "Bei nachweislich unterlassener Unterweisung haftet der Arbeitgeber bzw. die zuständige Führungskraft zivil- und ggf. strafrechtlich persönlich. Die Berufsgenossenschaft kann zusätzlich Regress fordern. Deshalb ist diese Schulung kein optionaler Service."
+    },
+    {
+      "nummer": 42,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-42.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Die elf Gefährdungsfaktoren umfassen Mechanik, Elektrik, Gefahrstoffe, Biologie, Brand/Explosion, Thermik, physikalische Faktoren, Arbeitsumgebung, physische und psychische Belastung sowie sonstige Faktoren. Gehaltsstruktur ist ein arbeitsrechtliches, kein arbeitsschutzrechtliches Thema."
+    },
+    {
+      "nummer": 43,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-43.png",
+      "sprechertext": "Die elf Gefährdungsfaktoren umfassen Mechanik, Elektrik, Gefahrstoffe, Biologie, Brand/Explosion, Thermik, physikalische Faktoren, Arbeitsumgebung, physische und psychische Belastung sowie sonstige Faktoren. Gehaltsstruktur ist ein arbeitsrechtliches, kein arbeitsschutzrechtliches Thema."
+    },
+    {
+      "nummer": 44,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-44.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die Gefährdungsbeurteilung ist ein lebendiger Prozess. Sie muss bei Änderungen sofort aktualisiert und mindestens jährlich auf Aktualität überprüft werden. Schritt 7 des GBU-Prozesses heißt explizit »Fortschreiben«."
+    },
+    {
+      "nummer": 45,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-45.png",
+      "sprechertext": "Die Gefährdungsbeurteilung ist ein lebendiger Prozess. Sie muss bei Änderungen sofort aktualisiert und mindestens jährlich auf Aktualität überprüft werden. Schritt 7 des GBU-Prozesses heißt explizit »Fortschreiben«."
+    },
+    {
+      "nummer": 46,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-46.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. §15 ArbSchG verpflichtet Sie, auch für die Sicherheit anderer zu sorgen. Eine kollegiale Ansprache („Hey, dein Helm!“) ist meist ausreichend. Wenn das nicht hilft, gehört die Information an die Führungskraft – nicht aus Petzerei, sondern aus Schutzpflicht."
+    },
+    {
+      "nummer": 47,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-47.png",
+      "sprechertext": "§15 ArbSchG verpflichtet Sie, auch für die Sicherheit anderer zu sorgen. Eine kollegiale Ansprache („Hey, dein Helm!“) ist meist ausreichend. Wenn das nicht hilft, gehört die Information an die Führungskraft – nicht aus Petzerei, sondern aus Schutzpflicht."
+    },
+    {
+      "nummer": 48,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-48.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Wasser auf brennendes Öl erzeugt eine Fettexplosion mit Stichflammen von mehreren Metern Höhe. Häufige Ursache schwerer Verbrennungen. Brandklasse F immer mit speziellem Fettbrandlöscher oder bei kleinen Pfannen mit Löschdecke ersticken."
+    },
+    {
+      "nummer": 49,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-49.png",
+      "sprechertext": "Wasser auf brennendes Öl erzeugt eine Fettexplosion mit Stichflammen von mehreren Metern Höhe. Häufige Ursache schwerer Verbrennungen. Brandklasse F immer mit speziellem Fettbrandlöscher oder bei kleinen Pfannen mit Löschdecke ersticken."
+    },
+    {
+      "nummer": 50,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-50.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Art. 33 DSGVO schreibt die Meldung an die Aufsichtsbehörde »unverzüglich, möglichst binnen 72 Stunden« vor — beginnend mit Kenntnis des Vorfalls. Verspätete Meldung kann zu zusätzlichen Bußgeldern führen."
+    },
+    {
+      "nummer": 51,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-51.png",
+      "sprechertext": "Art. 33 DSGVO schreibt die Meldung an die Aufsichtsbehörde »unverzüglich, möglichst binnen 72 Stunden« vor — beginnend mit Kenntnis des Vorfalls. Verspätete Meldung kann zu zusätzlichen Bußgeldern führen."
+    },
+    {
+      "nummer": 52,
+      "titel": "Zusammenfassung",
+      "bild": "folie-52.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 53,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-53.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 54,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-54.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Wie oft müssen Beschäftigte mindestens unterwiesen werden?",
+      "optionen": [
+        "Einmalig bei Einstellung",
+        "Alle 2 Jahre",
+        "Mindestens einmal jährlich und bei Bedarf",
+        "Nur bei einem Vorfall"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "§12 Abs. 1 ArbSchG und §4 DGUV V1 schreiben mindestens jährliche Unterweisung vor — zusätzlich bei jeder relevanten Änderung (neue Tätigkeit, neues Gerät, neuer Stoff, nach Unfall)."
+    },
+    {
+      "frage": "Welche Reihenfolge gilt bei Schutzmaßnahmen?",
+      "optionen": [
+        "PSA – Organisation – Technik",
+        "Technik – Organisation – PSA (T-O-P)",
+        "Beliebig, Hauptsache es schützt",
+        "Erst Versicherung, dann Schutzmaßnahmen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Das TOP-Prinzip ist verbindlich nach §4 ArbSchG: erst technisch (Gefahr beseitigen), dann organisatorisch (Abläufe regeln), zuletzt persönlich (PSA). PSA wirkt nur, wenn sie getragen wird und schützt nur die einzelne Person."
+    },
+    {
+      "frage": "Welcher Notruf gilt in Deutschland für Feuerwehr und Rettungsdienst?",
+      "optionen": [
+        "110",
+        "112",
+        "115",
+        "Ortsabhängig"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "112 ist europaweit der einheitliche Notruf für Feuerwehr und Rettungsdienst. 110 ist die Polizei. Bei Brand und medizinischen Notfällen immer 112 — auch aus dem Mobilfunknetz kostenfrei erreichbar."
+    },
+    {
+      "frage": "Was tun Sie bei einem Beinaheunfall (z. B. ein Teil fällt herunter, trifft aber niemanden)?",
+      "optionen": [
+        "Nichts – ist ja nichts passiert",
+        "Im Stillen ärgern und weitermachen",
+        "Vorgesetzten und/oder Sicherheitsbeauftragte:n informieren",
+        "Auf das nächste Sicherheitsgespräch warten"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Beinaheunfälle sind die wertvollsten Frühwarnsignale. §17 ArbSchG schützt Sie ausdrücklich vor Benachteiligung. Wenn nichts gemeldet wird, trifft es beim nächsten Mal vielleicht jemanden."
+    },
+    {
+      "frage": "Wer haftet, wenn der Arbeitgeber die Unterweisung nicht oder nur lückenhaft durchführt und es zu einem Unfall kommt?",
+      "optionen": [
+        "Niemand – Pech gehabt",
+        "Die geschädigte Person selbst",
+        "Der Arbeitgeber bzw. die zuständige Führungskraft persönlich",
+        "Nur die Krankenkasse"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Bei nachweislich unterlassener Unterweisung haftet der Arbeitgeber bzw. die zuständige Führungskraft zivil- und ggf. strafrechtlich persönlich. Die Berufsgenossenschaft kann zusätzlich Regress fordern. Deshalb ist diese Schulung kein optionaler Service."
+    },
+    {
+      "frage": "Welche der folgenden ist KEIN Gefährdungsfaktor nach LASI LV28?",
+      "optionen": [
+        "Mechanik",
+        "Psychische Belastung",
+        "Gehaltsstruktur",
+        "Biologie"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Die elf Gefährdungsfaktoren umfassen Mechanik, Elektrik, Gefahrstoffe, Biologie, Brand/Explosion, Thermik, physikalische Faktoren, Arbeitsumgebung, physische und psychische Belastung sowie sonstige Faktoren. Gehaltsstruktur ist ein arbeitsrechtliches, kein arbeitsschutzrechtliches Thema."
+    },
+    {
+      "frage": "Wann muss eine Gefährdungsbeurteilung fortgeschrieben werden?",
+      "optionen": [
+        "Nur bei Behördenanordnung",
+        "Wenn sich Tätigkeiten oder Bedingungen ändern, mindestens jährlich überprüfen",
+        "Nie, einmal erstellt reicht",
+        "Nur bei Unfall"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die Gefährdungsbeurteilung ist ein lebendiger Prozess. Sie muss bei Änderungen sofort aktualisiert und mindestens jährlich auf Aktualität überprüft werden. Schritt 7 des GBU-Prozesses heißt explizit »Fortschreiben«."
+    },
+    {
+      "frage": "Sie sehen, dass eine Kollegin keinen Helm trägt, obwohl PSA-Pflicht besteht. Wie reagieren Sie?",
+      "optionen": [
+        "Ignorieren — geht mich nichts an",
+        "Direkt ansprechen, im Zweifel Vorgesetzte:n informieren",
+        "Selbst auch den Helm absetzen — fairness halber",
+        "Foto machen und im Chat teilen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "§15 ArbSchG verpflichtet Sie, auch für die Sicherheit anderer zu sorgen. Eine kollegiale Ansprache („Hey, dein Helm!“) ist meist ausreichend. Wenn das nicht hilft, gehört die Information an die Führungskraft – nicht aus Petzerei, sondern aus Schutzpflicht."
+    },
+    {
+      "frage": "Was darf bei einem Brand der Klasse F (Speiseöle/-fette) NICHT zum Löschen verwendet werden?",
+      "optionen": [
+        "Fettbrandlöscher (F)",
+        "Wasser",
+        "Löschdecke (für kleine Pfannenbrände)",
+        "Pulverlöscher"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Wasser auf brennendes Öl erzeugt eine Fettexplosion mit Stichflammen von mehreren Metern Höhe. Häufige Ursache schwerer Verbrennungen. Brandklasse F immer mit speziellem Fettbrandlöscher oder bei kleinen Pfannen mit Löschdecke ersticken."
+    },
+    {
+      "frage": "Welche Frist gilt für die Meldung eines Datenschutzvorfalls an die Aufsichtsbehörde nach DSGVO?",
+      "optionen": [
+        "1 Stunde",
+        "24 Stunden",
+        "72 Stunden",
+        "1 Woche"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Art. 33 DSGVO schreibt die Meldung an die Aufsichtsbehörde »unverzüglich, möglichst binnen 72 Stunden« vor — beginnend mit Kenntnis des Vorfalls. Verspätete Meldung kann zu zusätzlichen Bußgeldern führen."
+    }
+  ]
+}

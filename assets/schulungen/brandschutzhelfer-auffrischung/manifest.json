@@ -1,0 +1,374 @@
+{
+  "slug": "brandschutzhelfer-auffrischung",
+  "titel": "Brandschutzhelfer – Auffrischung",
+  "pflichtgrundlage": "ASR A2.2, DGUV I 205-023",
+  "dauer_minuten": 35,
+  "anzahl_folien": 42,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Brandschutzhelfer – Auffrischung",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Brandschutzhelfer – Auffrischung\". Theorie-Auffrischung für ausgebildete Brandschutzhelfer:innen. Diese Schulung ist Ihre Pflichtunterweisung nach ASR A2.2  ·  DGUV Information 205-023  ·  §10 ArbSchG und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Rolle & Grundlagen",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Rolle & Grundlagen. Aufgaben der Brandschutzhelfer und Brandgrundlagen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Ihre Rolle als Brandschutzhelfer:in",
+      "bild": "folie-05.png",
+      "sprechertext": "Brandschutzhelfer sind ausgebildete Beschäftigte, die im Frühstadium helfen und die Räumung unterstützen. Die klare Grenze: nur Entstehungsbrände, nur ohne Eigengefährdung. Bei Rauch oder größerem Brand zählt Selbstrettung und Alarmierung.\n\n▸ Trainer-Tipp: Brandschutzhelfer sind keine Feuerwehr im Kleinformat. Ihr Auftrag ist der Entstehungsbrand und die Räumung — Heldentum kostet Leben."
+    },
+    {
+      "nummer": 6,
+      "titel": "Verbrennungsdreieck und Brandklassen",
+      "bild": "folie-06.png",
+      "sprechertext": "Brandklassen bestimmen das Löschmittel. Besonders wichtig: Wasser nur bei A; bei Fett (F), Metall (D) und Flüssigkeiten (B) ist Wasser gefährlich. Jeder Löscher trägt Piktogramme der zugelassenen Klassen.\n\n▸ Trainer-Tipp: Die häufigste tödliche Verwechslung ist Wasser auf Fett (Klasse F): eine Stichflamme von mehreren Metern. Deshalb gehört in jede Küche ein Fettbrandlöscher."
+    },
+    {
+      "nummer": 7,
+      "titel": "Modul 2 — Löschmittel & Feuerlöscher",
+      "bild": "folie-07.png",
+      "sprechertext": "Modul 2 — Löschmittel & Feuerlöscher. Richtiges Löschmittel und Bedienung. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 8,
+      "titel": "Feuerlöscher bedienen — vier Schritte",
+      "bild": "folie-08.png",
+      "sprechertext": "Die vier Schritte (Sichern, Anschlagen, Zielen, Löschen) sind die Standard-Bedienung. Wichtig: an den Brandherd zielen, in Stößen sprühen, begrenzte Löschmittelmenge beachten. Praktisch wird das am Übungsfeuer geübt.\n\n▸ Trainer-Tipp: Ein 6-kg-Löscher ist in 9–15 Sekunden leer — gezielt an die Glut, nicht 'in die Flammen sprühen'. Diese Sekunden muss man im Schlaf beherrschen."
+    },
+    {
+      "nummer": 9,
+      "titel": "Richtig löschen",
+      "bild": "folie-09.png",
+      "sprechertext": "Richtiges Löschen schützt — falsches gefährdet. Wasser nie auf Fett/Metall/Flüssigkeit. Rauchgas ist die Hauptgefahr: bei dichtem Rauch Rückzug. CO₂-Löscher in engen Räumen nur mit Bedacht (Erstickungsgefahr).\n\n▸ Trainer-Tipp: Über 90 % der Brandtoten sterben am Rauchgas, nicht an den Flammen. Wenn dichter Rauch kommt: zurückziehen, auch mit Löscher in der Hand."
+    },
+    {
+      "nummer": 10,
+      "titel": "Modul 3 — Verhalten im Brandfall",
+      "bild": "folie-10.png",
+      "sprechertext": "Modul 3 — Verhalten im Brandfall. Fünf Sofortmaßnahmen und Räumung. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 11,
+      "titel": "Die fünf Sofortmaßnahmen",
+      "bild": "folie-11.png",
+      "sprechertext": "Die fünf Sofortmaßnahmen (Alarmieren, Retten, Schließen, Löschen, Räumen) sind das Standard-Schema. Brandschutzhelfer organisieren zusätzlich die Räumung und prüfen die Vollständigkeit am Sammelplatz.\n\n▸ Trainer-Tipp: Personenschutz vor Sachschutz. Sammeln Sie keine persönlichen Sachen, nutzen Sie nie den Aufzug, kehren Sie nicht zurück."
+    },
+    {
+      "nummer": 12,
+      "titel": "Räumung und Sammelplatz organisieren",
+      "bild": "folie-12.png",
+      "sprechertext": "Die Räumung ist die Kernaufgabe der Brandschutzhelfer im Ernstfall. Ruhe, klare Wegweisung, Vollständigkeitsprüfung am Sammelplatz und Meldung an die Einsatzleitung sind entscheidend. Räumungsübungen mind. alle 2 Jahre.\n\n▸ Trainer-Tipp: Ihre Hauptaufgabe in der Räumung ist Ruhe und Übersicht: Wege weisen, zählen, melden. Das rettet im Ernstfall mehr Leben als jeder Löschversuch."
+    },
+    {
+      "nummer": 13,
+      "titel": "Modul 4 — Grenzen & Notfall",
+      "bild": "folie-13.png",
+      "sprechertext": "Modul 4 — Grenzen & Notfall. Rauchgas, Eigenschutz, Feuerwehr-Einweisung. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 14,
+      "titel": "Grenzen der Eigenbekämpfung",
+      "bild": "folie-14.png",
+      "sprechertext": "Die Grenze der Eigenbekämpfung ist überlebenswichtig. Rauchgas wirkt schnell und tödlich. Brandschutzhelfer bekämpfen nur Entstehungsbrände mit Fluchtweg im Rücken und ziehen sich bei Rauch zurück. Die Feuerwehr-Einweisung spart wertvolle Zeit.\n\n▸ Trainer-Tipp: Die wichtigste Fähigkeit eines guten Brandschutzhelfers ist zu wissen, wann man NICHT mehr löscht. Selbstüberschätzung im Rauch ist tödlich."
+    },
+    {
+      "nummer": 15,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-15.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei Szenarien. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 16,
+      "titel": "Fallbeispiel 1: Der Brand im Lager",
+      "bild": "folie-16.png",
+      "sprechertext": "Ein mannshoher Brand mit Rauch ist kein Entstehungsbrand mehr. Hier gilt: alarmieren, retten, räumen, der Feuerwehr überlassen. Lager haben hohe Brandlast und entwickeln schnell tödlichen Rauch.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 17,
+      "titel": "Fallbeispiel 2: Der Fettbrand in der Kantine",
+      "bild": "folie-17.png",
+      "sprechertext": "Der Fettbrand ist der klassische tödliche Löschfehler. Wasser ist hier lebensgefährlich. Richtig sind Fettbrandlöscher (F) oder Ersticken mit Deckel/Löschdecke. Brandschutzhelfer müssen das sofort unterbinden.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 18,
+      "titel": "Fallbeispiel 3: Die verkeilte Brandschutztür",
+      "bild": "folie-18.png",
+      "sprechertext": "Verkeilte Brandschutztüren sind ein häufiger, gefährlicher Mangel — sie machen den Brandabschnitt wirkungslos. Brandschutzhelfer erkennen und melden das. Die einzig zulässige Dauerlösung ist eine Feststellanlage.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 19,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-19.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 20,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-20.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. ASR A2.2: im Normalfall mindestens 5 % der Beschäftigten."
+    },
+    {
+      "nummer": 21,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-21.png",
+      "sprechertext": "ASR A2.2: im Normalfall mindestens 5 % der Beschäftigten."
+    },
+    {
+      "nummer": 22,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-22.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Wasser auf Fett erzeugt eine Fettexplosion — nur Fettbrandlöscher (F) oder Ersticken."
+    },
+    {
+      "nummer": 23,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-23.png",
+      "sprechertext": "Wasser auf Fett erzeugt eine Fettexplosion — nur Fettbrandlöscher (F) oder Ersticken."
+    },
+    {
+      "nummer": 24,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-24.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Alarmieren – Retten – Schließen – Löschen – Räumen. Personenschutz vor Sachschutz."
+    },
+    {
+      "nummer": 25,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-25.png",
+      "sprechertext": "Alarmieren – Retten – Schließen – Löschen – Räumen. Personenschutz vor Sachschutz."
+    },
+    {
+      "nummer": 26,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-26.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Rauchgas — über 90 % der Brandtoten sterben an Rauchgasvergiftung."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Rauchgas — über 90 % der Brandtoten sterben an Rauchgasvergiftung."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Nur Entstehungsbrände ohne Eigengefährdung — bei Rauch/größerem Brand: retten, alarmieren, Feuerwehr."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "Nur Entstehungsbrände ohne Eigengefährdung — bei Rauch/größerem Brand: retten, alarmieren, Feuerwehr."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Auf den Brandherd/die Glut, nicht in die Flammen — in kurzen Stößen."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "Auf den Brandherd/die Glut, nicht in die Flammen — in kurzen Stößen."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Selbstschließend; Offenhalten nur mit zugelassener Feststellanlage, die im Brandfall auslöst."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Selbstschließend; Offenhalten nur mit zugelassener Feststellanlage, die im Brandfall auslöst."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Vollständigkeit prüfen, Vermisste melden, Sammelplatz erst nach Freigabe verlassen."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Vollständigkeit prüfen, Vermisste melden, Sammelplatz erst nach Freigabe verlassen."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Brandquelle, kürzester Weg zur Einsatzstelle und Angaben zu betroffenen/vermissten Personen."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Brandquelle, kürzester Weg zur Einsatzstelle und Angaben zu betroffenen/vermissten Personen."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Nur etwa 9–15 Sekunden — deshalb gezielt an die Glut, in Stößen."
+    },
+    {
+      "nummer": 39,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-39.png",
+      "sprechertext": "Nur etwa 9–15 Sekunden — deshalb gezielt an die Glut, in Stößen."
+    },
+    {
+      "nummer": 40,
+      "titel": "Zusammenfassung",
+      "bild": "folie-40.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 41,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-41.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 42,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-42.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Wie viel Prozent der Beschäftigten sind als Brandschutzhelfer auszubilden?",
+      "optionen": [
+        "1 %",
+        "5 %",
+        "10 %",
+        "25 %"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "ASR A2.2: im Normalfall mindestens 5 % der Beschäftigten."
+    },
+    {
+      "frage": "Welches Löschmittel NICHT bei Fettbrand (Klasse F)?",
+      "optionen": [
+        "Fettbrandlöscher",
+        "Löschdecke",
+        "Wasser",
+        "Deckel"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Wasser auf Fett erzeugt eine Fettexplosion — nur Fettbrandlöscher (F) oder Ersticken."
+    },
+    {
+      "frage": "Reihenfolge der fünf Sofortmaßnahmen?",
+      "optionen": [
+        "Löschen-Räumen-Alarmieren-Retten-Schließen",
+        "Alarmieren-Retten-Schließen-Löschen-Räumen",
+        "Räumen-Alarmieren-Löschen-Retten-Schließen",
+        "Retten-Löschen-Alarmieren-Schließen-Räumen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Alarmieren – Retten – Schließen – Löschen – Räumen. Personenschutz vor Sachschutz."
+    },
+    {
+      "frage": "Was ist die Hauptgefahr bei Bränden?",
+      "optionen": [
+        "Die Flammen",
+        "Das Rauchgas",
+        "Der Lärm",
+        "Die Hitze allein"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Rauchgas — über 90 % der Brandtoten sterben an Rauchgasvergiftung."
+    },
+    {
+      "frage": "Wann löschen Brandschutzhelfer NICHT mehr selbst?",
+      "optionen": [
+        "Nie",
+        "Bei Entstehungsbränden",
+        "Bei starker Rauchentwicklung/größerem Brand",
+        "Immer"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Nur Entstehungsbrände ohne Eigengefährdung — bei Rauch/größerem Brand: retten, alarmieren, Feuerwehr."
+    },
+    {
+      "frage": "Wie zielt man mit dem Feuerlöscher?",
+      "optionen": [
+        "In die Flammen",
+        "Auf den Brandherd",
+        "In die Luft",
+        "Egal"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Auf den Brandherd/die Glut, nicht in die Flammen — in kurzen Stößen."
+    },
+    {
+      "frage": "Was gilt für Brandschutztüren?",
+      "optionen": [
+        "Mit Keil offen halten",
+        "Nur mit zugelassener Feststellanlage offen",
+        "Immer offen",
+        "Mit Glas"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Selbstschließend; Offenhalten nur mit zugelassener Feststellanlage, die im Brandfall auslöst."
+    },
+    {
+      "frage": "Was tun am Sammelplatz?",
+      "optionen": [
+        "Heimgehen",
+        "Vollständigkeit prüfen, auf Freigabe warten",
+        "Zurück ins Gebäude",
+        "Zerstreuen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Vollständigkeit prüfen, Vermisste melden, Sammelplatz erst nach Freigabe verlassen."
+    },
+    {
+      "frage": "Welche Info gibt man der Feuerwehr bei der Einweisung?",
+      "optionen": [
+        "Bankdaten",
+        "Brandquelle, kürzester Weg, vermisste Personen",
+        "Urlaubsplan",
+        "Nichts"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Brandquelle, kürzester Weg zur Einsatzstelle und Angaben zu betroffenen/vermissten Personen."
+    },
+    {
+      "frage": "Wie viele Sekunden hält ein 6-kg-Löscher etwa?",
+      "optionen": [
+        "60 s",
+        "30 s",
+        "9–15 s",
+        "5 min"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Nur etwa 9–15 Sekunden — deshalb gezielt an die Glut, in Stößen."
+    }
+  ]
+}

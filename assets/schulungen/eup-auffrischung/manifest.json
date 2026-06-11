@@ -1,0 +1,374 @@
+{
+  "slug": "eup-auffrischung",
+  "titel": "EuP – Auffrischung",
+  "pflichtgrundlage": "DGUV V3, DIN VDE 0105-100",
+  "dauer_minuten": 40,
+  "anzahl_folien": 42,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "EuP – Auffrischung",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „EuP – Auffrischung\". Elektrotechnisch unterwiesene Person: festgelegte Tätigkeiten sicher ausführen. Diese Schulung ist Ihre Pflichtunterweisung nach DGUV V3  ·  DIN VDE 0105-100  ·  DGUV Information 203-002 und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Status & Abgrenzung",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Status & Abgrenzung. Wo die EuP zwischen Laie und Fachkraft steht. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Laie – EuP – Elektrofachkraft",
+      "bild": "folie-05.png",
+      "sprechertext": "Die EuP ist im Sinne der DIN VDE 0105-100 von einer Elektrofachkraft für bestimmte Tätigkeiten unterwiesen und steht unter deren Leitung und Aufsicht. Sie ist keine Elektrofachkraft und darf keine eigenständigen Eingriffe in Anlagen vornehmen.\n\n▸ Trainer-Tipp: EuP heißt nicht 'darf jetzt alles Elektrische'. Sie dürfen genau die Tätigkeiten, die schriftlich festgelegt und für die Sie unterwiesen wurden — nicht mehr."
+    },
+    {
+      "nummer": 6,
+      "titel": "Voraussetzungen als EuP",
+      "bild": "folie-06.png",
+      "sprechertext": "Der EuP-Status ist an klare Voraussetzungen gebunden: Unterweisung durch eine EFK, schriftlich festgelegter Tätigkeitsumfang, Leitung/Aufsicht durch die EFK. Fehlt eines davon, gilt man als Laie mit entsprechend engen Grenzen.\n\n▸ Trainer-Tipp: Die schriftliche Festlegung ist Ihr Schutz: Sie definiert genau, was Sie dürfen — und entlastet Sie von allem, was darüber hinausgeht."
+    },
+    {
+      "nummer": 7,
+      "titel": "Modul 2 — Festgelegte Tätigkeiten",
+      "bild": "folie-07.png",
+      "sprechertext": "Modul 2 — Festgelegte Tätigkeiten. Typische erlaubte Tätigkeiten und klare Grenzen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 8,
+      "titel": "Typische EuP-Tätigkeiten",
+      "bild": "folie-08.png",
+      "sprechertext": "Die erlaubten Tätigkeiten sind eng und schriftlich definiert. Alles außerhalb der Festlegung, jedes Arbeiten unter Spannung und jeder eigenständige Anlageneingriff sind tabu. Bei Unklarheit: EFK fragen.\n\n▸ Trainer-Tipp: Im Zweifel gilt immer: Rückfrage bei der Elektrofachkraft. Eine EuP, die improvisiert, verlässt ihren Schutzraum und gefährdet sich."
+    },
+    {
+      "nummer": 9,
+      "titel": "Warum die Grenzen so streng sind",
+      "bild": "folie-09.png",
+      "sprechertext": "Die strengen Grenzen schützen die EuP. Strom ist gefährlich, weil unsichtbar; Eingriffe können verkettete Gefahren auslösen. Innerhalb der schriftlichen Festlegung und unter Aufsicht ist die EuP abgesichert — außerhalb haftet sie persönlich.\n\n▸ Trainer-Tipp: Elektrounfälle passieren fast immer, wenn jemand 'nur kurz' etwas tut, das eigentlich der Fachkraft vorbehalten ist. Die Grenze einzuhalten ist kein Zeichen von Unvermögen, sondern von Professionalität."
+    },
+    {
+      "nummer": 10,
+      "titel": "Modul 3 — Gefahren & Schutz",
+      "bild": "folie-10.png",
+      "sprechertext": "Modul 3 — Gefahren & Schutz. Stromwirkung und Schutzmaßnahmen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 11,
+      "titel": "Wirkung des Stroms und Schutz",
+      "bild": "folie-11.png",
+      "sprechertext": "Die physiologische Stromwirkung ist die Grundlage des Schutzes. Entscheidend sind Stromstärke und Dauer. Schutz bieten Freischalten, Spannungsfreiheit feststellen, isolierende PSA/Werkzeuge und der FI-Schutzschalter. Feuchtigkeit erhöht das Risiko erheblich.\n\n▸ Trainer-Tipp: Auch als EuP gilt: vor der Tätigkeit Spannungsfreiheit sicherstellen lassen. Niemals annehmen, dass etwas 'schon stromlos' ist — prüfen lassen."
+    },
+    {
+      "nummer": 12,
+      "titel": "Modul 4 — Regeln, Prüfung, Notfall",
+      "bild": "folie-12.png",
+      "sprechertext": "Modul 4 — Regeln, Prüfung, Notfall. Fünf Sicherheitsregeln, DGUV V3, Stromunfall. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 13,
+      "titel": "Die fünf Sicherheitsregeln",
+      "bild": "folie-13.png",
+      "sprechertext": "Die fünf Sicherheitsregeln (DIN VDE 0105-100) sind die verbindliche Reihenfolge vor Arbeiten an Anlagen. Sie werden von der EFK verantwortet; die EuP arbeitet im freigegebenen, gesicherten Bereich und muss die Logik verstehen.\n\n▸ Trainer-Tipp: Die fünf Regeln führt die Elektrofachkraft an — als EuP arbeiten Sie an dem, was die EFK freigegeben hat. Wissen Sie, warum die Reihenfolge zwingend ist."
+    },
+    {
+      "nummer": 14,
+      "titel": "DGUV-V3-Prüfung und Stromunfall",
+      "bild": "folie-14.png",
+      "sprechertext": "Die DGUV-V3-Prüfung sichert den Anlagenzustand. Beim Stromunfall ist Eigenschutz vorrangig: erst sicher trennen, dann helfen. Verzögerte Herzrhythmusstörungen erfordern ärztliche Überwachung auch nach scheinbarer Erholung.\n\n▸ Trainer-Tipp: Als EuP sind Sie näher an der Anlage als die meisten — kennen Sie die Trennstellen (Sicherung, Hauptschalter), damit Sie im Notfall sofort den Strom abschalten können."
+    },
+    {
+      "nummer": 15,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-15.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei Szenarien. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 16,
+      "titel": "Fallbeispiel 1: Die Aufgabe außerhalb der Festlegung",
+      "bild": "folie-16.png",
+      "sprechertext": "Die schriftliche Festlegung ist die Grenze. Tätigkeiten an Verteilungen sind EFK-Aufgabe. Zeitdruck rechtfertigt keine Grenzüberschreitung — höflich ablehnen und an die EFK verweisen.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 17,
+      "titel": "Fallbeispiel 2: Das 'sicher stromlose' Gerät",
+      "bild": "folie-17.png",
+      "sprechertext": "Verlassen auf Zuruf ist eine häufige Unfallursache. Die Spannungsfreiheit muss festgestellt sein (Regel 3), nicht angenommen. Als EuP im freigegebenen, gesicherten Bereich arbeiten.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 18,
+      "titel": "Fallbeispiel 3: Der Kollege am Strom",
+      "bild": "folie-18.png",
+      "sprechertext": "Eigenschutz zuerst: das Opfer nicht berühren, solange Strom anliegt. Als EuP kennen Sie die Trennstellen und können schnell abschalten. Danach Erste Hilfe und ärztliche Überwachung.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 19,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-19.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 20,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-20.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Eine elektrotechnisch unterwiesene Person: für festgelegte Tätigkeiten unter Leitung/Aufsicht einer EFK unterwiesen."
+    },
+    {
+      "nummer": 21,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-21.png",
+      "sprechertext": "Eine elektrotechnisch unterwiesene Person: für festgelegte Tätigkeiten unter Leitung/Aufsicht einer EFK unterwiesen."
+    },
+    {
+      "nummer": 22,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-22.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Schriftlich festgelegter Tätigkeitsumfang, Unterweisung und Leitung/Aufsicht durch eine Elektrofachkraft."
+    },
+    {
+      "nummer": 23,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-23.png",
+      "sprechertext": "Schriftlich festgelegter Tätigkeitsumfang, Unterweisung und Leitung/Aufsicht durch eine Elektrofachkraft."
+    },
+    {
+      "nummer": 24,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-24.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Nein — Arbeiten unter Spannung sind tabu; gearbeitet wird im freigeschalteten, gesicherten Zustand."
+    },
+    {
+      "nummer": 25,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-25.png",
+      "sprechertext": "Nein — Arbeiten unter Spannung sind tabu; gearbeitet wird im freigeschalteten, gesicherten Zustand."
+    },
+    {
+      "nummer": 26,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-26.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Ab ca. 50 V Wechselspannung; entscheidend sind Stromstärke und Einwirkdauer."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Ab ca. 50 V Wechselspannung; entscheidend sind Stromstärke und Einwirkdauer."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Regel 3: Spannungsfreiheit feststellen — mit geeignetem Messgerät, nie auf Zuruf."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "Regel 3: Spannungsfreiheit feststellen — mit geeignetem Messgerät, nie auf Zuruf."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Ablehnen und an die Elektrofachkraft verweisen — außerhalb der Festlegung gilt man als Laie und haftet persönlich."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "Ablehnen und an die Elektrofachkraft verweisen — außerhalb der Festlegung gilt man als Laie und haftet persönlich."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Den ordnungsgemäßen Zustand elektrischer Anlagen und Betriebsmittel durch befähigte Personen/EFK."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Den ordnungsgemäßen Zustand elektrischer Anlagen und Betriebsmittel durch befähigte Personen/EFK."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Eigenschutz: das Opfer nicht berühren, zuerst den Stromkreis trennen."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Eigenschutz: das Opfer nicht berühren, zuerst den Stromkreis trennen."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Nein — Spannungsfreiheit muss festgestellt werden, nicht angenommen."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Nein — Spannungsfreiheit muss festgestellt werden, nicht angenommen."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die aufsichtsführende Elektrofachkraft trägt die fachliche Verantwortung; die EuP arbeitet im freigegebenen Rahmen."
+    },
+    {
+      "nummer": 39,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-39.png",
+      "sprechertext": "Die aufsichtsführende Elektrofachkraft trägt die fachliche Verantwortung; die EuP arbeitet im freigegebenen Rahmen."
+    },
+    {
+      "nummer": 40,
+      "titel": "Zusammenfassung",
+      "bild": "folie-40.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 41,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-41.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 42,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-42.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Was ist eine EuP?",
+      "optionen": [
+        "Eine Elektrofachkraft",
+        "Eine von der EFK für festgelegte Tätigkeiten unterwiesene Person",
+        "Ein Laie ohne Einschränkung",
+        "Ein Meister"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Eine elektrotechnisch unterwiesene Person: für festgelegte Tätigkeiten unter Leitung/Aufsicht einer EFK unterwiesen."
+    },
+    {
+      "frage": "Was braucht eine EuP zwingend?",
+      "optionen": [
+        "Nur guten Willen",
+        "Schriftliche Festlegung + Unterweisung + Aufsicht durch EFK",
+        "Einen Führerschein",
+        "Nichts"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Schriftlich festgelegter Tätigkeitsumfang, Unterweisung und Leitung/Aufsicht durch eine Elektrofachkraft."
+    },
+    {
+      "frage": "Darf eine EuP an unter Spannung stehenden Teilen arbeiten?",
+      "optionen": [
+        "Ja",
+        "Nein",
+        "Nur kurz",
+        "Mit Handschuhen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Nein — Arbeiten unter Spannung sind tabu; gearbeitet wird im freigeschalteten, gesicherten Zustand."
+    },
+    {
+      "frage": "Ab welcher Wechselspannung wird es gefährlich?",
+      "optionen": [
+        "12 V",
+        "50 V",
+        "230 V",
+        "1000 V"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Ab ca. 50 V Wechselspannung; entscheidend sind Stromstärke und Einwirkdauer."
+    },
+    {
+      "frage": "Was ist Regel 3 der fünf Sicherheitsregeln?",
+      "optionen": [
+        "Abdecken",
+        "Spannungsfreiheit feststellen",
+        "Erden",
+        "Freischalten"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Regel 3: Spannungsfreiheit feststellen — mit geeignetem Messgerät, nie auf Zuruf."
+    },
+    {
+      "frage": "Aufgabe außerhalb der Festlegung — was tun?",
+      "optionen": [
+        "Schnell erledigen",
+        "Ablehnen und an EFK verweisen",
+        "Improvisieren",
+        "Sicherung verstärken"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Ablehnen und an die Elektrofachkraft verweisen — außerhalb der Festlegung gilt man als Laie und haftet persönlich."
+    },
+    {
+      "frage": "Was prüft die DGUV V3?",
+      "optionen": [
+        "Den Brandschutz",
+        "Den ordnungsgemäßen Zustand elektrischer Anlagen/Betriebsmittel",
+        "Die Ergonomie",
+        "Die Lautstärke"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Den ordnungsgemäßen Zustand elektrischer Anlagen und Betriebsmittel durch befähigte Personen/EFK."
+    },
+    {
+      "frage": "Erster Schritt beim Stromunfall?",
+      "optionen": [
+        "Opfer wegziehen",
+        "Nicht berühren, Strom trennen",
+        "Wasser holen",
+        "Sicherung verstärken"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Eigenschutz: das Opfer nicht berühren, zuerst den Stromkreis trennen."
+    },
+    {
+      "frage": "Darf man sich auf 'Sicherung ist raus' per Zuruf verlassen?",
+      "optionen": [
+        "Ja",
+        "Nein, Spannungsfreiheit feststellen",
+        "Nur beim Chef",
+        "Manchmal"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Nein — Spannungsfreiheit muss festgestellt werden, nicht angenommen."
+    },
+    {
+      "frage": "Wer trägt die fachliche Verantwortung bei EuP-Tätigkeiten?",
+      "optionen": [
+        "Die EuP allein",
+        "Die aufsichtsführende Elektrofachkraft",
+        "Niemand",
+        "Der Hersteller"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die aufsichtsführende Elektrofachkraft trägt die fachliche Verantwortung; die EuP arbeitet im freigegebenen Rahmen."
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schulungs-Detail · HerwardTimm</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180">
+    </a>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="schulungen.html" class="active" data-i18n="nav.schulungen">Schulungen</a></li>
+      <li><a href="anfrage.html" data-i18n="nav.pauschalbetreuung">Pauschalbetreuung</a></li>
+      <li><a href="preise.html">Preise</a></li>
+      <li><a href="termin.html" data-i18n="nav.termin">Termin</a></li>
+      <li><a href="ueber-uns.html" data-i18n="nav.ueber-uns">Über uns</a></li>
+      <li><a href="login.html" data-i18n="nav.login">Login</a></li>
+      <li><a href="anfrage.html" class="nav-cta" data-i18n="nav.sifa-anfragen">Sifa anfragen</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============ HERO mit Themen-Bild ============ -->
+<section class="detail-hero" id="detail-hero">
+  <div class="detail-hero__bg" id="detail-hero-bg"></div>
+  <div class="container">
+    <a href="schulungen.html" class="btn-link">← Zurück zur Schulungs-Übersicht</a>
+    <div class="detail-hero__grid">
+      <div>
+        <div id="hero-badges" style="display:flex; gap:8px; flex-wrap:wrap;"></div>
+        <h1 id="hero-title">…</h1>
+        <p class="lead" id="hero-short">…</p>
+        <div class="detail-hero__statline" id="hero-stats"></div>
+      </div>
+      <div class="detail-hero__pricebox">
+        <div style="font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-soft); margin-bottom:6px;">Einzel-Lizenz</div>
+        <div class="now" id="hero-price">— <span class="cur">€</span></div>
+        <div class="meta">pro Person · 12 Monate Zugriff</div>
+        <button class="btn btn-cta" id="buy-btn">Jetzt kaufen</button>
+        <a class="btn btn-outline-light" id="preview-btn" href="#">Kostenlose Vorschau</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INHALTSBEREICH ============ -->
+<section class="section section--tight">
+  <div class="container" style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px; align-items: flex-start;">
+    <div>
+      <h2>Was Sie lernen</h2>
+      <p class="text-muted" id="detail-description"></p>
+
+      <h2 style="margin-top: 36px;">Lernziele</h2>
+      <ul id="detail-objectives" class="objectives-grid"></ul>
+
+      <h2 style="margin-top: 36px;">Module-Übersicht</h2>
+      <p class="text-muted">Die Schulung ist in Module gegliedert — pro Modul drei bis acht Folien mit Trainer-Kommentar und Praxis-Box.</p>
+      <ol id="detail-topics" class="module-list-visual"></ol>
+
+      <h2 style="margin-top: 36px;">Folien-Vorschau</h2>
+      <p class="text-muted">Klicken Sie eine Vorschau an, um sie in Voll-Ansicht zu sehen. Aufbau und Tonalität bleiben in jeder Schulung gleich.</p>
+      <div id="preview-thumbs" class="preview-thumbs"></div>
+
+      <h2 style="margin-top: 36px;">Beispiel-Quizfrage</h2>
+      <div class="card">
+        <p style="font-weight:600; color: var(--sage-dark); font-family:'Inter',sans-serif; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase;">Beispielfrage</p>
+        <p id="example-question" style="margin-bottom: 16px; font-family: 'Cormorant Garamond', serif; font-size:1.25rem; color: var(--sage-darker);"></p>
+        <div id="example-options"></div>
+        <p class="text-muted" style="font-size: 0.85rem; margin-top: 14px;">Das echte Quiz hat 5 Fragen, Bestehensgrenze 80 %. Das Zertifikat wird automatisch erzeugt.</p>
+      </div>
+
+      <h2 style="margin-top: 36px;">Zertifikats-Vorschau</h2>
+      <div class="card" style="display:grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: center; padding: 24px;">
+        <div>
+          <strong style="display:block; color: var(--sage-darker); font-family:'Cormorant Garamond',serif; font-size:1.3rem; margin-bottom: 8px;">So sieht Ihr Zertifikat aus</strong>
+          <p class="text-muted" style="margin: 0 0 14px;">Personalisiert mit Name, Datum und einer eindeutigen Verifikations-ID. Drucken oder als PDF speichern — und an die Berufsgenossenschaft weiterreichen.</p>
+          <a href="zertifikat.html" class="btn btn-ghost btn-sm">Muster-Zertifikat ansehen</a>
+        </div>
+        <div style="aspect-ratio: 1.414/1; background: var(--cream); border: 1px solid var(--border); position: relative; padding: 20px; font-family:'Cormorant Garamond',serif;">
+          <div style="position:absolute; inset:8px; border: 1px solid var(--gold);"></div>
+          <div style="text-align:center; position:relative;">
+            <div style="font-size: 0.62rem; letter-spacing:.18em; text-transform:uppercase; color: var(--sage-mid);">HerwardTimm e.K.</div>
+            <div style="font-family:'Cormorant Garamond',serif; font-size: 1.2rem; color: var(--sage-darker); letter-spacing:.16em; text-transform:uppercase; margin-top: 14px;">Zertifikat</div>
+            <div style="width: 50px; height: 1px; background: var(--gold); margin: 8px auto;"></div>
+            <div style="font-size: 0.72rem; color: var(--text-soft); margin-top: 4px;">über die erfolgreich abgeschlossene</div>
+            <div style="font-family:'Cormorant Garamond',serif; font-style: italic; font-size: 0.95rem; color: var(--sage-darker); margin-top: 6px;" id="cert-title-preview">…</div>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 36px;">Erfahrungen unserer Kunden</h2>
+      <div class="testimonial">
+        <p>Klar strukturiert, schnell durchzuziehen, und die Mitarbeitenden haben tatsächlich etwas behalten. Das Quiz hat sogar unserem Brandschutzbeauftragten Spaß gemacht.</p>
+        <div class="who">Thomas R.</div>
+        <div class="role">Werksleiter · Bauelemente, 28 Mitarbeitende</div>
+      </div>
+
+      <h2 style="margin-top: 36px;">Häufige Fragen zu dieser Schulung</h2>
+      <div class="faq">
+        <details open>
+          <summary>Wie lange ist das Zertifikat gültig?</summary>
+          <p>In der Regel 12 Monate — danach ist die Unterweisung gesetzlich neu durchzuführen. Sie werden 30 Tage vor Ablauf automatisch erinnert.</p>
+        </details>
+        <details>
+          <summary>Kann ich die Schulung pausieren und später fortsetzen?</summary>
+          <p>Ja, Ihr Fortschritt wird automatisch gespeichert. Sie können jederzeit dort weiterlernen, wo Sie aufgehört haben.</p>
+        </details>
+        <details>
+          <summary>Was passiert, wenn ich das Quiz nicht bestehe?</summary>
+          <p>Sie können das Quiz beliebig oft wiederholen. Erst ab 80 % korrekten Antworten wird das Zertifikat ausgestellt — so stellen wir sicher, dass die Pflichten der Unterweisung erfüllt sind.</p>
+        </details>
+        <details>
+          <summary>Kann ich das Zertifikat als PDF herunterladen?</summary>
+          <p>Ja, das Zertifikat wird als druckfähige PDF-Vorlage erzeugt. Drucken oder „Speichern als PDF" über den Browser sind beide Optionen.</p>
+        </details>
+      </div>
+    </div>
+
+    <aside style="position: sticky; top: calc(var(--header-h) + 20px);">
+      <div class="card">
+        <h4 style="margin-top:0; font-family:'Inter',sans-serif; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color: var(--sage-mid);">Bestellung</h4>
+        <div class="price-tag" id="aside-price" style="font-size: 2.2rem; margin-bottom: 4px;"></div>
+        <p class="text-muted" style="font-size:.85rem; margin: 0 0 18px;">pro Person · 12 Monate Zugriff</p>
+        <button class="btn btn-cta btn-block btn-lg" id="buy-btn-aside">Jetzt kaufen</button>
+        <a id="preview-btn-aside" class="btn btn-ghost btn-block" style="margin-top: 8px;" href="#">Kostenlose Vorschau</a>
+        <ul style="list-style: none; padding: 16px 0 0; margin: 16px 0 0; border-top: 1px solid var(--border-soft); font-size: 0.9rem; color: var(--text-soft);">
+          <li style="margin-bottom: 8px;">✓ Sofort verfügbar nach Kauf</li>
+          <li style="margin-bottom: 8px;">✓ Auf gesetzliche Anforderungen ausgelegt</li>
+          <li style="margin-bottom: 8px;">✓ Automatisches Zertifikat</li>
+          <li style="margin-bottom: 8px;">✓ Revisionssicherer Nachweis</li>
+        </ul>
+      </div>
+
+      <div class="card mt-2" style="background: var(--sage-mint-soft); border-top: 2px solid var(--gold); margin-top: 18px;">
+        <h4 style="font-size:.85rem; color: var(--sage-dark);">Mehr als eine Schulung gebraucht?</h4>
+        <p class="text-muted" style="font-size: 0.9rem; margin: 10px 0 18px; line-height: 1.6;">Mit dem Basis-Paket erhalten Sie alle 7 Pflichtschulungen für 199 € statt 283 €.</p>
+        <a href="schulungen.html#schulungen-anker" class="btn btn-primary btn-sm btn-block">Zum Basis-Paket</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="slide-lightbox" role="dialog" aria-modal="true" aria-label="Folien-Vorschau">
+  <div class="lightbox__inner" id="lightbox-content"></div>
+  <button class="lightbox__close" onclick="closeLightbox()" aria-label="Schließen">×</button>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;"><img src="assets/logo-weiss.png" alt="HerwardTimm" class="logo-weiss" width="200"></div>
+        <p style="font-size: 0.92rem;">Sifa-Beratung und Arbeitssicherheit für KMUs in Norddeutschland.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.plattform">Plattform</h4>
+        <ul class="footer-list">
+          <li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li>
+          <li><a href="anfrage.html" data-i18n="nav.pauschalbetreuung">Pauschalbetreuung</a></li>
+          <li><a href="preise.html">Preise</a></li>
+          <li><a href="termin.html" data-i18n="footer.termin-buchen">Termin buchen</a></li>
+          <li><a href="login.html" data-i18n="nav.login">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.unternehmen">Unternehmen</h4>
+        <ul class="footer-list">
+          <li><a href="ueber-uns.html" data-i18n="nav.ueber-uns">Über uns</a></li>
+          <li><a href="ratgeber.html">Ratgeber</a></li>
+          <li><a href="ueber-uns.html#kontakt" data-i18n="footer.kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.rechtliches">Rechtliches</h4>
+        <ul class="footer-list">
+          <li><a href="impressum.html" data-i18n="footer.impressum">Impressum</a></li>
+          <li><a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a></li>
+          <li><a href="agb.html" data-i18n="footer.agb">AGB</a></li>
+          <li><a href="widerruf.html" data-i18n="footer.widerruf">Widerruf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 HerwardTimm</span>
+      <span data-i18n="footer.demo-version">Demo-Version</span>
+    </div>
+  </div>
+</footer>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script>
+const COURSE_ID_TO_SLUG = {
+  'allgemein':'allgemeine-unterweisung','brandschutz':'brandschutz','bildschirm':'bildschirmarbeit',
+  'datenschutz':'datenschutz','elektro':'elektrosicherheit-laien','gefahrstoffe':'gefahrstoffe',
+  'psa':'psa','stapler-auff':'stapler-auffrischung','buehnen-auff':'hubarbeitsbuehnen-auffrischung',
+  'hautschutz':'hautschutz-psa-haende','eup-auff':'eup-auffrischung','bsh-auff':'brandschutzhelfer-auffrischung',
+  'sibe-auff':'sicherheitsbeauftragte-auffrischung','lasten':'manuelle-lastenhandhabung',
+  'stress':'stress-psyche','mobil':'mobiles-arbeiten-homeoffice','verkehr':'verkehrssicherheit-wegeunfaelle',
+  'hygiene':'hygiene-arbeitsplatz','sucht':'suchtpraevention'
+};
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get('id') || 'brandschutz';
+const course = COURSES.find(c => c.id === id) || COURSES.find(c => c.id === 'brandschutz');
+const slug = COURSE_ID_TO_SLUG[course.id] || course.id;
+
+document.title = `${course.title} · HerwardTimm`;
+document.getElementById('detail-hero-bg').style.backgroundImage = `url('assets/covers/${slug}.svg')`;
+
+// Hero-Inhalt
+document.getElementById('hero-badges').innerHTML = `
+  <span class="badge" style="background:rgba(255,255,255,0.12); border-color:rgba(255,255,255,0.25); color:var(--gold-soft);">${course.basis}</span>
+  <span class="badge" style="background:rgba(255,255,255,0.12); border-color:rgba(255,255,255,0.25); color:#fff;">${course.obligation}</span>
+  ${course.version === 'v4 Premium' ? `<span class="badge" style="background:var(--gold); color:#2A1E05; border-color:var(--gold);">v4 Premium</span>` : ''}
+`;
+document.getElementById('hero-title').textContent = course.title;
+document.getElementById('hero-short').textContent = course.short;
+document.getElementById('hero-stats').innerHTML = `
+  <div class="s"><span class="num">${course.slides || '—'}</span><span class="lbl">Folien</span></div>
+  <div class="s"><span class="num">${course.duration} Min</span><span class="lbl">Dauer</span></div>
+  <div class="s"><span class="num">5 Fragen</span><span class="lbl">Quiz</span></div>
+  <div class="s"><span class="num">80 %</span><span class="lbl">Bestehensgrenze</span></div>
+  <div class="s"><span class="num">12 Mo.</span><span class="lbl">Zugriff</span></div>
+`;
+document.getElementById('hero-price').innerHTML = `${course.price} <span class="cur">€</span>`;
+document.getElementById('aside-price').innerHTML = `${course.price} <span class="currency">€</span>`;
+
+const buyHandler = () => {
+  buyCourse(course.id);
+  setTimeout(() => location.href = `lernen.html?schulung=${slug}`, 1200);
+};
+document.getElementById('buy-btn').addEventListener('click', buyHandler);
+document.getElementById('buy-btn-aside').addEventListener('click', buyHandler);
+const previewHref = `lernen.html?schulung=${slug}&demo=1`;
+document.getElementById('preview-btn').href = previewHref;
+document.getElementById('preview-btn-aside').href = previewHref;
+
+document.getElementById('detail-description').textContent =
+  `Diese Schulung deckt die jährliche Pflichtunterweisung nach ${course.basis} ab. Sie ist praxisorientiert aufgebaut, vermittelt das Wissen in ${course.duration} Minuten und schließt mit einem 5-Fragen-Quiz ab. Nach erfolgreichem Abschluss wird automatisch ein revisionssicheres Zertifikat erzeugt, das Sie als Nachweis vorlegen können.`;
+
+document.getElementById('detail-objectives').innerHTML =
+  (course.objectives || []).map(o => `<li>${o}</li>`).join('');
+
+document.getElementById('detail-topics').innerHTML =
+  (course.topics || []).map(t => `<li><strong>${t}</strong><span class="meta">3–6 Folien · Trainer-Kommentar · Praxis-Box</span></li>`).join('');
+
+document.getElementById('cert-title-preview').textContent = course.title;
+
+// Preview-Thumbs
+const previews = [
+  { folie: 'Folie 1', title: 'Lernziele', text: (course.objectives||[]).slice(0,3).join(' · ') || 'Klare Lernziele zu Beginn jeder Schulung.' },
+  { folie: 'Folie 4', title: course.topics?.[2] || 'Praxisbeispiele', text: 'Konkrete Anleitungen mit Praxis-Boxen und Trainer-Hinweisen für jeden Punkt.' },
+  { folie: 'Folie 10', title: 'Quiz und Zertifikat', text: '5 Multiple-Choice-Fragen. Ab 4 von 5 richtigen Antworten: automatisches Zertifikat als PDF.' }
+];
+document.getElementById('preview-thumbs').innerHTML = previews.map((p, i) => `
+  <button type="button" class="preview-thumb" data-idx="${i}" onclick="openLightbox(${i})">
+    <div class="preview-thumb__head"><span>${p.folie}</span><span class="zoom">↗</span></div>
+    <div class="preview-thumb__body">
+      <strong>${p.title}</strong>
+      <span>${p.text}</span>
+    </div>
+  </button>
+`).join('');
+
+// Lightbox
+window.openLightbox = function(idx) {
+  const p = previews[idx];
+  const html = `
+    <div style="font-family:'Inter',sans-serif; font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color: var(--sage-mid);">${p.folie}</div>
+    <div style="display:flex; align-items:center; gap:18px; margin-top:8px;">
+      <div style="width:3px; height:48px; background: var(--gold);"></div>
+      <div>
+        <div style="font-family:'Inter',sans-serif; font-size:.74rem; color: var(--sage); letter-spacing:.18em; text-transform:uppercase;">${course.basis}</div>
+        <h2 style="margin:6px 0 0; font-size:2rem; color: var(--sage-darker);">${p.title}</h2>
+      </div>
+    </div>
+    <div style="margin-top:32px; padding: 22px 26px; background: var(--sage-mint-soft); border-left: 2px solid var(--gold); font-size: 1rem; line-height:1.7; color: var(--text);">
+      ${p.text}
+    </div>
+    <div style="margin-top:24px; padding: 16px 18px; border: 1px dashed var(--sage); font-size: 0.9rem; color: var(--text-soft); font-family:'Inter',sans-serif;">
+      <strong style="color: var(--sage-dark);">Trainer-Kommentar:</strong> Diese Folie wird mit einem ausführlichen Sprechertext begleitet, der das Thema mit Beispielen aus dem Alltag verknüpft.
+    </div>
+    <div style="margin-top: 20px; display:flex; gap: 12px; justify-content: flex-end;">
+      <button class="btn btn-ghost" onclick="closeLightbox()">Schließen</button>
+    </div>
+  `;
+  document.getElementById('lightbox-content').innerHTML = html;
+  document.getElementById('slide-lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+};
+window.closeLightbox = function() {
+  document.getElementById('slide-lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+};
+document.getElementById('slide-lightbox').addEventListener('click', e => {
+  if (e.target.id === 'slide-lightbox') closeLightbox();
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+// Beispiel-Quizfragen
+const exampleQuestions = {
+  'brandschutz':  { q: 'Welche Brandklassen unterscheidet die DIN EN 2?', options: ['A bis D', 'A bis F (ohne E)', 'I bis V', '1 bis 10'], correct: 1 },
+  'allgemein':    { q: 'Wie oft müssen Beschäftigte nach §12 ArbSchG unterwiesen werden?', options: ['Einmal bei der Einstellung', 'Mindestens jährlich', 'Alle 3 Jahre', 'Nur bei Vorfällen'], correct: 1 },
+  'bildschirm':   { q: 'Wie groß sollte der Mindestabstand zum Bildschirm sein?', options: ['30–40 cm', '50–80 cm', '90–120 cm', '120–150 cm'], correct: 1 },
+  'datenschutz':  { q: 'Innerhalb welcher Frist muss eine Datenpanne gemeldet werden?', options: ['Sofort', '24 Stunden', '72 Stunden', '7 Tage'], correct: 2 },
+  'elektro':      { q: 'Welche fünf Sicherheitsregeln gibt es beim Arbeiten an Elektroanlagen?', options: ['Trennen, Sichern, Spannungsfrei, Erden, Abschirmen', 'Prüfen, Trennen, Sichern, Erden, Schützen', 'Trennen, Gegen Wiedereinschalten sichern, Spannungsfreiheit feststellen, Erden und Kurzschließen, Benachbarte Teile abdecken', 'Spannung weg, Stecker raus, Sicherung raus, Erden, Hinweisschild'], correct: 2 },
+  'gefahrstoffe': { q: 'Was bedeutet das STOP-Prinzip?', options: ['Sofortstopp bei Gefahr', 'Substitution, Technisch, Organisatorisch, Persönlich', 'Stop, Think, Observe, Proceed', 'Schutz, Tagebuch, Organisation, Protokoll'], correct: 1 },
+  'psa':          { q: 'Welche FFP-Klasse schützt am stärksten?', options: ['FFP1', 'FFP2', 'FFP3', 'FFP4'], correct: 2 }
+};
+const eq = exampleQuestions[course.id] || exampleQuestions['brandschutz'];
+document.getElementById('example-question').textContent = eq.q;
+document.getElementById('example-options').innerHTML = eq.options.map((opt, i) => `
+  <div class="quiz-option" onclick="checkExample(this, ${i}, ${eq.correct})">
+    <span class="letter">${String.fromCharCode(65+i)}</span>
+    <span>${opt}</span>
+  </div>
+`).join('');
+
+function checkExample(el, idx, correct) {
+  document.querySelectorAll('#example-options .quiz-option').forEach(o => o.classList.remove('selected','correct','wrong'));
+  if (idx === correct) el.classList.add('correct');
+  else {
+    el.classList.add('wrong');
+    const c = document.querySelectorAll('#example-options .quiz-option')[correct];
+    if (c) c.classList.add('correct');
+  }
+}
+window.checkExample = checkExample;
+</script>
+</body>
+</html>

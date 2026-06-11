@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verbandbuch führen (DGUV V1 §24) · HerwardTimm</title>
+<meta name="description" content="Verbandbuch / Meldeblock für Erste-Hilfe-Leistungen nach DGUV Vorschrift 1 online führen: Datum, verletzte Person, Hergang, Maßnahme, Ersthelfer. Speichern und als PDF ausgeben.">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/tools.css">
+<script defer data-domain="herwardtimm.de" src="https://plausible.io/js/script.js"></script>
+</head>
+<body data-tool-key="ht-verbandbuch">
+
+<header class="site-header no-print">
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180"></a>
+    <ul class="nav-menu">
+      <li><a href="dashboard.html">Mein Bereich</a></li>
+      <li><a href="werkzeuge.html">Werkzeuge</a></li>
+      <li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="tool-actions no-print">
+  <div class="container inner">
+    <div>
+      <a href="werkzeuge.html" class="btn-link" style="font-size:0.82rem; text-transform:uppercase; letter-spacing:0.08em;">← Alle Werkzeuge</a>
+      <div id="tool-status" class="tool-saved"></div>
+    </div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="btn btn-ghost btn-sm" onclick="toolReset()">Zurücksetzen</button>
+      <button class="btn btn-primary btn-sm" onclick="toolSave()">Speichern</button>
+      <button class="btn btn-accent btn-sm" onclick="window.print()">Drucken / Als PDF speichern</button>
+    </div>
+  </div>
+</section>
+
+<section class="tool-wrap">
+  <div class="tool-page">
+    <div class="tool-eyebrow">HerwardTimm e.K. · Compliance-Werkzeug</div>
+    <div class="tool-title">Verbandbuch</div>
+    <p class="tool-intro">Dokumentation jeder Erste-Hilfe-Leistung nach §24 DGUV Vorschrift 1 — auch bei kleinen Verletzungen. Die Aufzeichnungen sind vertraulich zu behandeln und mindestens 5 Jahre aufzubewahren (wichtig als Nachweis für später erkennbare Spätfolgen). Eingaben werden lokal im Browser gespeichert.</p>
+
+    <div class="tool-grid" style="max-width:680px; margin-bottom:22px;">
+      <div class="lbl">Firma / Betrieb</div><div class="val"><input class="tf" data-k="firma" type="text"></div>
+      <div class="lbl">Standort</div><div class="val"><input class="tf" data-k="standort" type="text"></div>
+    </div>
+
+    <div class="tool-sec">Eintragungen</div>
+    <div class="tool-table-wrap">
+      <table class="tool-table" style="min-width:1080px;">
+        <thead><tr>
+          <th style="width:11%;">Datum / Uhrzeit</th>
+          <th style="width:13%;">Verletzte Person</th>
+          <th style="width:16%;">Hergang &amp; Ort des Unfalls</th>
+          <th style="width:14%;">Art / Umfang der Verletzung</th>
+          <th style="width:13%;">Erste-Hilfe-Maßnahme</th>
+          <th style="width:10%;">Arztbesuch</th>
+          <th style="width:8%;">Arbeitsunfähig</th>
+          <th style="width:13%;">Folgemaßnahme</th>
+          <th style="width:12%;">Ersthelfer / Zeugen</th>
+          <th style="width:2%;"></th>
+        </tr></thead>
+        <tbody id="tool-rows"></tbody>
+      </table>
+    </div>
+    <button class="btn btn-ghost btn-sm tool-addrow no-print" onclick="toolAddRow()">+ Eintrag hinzufügen</button>
+
+    <template id="row-template">
+      <tr data-row>
+        <td><input class="tf" data-f="datum" type="text" placeholder="TT.MM.JJJJ, hh:mm"></td>
+        <td><input class="tf" data-f="person" type="text"></td>
+        <td><input class="tf" data-f="hergang" type="text"></td>
+        <td><input class="tf" data-f="verletzung" type="text"></td>
+        <td><input class="tf" data-f="massnahme" type="text"></td>
+        <td>
+          <select class="tf" data-f="arzt">
+            <option value=""></option>
+            <option>nein</option>
+            <option>Durchgangsarzt</option>
+            <option>Hausarzt</option>
+            <option>Krankenhaus</option>
+          </select>
+        </td>
+        <td>
+          <select class="tf" data-f="au">
+            <option value=""></option>
+            <option>ja</option>
+            <option>nein</option>
+            <option>unbekannt</option>
+          </select>
+        </td>
+        <td><input class="tf" data-f="folge" type="text"></td>
+        <td><input class="tf" data-f="ersthelfer" type="text"></td>
+        <td><button class="tool-del no-print" title="Zeile löschen" onclick="toolDelRow(this)">✕</button></td>
+      </tr>
+    </template>
+
+    <p class="tool-footer-note">Datenschutz: Das Verbandbuch enthält Gesundheitsdaten — Zugriff nur für Befugte, vertraulich aufbewahren. Diese Arbeitshilfe ersetzt keine Rechtsberatung im Einzelfall (Stand 2026). HerwardTimm e.K. · info@herwardtimm.de</p>
+  </div>
+</section>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script src="assets/tools.js"></script>
+</body>
+</html>

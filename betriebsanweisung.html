@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Betriebsanweisung erstellen — Assistent · HerwardTimm</title>
+<meta name="description" content="Betriebsanweisung in der vorgeschriebenen Form erstellen: Thema eingeben, Vorlage laden oder per KI ausfüllen — für Gefahrstoffe (GefStoffV §14) und Maschinen. Speichern und als PDF.">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/tools.css">
+<script defer data-domain="herwardtimm.de" src="https://plausible.io/js/script.js"></script>
+<style>
+  .ba-assist { background: var(--white); border: 1px solid var(--border-soft); border-radius: 10px; padding: 20px 22px; margin-bottom: 22px; }
+  .ba-assist h2 { margin: 0 0 4px; font-size: 1.1rem; color: var(--sage-dark); }
+  .ba-assist .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; margin-top: 14px; }
+  .ba-assist .fld { display: flex; flex-direction: column; gap: 4px; }
+  .ba-assist label { font-size: 0.78rem; font-weight: 600; color: var(--text-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+  .ba-assist input[type=text], .ba-assist select { padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: 0.92rem; min-width: 240px; }
+  .ba-typewrap { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .ba-typewrap label { display:flex; align-items:center; gap:6px; padding: 9px 14px; cursor: pointer; font-size: 0.9rem; text-transform: none; letter-spacing: 0; font-weight: 500; color: var(--text-soft); }
+  .ba-typewrap label.on { background: var(--sage-dark); color: #fff; }
+  .ba-hint { font-size: 0.82rem; color: var(--text-mute); margin-top: 10px; }
+
+  /* Dokument in Normform mit Farbcodierung */
+  .ba-doc { border: 3px solid var(--accent-line); border-radius: 4px; padding: 0; overflow: hidden; }
+  .ba-gef { --accent-line: #C0442C; --accent-soft: #F6E2DC; }
+  .ba-masch { --accent-line: #1C5D8C; --accent-soft: #DCE8F2; }
+  .ba-titlebar { background: var(--accent-line); color: #fff; display: grid; grid-template-columns: 1fr auto; align-items: center; padding: 10px 16px; }
+  .ba-titlebar .t { font-weight: 700; font-size: 1.15rem; letter-spacing: 0.02em; }
+  .ba-titlebar .nr { font-size: 0.82rem; opacity: 0.95; }
+  .ba-metarow { display: grid; grid-template-columns: repeat(2, 1fr); border-bottom: 1px solid var(--border); }
+  .ba-metarow .cell { padding: 6px 14px; border-right: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+  .ba-metarow .cell .k { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-mute); font-weight: 600; }
+  .ba-block { padding: 12px 16px; border-bottom: 1px solid var(--border-soft); }
+  .ba-block .bh { display: inline-block; background: var(--accent-soft); color: var(--accent-line); font-weight: 700; font-size: 0.9rem; padding: 3px 10px; border-radius: 3px; margin-bottom: 8px; }
+  .ba-foot { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .ba-foot .cell { padding: 8px 14px; border-right: 1px solid var(--border-soft); }
+  .ba-foot .cell .k { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-mute); font-weight: 600; }
+  #ghs-cell.hide { display: none; }
+  @media print {
+    .ba-assist { display: none !important; }
+    .ba-titlebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .ba-block .bh { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    /* Seitenumbruch-Schutz: einzelne Blöcke nicht über Seitengrenzen zerreißen */
+    .ba-doc { break-inside: avoid-page; }
+    .ba-block, .ba-foot .cell, .ba-metarow .cell { break-inside: avoid; page-break-inside: avoid; }
+    .ba-psa-pics img, .ba-ghs-pics img { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body data-tool-key="ht-betriebsanweisung" class="ba-gef">
+
+<header class="site-header no-print">
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180"></a>
+    <ul class="nav-menu">
+      <li><a href="dashboard.html">Mein Bereich</a></li>
+      <li><a href="werkzeuge.html">Werkzeuge</a></li>
+      <li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="tool-actions no-print">
+  <div class="container inner">
+    <div>
+      <a href="werkzeuge.html" class="btn-link" style="font-size:0.82rem; text-transform:uppercase; letter-spacing:0.08em;">← Alle Werkzeuge</a>
+      <div id="tool-status" class="tool-saved"></div>
+    </div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="btn btn-ghost btn-sm" onclick="toolReset()">Zurücksetzen</button>
+      <button class="btn btn-primary btn-sm" onclick="toolSave()">Speichern</button>
+      <button class="btn btn-accent btn-sm" onclick="window.print()">Drucken / Als PDF speichern</button>
+    </div>
+  </div>
+</section>
+
+<section class="tool-wrap">
+  <div class="tool-page">
+    <div class="tool-eyebrow">HerwardTimm e.K. · Compliance-Werkzeug</div>
+    <div class="tool-title">Betriebsanweisung — Assistent</div>
+    <p class="tool-intro">So einfach wie möglich: Wählen Sie die Art, geben Sie ein, worum es geht (z. B. „Aceton" oder „Tischkreissäge"), und laden Sie eine fertige Vorlage — oder lassen Sie sie per KI in der vorgeschriebenen Form ausfüllen. Danach prüfen, anpassen, drucken. Eingaben werden lokal im Browser gespeichert.</p>
+
+    <!-- Assistent -->
+    <div class="ba-assist no-print">
+      <h2>1 · Worum geht es?</h2>
+      <div class="row">
+        <div class="fld">
+          <label>Art der Betriebsanweisung</label>
+          <div class="ba-typewrap">
+            <label id="lab-gef" class="on"><input type="radio" name="batyp" value="gefahrstoff" checked onchange="baSetType('gefahrstoff')" hidden> Gefahrstoff</label>
+            <label id="lab-masch"><input type="radio" name="batyp" value="maschine" onchange="baSetType('maschine')" hidden> Maschine / Gerät</label>
+          </div>
+        </div>
+        <div class="fld">
+          <label for="ba-subject">Thema / Bezeichnung</label>
+          <input type="text" id="ba-subject" list="ba-list" placeholder="z. B. Aceton, Tischkreissäge …">
+          <datalist id="ba-list"></datalist>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="baLoadVorlage()">Vorlage laden</button>
+        <button class="btn btn-cta btn-sm" onclick="baAiFill()">✨ Per KI ausfüllen</button>
+      </div>
+      <p class="ba-hint" id="ba-hint">Tipp: Für gängige Themen ist bereits eine geprüfte Vorlage hinterlegt. Für alles andere füllt die KI die Form aus — Sie prüfen anschließend als Fachkraft gegen.</p>
+    </div>
+
+    <!-- Dokument in Normform -->
+    <div class="ba-doc" id="ba-doc">
+      <div class="ba-titlebar">
+        <span class="t" id="ba-doctitle">Betriebsanweisung gem. GefStoffV</span>
+        <span class="nr">Nr.: <input class="tf" style="width:90px; color:#fff;" data-k="nummer" type="text" placeholder="G1-00"></span>
+      </div>
+      <div class="ba-metarow">
+        <div class="cell"><div class="k">Betrieb</div><input class="tf" data-k="betrieb" type="text"></div>
+        <div class="cell"><div class="k">Bearbeitungsstand</div><input class="tf" data-k="stand" type="text" placeholder="MM/JJ"></div>
+        <div class="cell"><div class="k">Arbeitsplatz / Tätigkeitsbereich</div><input class="tf" data-k="arbeitsplatz" type="text"></div>
+        <div class="cell" id="ghs-cell"><div class="k">GHS-Piktogramme / Signalwort</div><input class="tf" data-k="ghs" type="text" placeholder="z. B. GHS02 / Gefahr"></div>
+      </div>
+
+      <div class="ba-block"><span class="bh" id="b1h">1 · Gefahrstoffbezeichnung</span><textarea class="tf" data-k="b1" rows="2"></textarea></div>
+      <div class="ba-block"><span class="bh" id="b2h">2 · Gefahren für Mensch und Umwelt</span><textarea class="tf" data-k="b2" rows="3"></textarea></div>
+      <div class="ba-block"><span class="bh" id="b3h">3 · Schutzmaßnahmen und Verhaltensregeln</span><textarea class="tf" data-k="b3" rows="3"></textarea>
+        <input type="hidden" data-k="psa">
+        <div class="ba-psa-select no-print" style="margin-top:10px;">
+          <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-mute); font-weight:600; margin-bottom:6px;">PSA-Gebotszeichen wählen (manuelle Auswahl hat Vorrang vor der automatischen Erkennung aus dem Text):</div>
+          <div style="display:flex; flex-wrap:wrap; gap:6px 16px; font-size:0.88rem;">
+            <label style="display:inline-flex; align-items:center; gap:5px;"><input type="checkbox" class="ba-psa-cb" value="M003"> Gehörschutz (M003)</label>
+            <label style="display:inline-flex; align-items:center; gap:5px;"><input type="checkbox" class="ba-psa-cb" value="M004"> Augenschutz / Schutzbrille (M004)</label>
+            <label style="display:inline-flex; align-items:center; gap:5px;"><input type="checkbox" class="ba-psa-cb" value="M008"> Fußschutz / Sicherheitsschuhe (M008)</label>
+            <label style="display:inline-flex; align-items:center; gap:5px;"><input type="checkbox" class="ba-psa-cb" value="M009"> Handschutz / Schutzhandschuhe (M009)</label>
+            <label style="display:inline-flex; align-items:center; gap:5px;"><input type="checkbox" class="ba-psa-cb" value="M010"> Schutzkleidung (M010)</label>
+            <label style="display:inline-flex; align-items:center; gap:5px;"><input type="checkbox" class="ba-psa-cb" value="M014"> Kopfschutz / Helm (M014)</label>
+            <label style="display:inline-flex; align-items:center; gap:5px;"><input type="checkbox" class="ba-psa-cb" value="M017"> Atemschutz (M017)</label>
+            <label style="display:inline-flex; align-items:center; gap:5px;"><input type="checkbox" class="ba-psa-cb" value="M018"> Auffanggurt (M018)</label>
+          </div>
+        </div>
+        <div class="ba-psa-pics"></div>
+      </div>
+      <div class="ba-block"><span class="bh" id="b4h">4 · Verhalten im Gefahrfall</span><textarea class="tf" data-k="b4" rows="3"></textarea></div>
+      <div class="ba-block"><span class="bh" id="b5h">5 · Erste Hilfe</span><textarea class="tf" data-k="b5" rows="3"></textarea></div>
+      <div class="ba-block"><span class="bh" id="b6h">6 · Sachgerechte Entsorgung</span><textarea class="tf" data-k="b6" rows="2"></textarea></div>
+
+      <div class="ba-foot">
+        <div class="cell"><div class="k">Datum</div><input class="tf" data-k="datum" type="text" placeholder="TT.MM.JJJJ"></div>
+        <div class="cell"><div class="k">Version</div><input class="tf" data-k="version" type="text" placeholder="z. B. v1.0"></div>
+        <div class="cell"><div class="k">Nächster Überprüfungstermin</div><input class="tf" data-k="ueberpruefung" type="text"></div>
+        <div class="cell"><div class="k">Freigegeben durch (verantwortliche Person)</div><input class="tf" data-k="freigabe" type="text"></div>
+        <div class="cell"><div class="k">Funktion / Rolle</div><input class="tf" data-k="freigabe_funktion" type="text" placeholder="z. B. Geschäftsleitung, Sifa"></div>
+        <div class="cell"><div class="k">Unterschrift Unternehmer/Geschäftsleitung</div><input class="tf" data-k="unterschrift" type="text"></div>
+      </div>
+    </div>
+
+    <p class="tool-footer-note">Form nach §14 GefStoffV (Gefahrstoff) bzw. den Vorgaben für Maschinen-Betriebsanweisungen. Stoffangaben aus dem <a href="gefahrstoffkataster.html">Gefahrstoffkataster</a> und dem Sicherheitsdatenblatt übernehmen. KI-Entwürfe sind vor dem Aushang fachlich zu prüfen. Arbeitshilfe, keine Rechtsberatung im Einzelfall (Stand 2026). HerwardTimm e.K.</p>
+  </div>
+</section>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script src="assets/ba-vorlagen.js"></script>
+<script src="assets/tools.js"></script>
+<script>
+  // TODO GO-LIVE: KI-Funktion ist ein Demo-Stub. Solange BA_AI_ENDPOINT leer
+  // ist, wird KEINE KI aufgerufen — es greift nur die Vorlagen-Bibliothek samt
+  // ehrlichem Demo-Hinweis (es wird also keine KI-Funktion vorgetäuscht).
+  // Vor Live-Gang die Edge-Function 'ba-generate' deployen und die URL hier
+  // eintragen (z. B. "https://<projekt>.functions.supabase.co/ba-generate").
+  window.BA_AI_ENDPOINT = "";
+
+  const BA_LABELS = {
+    gefahrstoff: { title: "Betriebsanweisung gem. GefStoffV", nr: "G1-00",
+      b: ["1 · Gefahrstoffbezeichnung","2 · Gefahren für Mensch und Umwelt","3 · Schutzmaßnahmen und Verhaltensregeln","4 · Verhalten im Gefahrfall","5 · Erste Hilfe","6 · Sachgerechte Entsorgung"] },
+    maschine: { title: "Betriebsanweisung (Maschine/Gerät)", nr: "M1-00",
+      b: ["1 · Anwendungsbereich","2 · Gefahren für Mensch und Umwelt","3 · Schutzmaßnahmen und Verhaltensregeln","4 · Verhalten bei Störungen","5 · Erste Hilfe","6 · Instandhaltung"] }
+  };
+
+  function baGetType(){ return document.querySelector('input[name="batyp"]:checked')?.value || 'gefahrstoff'; }
+
+  function baApplyLabels(t){
+    const L = BA_LABELS[t];
+    document.getElementById('ba-doctitle').textContent = L.title;
+    for(let i=1;i<=6;i++) document.getElementById('b'+i+'h').textContent = L.b[i-1];
+    document.body.classList.toggle('ba-gef', t==='gefahrstoff');
+    document.body.classList.toggle('ba-masch', t==='maschine');
+    document.getElementById('ghs-cell').classList.toggle('hide', t!=='gefahrstoff');
+    document.getElementById('lab-gef').classList.toggle('on', t==='gefahrstoff');
+    document.getElementById('lab-masch').classList.toggle('on', t==='maschine');
+    // Vorlagen-Liste füllen
+    const dl = document.getElementById('ba-list'); dl.innerHTML='';
+    (window.BA_VORLAGEN[t]||[]).forEach(v=>{ const o=document.createElement('option'); o.value=v.subject; dl.appendChild(o); });
+    // Nummer-Platzhalter
+    document.querySelector('[data-k="nummer"]').placeholder = L.nr;
+  }
+
+  window.baSetType = function(t){
+    // Radio synchronisieren
+    const r = document.querySelector('input[name="batyp"][value="'+t+'"]'); if(r) r.checked=true;
+    baApplyLabels(t);
+    persistType(t);
+    toolSave(true);
+  };
+
+  // Typ separat persistieren (kein data-k, da Radio)
+  function persistType(t){ try{ localStorage.setItem('ht-betriebsanweisung-typ', t); }catch(e){} }
+
+  function baFind(t, subject){
+    const s = (subject||'').trim().toLowerCase();
+    if(!s) return null;
+    const list = window.BA_VORLAGEN[t]||[];
+    return list.find(v=>v.subject.toLowerCase()===s) || list.find(v=>v.subject.toLowerCase().includes(s) || s.includes(v.subject.toLowerCase())) || null;
+  }
+
+  function baFill(v){
+    const set=(k,val)=>{ const el=document.querySelector('[data-k="'+k+'"]'); if(el && val!==undefined){ el.value=val; } };
+    set('b1',v.b1); set('b2',v.b2); set('b3',v.b3); set('b4',v.b4); set('b5',v.b5); set('b6',v.b6);
+    if(v.ghs!==undefined) set('ghs',v.ghs);
+    if(!document.querySelector('[data-k="arbeitsplatz"]').value && v.subject) document.querySelector('[data-k="arbeitsplatz"]').value = v.subject;
+    if(!document.querySelector('[data-k="stand"]').value){ const d=new Date(); set('stand', String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getFullYear()).slice(2)); }
+    toolSave(true);
+  }
+
+  window.baLoadVorlage = function(){
+    const t=baGetType(), subj=document.getElementById('ba-subject').value;
+    const v=baFind(t,subj);
+    const hint=document.getElementById('ba-hint');
+    if(v){ baFill(v); hint.textContent='Vorlage „'+v.subject+'" geladen. Bitte als Fachkraft prüfen und an den Betrieb anpassen.'; hint.style.color='var(--success)'; }
+    else { hint.innerHTML='Für „'+(subj||'—')+'" ist keine fertige Vorlage hinterlegt. Nutzen Sie <strong>✨ Per KI ausfüllen</strong> oder tragen Sie die Inhalte direkt ein.'; hint.style.color='var(--gold-dark)'; }
+  };
+
+  window.baAiFill = async function(){
+    const t=baGetType(), subj=document.getElementById('ba-subject').value.trim();
+    const hint=document.getElementById('ba-hint');
+    if(!subj){ hint.textContent='Bitte zuerst ein Thema eingeben.'; hint.style.color='var(--error)'; return; }
+    if(window.BA_AI_ENDPOINT){
+      hint.textContent='KI erstellt die Betriebsanweisung …'; hint.style.color='var(--text-mute)';
+      try{
+        const res=await fetch(window.BA_AI_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({typ:t,thema:subj})});
+        if(!res.ok) throw new Error('HTTP '+res.status);
+        const data=await res.json();
+        baFill(Object.assign({subject:subj},data));
+        hint.textContent='KI-Entwurf erstellt. Bitte als Fachkraft fachlich prüfen, bevor Sie ihn aushängen.'; hint.style.color='var(--success)';
+      }catch(e){ hint.textContent='KI aktuell nicht erreichbar. Bitte Vorlage laden oder manuell ausfüllen.'; hint.style.color='var(--error)'; }
+      return;
+    }
+    // Demo ohne Backend: Bibliothek versuchen, sonst Hinweis
+    const v=baFind(t,subj);
+    if(v){ baFill(v); hint.innerHTML='Aus der Bibliothek vorausgefüllt (Demo). Im Live-Betrieb erzeugt die KI auch für neue Themen einen Entwurf in dieser Form.'; hint.style.color='var(--success)'; }
+    else { hint.innerHTML='Demo-Hinweis: Die KI-Erzeugung ist im Live-Betrieb aktiv (Backend mit Claude-API). Für „'+subj+'" bitte vorerst manuell ausfüllen — die Form steht bereits korrekt.'; hint.style.color='var(--gold-dark)'; }
+  };
+
+  // Init: gespeicherten Typ wiederherstellen und Labels setzen (nach tools.js-Load)
+  (function(){
+    let t='gefahrstoff';
+    try{ t=localStorage.getItem('ht-betriebsanweisung-typ')||'gefahrstoff'; }catch(e){}
+    const r=document.querySelector('input[name="batyp"][value="'+t+'"]'); if(r) r.checked=true;
+    baApplyLabels(t);
+  })();
+
+  /* ============================================================
+     Piktogramme in der Betriebsanweisung
+     ------------------------------------------------------------
+     B-P2: GHS-Bilder NUR aus eindeutigen Codes GHS01–GHS09 im Feld
+           "GHS-Piktogramme / Signalwort".
+     B-P3: PSA-Gebotszeichen NUR aus eindeutigen Begriffen in Abschnitt 3,
+           mit Negations-Schutz (z. B. „keine Handschuhe" erzeugt KEIN
+           Handschutz-Gebot). Bei Unsicherheit lieber kein Zeichen.
+     Es werden ausschließlich vorhandene Dateien aus assets/piktogramme/
+     verwendet. Brand-/Erste-Hilfe-/Warn-/Verbotszeichen liegen nicht vor
+     und werden daher NICHT ergänzt.
+     ============================================================ */
+  (function(){
+    const GHS_BED = {'01':'Explodierende Bombe','02':'Flamme (entzündbar)','03':'Flamme über Kreis (brandfördernd)','04':'Gasflasche (Gase unter Druck)','05':'Ätzwirkung','06':'Totenkopf (giftig)','07':'Ausrufezeichen (Reiz-/Gesundheitsgefahr)','08':'Gesundheitsgefahr','09':'Umwelt (gewässergefährdend)'};
+    const PSA_RULES = [
+      { code:'M003', label:'Gehörschutz benutzen',   re:/gehörschutz|gehör-/gi },
+      { code:'M004', label:'Augenschutz benutzen',   re:/augenschutz|schutzbrille/gi },
+      { code:'M008', label:'Fußschutz benutzen',     re:/fußschutz|sicherheitsschuh\w*/gi },
+      { code:'M009', label:'Handschutz benutzen',    re:/handschutz|schutzhandschuh\w*|handschuh\w*/gi },
+      { code:'M010', label:'Schutzkleidung benutzen',re:/schutzkleidung/gi },
+      { code:'M014', label:'Kopfschutz benutzen',    re:/kopfschutz|schutzhelm|\bhelm\b/gi },
+      { code:'M017', label:'Atemschutz benutzen',    re:/atemschutz/gi },
+      { code:'M018', label:'Auffanggurt benutzen',   re:/auffanggurt/gi }
+    ];
+    const img = (src,label) => '<img src="'+src+'" alt="'+label+'" title="'+label+'" style="height:30px;width:auto;margin:4px 6px 0 0;vertical-align:middle;-webkit-print-color-adjust:exact;print-color-adjust:exact;">';
+
+    function ghsHtml(text){
+      const codes = ((text||'').toUpperCase().match(/GHS0[1-9]/g) || []);
+      return Array.from(new Set(codes)).map(c => img('assets/piktogramme/ghs/'+c+'.png', c+' – '+(GHS_BED[c.slice(-2)]||c))).join('');
+    }
+    // Negation im 14-Zeichen-Fenster vor dem Treffer? -> Begriff ignorieren.
+    function negatedBefore(text, idx){
+      const win = text.slice(Math.max(0, idx-14), idx).toLowerCase();
+      return /(kein|ohne|nicht)/.test(win);
+    }
+    function psaHtml(text){
+      if(!text) return '';
+      const out = [];
+      PSA_RULES.forEach(rule => {
+        rule.re.lastIndex = 0;
+        let m, positive = false;
+        while ((m = rule.re.exec(text)) !== null) {
+          if (!negatedBefore(text, m.index)) { positive = true; break; }
+        }
+        if (positive) out.push(img('assets/piktogramme/gebotszeichen/'+rule.code+'.png', rule.label));
+      });
+      return out.join('');
+    }
+
+    function box(afterEl, cls){
+      if(!afterEl) return null;
+      let b = afterEl.parentElement.querySelector('.'+cls);
+      if(!b){ b = document.createElement('div'); b.className = cls; b.style.cssText='margin-top:6px; line-height:0;'; afterEl.insertAdjacentElement('afterend', b); }
+      return b;
+    }
+
+    const PSA_LABELS = {M003:'Gehörschutz benutzen',M004:'Augenschutz benutzen',M008:'Fußschutz benutzen',M009:'Handschutz benutzen',M010:'Schutzkleidung benutzen',M014:'Kopfschutz benutzen',M017:'Atemschutz benutzen',M018:'Auffanggurt benutzen'};
+    function selectedPsaCodes(){ return Array.from(document.querySelectorAll('.ba-psa-cb:checked')).map(cb => cb.value); }
+    function psaHtmlFromCodes(codes){ return codes.map(c => img('assets/piktogramme/gebotszeichen/'+c+'.png', PSA_LABELS[c]||c)).join(''); }
+    const caption = txt => '<div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-mute);font-weight:600;line-height:1.2;margin-bottom:2px;">'+txt+'</div>';
+
+    function render(){
+      const ghsField = document.querySelector('[data-k="ghs"]');
+      const ghsCellHidden = document.getElementById('ghs-cell')?.classList.contains('hide');
+      const gb = box(ghsField, 'ba-ghs-pics');
+      if (gb) gb.innerHTML = (ghsField && !ghsCellHidden) ? ghsHtml(ghsField.value) : '';
+
+      const b3 = document.querySelector('[data-k="b3"]');
+      const pb = box(b3, 'ba-psa-pics');
+      if (pb) {
+        // Manuelle Auswahl hat Vorrang; sonst automatische Erkennung aus dem Text.
+        const manual = selectedPsaCodes();
+        if (manual.length) {
+          pb.innerHTML = caption('Schutz-Gebote (manuell ausgewählt)') + psaHtmlFromCodes(manual);
+        } else {
+          const auto = psaHtml(b3 ? b3.value : '');
+          pb.innerHTML = auto ? caption('Schutz-Gebote (automatisch erkannt — bitte prüfen)') + auto : '';
+        }
+      }
+    }
+    window.baRenderPictos = render;
+
+    // Manuelle PSA-Auswahl <-> verstecktes Feld data-k="psa" synchronisieren
+    // (damit die Auswahl über tools.js mitgespeichert/-geladen wird).
+    const psaHidden = document.querySelector('[data-k="psa"]');
+    function syncHiddenFromChecks(){ if (psaHidden) psaHidden.value = selectedPsaCodes().join(','); }
+    function syncChecksFromHidden(){
+      if (!psaHidden) return;
+      const set = new Set((psaHidden.value || '').split(',').map(s => s.trim()).filter(Boolean));
+      document.querySelectorAll('.ba-psa-cb').forEach(cb => { cb.checked = set.has(cb.value); });
+    }
+    document.addEventListener('change', e => {
+      if (e.target.classList && e.target.classList.contains('ba-psa-cb')) {
+        syncHiddenFromChecks();
+        if (window.toolSave) toolSave(true);
+        render();
+      }
+    });
+    // Auf Eingaben und Vorlagen-Laden reagieren.
+    document.addEventListener('input', e => { if (e.target.matches && e.target.matches('[data-k="ghs"],[data-k="b3"]')) render(); });
+    document.addEventListener('click', e => { if (e.target.closest('.btn')) setTimeout(render, 0); });
+
+    // Init: tools.js hat das psa-Feld bereits aus localStorage geladen ->
+    // Checkboxen daraus herstellen, dann rendern.
+    syncChecksFromHidden();
+    render();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin · HerwardTimm</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/app-shell.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180">
+      <span style="font-family: 'Inter', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-dark); margin-left: 14px; padding-left: 14px; border-left: 1px solid var(--border); font-weight: 500;">Admin</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="admin.html" class="active">Übersicht</a></li>
+      <li><a href="dashboard.html">Kundenansicht</a></li>
+      <li><a href="login.html">Abmelden</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="section section--tight" style="background: var(--sage-mint-soft); padding-top: 56px; padding-bottom: 48px;">
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 24px;">
+      <div>
+        <span class="eyebrow">Admin-Bereich</span>
+        <h1 style="margin: 6px 0 6px;">Steuerung &amp; Statistik</h1>
+        <p style="margin-bottom: 0; color: var(--text-soft); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem;">Stand: <span id="today"></span> · Letzter Sync vor 4 Minuten</p>
+      </div>
+      <div style="display:flex; gap: 10px;">
+        <button class="btn btn-ghost btn-sm" onclick="exportData()">Daten exportieren</button>
+        <button class="btn btn-primary btn-sm">+ Neue Anfrage anlegen</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KPI ROW ============ -->
+<section class="section--tight">
+  <div class="container">
+    <!-- A-B1: Die mit data-demo-kpi markierten Werte sind statische DEMO-Zahlen.
+         Im Demo-Modus bleiben sie sichtbar (Hinweis unten). Im Live-Modus
+         (window.HT_DEMO_MODE === false) setzt applyDemoMode() in app.js sie auf
+         "—" und blendet die Demo-Deltas/-Hinweise aus, bis eine echte
+         Datenquelle angebunden ist. "Neue Anfragen" ist bereits dynamisch. -->
+    <div class="grid grid-4">
+      <div class="kpi">
+        <div class="label">Umsatz Monat</div>
+        <div class="value" data-demo-kpi>12 480 €</div>
+        <div class="delta" data-demo-kpi-delta>▲ 18 % vs. Vormonat</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Neue Anfragen</div>
+        <div class="value" id="kpi-anfragen">5</div>
+        <div class="delta" data-demo-kpi-delta>▲ 2 in dieser Woche</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Abgeschlossene Schulungen</div>
+        <div class="value" data-demo-kpi>87</div>
+        <div class="delta" data-demo-kpi-delta>▲ 12 in den letzten 30 Tagen</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Aktive Pauschal-Kunden</div>
+        <div class="value" data-demo-kpi>28</div>
+        <div class="delta down" data-demo-kpi-delta>▼ 1 — Kündigung MM&amp;Co. KG</div>
+      </div>
+    </div>
+    <p id="kpi-demo-note" class="text-muted" style="font-size:0.78rem; margin:10px 2px 0; letter-spacing:0.02em;">
+      <strong>Demo-Kennzahlen.</strong> Umsatz, abgeschlossene Schulungen und aktive Pauschal-Kunden sind Beispielwerte zur Veranschaulichung — im Live-Betrieb werden hier echte Daten ausgewiesen (oder „—", solange keine Daten vorliegen). „Neue Anfragen" wird bereits live aus den eingegangenen Anfragen berechnet.
+    </p>
+  </div>
+</section>
+
+<!-- ============ TABS ============ -->
+<section class="section--tight" style="padding-bottom: 80px;">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="anfragen">Anfragen</button>
+      <button class="tab-btn" data-tab="pauschal">Pauschal-Kunden</button>
+      <button class="tab-btn" data-tab="schulungen">Schulungs-Käufer</button>
+      <button class="tab-btn" data-tab="audit">Audit-Log</button>
+      <button class="tab-btn" data-tab="firmen">Firmen-Übersicht</button>
+      <button class="tab-btn" data-tab="stats">Statistik</button>
+    </div>
+    <style>
+      .audit-toolbar { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px; }
+      .audit-toolbar input, .audit-toolbar select {
+        padding:9px 12px; border:1px solid var(--border-soft); border-radius:8px;
+        font:inherit; font-size:.88rem; background:#fff;
+      }
+      .audit-toolbar input[type=search] { min-width:240px; }
+      .audit-table { width:100%; border-collapse:collapse; font-size:.86rem; }
+      .audit-table th, .audit-table td {
+        padding:10px 12px; border-bottom:1px solid var(--border-soft);
+        text-align:left; vertical-align:top;
+      }
+      .audit-table th {
+        font-size:.74rem; text-transform:uppercase; letter-spacing:.05em;
+        color:var(--text-soft); background:var(--sage-mint-soft);
+      }
+      .audit-table tr:hover td { background:rgba(95,126,95,0.04); }
+      .ev-pill {
+        display:inline-block; padding:3px 9px; border-radius:18px;
+        font-size:.72rem; font-weight:600;
+      }
+      .ev-pill.slide_viewed   { background:var(--sage-mint-soft); color:var(--sage-dark); }
+      .ev-pill.quiz_answered  { background:rgba(201,155,69,.16); color:var(--gold-dark); }
+      .ev-pill.quiz_passed    { background:rgba(76,122,94,.18); color:#2f5a3e; }
+      .ev-pill.quiz_failed    { background:rgba(176,58,46,.13); color:var(--error); }
+      .ev-pill.cert_generated { background:#fff3da; color:#7a5d18; border:1px solid #e7c98a; }
+      .ev-pill.profile_created,
+      .ev-pill.profile_updated,
+      .ev-pill.login,
+      .ev-pill.logout         { background:#eef0f1; color:#4a585e; }
+      .firma-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px; }
+      .firma-card {
+        background:#fff; border:1px solid var(--border-soft); border-radius:12px;
+        padding:18px 22px; cursor:pointer; transition:border .15s, box-shadow .15s;
+      }
+      .firma-card:hover { border-color: var(--sage); box-shadow:0 6px 18px rgba(36,48,41,.07); }
+      .firma-card h4 { margin:0 0 6px; font-size:1rem; color:var(--sage-dark); }
+      .firma-card .stats { display:flex; gap:18px; font-size:.84rem; color:var(--text-soft); margin-top:8px; }
+      .firma-card .stats b { color:var(--sage-darker); font-size:1.1rem; display:block; line-height:1; margin-bottom:2px; }
+      .firma-detail {
+        background:#fff; border:1px solid var(--border-soft); border-radius:12px;
+        padding:24px 26px; margin-top:18px;
+      }
+      .firma-detail h3 { margin:0 0 10px; color:var(--sage-dark); }
+      .firma-detail-table { width:100%; border-collapse:collapse; margin-top:10px; }
+      .firma-detail-table th, .firma-detail-table td {
+        padding:9px 10px; border-bottom:1px solid var(--border-soft);
+        text-align:left; font-size:.86rem;
+      }
+      .firma-detail-table th { font-size:.72rem; text-transform:uppercase; letter-spacing:.04em; color:var(--text-soft); }
+      .status-pill {
+        display:inline-block; padding:3px 9px; border-radius:18px;
+        font-size:.72rem; font-weight:600;
+      }
+      .status-pill.done { background:rgba(76,122,94,.18); color:#2f5a3e; }
+      .status-pill.prog { background:rgba(201,155,69,.18); color:var(--gold-dark); }
+      .status-pill.todo { background:#eef0f1; color:#4a585e; }
+      .ev-detail-mini { color:var(--text-soft); font-size:.78rem; margin-top:2px; }
+    </style>
+
+    <!-- ANFRAGEN -->
+    <div class="tab-panel" data-tab="anfragen">
+      <div class="card" style="padding: 0; overflow: hidden;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Firma</th>
+              <th>Branche</th>
+              <th>MA</th>
+              <th>BG</th>
+              <th>Empfehlung</th>
+              <th>Preis</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="anfragen-table"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- PAUSCHAL -->
+    <div class="tab-panel hidden" data-tab="pauschal">
+      <div class="card" style="padding: 0; overflow: hidden;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Firma</th>
+              <th>Branche</th>
+              <th>Tier</th>
+              <th>Preis</th>
+              <th>Nächste Aktion</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Elektro-Betrieb · 35 MA</strong></td><td>Elektro</td><td><span class="badge">T2</span></td><td>340 €/M</td><td>Begehung in 12 Tagen</td><td><span class="badge badge--success">Aktiv</span></td></tr>
+            <tr><td><strong>Bauhandwerk-KG · 28 MA</strong></td><td>Bauhandwerk</td><td><span class="badge">T2</span></td><td>280 €/M</td><td>GBU-Update</td><td><span class="badge badge--success">Aktiv</span></td></tr>
+            <tr><td><strong>Pharma-Zulieferer · 65 MA</strong></td><td>Pharma</td><td><span class="badge">T2</span></td><td>460 €/M</td><td>Audit-Vorbereitung</td><td><span class="badge badge--success">Aktiv</span></td></tr>
+            <tr><td><strong>Elektro &amp; Service (HH)</strong></td><td>Elektro</td><td><span class="badge">T2</span></td><td>220 €/M</td><td>Erstbegehung 24.05.</td><td><span class="badge badge--accent">Onboarding</span></td></tr>
+            <tr><td><strong>Tischlerei (SH)</strong></td><td>Bauhandwerk</td><td><span class="badge">T1</span></td><td>140 €/Q</td><td>Quartalstermin Q3</td><td><span class="badge badge--success">Aktiv</span></td></tr>
+            <tr><td><strong>Reinigungs-Betrieb (SH)</strong></td><td>Reinigung</td><td><span class="badge">T1</span></td><td>110 €/Q</td><td>Unterweisungs-Check</td><td><span class="badge badge--success">Aktiv</span></td></tr>
+            <tr><td><strong>Logistik OHG (NS)</strong></td><td>Logistik</td><td><span class="badge">T2</span></td><td>320 €/M</td><td>Begehung Halle 3</td><td><span class="badge badge--success">Aktiv</span></td></tr>
+            <tr><td><strong>Bürotechnik (HH)</strong></td><td>Bürodienstleistung</td><td><span class="badge">T1</span></td><td>95 €/Q</td><td>Jahresgespräch</td><td><span class="badge badge--success">Aktiv</span></td></tr>
+            <tr><td><strong>Maschinenbau-KG (NRW)</strong></td><td>Maschinenbau</td><td><span class="badge">T2</span></td><td>280 €/M</td><td>Kündigung zum 31.07.</td><td><span class="badge" style="background: rgba(181,59,59,0.1); color: var(--error);">Kündigung</span></td></tr>
+            <tr><td><strong>KFZ-Service (NS)</strong></td><td>KFZ</td><td><span class="badge">T1</span></td><td>165 €/Q</td><td>DGUV-V3 in 3 Wochen</td><td><span class="badge badge--success">Aktiv</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SCHULUNGEN -->
+    <div class="tab-panel hidden" data-tab="schulungen">
+      <div class="card" style="padding: 0; overflow: hidden;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Käufer</th>
+              <th>Firma</th>
+              <th>Schulung</th>
+              <th>Status</th>
+              <th>Zertifikat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>17.05.2026</td><td>P. L.</td><td>Elektro-Betrieb (SH)</td><td>Elektrosicherheit Nichtelektrofach</td><td><span class="badge badge--success">Bestanden</span></td><td>✓ HTK-LXA42</td></tr>
+            <tr><td>17.05.2026</td><td>S. B.</td><td>Elektro-Betrieb (SH)</td><td>Brandschutz</td><td><span class="badge badge--success">Bestanden</span></td><td>✓ HTK-MMB17</td></tr>
+            <tr><td>16.05.2026</td><td>K. S.</td><td>Tischlerei (HH)</td><td>PSA</td><td><span class="badge badge--success">Bestanden</span></td><td>✓ HTK-PMC02</td></tr>
+            <tr><td>15.05.2026</td><td>A. P.</td><td>Reinigungs-Betrieb (NS)</td><td>Gefahrstoffe Grundunterweisung</td><td><span class="badge badge--accent">Im Quiz</span></td><td>—</td></tr>
+            <tr><td>15.05.2026</td><td>M. K.</td><td>Bürobetrieb (HH)</td><td>Bildschirmarbeit</td><td><span class="badge badge--success">Bestanden</span></td><td>✓ HTK-NM814</td></tr>
+            <tr><td>14.05.2026</td><td>T. R.</td><td>Bauhandwerk-KG (NS)</td><td>Basis-Paket Arbeitsschutz</td><td><span class="badge">Läuft</span></td><td>4/7 Module</td></tr>
+            <tr><td>13.05.2026</td><td>D. H.</td><td>Logistik (SH)</td><td>Allgemeine Sicherheitsunterweisung</td><td><span class="badge badge--success">Bestanden</span></td><td>✓ HTK-CGP9K</td></tr>
+            <tr><td>12.05.2026</td><td>L. W.</td><td>Pharma-Zulieferer (NRW)</td><td>Datenschutz DSGVO</td><td><span class="badge badge--success">Bestanden</span></td><td>✓ HTK-Q12LX</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ============ AUDIT-LOG (DGUV-Konformität) ============ -->
+    <div class="tab-panel hidden" data-tab="audit">
+      <div class="card" style="padding:24px 26px;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:14px; flex-wrap:wrap; margin-bottom:14px;">
+          <div>
+            <h3 style="margin:0 0 4px;">Audit-Log · Unterweisungsnachweis</h3>
+            <p class="text-muted" style="margin:0; font-size:.86rem;">Jede Folie und jede Quiz-Antwort wird mit Zeitpunkt und User-Kennung erfasst. Append-only; Events können nicht gelöscht werden.</p>
+          </div>
+          <div style="font-size:.78rem; color:var(--text-soft);">
+            <span id="audit-count">0</span> Events insgesamt
+          </div>
+        </div>
+
+        <div class="audit-toolbar">
+          <input type="search" id="audit-search" placeholder="Suche (Email, Name, Schulung …)">
+          <select id="audit-type-filter">
+            <option value="">Alle Event-Typen</option>
+            <option value="slide_viewed">slide_viewed</option>
+            <option value="quiz_answered">quiz_answered</option>
+            <option value="quiz_passed">quiz_passed</option>
+            <option value="quiz_failed">quiz_failed</option>
+            <option value="cert_generated">cert_generated</option>
+            <option value="login">login</option>
+            <option value="profile_created">profile_created</option>
+            <option value="profile_updated">profile_updated</option>
+          </select>
+          <select id="audit-firma-filter">
+            <option value="">Alle Firmen</option>
+          </select>
+          <button class="btn btn-ghost btn-sm" id="audit-export">⤓ CSV</button>
+        </div>
+
+        <div style="overflow-x:auto;">
+          <table class="audit-table">
+            <thead>
+              <tr>
+                <th style="white-space:nowrap;">Zeitpunkt</th>
+                <th>User</th>
+                <th>Firma</th>
+                <th>Schulung</th>
+                <th>Event</th>
+                <th>Detail</th>
+              </tr>
+            </thead>
+            <tbody id="audit-table"></tbody>
+          </table>
+        </div>
+        <p class="text-muted" style="font-size:.78rem; margin-top:10px;">
+          <strong>Demo:</strong> Audit-Events liegen in <code>localStorage</code> und können vom Browser theoretisch geleert werden. Im Live-Betrieb (Supabase) sind Events per RLS append-only und vor User-Zugriff geschützt.
+        </p>
+      </div>
+    </div>
+
+    <!-- ============ FIRMEN-ÜBERSICHT ============ -->
+    <div class="tab-panel hidden" data-tab="firmen">
+      <div class="card" style="padding:24px 26px;">
+        <h3 style="margin:0 0 4px;">Firmen-Übersicht</h3>
+        <p class="text-muted" style="margin:0 0 18px; font-size:.86rem;">Wie viele Mitarbeitende einer Firma haben eine Pflichtschulung absolviert? Klick auf eine Firma öffnet die Detail-Sicht mit allen Mitarbeitenden und deren Schulungs-Status.</p>
+        <div class="firma-grid" id="firma-grid"></div>
+        <div id="firma-detail"></div>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="tab-panel hidden" data-tab="stats">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div class="card">
+          <h3>Umsatz nach Monat (T€)</h3>
+          <p class="text-muted" style="font-size:.88rem;">Letzte 6 Monate · Schulungen + Pauschalen</p>
+          <div class="bar-chart" style="margin-top: 28px;">
+            <div class="bar" style="height: 50%;" data-label="Dez" data-value="6.8"></div>
+            <div class="bar" style="height: 62%;" data-label="Jan" data-value="8.2"></div>
+            <div class="bar" style="height: 70%;" data-label="Feb" data-value="9.1"></div>
+            <div class="bar" style="height: 78%;" data-label="Mär" data-value="10.4"></div>
+            <div class="bar" style="height: 82%;" data-label="Apr" data-value="10.9"></div>
+            <div class="bar" style="height: 95%;" data-label="Mai" data-value="12.5"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Schulungs-Käufe nach Modul</h3>
+          <p class="text-muted" style="font-size:.88rem;">Letzte 90 Tage</p>
+          <div class="bar-chart" style="margin-top: 28px;">
+            <div class="bar" style="height: 60%; background: linear-gradient(180deg, var(--gold-soft), var(--gold));" data-label="Allg" data-value="24"></div>
+            <div class="bar" style="height: 90%; background: linear-gradient(180deg, var(--gold-soft), var(--gold));" data-label="Brand" data-value="38"></div>
+            <div class="bar" style="height: 40%; background: linear-gradient(180deg, var(--gold-soft), var(--gold));" data-label="Bild" data-value="16"></div>
+            <div class="bar" style="height: 55%; background: linear-gradient(180deg, var(--gold-soft), var(--gold));" data-label="DSGVO" data-value="22"></div>
+            <div class="bar" style="height: 50%; background: linear-gradient(180deg, var(--gold-soft), var(--gold));" data-label="Elektr" data-value="19"></div>
+            <div class="bar" style="height: 45%; background: linear-gradient(180deg, var(--gold-soft), var(--gold));" data-label="Gefst" data-value="17"></div>
+            <div class="bar" style="height: 35%; background: linear-gradient(180deg, var(--gold-soft), var(--gold));" data-label="PSA" data-value="14"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-3 mt-4">
+        <div class="card">
+          <div class="label" style="font-size: 0.85rem; color: var(--text-soft); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Quiz-Bestehensquote</div>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--petrol); margin-top: 4px;">91 %</div>
+          <p class="text-muted" style="font-size:.85rem;">Ø über alle Schulungen</p>
+        </div>
+        <div class="card">
+          <div class="label" style="font-size: 0.85rem; color: var(--text-soft); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Ø Durchlaufzeit pro Schulung</div>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--petrol); margin-top: 4px;">28 min</div>
+          <p class="text-muted" style="font-size:.85rem;">Median über alle Pflichtschulungen</p>
+        </div>
+        <div class="card">
+          <div class="label" style="font-size: 0.85rem; color: var(--text-soft); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">NPS aus Feedback-Mails</div>
+          <div style="font-size: 1.8rem; font-weight: 800; color: var(--petrol); margin-top: 4px;">+62</div>
+          <p class="text-muted" style="font-size:.85rem;">N = 24 Antworten in 6 Monaten</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;"><img src="assets/logo-weiss.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" class="logo-weiss" width="200"></div>
+        <p style="font-size: 0.92rem;">Admin-Bereich · Sifa-Beratung HerwardTimm</p>
+      </div>
+      <div><h4 data-i18n="footer.plattform">Plattform</h4><ul class="footer-list"><li><a href="index.html">Öffentliche Seite</a></li><li><a href="dashboard.html">Kundenansicht</a></li></ul></div>
+      <div><h4>System</h4><ul class="footer-list"><li><a href="#">Einstellungen</a></li><li><a href="#">Benutzer</a></li></ul></div>
+      <div><h4 data-i18n="footer.rechtliches">Rechtliches</h4><ul class="footer-list"><li><a href="impressum.html" data-i18n="footer.impressum">Impressum</a></li><li><a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 HerwardTimm</span><span>Admin · Demo-Version</span></div>
+  </div>
+</footer>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script>
+  // Heutiges Datum
+  document.getElementById('today').textContent = new Date().toLocaleDateString('de-DE', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' });
+
+  // Tab-Wechsel
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.dataset.tab;
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b === btn));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('hidden', p.dataset.tab !== tab));
+    });
+  });
+
+  // Anfragen rendern — Demo + echte aus localStorage
+  const demoAnfragen = [
+    { date: '2026-05-18T10:21:00Z', firma: 'Behrens & Sohn GmbH', branch: 'Elektrotechnik / Elektro-Handwerk', employees: 12, tier: 1, tierName: 'Tier 1 — Quartal-Betreuung', priceLow: 143, priceHigh: 180, status: 'Neu' },
+    { date: '2026-05-18T08:05:00Z', firma: 'Timm Dachdeckerei e.K.', branch: 'Bauhandwerk / Bauelemente', employees: 3, tier: 'S', tierName: 'Unternehmermodell — Dokumentenpaket', priceLow: 109, priceHigh: 164, setupFee: 390, status: 'Neu' },
+    { date: '2026-05-17T14:55:00Z', firma: 'Nordsee Catering KG', branch: 'Gastronomie / Hotellerie', employees: 28, tier: 2, tierName: 'Tier 2 — Monats-Betreuung', priceLow: 240, priceHigh: 360, status: 'Angebot raus' },
+    { date: '2026-05-17T09:08:00Z', firma: 'Schlüter Industriebedarf', branch: 'Industrie / Maschinenbau', employees: 65, tier: 2, tierName: 'Tier 2 — Monats-Betreuung', priceLow: 340, priceHigh: 460, status: 'Termin gebucht' },
+    { date: '2026-05-15T16:42:00Z', firma: 'Hamburger Hygieneservice', branch: 'Reinigung / Gebäudedienste', employees: 8, tier: 1, tierName: 'Tier 1 — Quartal-Betreuung', priceLow: 95, priceHigh: 150, status: 'Angebot raus' },
+    { date: '2026-05-14T11:30:00Z', firma: 'Petersen Bau Holding', branch: 'Bauhandwerk / Bauelemente', employees: 42, tier: 2, tierName: 'Tier 2 — Monats-Betreuung', priceLow: 286, priceHigh: 460, status: 'Erstgespräch heute' }
+  ];
+  const all = Store.get('anfragen', []).concat(demoAnfragen);
+  document.getElementById('kpi-anfragen').textContent = all.length;
+  document.getElementById('anfragen-table').innerHTML = all.map(a => `
+    <tr>
+      <td>${fmtDate(a.date)}</td>
+      <td><strong>${a.firma}</strong></td>
+      <td>${(a.branch || '').split(' /')[0]}</td>
+      <td>${a.employees}</td>
+      <td>${a.bg ? `${a.bg}${a.bgnummer ? `<br><span class="text-muted" style="font-size:.78rem;">Nr. ${a.bgnummer}</span>` : ''}` : '<span class="text-muted">—</span>'}</td>
+      <td><span class="badge ${a.tier === 'S' ? 'badge--accent' : ''}">${a.tier === 'S' ? 'Unternehmermodell' : 'Tier ' + a.tier}</span></td>
+      <td>${a.priceLow}–${a.priceHigh} €</td>
+      <td><span class="badge ${a.status === 'Neu' ? 'badge--accent' : 'badge--success'}">${a.status}</span></td>
+      <td><a href="#" class="btn-link" style="font-size:.85rem;">Details →</a></td>
+    </tr>
+  `).join('');
+
+  function exportData() {
+    const data = {
+      anfragen: Store.get('anfragen', []),
+      purchases: Store.get('purchases', []),
+      certificates: Store.get('certificates', []),
+      bookings: Store.get('bookings', []),
+      auditLog: Store.get('auditLog', []),
+      seedProfiles: Store.get('seedProfiles', [])
+    };
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = `herwardtimm-export-${new Date().toISOString().slice(0,10)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    toast('Export heruntergeladen.', 'success');
+  }
+  window.exportData = exportData;
+
+  /* ============================================================
+     Audit-Log + Firmen-Übersicht
+     ============================================================ */
+  function escHtml(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  function fmtTs(iso) {
+    const d = new Date(iso);
+    return d.toLocaleString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+  }
+  function trainingTitle(slug) {
+    if (!slug) return '<span class="text-muted">—</span>';
+    if (window.MANIFESTS_INLINE && window.MANIFESTS_INLINE[slug]) {
+      return escHtml(window.MANIFESTS_INLINE[slug].titel);
+    }
+    return escHtml(slug);
+  }
+  function detailToText(ev) {
+    const d = ev.detail || {};
+    if (ev.event_type === 'slide_viewed')   return `Folie ${d.folie_nr || '?'}`;
+    if (ev.event_type === 'quiz_answered')  return `Frage ${d.frage_nr || '?'} · Antwort ${d.antwort_idx != null ? String.fromCharCode(65 + d.antwort_idx) : '?'} (${d.korrekt ? 'richtig' : 'falsch'})`;
+    if (ev.event_type === 'quiz_passed' || ev.event_type === 'quiz_failed') return `Score ${d.score}/${d.total} · ${d.pct}%`;
+    if (ev.event_type === 'cert_generated') return `Zertifikat ${d.cert_id} · Score ${d.score}/${d.total}`;
+    if (ev.event_type === 'login')          return `Anmeldung (${d.mode || '—'})`;
+    if (ev.event_type === 'profile_created' || ev.event_type === 'profile_updated') return `Profil-Daten · Firma ${d.firma || '—'}`;
+    return '';
+  }
+
+  function renderAuditLog() {
+    const log = (Store.get('auditLog', []) || []).slice().sort((a, b) => b.timestamp.localeCompare(a.timestamp));
+    document.getElementById('audit-count').textContent = log.length;
+
+    // Firma-Filter befüllen
+    const firmaSelect = document.getElementById('audit-firma-filter');
+    const firmen = [...new Set(log.map(e => e.user_firma).filter(Boolean))].sort();
+    firmaSelect.innerHTML = '<option value="">Alle Firmen</option>' +
+      firmen.map(f => `<option value="${escHtml(f)}">${escHtml(f)}</option>`).join('');
+
+    function apply() {
+      const q = document.getElementById('audit-search').value.trim().toLowerCase();
+      const type = document.getElementById('audit-type-filter').value;
+      const firma = document.getElementById('audit-firma-filter').value;
+      const rows = log.filter(ev => {
+        if (type && ev.event_type !== type) return false;
+        if (firma && ev.user_firma !== firma) return false;
+        if (q) {
+          const blob = `${ev.user_email || ''} ${ev.user_name || ''} ${ev.user_firma || ''} ${ev.schulung_slug || ''} ${ev.event_type}`.toLowerCase();
+          if (!blob.includes(q)) return false;
+        }
+        return true;
+      }).slice(0, 400);
+      document.getElementById('audit-table').innerHTML = rows.length
+        ? rows.map(ev => `
+          <tr>
+            <td style="white-space:nowrap; font-variant-numeric:tabular-nums;">${escHtml(fmtTs(ev.timestamp))}</td>
+            <td>
+              <div style="font-weight:600;">${escHtml(ev.user_name || '—')}</div>
+              <div class="ev-detail-mini">${escHtml(ev.user_email || '')}</div>
+            </td>
+            <td>${escHtml(ev.user_firma || '—')}</td>
+            <td>${trainingTitle(ev.schulung_slug)}</td>
+            <td><span class="ev-pill ${escHtml(ev.event_type)}">${escHtml(ev.event_type)}</span></td>
+            <td>${escHtml(detailToText(ev))}</td>
+          </tr>
+        `).join('')
+        : '<tr><td colspan="6" style="text-align:center; color:var(--text-soft); padding:30px;">Keine Events gefunden.</td></tr>';
+    }
+    document.getElementById('audit-search').addEventListener('input', apply);
+    document.getElementById('audit-type-filter').addEventListener('change', apply);
+    document.getElementById('audit-firma-filter').addEventListener('change', apply);
+    document.getElementById('audit-export').addEventListener('click', () => {
+      const header = ['timestamp', 'user_email', 'user_name', 'user_firma', 'schulung_slug', 'event_type', 'detail'];
+      const lines = [header.join(';')];
+      log.forEach(ev => {
+        lines.push([ev.timestamp, ev.user_email, ev.user_name, ev.user_firma, ev.schulung_slug, ev.event_type, JSON.stringify(ev.detail).replace(/;/g, ',')]
+          .map(s => `"${String(s ?? '').replace(/"/g, '""')}"`).join(';'));
+      });
+      const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = `auditlog-${new Date().toISOString().slice(0,10)}.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+      toast('Audit-Log als CSV heruntergeladen.', 'success');
+    });
+    apply();
+  }
+
+  function renderFirmenUebersicht() {
+    const profiles = (typeof getAllProfiles === 'function') ? getAllProfiles() : [];
+    const log = Store.get('auditLog', []) || [];
+
+    // Gruppieren nach Firma
+    const byFirma = {};
+    profiles.forEach(p => {
+      const f = p.firma || '— ohne Firma —';
+      if (!byFirma[f]) byFirma[f] = { firma: f, users: [], schulungen: new Set(), certs: 0 };
+      byFirma[f].users.push(p);
+    });
+    log.forEach(ev => {
+      const f = ev.user_firma || '— ohne Firma —';
+      if (!byFirma[f]) byFirma[f] = { firma: f, users: [], schulungen: new Set(), certs: 0 };
+      if (ev.schulung_slug) byFirma[f].schulungen.add(ev.schulung_slug);
+      if (ev.event_type === 'cert_generated') byFirma[f].certs += 1;
+    });
+
+    const firmen = Object.values(byFirma).sort((a, b) => b.users.length - a.users.length);
+    const grid = document.getElementById('firma-grid');
+    grid.innerHTML = firmen.map(f => {
+      // Pflicht-Schulung Brandschutz als Beispiel: wie viele MA haben sie absolviert?
+      const brand = f.users.filter(u =>
+        log.some(ev => ev.user_email === u.email && ev.schulung_slug === 'brandschutz' && ev.event_type === 'quiz_passed')
+      ).length;
+      return `
+        <div class="firma-card" data-firma="${escHtml(f.firma)}">
+          <h4>${escHtml(f.firma)}</h4>
+          <div class="stats">
+            <div><b>${f.users.length}</b>Mitarbeitende</div>
+            <div><b>${f.schulungen.size}</b>Schulungen aktiv</div>
+            <div><b>${f.certs}</b>Zertifikate</div>
+          </div>
+          <div style="margin-top:10px; font-size:.78rem; color:var(--text-soft);">
+            Brandschutz: ${brand}/${f.users.length} absolviert
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    grid.querySelectorAll('.firma-card').forEach(card => {
+      card.addEventListener('click', () => showFirmaDetail(card.dataset.firma));
+    });
+  }
+
+  function showFirmaDetail(firmaName) {
+    const profiles = (typeof getAllProfiles === 'function') ? getAllProfiles() : [];
+    const log = Store.get('auditLog', []) || [];
+    const users = profiles.filter(p => (p.firma || '') === firmaName);
+
+    // Welche Schulungen sind in dieser Firma aktiv?
+    const allSlugs = [...new Set(log.filter(ev => ev.user_firma === firmaName && ev.schulung_slug).map(ev => ev.schulung_slug))];
+
+    const slugTitle = (s) => (window.MANIFESTS_INLINE && window.MANIFESTS_INLINE[s]) ? window.MANIFESTS_INLINE[s].titel : s;
+
+    let html = `
+      <div class="firma-detail">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap;">
+          <h3>${escHtml(firmaName)}</h3>
+          <button class="btn btn-ghost btn-sm" onclick="document.getElementById('firma-detail').innerHTML=''">Schließen ×</button>
+        </div>
+        <p class="text-muted" style="margin:0; font-size:.84rem;">${users.length} Mitarbeitende · ${allSlugs.length} verschiedene Schulungen aktiv</p>
+        <table class="firma-detail-table">
+          <thead>
+            <tr>
+              <th>Mitarbeitende:r</th>
+              ${allSlugs.map(s => `<th>${escHtml(slugTitle(s))}</th>`).join('')}
+            </tr>
+          </thead>
+          <tbody>
+            ${users.map(u => `
+              <tr>
+                <td>
+                  <strong>${escHtml(u.vorname)} ${escHtml(u.nachname)}</strong>
+                  <div class="ev-detail-mini">${escHtml(u.email)}${u.position ? ' · ' + escHtml(u.position) : ''}</div>
+                </td>
+                ${allSlugs.map(slug => {
+                  const passed = log.some(ev => ev.user_email === u.email && ev.schulung_slug === slug && ev.event_type === 'quiz_passed');
+                  const started = log.some(ev => ev.user_email === u.email && ev.schulung_slug === slug);
+                  if (passed)  return `<td><span class="status-pill done">✓ absolviert</span></td>`;
+                  if (started) return `<td><span class="status-pill prog">Läuft</span></td>`;
+                  return `<td><span class="status-pill todo">offen</span></td>`;
+                }).join('')}
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+        ${allSlugs.length === 0 ? '<p class="text-muted" style="font-size:.86rem; margin-top:14px;">Keine Schulungen in dieser Firma erfasst.</p>' : ''}
+      </div>
+    `;
+    document.getElementById('firma-detail').innerHTML = html;
+    document.getElementById('firma-detail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  renderAuditLog();
+  renderFirmenUebersicht();
+</script>
+<!-- App-Shell („Plattform-Gefühl"): feste Sidebar + Topbar für den Verwalten-Bereich -->
+<script src="assets/app-shell.js"></script>
+<script>mountAppShell({ active: 'uebersicht', crumb: 'Verwalten / Übersicht', title: 'Admin-Übersicht' });</script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+{
+  "slug": "stress-psyche",
+  "titel": "Stress und psychische Belastung",
+  "pflichtgrundlage": "§5 ArbSchG, GDA-Leitlinie",
+  "dauer_minuten": 35,
+  "anzahl_folien": 41,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Stress und psychische Belastung",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Stress und psychische Belastung\". Psychische Belastung erkennen, einordnen und gesund bewältigen. Diese Schulung ist Ihre Pflichtunterweisung nach §5 Abs. 3 Nr. 6 ArbSchG  ·  GDA-Leitlinie  ·  DGUV I 206-007 und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Grundlagen",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Grundlagen. Was psychische Belastung ist und welche Faktoren wirken. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Belastung ist nicht gleich Stress",
+      "bild": "folie-05.png",
+      "sprechertext": "Die Unterscheidung Belastung (objektiv) vs. Beanspruchung (individuell) ist zentral und entstigmatisierend. Stress ist nicht grundsätzlich schädlich — chronische Überforderung ohne Erholung ist es. Seit 2013 ist psychische Belastung Pflichtbestandteil der Gefährdungsbeurteilung.\n\n▸ Trainer-Tipp: Stress ist individuell: Was die eine motiviert, überfordert den anderen. Deshalb geht es nicht um 'Schwäche', sondern um das Verhältnis von Anforderung und Ressourcen."
+    },
+    {
+      "nummer": 6,
+      "titel": "Belastungsfaktoren am Arbeitsplatz",
+      "bild": "folie-06.png",
+      "sprechertext": "Die Belastungsfaktoren folgen den GDA-Merkmalbereichen: Arbeitsinhalt, Arbeitsorganisation, soziale Beziehungen, Arbeitsumgebung. Moderne Treiber sind Entgrenzung und ständige Erreichbarkeit. Diese Faktoren sind gestaltbar — Ansatzpunkt der GBU Psyche.\n\n▸ Trainer-Tipp: Die häufigsten Treiber sind nicht die großen Dramen, sondern Dauerzeitdruck, ständige Unterbrechungen und fehlende Klarheit — genau das lässt sich aber verbessern."
+    },
+    {
+      "nummer": 7,
+      "titel": "Modul 2 — Warnzeichen",
+      "bild": "folie-07.png",
+      "sprechertext": "Modul 2 — Warnzeichen. Stresssymptome früh erkennen — bei sich und anderen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 8,
+      "titel": "Warnzeichen für Überlastung",
+      "bild": "folie-08.png",
+      "sprechertext": "Warnzeichen zeigen sich körperlich, emotional, kognitiv und im Verhalten. Schlafstörungen sind ein häufiges Frühsignal. Burnout entwickelt sich über Erschöpfung, Distanzierung/Zynismus und Leistungsabfall. Auch Veränderungen bei Kolleg:innen wahrnehmen.\n\n▸ Trainer-Tipp: Warnzeichen ernst zu nehmen ist keine Schwäche, sondern Klugheit. Wer früh gegensteuert, vermeidet die lange Ausfallzeit, die aus ignorierter Dauerbelastung folgt."
+    },
+    {
+      "nummer": 9,
+      "titel": "Modul 3 — Gesund bewältigen",
+      "bild": "folie-09.png",
+      "sprechertext": "Modul 3 — Gesund bewältigen. Strategien, Pausen, Grenzen setzen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 10,
+      "titel": "Gesunder Umgang mit Belastung",
+      "bild": "folie-10.png",
+      "sprechertext": "Bewältigung hat individuelle und organisatorische Seiten. Individuell: Pausen, Priorisierung, Grenzen, Schlaf/Bewegung, frühe Hilfe. Schädlich: Pausenverzicht, Dauererreichbarkeit, Substanzkonsum zur Bewältigung. Echte Erholung ist nicht verhandelbar.\n\n▸ Trainer-Tipp: Die wirksamste Einzelmaßnahme ist die echte Pause — nicht am Handy, sondern mit Bewegung oder Abstand. Und: Erreichbarkeit bewusst abschalten."
+    },
+    {
+      "nummer": 11,
+      "titel": "Pausen und Erholung richtig nutzen",
+      "bild": "folie-11.png",
+      "sprechertext": "Erholung ist die Gegenkraft zur Belastung. Kurzpausen, echte Mittagspause, Feierabendgrenze und Schlaf sind die wirksamsten Hebel. Soziale Unterstützung puffert Stress. Ständige Erreichbarkeit ist ein eigenständiger Risikofaktor.\n\n▸ Trainer-Tipp: Erholung ist kein Luxus, sondern Leistungsvoraussetzung. Wer dauerhaft auf Pausen und Schlaf verzichtet, wird langfristig weniger leistungsfähig, nicht mehr."
+    },
+    {
+      "nummer": 12,
+      "titel": "Modul 4 — Verantwortung & Hilfe",
+      "bild": "folie-12.png",
+      "sprechertext": "Modul 4 — Verantwortung & Hilfe. GBU Psyche, Führung und Unterstützungsangebote. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 13,
+      "titel": "Verantwortung und Unterstützung",
+      "bild": "folie-13.png",
+      "sprechertext": "Verantwortung ist geteilt: Arbeitgeber (GBU Psyche + Maßnahmen), Führungskräfte (Wahrnehmung, Gestaltung), Beschäftigte (Selbstfürsorge, Ansprechen). Unterstützung bieten Betriebsarzt, Hausarzt, Beratungsstellen, EAP. Bei akuten Krisen kostenlose, anonyme Telefonseelsorge. HerwardTimm e.K. unterstützt bei der GBU psychischer Belastung.\n\n▸ Trainer-Tipp: Niemand muss das allein durchstehen. Das Ansprechen — bei Führungskraft, Betriebsarzt oder Beratungsstelle — ist der wirksamste erste Schritt. Und es ist vertraulich."
+    },
+    {
+      "nummer": 14,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-14.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei Szenarien. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 15,
+      "titel": "Fallbeispiel 1: Der Dauer-Zeitdruck",
+      "bild": "folie-15.png",
+      "sprechertext": "Die Überlastungsspirale ist häufig: Druck → schlechter Schlaf → Fehler → noch mehr Arbeit. Mehrarbeit verschärft den Erholungsmangel. Lösung ist organisatorisch (Priorisierung, weniger Unterbrechung) und persönlich (Pausen, Ansprechen).\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 16,
+      "titel": "Fallbeispiel 2: Die veränderte Kollegin",
+      "bild": "folie-16.png",
+      "sprechertext": "Rückzug, Zynismus und Fehlzeiten können Burnout-Warnzeichen sein. Kollegiales, wertschätzendes Ansprechen und der Hinweis auf Hilfsangebote sind richtig. Keine Diagnosen stellen, keine Bloßstellung. Bei ernster Sorge professionelle Stellen einbeziehen.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 17,
+      "titel": "Fallbeispiel 3: Die ständige Erreichbarkeit",
+      "bild": "folie-17.png",
+      "sprechertext": "Entgrenzung/ständige Erreichbarkeit ist ein moderner Belastungsfaktor mit messbarem Gesundheitsrisiko. Es ist organisatorisch lösbar: klare Erreichbarkeitsregeln, Vorbild der Führung, Aufnahme in die GBU psychischer Belastung.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 18,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-18.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 19,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-19.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Belastung sind die objektiven Einwirkungen, Beanspruchung die individuelle Reaktion darauf."
+    },
+    {
+      "nummer": 20,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-20.png",
+      "sprechertext": "Belastung sind die objektiven Einwirkungen, Beanspruchung die individuelle Reaktion darauf."
+    },
+    {
+      "nummer": 21,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-21.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Ja — §5 Abs. 3 Nr. 6 ArbSchG nennt psychische Belastungen ausdrücklich."
+    },
+    {
+      "nummer": 22,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-22.png",
+      "sprechertext": "Ja — §5 Abs. 3 Nr. 6 ArbSchG nennt psychische Belastungen ausdrücklich."
+    },
+    {
+      "nummer": 23,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-23.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Schlafstörungen sind oft das erste und deutlichste Warnzeichen."
+    },
+    {
+      "nummer": 24,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-24.png",
+      "sprechertext": "Schlafstörungen sind oft das erste und deutlichste Warnzeichen."
+    },
+    {
+      "nummer": 25,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-25.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Anhaltende Erschöpfung, Distanzierung/Zynismus und Leistungsabfall kennzeichnen Burnout."
+    },
+    {
+      "nummer": 26,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-26.png",
+      "sprechertext": "Anhaltende Erschöpfung, Distanzierung/Zynismus und Leistungsabfall kennzeichnen Burnout."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Echte, regelmäßige Pausen (nicht am Bildschirm) — plus Schlaf und Bewegung."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Echte, regelmäßige Pausen (nicht am Bildschirm) — plus Schlaf und Bewegung."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Vorsichtig, wertschätzend, zuhörend und mit Hinweis auf Hilfsangebote — nicht diagnostizieren oder bloßstellen."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Vorsichtig, wertschätzend, zuhörend und mit Hinweis auf Hilfsangebote — nicht diagnostizieren oder bloßstellen."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Ein eigenständiger Belastungsfaktor mit Gesundheitsrisiko — durch klare Regeln und Führung lösbar."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Ein eigenständiger Belastungsfaktor mit Gesundheitsrisiko — durch klare Regeln und Führung lösbar."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Der Arbeitgeber ist verantwortlich (mit Beteiligung der Beschäftigten); HerwardTimm e.K. unterstützt."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Der Arbeitgeber ist verantwortlich (mit Beteiligung der Beschäftigten); HerwardTimm e.K. unterstützt."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Kostenlose, anonyme Telefonseelsorge, Hausarzt oder Betriebsarzt — Hilfe holen ist der wichtigste Schritt."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Kostenlose, anonyme Telefonseelsorge, Hausarzt oder Betriebsarzt — Hilfe holen ist der wichtigste Schritt."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Nein — fordernde Aufgaben können motivieren (Eustress); schädlich ist chronische Überforderung ohne Erholung."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "Nein — fordernde Aufgaben können motivieren (Eustress); schädlich ist chronische Überforderung ohne Erholung."
+    },
+    {
+      "nummer": 39,
+      "titel": "Zusammenfassung",
+      "bild": "folie-39.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 40,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-40.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 41,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-41.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Was ist der Unterschied zwischen Belastung und Beanspruchung?",
+      "optionen": [
+        "Kein Unterschied",
+        "Belastung = äußere Faktoren, Beanspruchung = individuelle Reaktion",
+        "Beanspruchung ist immer schlecht",
+        "Belastung ist die Reaktion"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Belastung sind die objektiven Einwirkungen, Beanspruchung die individuelle Reaktion darauf."
+    },
+    {
+      "frage": "Ist psychische Belastung Teil der Gefährdungsbeurteilung?",
+      "optionen": [
+        "Nein",
+        "Ja, seit 2013 ausdrücklich (§5 ArbSchG)",
+        "Nur freiwillig",
+        "Nur in Großbetrieben"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Ja — §5 Abs. 3 Nr. 6 ArbSchG nennt psychische Belastungen ausdrücklich."
+    },
+    {
+      "frage": "Welches ist ein häufiges Frühsignal für Überlastung?",
+      "optionen": [
+        "Hunger",
+        "Schlafstörungen",
+        "Durst",
+        "Niesen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Schlafstörungen sind oft das erste und deutlichste Warnzeichen."
+    },
+    {
+      "frage": "Welche drei Kennzeichen hat Burnout?",
+      "optionen": [
+        "Müdigkeit, Hunger, Durst",
+        "Erschöpfung, Distanzierung/Zynismus, Leistungsabfall",
+        "Fieber, Husten, Schnupfen",
+        "Freude, Energie, Fokus"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Anhaltende Erschöpfung, Distanzierung/Zynismus und Leistungsabfall kennzeichnen Burnout."
+    },
+    {
+      "frage": "Was ist die wirksamste Einzelmaßnahme im Alltag?",
+      "optionen": [
+        "Länger arbeiten",
+        "Echte, regelmäßige Pausen",
+        "Mehr Kaffee",
+        "Dauererreichbarkeit"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Echte, regelmäßige Pausen (nicht am Bildschirm) — plus Schlaf und Bewegung."
+    },
+    {
+      "frage": "Wie sollte man eine veränderte Kollegin ansprechen?",
+      "optionen": [
+        "Gar nicht",
+        "Wertschätzend, zuhörend, auf Hilfe hinweisen",
+        "Vor dem Team",
+        "Mit Vorwürfen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Vorsichtig, wertschätzend, zuhörend und mit Hinweis auf Hilfsangebote — nicht diagnostizieren oder bloßstellen."
+    },
+    {
+      "frage": "Ständige Erreichbarkeit nach Feierabend ist…",
+      "optionen": [
+        "unproblematisch",
+        "ein Risikofaktor, organisatorisch lösbar",
+        "ein Zeichen von Engagement",
+        "Pflicht"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Ein eigenständiger Belastungsfaktor mit Gesundheitsrisiko — durch klare Regeln und Führung lösbar."
+    },
+    {
+      "frage": "Wer führt die GBU psychischer Belastung durch?",
+      "optionen": [
+        "Die Beschäftigten allein",
+        "Der Arbeitgeber (mit Beteiligung)",
+        "Niemand",
+        "Die Krankenkasse"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Der Arbeitgeber ist verantwortlich (mit Beteiligung der Beschäftigten); HerwardTimm e.K. unterstützt."
+    },
+    {
+      "frage": "Wohin bei einer akuten Krise?",
+      "optionen": [
+        "Abwarten",
+        "Telefonseelsorge 0800 111 0 111 / Hausarzt / Betriebsarzt",
+        "Soziale Medien",
+        "Niemandem sagen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Kostenlose, anonyme Telefonseelsorge, Hausarzt oder Betriebsarzt — Hilfe holen ist der wichtigste Schritt."
+    },
+    {
+      "frage": "Ist Stress immer schädlich?",
+      "optionen": [
+        "Ja",
+        "Nein, nur dauerhafte Überforderung ohne Erholung",
+        "Stress gibt es nicht",
+        "Nur bei Lärm"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Nein — fordernde Aufgaben können motivieren (Eustress); schädlich ist chronische Überforderung ohne Erholung."
+    }
+  ]
+}

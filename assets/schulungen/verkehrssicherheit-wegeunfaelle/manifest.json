@@ -1,0 +1,362 @@
+{
+  "slug": "verkehrssicherheit-wegeunfaelle",
+  "titel": "Verkehrssicherheit und Wegeunfälle",
+  "pflichtgrundlage": "§12 ArbSchG, SGB VII §8",
+  "dauer_minuten": 35,
+  "anzahl_folien": 40,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Verkehrssicherheit und Wegeunfälle",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Verkehrssicherheit und Wegeunfälle\". Sicher zur Arbeit, sicher unterwegs — Wege- und Dienstwegeunfälle vermeiden. Diese Schulung ist Ihre Pflichtunterweisung nach §12 ArbSchG  ·  DGUV V1  ·  DGUV Information 208-052 und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Grundlagen & Versicherung",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Grundlagen & Versicherung. Wann gilt der Versicherungsschutz auf dem Weg. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Wegeunfall und Versicherungsschutz",
+      "bild": "folie-05.png",
+      "sprechertext": "Wege- (Wohnung↔Arbeit) und Dienstwegeunfälle (dienstliche Fahrten) sind gesetzlich unfallversichert (§8 SGB VII). Entscheidend ist der direkte Weg; private Umwege/Unterbrechungen heben den Schutz meist auf, mit anerkannten Ausnahmen (Fahrgemeinschaft, Kinderbetreuung). Auch Wegeunfälle gehören gemeldet.\n\n▸ Trainer-Tipp: Der Versicherungsschutz hängt am direkten Weg. Wer privat einen Umweg macht, ist in dieser Zeit oft nicht geschützt — das ist gerade bei Wegeunfällen wichtig zu wissen."
+    },
+    {
+      "nummer": 6,
+      "titel": "Modul 2 — Ursachen & Risiken",
+      "bild": "folie-06.png",
+      "sprechertext": "Modul 2 — Ursachen & Risiken. Ablenkung, Müdigkeit und Witterung. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 7,
+      "titel": "Die häufigsten Unfallursachen",
+      "bild": "folie-07.png",
+      "sprechertext": "Hauptursachen sind Ablenkung (v. a. Handy), unangepasste Geschwindigkeit/Abstand, Müdigkeit, Witterung und Substanzen. Routine auf dem bekannten Weg senkt die Aufmerksamkeit. Schon Sekunden der Ablenkung führen zu schweren Unfällen.\n\n▸ Trainer-Tipp: Der gefährlichste Moment ist oft der vertraute Arbeitsweg — Routine senkt die Aufmerksamkeit. Und das Handy: ein kurzer Blick reicht für den Auffahrunfall."
+    },
+    {
+      "nummer": 8,
+      "titel": "Modul 3 — Sicher unterwegs",
+      "bild": "folie-08.png",
+      "sprechertext": "Modul 3 — Sicher unterwegs. Zu Fuß, mit Rad und Pkw — und Ladung. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 9,
+      "titel": "Sicher im Verkehr",
+      "bild": "folie-09.png",
+      "sprechertext": "Sicheres Verhalten: keine Ablenkung, angepasste Geschwindigkeit/Abstand, ausgeruht/nüchtern, sichtbar machen, Fahrzeug-/Radcheck, anschnallen/Helm. Bei Dienstfahrten zusätzlich Ladungssicherung. Müdigkeit und Substanzen sind absolute No-Gos.\n\n▸ Trainer-Tipp: Die wirksamste Maßnahme ist banal: Handy weg, anschnallen, Abstand halten, an Wetter anpassen. Damit vermeidet man die große Mehrheit der Wegeunfälle."
+    },
+    {
+      "nummer": 10,
+      "titel": "Dienstfahrten und Ladungssicherung",
+      "bild": "folie-10.png",
+      "sprechertext": "Dienstfahrten erfordern Fahrzeugcheck, Ladungssicherung (§22 StVO), realistische Routenplanung mit Puffer und Pausen. Lose Gegenstände werden bei Bremsung zu Geschossen. Winterausrüstung und freie Sicht sind Pflicht.\n\n▸ Trainer-Tipp: Bei Dienstfahrten ist Zeitdruck der heimliche Killer. Planen Sie Puffer ein — niemand verlangt, dass Sie unsicher schnell fahren, um einen Termin zu halten."
+    },
+    {
+      "nummer": 11,
+      "titel": "Modul 4 — Unfall & Meldung",
+      "bild": "folie-11.png",
+      "sprechertext": "Modul 4 — Unfall & Meldung. Richtig handeln und melden. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 12,
+      "titel": "Verhalten am Unfallort und Meldung",
+      "bild": "folie-12.png",
+      "sprechertext": "Am Unfallort: absichern (Warnblinker, Weste, Dreieck), Eigenschutz, Erste Hilfe, Notruf 112, ggf. Polizei. Dokumentation für die Versicherung. Wegeunfälle mit AU > 3 Tagen sind meldepflichtig (§193 SGB VII) — wichtig für Versicherungsschutz und Spätfolgen.\n\n▸ Trainer-Tipp: Nach einem Wegeunfall denken viele nicht an die Meldung — sie ist aber wichtig für den Versicherungsschutz und mögliche Spätfolgen. Immer Arbeitgeber/BG informieren."
+    },
+    {
+      "nummer": 13,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-13.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei Szenarien. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 14,
+      "titel": "Fallbeispiel 1: Der kurze Blick aufs Handy",
+      "bild": "folie-14.png",
+      "sprechertext": "Handyablenkung ist die häufigste Unfallursache. Auf dem direkten Weg greift der Wegeunfallschutz, dennoch drohen Bußgeld/Haftung. Lösung: Fahrmodus, Handy weglegen.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 15,
+      "titel": "Fallbeispiel 2: Müde nach der Spätschicht",
+      "bild": "folie-15.png",
+      "sprechertext": "Müdigkeit/Sekundenschlaf ist besonders nach Schicht gefährlich. 'Durchhalten' ist die falsche Entscheidung — Pause/Kurzschlaf ist Pflicht. Schichtgestaltung und Sensibilisierung sind betriebliche Hebel.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 16,
+      "titel": "Fallbeispiel 3: Die lose Kiste im Kombi",
+      "bild": "folie-16.png",
+      "sprechertext": "Ungesicherte Ladung wird bei Bremsung zum Geschoss. §22 StVO verlangt Ladungssicherung. Trennnetz, Zurrgurte und richtige Lastverteilung sind Pflicht — auch bei kurzen Dienstfahrten.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 17,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-17.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 18,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-18.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Ein Unfall auf dem direkten Weg zwischen Wohnung und Arbeit — gesetzlich unfallversichert (§8 SGB VII)."
+    },
+    {
+      "nummer": 19,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-19.png",
+      "sprechertext": "Ein Unfall auf dem direkten Weg zwischen Wohnung und Arbeit — gesetzlich unfallversichert (§8 SGB VII)."
+    },
+    {
+      "nummer": 20,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-20.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Private Umwege/Unterbrechungen heben den Schutz meist auf; Fahrgemeinschaft und Kinderbetreuung sind anerkannte Ausnahmen."
+    },
+    {
+      "nummer": 21,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-21.png",
+      "sprechertext": "Private Umwege/Unterbrechungen heben den Schutz meist auf; Fahrgemeinschaft und Kinderbetreuung sind anerkannte Ausnahmen."
+    },
+    {
+      "nummer": 22,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-22.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Ablenkung — vor allem das Handy am Steuer/beim Gehen — schon Sekunden genügen."
+    },
+    {
+      "nummer": 23,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-23.png",
+      "sprechertext": "Ablenkung — vor allem das Handy am Steuer/beim Gehen — schon Sekunden genügen."
+    },
+    {
+      "nummer": 24,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-24.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Müdigkeit/Sekundenschlaf macht fahruntüchtig — sofort Pause, nicht 'durchhalten'."
+    },
+    {
+      "nummer": 25,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-25.png",
+      "sprechertext": "Müdigkeit/Sekundenschlaf macht fahruntüchtig — sofort Pause, nicht 'durchhalten'."
+    },
+    {
+      "nummer": 26,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-26.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Griffbereit im Innenraum — beim Aussteigen auf der Fahrbahn schützt sie sofort."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Griffbereit im Innenraum — beim Aussteigen auf der Fahrbahn schützt sie sofort."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Lose Gegenstände werden zu Geschossen mit dem Vielfachen ihres Gewichts — §22 StVO verlangt Ladungssicherung."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "Lose Gegenstände werden zu Geschossen mit dem Vielfachen ihres Gewichts — §22 StVO verlangt Ladungssicherung."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Erst absichern und Eigenschutz, dann Erste Hilfe und Notruf 112."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "Erst absichern und Eigenschutz, dann Erste Hilfe und Notruf 112."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Bei Arbeitsunfähigkeit von mehr als drei Tagen ist auch der Wegeunfall der BG zu melden."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Bei Arbeitsunfähigkeit von mehr als drei Tagen ist auch der Wegeunfall der BG zu melden."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Geschwindigkeit an Sicht/Witterung anpassen und den Abstand deutlich vergrößern."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Geschwindigkeit an Sicht/Witterung anpassen und den Abstand deutlich vergrößern."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die Verkehrsmittelwahl ist frei — auf dem direkten Weg sind alle versichert."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Die Verkehrsmittelwahl ist frei — auf dem direkten Weg sind alle versichert."
+    },
+    {
+      "nummer": 38,
+      "titel": "Zusammenfassung",
+      "bild": "folie-38.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 39,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-39.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 40,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-40.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Was ist ein Wegeunfall?",
+      "optionen": [
+        "Unfall im Büro",
+        "Unfall auf dem direkten Weg Wohnung↔Arbeit",
+        "Jeder Autounfall",
+        "Unfall im Urlaub"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Ein Unfall auf dem direkten Weg zwischen Wohnung und Arbeit — gesetzlich unfallversichert (§8 SGB VII)."
+    },
+    {
+      "frage": "Ist ein privater Umweg versichert?",
+      "optionen": [
+        "Immer",
+        "Meist nicht (Ausnahmen: Fahrgemeinschaft, Kinderbetreuung)",
+        "Nie",
+        "Nur mit dem Auto"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Private Umwege/Unterbrechungen heben den Schutz meist auf; Fahrgemeinschaft und Kinderbetreuung sind anerkannte Ausnahmen."
+    },
+    {
+      "frage": "Was ist die häufigste Unfallursache?",
+      "optionen": [
+        "Wetter",
+        "Ablenkung (v. a. Handy)",
+        "Reifenpanne",
+        "Tiere"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Ablenkung — vor allem das Handy am Steuer/beim Gehen — schon Sekunden genügen."
+    },
+    {
+      "frage": "Wie gefährlich ist Müdigkeit am Steuer?",
+      "optionen": [
+        "Harmlos",
+        "Wie Alkohol — fahruntüchtig",
+        "Nur nachts",
+        "Nur auf der Autobahn"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Müdigkeit/Sekundenschlaf macht fahruntüchtig — sofort Pause, nicht 'durchhalten'."
+    },
+    {
+      "frage": "Wo gehört die Warnweste hin?",
+      "optionen": [
+        "In den Kofferraum",
+        "Griffbereit im Innenraum",
+        "Nach Hause",
+        "Egal"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Griffbereit im Innenraum — beim Aussteigen auf der Fahrbahn schützt sie sofort."
+    },
+    {
+      "frage": "Was passiert mit loser Ladung bei einer Vollbremsung?",
+      "optionen": [
+        "Nichts",
+        "Sie wird zum Geschoss",
+        "Sie bremst mit",
+        "Sie bleibt liegen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Lose Gegenstände werden zu Geschossen mit dem Vielfachen ihres Gewichts — §22 StVO verlangt Ladungssicherung."
+    },
+    {
+      "frage": "Was tun zuerst am Unfallort?",
+      "optionen": [
+        "Fotografieren",
+        "Absichern (Warnblinker/Weste/Dreieck) + Eigenschutz",
+        "Wegfahren",
+        "Telefonieren"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Erst absichern und Eigenschutz, dann Erste Hilfe und Notruf 112."
+    },
+    {
+      "frage": "Ist ein Wegeunfall meldepflichtig?",
+      "optionen": [
+        "Nie",
+        "Bei AU > 3 Tagen ja (§193 SGB VII)",
+        "Nur bei Auto",
+        "Nur mit Polizei"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Bei Arbeitsunfähigkeit von mehr als drei Tagen ist auch der Wegeunfall der BG zu melden."
+    },
+    {
+      "frage": "Wie verhält man sich bei Glätte/Nebel?",
+      "optionen": [
+        "Wie immer",
+        "Geschwindigkeit reduzieren, Abstand vergrößern",
+        "Schneller, um durchzukommen",
+        "Lichthupe"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Geschwindigkeit an Sicht/Witterung anpassen und den Abstand deutlich vergrößern."
+    },
+    {
+      "frage": "Welche Verkehrsmittel sind auf dem Arbeitsweg versichert?",
+      "optionen": [
+        "Nur Auto",
+        "Alle (zu Fuß, Rad, ÖPNV, Auto) auf direktem Weg",
+        "Nur ÖPNV",
+        "Nur Rad"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die Verkehrsmittelwahl ist frei — auf dem direkten Weg sind alle versichert."
+    }
+  ]
+}

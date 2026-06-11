@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vorsorgekartei führen (ArbMedVV) · HerwardTimm</title>
+<meta name="description" content="Arbeitsmedizinische Vorsorgekartei nach ArbMedVV §6 online führen: Vorsorgeart, Anlass, letzte und nächste Vorsorge je Mitarbeiter. Speichern und als PDF ausgeben.">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/tools.css">
+<script defer data-domain="herwardtimm.de" src="https://plausible.io/js/script.js"></script>
+</head>
+<body data-tool-key="ht-vorsorgekartei" data-due-field="naechste">
+
+<header class="site-header no-print">
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180"></a>
+    <ul class="nav-menu">
+      <li><a href="dashboard.html">Mein Bereich</a></li>
+      <li><a href="werkzeuge.html">Werkzeuge</a></li>
+      <li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="tool-actions no-print">
+  <div class="container inner">
+    <div>
+      <a href="werkzeuge.html" class="btn-link" style="font-size:0.82rem; text-transform:uppercase; letter-spacing:0.08em;">← Alle Werkzeuge</a>
+      <div id="tool-status" class="tool-saved"></div>
+    </div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="btn btn-ghost btn-sm" onclick="toolReset()">Zurücksetzen</button>
+      <button class="btn btn-primary btn-sm" onclick="toolSave()">Speichern</button>
+      <button class="btn btn-accent btn-sm" onclick="window.print()">Drucken / Als PDF speichern</button>
+    </div>
+  </div>
+</section>
+
+<section class="tool-wrap">
+  <div class="tool-page">
+    <div class="tool-eyebrow">HerwardTimm e.K. · Compliance-Werkzeug</div>
+    <div class="tool-title">Vorsorgekartei</div>
+    <p class="tool-intro">Nachweis der arbeitsmedizinischen Vorsorge nach §6 Verordnung zur arbeitsmedizinischen Vorsorge (ArbMedVV). Festgehalten werden Art (Pflicht-, Angebots-, Wunschvorsorge), Anlass sowie Datum der letzten und der nächsten fälligen Vorsorge — je beschäftigter Person. Hinweis: Befunde der Untersuchung gehören NICHT in die Kartei, nur die Tatsache und der Zeitpunkt. Eingaben werden lokal im Browser gespeichert.</p>
+
+    <div class="tool-grid" style="max-width:680px; margin-bottom:22px;">
+      <div class="lbl">Firma / Betrieb</div><div class="val"><input class="tf" data-k="firma" type="text"></div>
+      <div class="lbl">Betriebsarzt</div><div class="val"><input class="tf" data-k="arzt" type="text"></div>
+      <div class="lbl">Stand (Datum)</div><div class="val"><input class="tf" data-k="datum" type="text" placeholder="TT.MM.JJJJ"></div>
+    </div>
+
+    <div class="tool-sec">Vorsorge je Mitarbeiter</div>
+    <div id="tool-reminders" class="tool-rem no-print"></div>
+    <div class="tool-table-wrap">
+      <table class="tool-table" style="min-width:1040px;">
+        <thead><tr>
+          <th style="width:14%;">Mitarbeiter/in</th>
+          <th style="width:11%;">Vorsorgeart</th>
+          <th style="width:9%;">G-Grundsatz</th>
+          <th style="width:15%;">Anlass / Tätigkeit</th>
+          <th style="width:9%;">Datum angeboten</th>
+          <th style="width:10%;">Reaktion</th>
+          <th style="width:9%;">Letzte Vorsorge</th>
+          <th style="width:9%;">Nächste fällig</th>
+          <th style="width:7%;">Status</th>
+          <th style="width:11%;">Bemerkung</th>
+          <th style="width:2%;"></th>
+        </tr></thead>
+        <tbody id="tool-rows"></tbody>
+      </table>
+    </div>
+    <button class="btn btn-ghost btn-sm tool-addrow no-print" onclick="toolAddRow()">+ Eintrag hinzufügen</button>
+
+    <template id="row-template">
+      <tr data-row>
+        <td><input class="tf" data-f="name" type="text"></td>
+        <td>
+          <select class="tf" data-f="art">
+            <option value=""></option>
+            <option>Pflichtvorsorge</option>
+            <option>Angebotsvorsorge</option>
+            <option>Wunschvorsorge</option>
+          </select>
+        </td>
+        <td><input class="tf" data-f="grundsatz" type="text" placeholder="z. B. G37, G24, G20"></td>
+        <td><input class="tf" data-f="anlass" type="text" placeholder="z. B. Bildschirm, Lärm, Gefahrstoff"></td>
+        <td><input class="tf" data-f="angeboten" type="text" placeholder="MM.JJJJ"></td>
+        <td>
+          <select class="tf" data-f="reaktion">
+            <option value=""></option>
+            <option>angenommen</option>
+            <option>abgelehnt</option>
+            <option>ausstehend</option>
+          </select>
+        </td>
+        <td><input class="tf" data-f="letzte" type="text" placeholder="MM.JJJJ"></td>
+        <td><input class="tf" data-f="naechste" type="text" placeholder="MM.JJJJ"></td>
+        <td><span data-status class="due-pill"></span></td>
+        <td><input class="tf" data-f="bemerkung" type="text"></td>
+        <td><button class="tool-del no-print" title="Zeile löschen" onclick="toolDelRow(this)">✕</button></td>
+      </tr>
+    </template>
+
+    <p class="tool-footer-note">Welche Vorsorge fällig ist, ergibt sich aus der <a href="gefahrstoffkataster.html">Gefährdungsbeurteilung</a> und den Tätigkeiten. Diese Arbeitshilfe ersetzt keine arbeitsmedizinische oder rechtliche Beratung im Einzelfall (Stand 2026). HerwardTimm e.K. · info@herwardtimm.de</p>
+  </div>
+</section>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script src="assets/tools.js"></script>
+</body>
+</html>

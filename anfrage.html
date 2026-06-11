@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sifa-Pauschale anfragen · HerwardTimm</title>
+<meta name="description" content="In 3 Minuten zur unverbindlichen Sifa-Pauschale: Fragebogen ausfüllen, Tier-Empfehlung und Preis-Rahmen in 24 Stunden erhalten. Einfach und rechtssicher — ohne Verkaufsanruf.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sifa-Pauschale anfragen · HerwardTimm">
+<meta property="og:description" content="In 3 Minuten zur unverbindlichen Sifa-Pauschale. Einfach, rechtssicher, planbar.">
+<meta property="og:image" content="https://herwardtimm.de/assets/og-image.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<script defer data-domain="herwardtimm.de" src="https://plausible.io/js/script.js"></script>
+  <link rel="canonical" href="https://herwardtimm.de/anfrage.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sifa-Pauschale anfragen · HerwardTimm">
+  <meta name="twitter:description" content="In 3 Minuten zur unverbindlichen Sifa-Pauschale: Fragebogen ausfüllen, Tier-Empfehlung und Preis-Rahmen in 24 Stunden erhalten. Einfach und rechtssicher — ohne Verkaufsanruf.">
+  <meta name="twitter:image" content="https://herwardtimm.de/assets/og-image.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180">
+    </a>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li>
+      <li><a href="anfrage.html" class="active" data-i18n="nav.pauschalbetreuung">Pauschalbetreuung</a></li>
+      <li><a href="preise.html">Preise</a></li>
+      <li><a href="termin.html" data-i18n="nav.termin">Termin</a></li>
+      <li><a href="ueber-uns.html" data-i18n="nav.ueber-uns">Über uns</a></li>
+      <li><a href="login.html" data-i18n="nav.login">Login</a></li>
+      <li><a href="anfrage.html" class="nav-cta" data-i18n="nav.sifa-anfragen">Sifa anfragen</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow" data-i18n="anfrage.eyebrow">Sifa-Pauschalbetreuung</span>
+    <h1 data-i18n="anfrage.h1">Drei Minuten ausfüllen, in 24 Stunden ein konkretes Angebot.</h1>
+    <p data-i18n="anfrage.intro">Sie schildern uns Ihren Betrieb, wir empfehlen Ihnen das passende Modell — Unternehmermodell, Tier 1 oder Tier 2 — und nennen einen Preis-Rahmen. Unverbindlich, ohne automatischen Vertragsabschluss.</p>
+  </div>
+</section>
+
+<section class="section section--tight" style="padding-bottom: 80px;">
+  <div class="container" style="max-width: 820px;">
+    <div class="stepper">
+      <div class="stepper-item active" id="step-ind-1"><span class="num">1</span><span>Firmendaten</span></div>
+      <div class="stepper-item" id="step-ind-2"><span class="num">2</span><span>Gefährdungen</span></div>
+      <div class="stepper-item" id="step-ind-3"><span class="num">3</span><span>Kontakt</span></div>
+    </div>
+
+    <form id="anfrage-form" class="card" style="padding: 32px;">
+      <!-- ============ SCHRITT 1 ============ -->
+      <div class="step-content active" data-step="1">
+        <h2 style="font-size:1.4rem;">Firmendaten</h2>
+        <p class="text-muted">Diese Angaben helfen uns, den richtigen Betreuungs-Tier vorzuschlagen.</p>
+
+        <div class="form-group">
+          <label for="firma">Firmenname *</label>
+          <input type="text" id="firma" name="firma" required placeholder="Muster GmbH">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="branche">Branche *</label>
+            <select id="branche" name="branche" required></select>
+          </div>
+          <div class="form-group">
+            <label for="mitarbeiter">Mitarbeitende *</label>
+            <input type="number" id="mitarbeiter" name="mitarbeiter" min="1" required placeholder="z. B. 25">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="standorte">Anzahl Standorte *</label>
+            <input type="number" id="standorte" name="standorte" min="1" value="1" required>
+          </div>
+          <div class="form-group">
+            <label for="plz">Hauptstandort PLZ</label>
+            <input type="text" id="plz" name="plz" pattern="[0-9]{5}" placeholder="22307">
+            <p class="help">Nur deutsche PLZ — für Reisekosten-Einschätzung</p>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bg">Berufsgenossenschaft <span class="text-muted" style="font-weight:400;">(optional)</span></label>
+            <select id="bg" name="bg">
+              <option value="">— bitte wählen —</option>
+              <option value="BG BAU">BG BAU — Bauwirtschaft</option>
+              <option value="BG ETEM">BG ETEM — Energie, Textil, Elektro, Medien</option>
+              <option value="BG HM">BG HM — Holz und Metall</option>
+              <option value="BG RCI">BG RCI — Rohstoffe und chemische Industrie</option>
+              <option value="BG Verkehr">BG Verkehr — Transport und Verkehr</option>
+              <option value="BGHW">BGHW — Handel und Warenlogistik</option>
+              <option value="BGN">BGN — Nahrungsmittel und Gastgewerbe</option>
+              <option value="BGW">BGW — Gesundheitsdienst und Wohlfahrtspflege</option>
+              <option value="VBG">VBG — Verwaltung, Dienstleistung</option>
+              <option value="Unfallkasse">Unfallkasse / öffentlicher Dienst</option>
+              <option value="Weiß nicht">Weiß ich nicht</option>
+              <option value="Andere">Andere</option>
+            </select>
+            <p class="help">Ihre zuständige gesetzliche Unfallversicherung</p>
+          </div>
+          <div class="form-group">
+            <label for="bgnummer">BG-Mitgliedsnummer <span class="text-muted" style="font-weight:400;">(optional)</span></label>
+            <input type="text" id="bgnummer" name="bgnummer" placeholder="z. B. 1234567890">
+            <p class="help">Falls zur Hand — beschleunigt die Bearbeitung</p>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 8px;">
+          <label>Welches Betreuungsmodell wünschen Sie?</label>
+          <div class="radio-row" style="margin-top: 8px;">
+            <label><input type="radio" name="model" value="regel" checked>Regelbetreuung — wir betreuen vollständig</label>
+            <label><input type="radio" name="model" value="unternehmermodell">Unternehmermodell — ich steuere selbst, brauche nur die Dokumente</label>
+            <label><input type="radio" name="model" value="unklar">Noch unklar / bitte beraten</label>
+          </div>
+          <p class="help">Im <strong>Unternehmermodell</strong> steuern Sie die Arbeitssicherheit selbst und tragen die Verantwortung. Wir liefern Ihnen dafür das rechtssichere <strong>Dokumentenpaket</strong> (GBU-Vorlagen, Unterweisungs-Dokumente, Betriebsanweisungen, Nachweis-Vorlagen) inklusive jährlicher Aktualisierung — ohne Beratung oder Betreuung.</p>
+        </div>
+
+        <div style="display:flex; justify-content: flex-end; margin-top: 24px;">
+          <button type="button" class="btn btn-primary" onclick="nextStep()">Weiter zu Schritt 2 →</button>
+        </div>
+      </div>
+
+      <!-- ============ SCHRITT 2 ============ -->
+      <div class="step-content" data-step="2">
+        <h2 style="font-size:1.4rem;">Gefährdungen und Dokumente</h2>
+        <p class="text-muted" data-i18n="anfrage.hazards-hint">Mehrfachauswahl möglich. Falls Sie sich unsicher sind, lassen Sie das Feld leer — wir klären das im Erstgespräch.</p>
+
+        <div class="form-group">
+          <label data-i18n="anfrage.hazards-q">Welche Gefährdungen kommen in Ihrem Betrieb vor?</label>
+          <div class="check-group">
+            <label class="check-item"><input type="checkbox" name="hazards" value="Elektro"><span data-i18n="anfrage.haz-elektro">Elektrische Anlagen / Geräte</span></label>
+            <label class="check-item"><input type="checkbox" name="hazards" value="Höhe"><span data-i18n="anfrage.haz-hoehe">Arbeiten in Höhe</span></label>
+            <label class="check-item"><input type="checkbox" name="hazards" value="Gefahrstoffe"><span data-i18n="anfrage.haz-gefahrstoffe">Gefahrstoffe</span></label>
+            <label class="check-item"><input type="checkbox" name="hazards" value="Bildschirmarbeit"><span data-i18n="anfrage.haz-bildschirm">Bildschirmarbeit</span></label>
+            <label class="check-item"><input type="checkbox" name="hazards" value="Körperliche Belastung"><span data-i18n="anfrage.haz-koerper">Körperliche Belastung / Heben</span></label>
+            <label class="check-item"><input type="checkbox" name="hazards" value="Maschinen"><span data-i18n="anfrage.haz-maschinen">Maschinen / Werkzeuge</span></label>
+            <label class="check-item"><input type="checkbox" name="hazards" value="Lärm"><span data-i18n="anfrage.haz-laerm">Lärm-Exposition</span></label>
+            <label class="check-item"><input type="checkbox" name="hazards" value="Verkehr"><span data-i18n="anfrage.haz-verkehr">Innerbetrieblicher Verkehr</span></label>
+            <label class="check-item"><input type="checkbox" name="hazards" value="Kundenkontakt"><span data-i18n="anfrage.haz-kunden">Direkter Kundenkontakt</span></label>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 24px;">
+          <label>Welche Dokumente haben Sie bereits?</label>
+
+          <div style="margin-top: 10px;">
+            <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 6px;">Gefährdungsbeurteilung</div>
+            <div class="radio-row">
+              <label><input type="radio" name="gbu" value="ja">Vorhanden &amp; aktuell</label>
+              <label><input type="radio" name="gbu" value="teilweise">Teilweise / veraltet</label>
+              <label><input type="radio" name="gbu" value="nein">Noch nicht erstellt</label>
+            </div>
+          </div>
+
+          <div style="margin-top: 14px;">
+            <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 6px;">Brandschutzordnung</div>
+            <div class="radio-row">
+              <label><input type="radio" name="bso" value="ja">Vorhanden</label>
+              <label><input type="radio" name="bso" value="teilweise">Teilweise</label>
+              <label><input type="radio" name="bso" value="nein">Nicht vorhanden</label>
+            </div>
+          </div>
+
+          <div style="margin-top: 14px;">
+            <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 6px;">Flucht- und Rettungsplan</div>
+            <div class="radio-row">
+              <label><input type="radio" name="frp" value="ja">Vorhanden</label>
+              <label><input type="radio" name="frp" value="teilweise">Teilweise</label>
+              <label><input type="radio" name="frp" value="nein">Nicht vorhanden</label>
+            </div>
+          </div>
+
+          <div style="margin-top: 14px;">
+            <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 6px;">Hygieneplan</div>
+            <div class="radio-row">
+              <label><input type="radio" name="hyg" value="ja">Vorhanden</label>
+              <label><input type="radio" name="hyg" value="teilweise">Teilweise</label>
+              <label><input type="radio" name="hyg" value="nein">Nicht relevant / nein</label>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content: space-between; margin-top: 24px;">
+          <button type="button" class="btn btn-ghost" onclick="prevStep()">← Zurück</button>
+          <button type="button" class="btn btn-primary" onclick="nextStep()">Weiter zu Schritt 3 →</button>
+        </div>
+      </div>
+
+      <!-- ============ SCHRITT 3 ============ -->
+      <div class="step-content" data-step="3">
+        <h2 style="font-size:1.4rem;">Ihre Ansprechperson</h2>
+        <p class="text-muted">Wer ist unser Gesprächspartner und wie erreichen wir Sie?</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Anna Petersen">
+          </div>
+          <div class="form-group">
+            <label for="rolle">Funktion</label>
+            <input type="text" id="rolle" name="rolle" placeholder="Geschäftsführung">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email" required placeholder="anna.petersen@firma.de">
+          </div>
+          <div class="form-group">
+            <label for="tel">Telefon</label>
+            <input type="tel" id="tel" name="tel" placeholder="040 123456789">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="startdatum">Wunsch-Starttermin</label>
+            <input type="date" id="startdatum" name="startdatum">
+          </div>
+          <div class="form-group">
+            <label for="anlass">Anlass</label>
+            <select id="anlass" name="anlass">
+              <option value="">Bitte wählen</option>
+              <option>Neueinrichtung Arbeitssicherheit</option>
+              <option>Bestehende Sifa wechselt</option>
+              <option>BG-Begehung / Audit angekündigt</option>
+              <option>Wachstum / neuer Standort</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="notiz">Notizen oder Fragen</label>
+          <textarea id="notiz" name="notiz" placeholder="Gibt es etwas, was wir vorab wissen sollten?"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="check-item"><input type="checkbox" required><span>Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzhinweise</a> zur Kenntnis genommen.</span></label>
+        </div>
+
+        <div style="display:flex; justify-content: space-between; margin-top: 24px; gap: 12px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-ghost" onclick="prevStep()">← Zurück</button>
+          <button type="submit" class="btn btn-accent btn-lg" data-i18n="anfrage.btn-absenden">Anfrage absenden</button>
+        </div>
+      </div>
+
+      <!-- ============ ERFOLGSSEITE ============ -->
+      <div class="step-content" data-step="4">
+        <div style="text-align:center; margin-bottom: 28px;">
+          <div style="font-size: 3rem; line-height: 1;">✓</div>
+          <h2 style="color: var(--success);" data-i18n="anfrage.success-h">Anfrage erfolgreich eingereicht</h2>
+          <p class="text-muted" data-i18n="anfrage.success-text">Sie hören von uns in 24 Stunden. Vorab haben wir Ihre Daten kurz analysiert:</p>
+        </div>
+
+        <div class="tier-result">
+          <div style="display:flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+            <div>
+              <div class="text-muted" style="font-size:.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Empfohlene Pauschale</div>
+              <div class="tier-name" id="r-tier">Tier 1 — Quartal-Betreuung</div>
+            </div>
+            <div style="text-align:right;">
+              <div class="text-muted" style="font-size:.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Indikative Spanne</div>
+              <div class="price-range" id="r-price">120 – 180 €</div>
+              <div class="text-muted" style="font-size:.85rem;" id="r-freq">je Quartal</div>
+            </div>
+          </div>
+          <div id="r-setup-row" style="display:flex; justify-content: space-between; align-items: center; gap: 16px; background: var(--sage-mint-soft); border-radius: 8px; padding: 12px 16px; margin-bottom: 4px;">
+            <div>
+              <div style="font-weight: 600; color: var(--sage-dark);" id="r-setup-label">Einmalige Erstausstattung</div>
+              <div class="text-muted" style="font-size:.82rem;" id="r-setup-note">GBU-Ersterstellung, Dokumenten-Aufbau, Bestellurkunden, Portal-Einrichtung</div>
+            </div>
+            <div style="font-weight: 700; font-size: 1.3rem; color: var(--sage-dark); white-space: nowrap;" id="r-setup">699 €</div>
+          </div>
+          <hr style="border:0; border-top:1px solid var(--border-soft); margin: 16px 0;">
+          <div id="r-explanation" class="text-muted"></div>
+          <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="termin.html" class="btn btn-primary">Erstgespräch buchen</a>
+            <a href="dashboard.html" class="btn btn-ghost">Zum Kundenbereich</a>
+          </div>
+        </div>
+
+        <p class="text-muted" style="font-size:.85rem; margin-top: 20px; text-align: center;">Hinweis: Die genannte Spanne ist eine erste Einschätzung anhand Ihrer Angaben. Das verbindliche Angebot kommt nach unserer Rückmeldung. Alle Preise netto zzgl. gesetzlicher USt; Angebot ausschließlich für Unternehmer (§ 14 BGB).</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;"><img src="assets/logo-weiss.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" class="logo-weiss" width="200"></div>
+        <p style="font-size: 0.92rem;">Sifa-Beratung und Arbeitssicherheit für KMUs in Norddeutschland.</p>
+      </div>
+      <div><h4 data-i18n="footer.plattform">Plattform</h4><ul class="footer-list"><li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li><li><a href="anfrage.html" data-i18n="nav.pauschalbetreuung">Pauschalbetreuung</a></li><li><a href="preise.html">Preise</a></li><li><a href="termin.html" data-i18n="nav.termin">Termin</a></li><li><a href="login.html" data-i18n="nav.login">Login</a></li></ul></div>
+      <div><h4 data-i18n="footer.unternehmen">Unternehmen</h4><ul class="footer-list"><li><a href="ueber-uns.html" data-i18n="nav.ueber-uns">Über uns</a></li><li><a href="ratgeber.html">Ratgeber</a></li><li><a href="ueber-uns.html#kontakt" data-i18n="footer.kontakt">Kontakt</a></li></ul></div>
+      <div><h4 data-i18n="footer.rechtliches">Rechtliches</h4><ul class="footer-list"><li><a href="impressum.html" data-i18n="footer.impressum">Impressum</a></li><li><a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a></li><li><a href="agb.html" data-i18n="footer.agb">AGB</a></li><li><a href="widerruf.html" data-i18n="footer.widerruf">Widerruf</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 HerwardTimm</span><span data-i18n="footer.demo-version">Demo-Version</span></div>
+  </div>
+</footer>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script>
+  // Branchen-Dropdown füllen
+  const brancheSel = document.getElementById('branche');
+  brancheSel.innerHTML = '<option value="">Bitte wählen</option>' + BRANCHES.map(b => `<option value="${b}">${b}</option>`).join('');
+
+  let step = 1;
+  const TOTAL_STEPS = 3;
+
+  function showStep(s) {
+    document.querySelectorAll('.step-content').forEach(el => el.classList.remove('active'));
+    document.querySelector(`.step-content[data-step="${s}"]`).classList.add('active');
+    for (let i = 1; i <= TOTAL_STEPS; i++) {
+      const el = document.getElementById('step-ind-' + i);
+      if (!el) continue;
+      el.classList.remove('active', 'done');
+      if (i < s) el.classList.add('done');
+      else if (i === s) el.classList.add('active');
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function nextStep() {
+    if (!validateStep(step)) return;
+    step = Math.min(step + 1, TOTAL_STEPS);
+    showStep(step);
+  }
+  function prevStep() {
+    step = Math.max(step - 1, 1);
+    showStep(step);
+  }
+  window.nextStep = nextStep;
+  window.prevStep = prevStep;
+
+  function validateStep(s) {
+    const required = document.querySelectorAll(`.step-content[data-step="${s}"] [required]`);
+    for (const el of required) {
+      if (!el.value.trim()) {
+        el.focus();
+        toast('Bitte alle Pflichtfelder ausfüllen.', 'error');
+        return false;
+      }
+    }
+    return true;
+  }
+
+  document.getElementById('anfrage-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    // Daten sammeln
+    const employees = parseInt(document.getElementById('mitarbeiter').value) || 0;
+    const branch = document.getElementById('branche').value;
+    const sites = parseInt(document.getElementById('standorte').value) || 1;
+    const hazards = [...document.querySelectorAll('input[name="hazards"]:checked')].map(c => c.value);
+    const model = document.querySelector('input[name="model"]:checked')?.value || 'regel';
+
+    const result = calculateTier({ employees, branch, hazards, sites, model });
+
+    document.getElementById('r-tier').textContent = result.tierName;
+    document.getElementById('r-price').textContent = `${result.priceLow} – ${result.priceHigh} €`;
+    document.getElementById('r-freq').textContent = result.freqLabel;
+    document.getElementById('r-setup').textContent = `${result.setupFee} €`;
+    document.getElementById('r-setup-label').textContent = result.setupLabel;
+    document.getElementById('r-setup-note').textContent = result.setupNote;
+    document.getElementById('r-setup-row').style.display = result.setupFee > 0 ? 'flex' : 'none';
+
+    let explain = `<p>Auf Basis Ihrer Angaben (<strong>${employees} Mitarbeitende</strong>, Branche <strong>${branch || 'nicht angegeben'}</strong>, <strong>${sites} Standort${sites > 1 ? 'e' : ''}</strong>) empfehlen wir <strong>${result.tierName}</strong>.</p><ul>`;
+    if (result.tier === 'S') {
+      explain += '<li>Sie steuern die Arbeitssicherheit selbst und tragen die Verantwortung — wir übernehmen keine Beratung oder Betreuung.</li>';
+      explain += '<li>Einmalige Erstellung des vollständigen Dokumentenpakets: GBU-Vorlagen, Unterweisungs-Dokumente, Betriebsanweisungen und Nachweis-Vorlagen.</li>';
+      explain += '<li>Der Jahrespreis deckt anschließend die laufende Aktualisierung der Dokumente an neue Vorschriften.</li>';
+      explain += '<li><span class="text-muted">Hinweis: Die Anerkennung des Unternehmermodells regeln Sie direkt mit Ihrer Berufsgenossenschaft.</span></li>';
+    } else if (result.tier === 1) {
+      explain += '<li>Quartalsbegehung, GBU-Pflege, Unterweisungs-Tracking, Jahresbericht</li><li>Feste Ansprechperson für Rückfragen zwischen den Terminen</li>';
+    } else {
+      explain += '<li>Monatlicher Vor-Ort-Termin oder Videocall, je nach Anlass</li><li>Vollständige GBU-Pflege, Unterweisungs-Steuerung, Audit-Begleitung</li>';
+    }
+    if (result.riskBranch) explain += '<li><strong>Branche mit erhöhter Gefährdung</strong> — Preis liegt im oberen Drittel der Spanne.</li>';
+    if (result.riskHazard) explain += '<li>Wegen besonderer Gefährdungen wurde ein Aufschlag berücksichtigt.</li>';
+    if (result.sondergefahr) explain += '<li><strong>Mehrfache Sondergefährdungen</strong> — wir besprechen das genauer im Erstgespräch.</li>';
+    if (sites > 1) explain += `<li>Mehrere Standorte (${sites}) — Reise- und Termin-Aufwand wurde eingepreist.</li>`;
+    explain += '</ul>';
+    document.getElementById('r-explanation').innerHTML = explain;
+
+    // Anfrage speichern (für Admin-Demo)
+    // TODO GO-LIVE: Demo-Stub — die Anfrage wird NUR lokal (localStorage)
+    // gespeichert; es wird KEINE E-Mail vers/empfangen. Vor Live-Gang an den
+    // echten Mailversand (z. B. Postmark/Mailgun/Resend) anbinden, sonst stimmt
+    // das Versprechen "wir melden uns in 24 Stunden" nicht.
+    Store.push('anfragen', {
+      firma: document.getElementById('firma').value,
+      branch,
+      employees,
+      sites,
+      model,
+      bg: document.getElementById('bg').value,
+      bgnummer: document.getElementById('bgnummer').value.trim(),
+      hazards,
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      tel: document.getElementById('tel').value,
+      anlass: document.getElementById('anlass').value,
+      tier: result.tier,
+      tierName: result.tierName,
+      frequency: result.frequency,
+      priceLow: result.priceLow,
+      priceHigh: result.priceHigh,
+      setupFee: result.setupFee,
+      date: new Date().toISOString(),
+      status: 'Neu'
+    });
+
+    // Erfolgsseite zeigen
+    document.querySelectorAll('.step-content').forEach(el => el.classList.remove('active'));
+    document.querySelector('.step-content[data-step="4"]').classList.add('active');
+    document.querySelectorAll('.stepper-item').forEach(el => el.classList.remove('active'));
+    for (let i = 1; i <= TOTAL_STEPS; i++) document.getElementById('step-ind-' + i)?.classList.add('done');
+    toast('Anfrage gesendet — wir melden uns in 24 Stunden.', 'success', 5000);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>

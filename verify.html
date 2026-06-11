@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zertifikat prüfen · HerwardTimm</title>
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .verify-wrap { max-width:640px; margin:0 auto; }
+  .verify-card { background:#fff; border:1px solid var(--border-soft); border-radius:14px; padding:36px; box-shadow:var(--shadow-lg); }
+  .vstatus { display:flex; align-items:center; gap:14px; padding:16px 18px; border-radius:10px; margin-bottom:22px; }
+  .vstatus.ok { background:rgba(76,122,94,.12); }
+  .vstatus.bad { background:rgba(176,58,46,.10); }
+  .vstatus .ic { width:42px; height:42px; flex:none; border-radius:50%; display:flex; align-items:center; justify-content:center; }
+  .vstatus.ok .ic { background:#4C7A5E; } .vstatus.bad .ic { background:#B03A2E; }
+  .vstatus .ic svg { width:24px; height:24px; stroke:#fff; }
+  .vstatus h2 { margin:0; font-size:1.15rem; }
+  .vstatus.ok h2 { color:#2f5a3e; } .vstatus.bad h2 { color:var(--error); }
+  .vrow { display:flex; padding:11px 0; border-bottom:1px solid var(--border-soft); font-size:.94rem; }
+  .vrow:last-child { border-bottom:0; }
+  .vrow .k { width:160px; flex:none; color:var(--text-soft); }
+  .vrow .v { font-weight:500; color:var(--sage-darker); }
+  .vsearch { display:flex; gap:10px; margin-top:22px; flex-wrap:wrap; }
+  .vsearch input { flex:1; min-width:200px; padding:11px 14px; border:1px solid var(--border-soft); border-radius:8px; font:inherit; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180"></a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="schulungen.html">Schulungen</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="section--tight" style="padding:56px 0 90px;">
+  <div class="container verify-wrap">
+    <span class="eyebrow">Zertifikatsprüfung</span>
+    <h1 style="margin:8px 0 6px;">Echtheit eines Schulungsnachweises prüfen</h1>
+    <p class="text-muted" style="margin:0 0 26px;">Geben Sie die Zertifikat-ID ein oder scannen Sie den QR-Code auf dem Nachweis.</p>
+
+    <div class="verify-card" id="verify-card">
+      <p class="text-muted">Wird geprüft …</p>
+    </div>
+
+    <div class="vsearch">
+      <input type="text" id="vid" placeholder="Zertifikat-ID, z. B. HTK-MMB17" aria-label="Zertifikat-ID">
+      <button class="btn btn-cta" onclick="check()">Prüfen</button>
+    </div>
+
+    <p class="text-muted" style="font-size:.82rem; margin-top:24px; line-height:1.6;">
+      <strong>Hinweis zur Demo:</strong> Die Prüfung erfolgt hier gegen die lokal im Browser gespeicherten Zertifikate.
+      Im Live-Betrieb läuft sie gegen die zentrale Datenbank von HerwardTimm — fälschungssicher und unabhängig vom Gerät.
+    </p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container"><div class="footer-bottom"><span>© 2026 HerwardTimm e.K.</span><span>Demo-Version</span></div></div>
+</footer>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="assets/verify.bundle.js"></script>
+</body>
+</html>

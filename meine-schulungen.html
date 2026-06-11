@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meine Schulungen · HerwardTimm</title>
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/app-shell.css">
+<style>
+  .ms-hero { background:var(--sage-mint-soft); padding:40px 0 32px; }
+  .ms-top { display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+  .ms-ring { flex:none; }
+  .ring-num { font-size:.8rem; font-weight:700; fill:var(--sage-dark); }
+  .ring-lbl { font-size:.32rem; fill:var(--text-soft); text-transform:uppercase; letter-spacing:.06em; }
+  .ms-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; }
+  .ms-card { background:#fff; border:1px solid var(--border-soft); border-radius:12px; padding:20px 22px; display:flex; flex-direction:column; gap:6px; }
+  .ms-card.due { border-left:3px solid var(--gold); }
+  .ms-card.ok { border-left:3px solid #4C7A5E; }
+  .ms-card.exp { border-left:3px solid #B03A2E; }
+  .ms-card h3 { font-size:1.05rem; margin:0; color:var(--sage-darker); }
+  .ms-meta { font-size:.84rem; color:var(--text-soft); }
+  .ms-actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+  .pill { display:inline-block; padding:3px 10px; border-radius:20px; font-size:.74rem; font-weight:600; width:max-content; }
+  .pill.done { background:rgba(76,122,94,.15); color:#2f5a3e; }
+  .pill.prog { background:rgba(201,155,69,.16); color:var(--gold-dark); }
+  .pill.todo { background:var(--sage-mint-soft); color:var(--text-soft); }
+  .pill.exp  { background:rgba(176,58,46,.13); color:var(--error); }
+  .ms-empty { background:#fff; border:1px solid var(--border-soft); border-radius:12px; padding:40px; text-align:center; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180"></a>
+    <button class="nav-toggle" aria-label="Menü öffnen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <ul class="nav-menu">
+      <li><a href="meine-schulungen.html" class="active">Meine Schulungen</a></li>
+      <li><a href="schulungen.html">Schulungskatalog</a></li>
+      <li><a href="login.html" id="logout-link">Abmelden</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="ms-hero">
+  <div class="container">
+    <div class="ms-top">
+      <div class="ms-ring" id="ms-ring"></div>
+      <div>
+        <span class="eyebrow" style="padding-left:0;">Mein Lernbereich</span>
+        <h1 style="margin:6px 0 4px;" id="ms-name">—</h1>
+        <p style="margin:0; color:var(--text-soft);" id="ms-sub">—</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section--tight" style="padding:36px 0 80px;">
+  <div class="container">
+    <div id="ms-due-wrap"></div>
+    <div class="ms-grid" id="ms-grid"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container"><div class="footer-bottom"><span>© 2026 HerwardTimm e.K.</span><span>Demo-Version</span></div></div>
+</footer>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script src="assets/meine-schulungen.bundle.js"></script>
+<!-- App-Shell („Plattform-Gefühl"): feste Sidebar + Topbar -->
+<script src="assets/app-shell.js"></script>
+<script>mountAppShell({ active: 'meine-schulungen', crumb: 'Lernen / Übersicht', title: 'Meine Schulungen' });</script>
+</body>
+</html>

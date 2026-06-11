@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard.html
+Disallow: /meine-schulungen.html
+Disallow: /login.html
+Disallow: /verify.html
+Disallow: /zertifikat.html
+Disallow: /admin.html
+Disallow: /lernen.html
+
+Sitemap: https://herwardtimm.de/sitemap.xml

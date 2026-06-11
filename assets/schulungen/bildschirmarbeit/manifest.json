@@ -1,0 +1,398 @@
+{
+  "slug": "bildschirmarbeit",
+  "titel": "Bildschirmarbeit",
+  "pflichtgrundlage": "ArbStättV Anhang 6, §6 ArbMedVV",
+  "dauer_minuten": 45,
+  "anzahl_folien": 46,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Bildschirmarbeit",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Bildschirmarbeit\". Ergonomie, Augen und Pausenkultur für gesundes Arbeiten am Display. Diese Schulung ist Ihre Pflichtunterweisung nach ArbStättV Anhang Nr. 6  ·  §6 ArbMedVV  ·  DGUV I 215-410 und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Rechtliche Grundlagen",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Rechtliche Grundlagen. ArbStättV, ArbMedVV, DGUV — was muss der Arbeitgeber, was dürfen Sie. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Bildschirmarbeit — was zählt rechtlich dazu?",
+      "bild": "folie-05.png",
+      "sprechertext": "Diese rechtliche Grundlage ist wichtig, weil viele Mitarbeitende und sogar Arbeitgeber sie unterschätzen. Sobald jemand regelmäßig — auch nur einige Stunden pro Woche — am Bildschirm arbeitet, gelten die ergonomischen Anforderungen der ArbStättV. Im Homeoffice geht der Schutzanspruch nicht verloren. Der Arbeitgeber muss die Bedingungen erfassen, ggf. ergonomische Hilfsmittel zur Verfügung stellen und arbeitsmedizinische Vorsorge anbieten. Das wird oft vergessen.\n\n▸ Trainer-Tipp: Die häufigste Missverständnis: 'Homeoffice ist private Sache'. Falsch. Der Arbeitgeber bleibt verantwortlich, auch wenn die Wohnung Ihnen gehört — der Schreibtisch ist Arbeitsplatz im Sinne der ArbStättV."
+    },
+    {
+      "nummer": 6,
+      "titel": "Anspruch auf arbeitsmedizinische Vorsorge",
+      "bild": "folie-06.png",
+      "sprechertext": "Arbeitsmedizinische Vorsorge ist ein freiwilliges Angebot, kein Zwang. Aber das Angebot ist Pflicht des Arbeitgebers. Wichtig: das Ergebnis der Untersuchung ist vertraulich. Der Arzt teilt dem Arbeitgeber NICHT konkrete Befunde mit, sondern nur das Ergebnis 'geeignet' oder 'nicht geeignet'. Diagnosen bleiben bei der Mitarbeiter:in und Arzt. Das ist wichtig, damit niemand aus Angst vor arbeitsrechtlichen Konsequenzen die Vorsorge meidet. Bildschirmbrille: viele Beschäftigte wissen nicht, dass sie einen Anspruch haben. Die Kosten trägt der Arbeitgeber, wenn der Augenarzt sie für die spezifische Tätigkeit als notwendig bestätigt.\n\n▸ Trainer-Tipp: Bildschirmbrille ist kein 'Goodie' für ältere Mitarbeitende. Viele unter 40 brauchen sie wegen Bildschirm-Mittelabstand, der mit normaler Brille schlecht erfasst wird."
+    },
+    {
+      "nummer": 7,
+      "titel": "Modul 2 — Ergonomie am Arbeitsplatz",
+      "bild": "folie-07.png",
+      "sprechertext": "Modul 2 — Ergonomie am Arbeitsplatz. Stuhl, Tisch, Bildschirm und Tastatur richtig einstellen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 8,
+      "titel": "Der ergonomische Arbeitsplatz im Überblick",
+      "bild": "folie-08.png",
+      "sprechertext": "Diese Maße sind keine Empfehlungen, sondern Standard nach DIN EN ISO 9241-5. Wer sie einhält, hat ein deutlich geringeres Risiko für Rücken-, Nacken- und Schulterbeschwerden über die Zeit. Häufige Fehler: zu hoher Tisch (Schultern hochgezogen), zu tiefer Bildschirm (Halsbeugung), Maus zu weit rechts (Schulterspannung). Der Bildschirm gehört direkt vor die Augen, nicht seitlich – ständige Kopfdrehung über Jahre verursacht chronische Beschwerden.\n\n▸ Trainer-Tipp: Probieren Sie es heute: stellen Sie Ihren Stuhl so ein, dass Ihre Oberschenkel exakt waagerecht sind und die Füße fest auf dem Boden stehen. Wenn die Füße baumeln, ist der Stuhl zu hoch — Fußstütze einsetzen."
+    },
+    {
+      "nummer": 9,
+      "titel": "Stuhl — die Königsdisziplin",
+      "bild": "folie-09.png",
+      "sprechertext": "Der Stuhl ist der Dreh- und Angelpunkt des ergonomischen Arbeitsplatzes. Standard-Bürostühle haben Sitzhöhe, Sitztiefe, Lehnenhöhe, Lehnenneigung, Armlehnen-Höhe, ggf. Armlehnen-Breite und Sitzneigung verstellbar. Wer all das nutzt, kann den Stuhl perfekt anpassen. Häufiger Fehler: 'Ich hab den Stuhl ja schon eingestellt, vor zwei Jahren.' Falsch – die ergonomische Einstellung muss regelmäßig überprüft werden, weil sich Tätigkeiten ändern (Stehpulte, mehrere Bildschirme), Personen sich ändern (Körpergewicht, Rückenbeschwerden), und Stühle altern. Lassen Sie sich bei Neueinstellung oder Beschwerden vom Arbeitgeber/Sifa einweisen.\n\n▸ Trainer-Tipp: Ein moderner Bürostuhl hat 7–10 Verstellungen. Wer nur Sitzhöhe und Rollen nutzt, verschenkt 80 % des Komforts — und schadet langfristig der eigenen Wirbelsäule."
+    },
+    {
+      "nummer": 10,
+      "titel": "Tisch und Bildschirm einstellen",
+      "bild": "folie-10.png",
+      "sprechertext": "Die Schritte gelten als Standard. Häufig wird der Bildschirm zu tief eingestellt – bei Notebook-Nutzung fast immer. Lösung: Notebook-Ständer und externe Tastatur/Maus. Sehabstand: ein einfacher Test: Arm ausstrecken, Faust zur Faust – das ist ein guter Sehabstand. Bei großen 4K-Monitoren entsprechend mehr Distanz. Beleuchtung: nicht direkt hinter dem Bildschirm (Blendung), nicht direkt im Rücken (Reflex im Display). Idealerweise seitlich, Tageslicht 90° zum Display.\n\n▸ Trainer-Tipp: Höhenverstellbare Tische sind heute Standard — wechseln Sie mehrmals täglich zwischen Sitzen und Stehen, das reduziert die Wirbelsäulenbelastung erheblich."
+    },
+    {
+      "nummer": 11,
+      "titel": "Ergonomie — Do's und Don't's",
+      "bild": "folie-11.png",
+      "sprechertext": "Die Do/Don't-Liste ist die Quintessenz aus etwa 50 Beratungen, die wir bei HerwardTimm pro Jahr durchführen. Die häufigsten Probleme sind: Notebook-Direktnutzung ohne externes Display, einseitige Bildschirmanordnung (mehrere Monitore, einer am Rand), zu tiefer Tisch. Pause ist wichtig: die meisten machen Bildschirmpause im Smartphone – das schadet Augen und Halswirbelsäule weiter. Ideal: 2 Minuten ans Fenster, in die Ferne schauen, leichte Halsrotation.\n\n▸ Trainer-Tipp: Wer drei dieser Don'ts heute beendet, spürt binnen einer Woche eine messbare Veränderung an Nacken, Schultern und Augen."
+    },
+    {
+      "nummer": 12,
+      "titel": "Modul 3 — Augen und Sehkraft",
+      "bild": "folie-12.png",
+      "sprechertext": "Modul 3 — Augen und Sehkraft. Augenbeschwerden, digitale Augenmüdigkeit, Bildschirmbrille. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 13,
+      "titel": "Digitale Augenmüdigkeit — was passiert?",
+      "bild": "folie-13.png",
+      "sprechertext": "Digitale Augenmüdigkeit (Computer Vision Syndrome) ist ein gut belegtes Phänomen. Es führt nicht zu langfristigen Sehverlusten, aber Beschwerden sind real und können Lebensqualität deutlich mindern. Wichtige Botschaft: das ist kein Bagatelltheme, aber auch keine Katastrophe. Mit ergonomischer Einstellung, regelmäßigen Pausen und Bildschirmbrille (wo nötig) gut beherrschbar.\n\n▸ Trainer-Tipp: Die Beschwerden sind echt, auch wenn sie nicht zu dauerhaftem Schaden führen. Sie sind ein Signal — und wenn sie häufig auftreten, sollten Sie reagieren."
+    },
+    {
+      "nummer": 14,
+      "titel": "20-20-20-Regel und Pausenkultur",
+      "bild": "folie-14.png",
+      "sprechertext": "Die 20-20-20-Regel ist die mit Abstand einfachste und effektivste Maßnahme gegen digitale Augenmüdigkeit. Sie ist im englischsprachigen Raum gut etabliert und wird inzwischen auch von der DGUV empfohlen. Wichtig ist die regelmäßige Umsetzung: ein Wecker oder eine Pausen-App hilft. Mikropausen sind ergänzend – Augen schließen für 20 Sekunden ist erstaunlich effektiv. Hauptpausen müssen tatsächlich Pausen sein, nicht 'mal eben E-Mails am Handy'. Ideal: nach draußen gehen, Tageslicht, Bewegung.\n\n▸ Trainer-Tipp: Pausen wirken nur, wenn sie tatsächlich genommen werden. Eine 'Pause' am Handy ist keine Pause für die Augen. Ans Fenster gehen, in die Ferne sehen, Schultern kreisen."
+    },
+    {
+      "nummer": 15,
+      "titel": "Bildschirmbrille — Anspruch und Praxis",
+      "bild": "folie-15.png",
+      "sprechertext": "Die Bildschirmbrille ist ein häufig unterschätzter Anspruch. Sie ist nicht Synonym mit Gleitsichtbrille – sie ist eine spezielle Konstruktion, oft mit erweitertem Mittelbereich für den 50–70-cm-Abstand. Viele Mitarbeitende wissen nicht, dass der Arbeitgeber zahlen muss. Die Kostenübernahme ist im Detail strittig: Gestelle in branchenüblicher Qualität werden voll übernommen, Designermodelle nur anteilig. HerwardTimm e.K. unterstützt bei der Klärung im Einzelfall.\n\n▸ Trainer-Tipp: Wichtig: die normale Lese- oder Gleitsichtbrille ist meist NICHT für Bildschirmarbeit optimiert. Wer Beschwerden hat, sollte den Sehtest gezielt für Bildschirmarbeit machen."
+    },
+    {
+      "nummer": 16,
+      "titel": "Modul 4 — Pausen, Bewegung, Gesundheit",
+      "bild": "folie-16.png",
+      "sprechertext": "Modul 4 — Pausen, Bewegung, Gesundheit. Pausenstrategien, Ausgleichssport, Stretching am Arbeitsplatz. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 17,
+      "titel": "Bewegung am Arbeitsplatz",
+      "bild": "folie-17.png",
+      "sprechertext": "Die Bewegungspause ist die wichtigste Gegenstrategie zur sitzenden Tätigkeit. Studien zeigen: 4 Stunden ununterbrochenes Sitzen erhöht das kardiovaskuläre Risiko messbar – auch wenn man danach Sport macht. Lösung ist regelmäßige Aktivierung im Tagesverlauf, nicht 'kompensatorischer' Sport am Abend. Walking-Meetings sind in vielen modernen Betrieben Standard. Steh-Pulte oder höhenverstellbare Tische sind heute Standard – nutzen Sie sie. Schulterrollen, Halsrotation usw. können diskret am Arbeitsplatz erfolgen.\n\n▸ Trainer-Tipp: Sie können Sitzen nicht 'gesund machen' — aber Sie können es mit Bewegung ausbalancieren. Schon 2 Minuten Aktivität pro Stunde reduzieren das Gesundheitsrisiko nachweislich."
+    },
+    {
+      "nummer": 18,
+      "titel": "Raumklima, Beleuchtung, Lärm",
+      "bild": "folie-18.png",
+      "sprechertext": "Raumklima, Beleuchtung und Lärm sind die 'unsichtbaren' Faktoren, die Konzentration, Wohlbefinden und langfristige Gesundheit stark beeinflussen. Die ASR A3.5, A3.4 und A3.7 geben konkrete Werte vor. Häufige Missstände: zu hohe Sommertemperaturen ohne Klimatisierung, zu trockene Heizungsluft im Winter, schlechte Beleuchtung in offenen Räumen, Lärm im Großraumbüro. Bei nachweislicher Überschreitung der Werte muss der Arbeitgeber gegensteuern. Tageslicht ist Pflicht – fensterlose Büros sind nur in Ausnahmefällen zulässig.\n\n▸ Trainer-Tipp: Diese Werte sind keine Wünsche — sie sind in der ASR (Technische Regeln Arbeitsstätten) verbindlich. Wenn Ihr Büro im Sommer 30 °C hat, ist das eine Verletzung der Arbeitsstättenrichtlinie."
+    },
+    {
+      "nummer": 19,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-19.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei realistische Szenarien aus dem Büroalltag. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 20,
+      "titel": "Fallbeispiel 1: Herr Schmidts Rückenschmerzen",
+      "bild": "folie-20.png",
+      "sprechertext": "Diese Konstellation ist erschreckend häufig: Stuhl seit Jahren unverändert, Bildschirm 'irgendwie' platziert, weil andere Dinge im Weg sind. Folge: chronische Beschwerden, die zur ernsthaften Erkrankung werden können. Wichtig: Herr Schmidt soll nicht zu schwarzmalen, aber rechtzeitig handeln. Arbeitsmedizinische Vorsorge ist freiwillig, aber das Angebot ist Pflicht des Arbeitgebers. Es lohnt sich, dort offen zu reden — der Arzt schweigt gegenüber dem Arbeitgeber (nur 'geeignet/nicht geeignet'). Die Ergonomie-Beratung durch Sifa oder externe Fachkraft sollte mindestens alle 3–5 Jahre stattfinden, bei Beschwerden sofort.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 21,
+      "titel": "Fallbeispiel 2: Frau Kim im Homeoffice",
+      "bild": "folie-21.png",
+      "sprechertext": "Das Homeoffice-Missverständnis ist verbreitet. Viele Arbeitgeber und Mitarbeitende denken, dass 'in der eigenen Wohnung' privater Raum sei, in dem das Arbeitsschutzrecht nicht gilt. Falsch: §3 ArbStättV gilt für jeden Arbeitsplatz, an dem Beschäftigte für ihren Arbeitgeber arbeiten. Der Arbeitgeber muss zwar nicht in die Wohnung kommen, aber er muss die Bedingungen erfassen (Dokumentation, Befragung) und ergonomische Hilfsmittel zur Verfügung stellen. Häufige Lösung: Pauschalbetrag für Homeoffice-Ausstattung (Stuhl, Bildschirm, Tastatur), den der/die Beschäftigte selbst kaufen darf.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 22,
+      "titel": "Fallbeispiel 3: Die brennenden Augen",
+      "bild": "folie-22.png",
+      "sprechertext": "Dieses Szenario zeigt das klassische Computer Vision Syndrome. Ursachen sind meist multifaktoriell: trockene Luft (Klimaanlage), Blendung von der Glasfront, Bildschirmreflexe, falsche Brille für den Bildschirmabstand. Wichtig: nicht eine einzelne Maßnahme reicht – meist müssen mehrere Faktoren angegangen werden. Bildschirmbrille ist häufig nötig, wird aber von Beschäftigten oft nicht eingefordert. Sie ist nicht Synonym mit 'Gleitsichtbrille', sondern speziell auf den 50–70-cm-Abstand optimiert.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 23,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-23.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen aus allen Modulen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 24,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-24.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Standard ist 50–70 cm bei Monitoren bis 22\". Bei größeren Bildschirmen (27\" und mehr) entsprechend mehr Abstand, etwa 70–90 cm."
+    },
+    {
+      "nummer": 25,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-25.png",
+      "sprechertext": "Standard ist 50–70 cm bei Monitoren bis 22\". Bei größeren Bildschirmen (27\" und mehr) entsprechend mehr Abstand, etwa 70–90 cm."
+    },
+    {
+      "nummer": 26,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-26.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die Oberkante des Displays sollte etwa auf Augenhöhe oder leicht darunter liegen. So bleibt der Blickwinkel leicht nach unten, die Halsmuskulatur entspannt."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Die Oberkante des Displays sollte etwa auf Augenhöhe oder leicht darunter liegen. So bleibt der Blickwinkel leicht nach unten, die Halsmuskulatur entspannt."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. 20-20-20-Regel: alle 20 Minuten für 20 Sekunden in etwa 6 m Entfernung schauen. Die einfachste Maßnahme gegen digitale Augenmüdigkeit."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "20-20-20-Regel: alle 20 Minuten für 20 Sekunden in etwa 6 m Entfernung schauen. Die einfachste Maßnahme gegen digitale Augenmüdigkeit."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. §6 ArbMedVV: der Arbeitgeber trägt die Kosten der speziellen Sehhilfe für Bildschirmarbeit, soweit sie erforderlich ist."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "§6 ArbMedVV: der Arbeitgeber trägt die Kosten der speziellen Sehhilfe für Bildschirmarbeit, soweit sie erforderlich ist."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Bei Bildschirmarbeit besteht Angebotsvorsorge nach §5 ArbMedVV. Der Arbeitgeber muss aktiv anbieten — die Beschäftigten entscheiden selbst über die Annahme."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Bei Bildschirmarbeit besteht Angebotsvorsorge nach §5 ArbMedVV. Der Arbeitgeber muss aktiv anbieten — die Beschäftigten entscheiden selbst über die Annahme."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. ASR A3.4: 500 lx am Bildschirmarbeitsplatz — gleichmäßig und blendfrei. Bei besonderen Sehaufgaben (CAD, Grafik) entsprechend mehr."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "ASR A3.4: 500 lx am Bildschirmarbeitsplatz — gleichmäßig und blendfrei. Bei besonderen Sehaufgaben (CAD, Grafik) entsprechend mehr."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. ArbStättV gilt für jeden Arbeitsplatz, an dem Beschäftigte für den Arbeitgeber tätig sind — auch im Homeoffice. Der Arbeitgeber bleibt verantwortlich für die Gefährdungsbeurteilung."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "ArbStättV gilt für jeden Arbeitsplatz, an dem Beschäftigte für den Arbeitgeber tätig sind — auch im Homeoffice. Der Arbeitgeber bleibt verantwortlich für die Gefährdungsbeurteilung."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Mindestens einmal pro Stunde aufstehen und 2 Minuten bewegen. Das reduziert das kardiovaskuläre Risiko und Muskel-Skelett-Beschwerden messbar."
+    },
+    {
+      "nummer": 39,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-39.png",
+      "sprechertext": "Mindestens einmal pro Stunde aufstehen und 2 Minuten bewegen. Das reduziert das kardiovaskuläre Risiko und Muskel-Skelett-Beschwerden messbar."
+    },
+    {
+      "nummer": 40,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-40.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. 40–60 % relative Luftfeuchte. Trockene Luft (< 30 %) verstärkt Augenreizung und Konzentrationsverlust — Heizungsluft im Winter ist häufig zu trocken."
+    },
+    {
+      "nummer": 41,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-41.png",
+      "sprechertext": "40–60 % relative Luftfeuchte. Trockene Luft (< 30 %) verstärkt Augenreizung und Konzentrationsverlust — Heizungsluft im Winter ist häufig zu trocken."
+    },
+    {
+      "nummer": 42,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-42.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die Bildschirmbrille ist eine spezielle Konstruktion für den Bildschirm-Mittelabstand (50–70 cm). Normale Brillen und Gleitsichtbrillen sind dafür oft nicht optimal."
+    },
+    {
+      "nummer": 43,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-43.png",
+      "sprechertext": "Die Bildschirmbrille ist eine spezielle Konstruktion für den Bildschirm-Mittelabstand (50–70 cm). Normale Brillen und Gleitsichtbrillen sind dafür oft nicht optimal."
+    },
+    {
+      "nummer": 44,
+      "titel": "Zusammenfassung",
+      "bild": "folie-44.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 45,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-45.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 46,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-46.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Welcher Sehabstand wird für die Standard-Bildschirmarbeit empfohlen?",
+      "optionen": [
+        "20–40 cm",
+        "50–70 cm",
+        "100–120 cm",
+        "Egal, was angenehm ist"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Standard ist 50–70 cm bei Monitoren bis 22\". Bei größeren Bildschirmen (27\" und mehr) entsprechend mehr Abstand, etwa 70–90 cm."
+    },
+    {
+      "frage": "Wo sollte die Oberkante des Bildschirms liegen?",
+      "optionen": [
+        "Über Augenhöhe",
+        "Auf Augenhöhe oder knapp darunter",
+        "Auf Brusthöhe",
+        "Egal"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die Oberkante des Displays sollte etwa auf Augenhöhe oder leicht darunter liegen. So bleibt der Blickwinkel leicht nach unten, die Halsmuskulatur entspannt."
+    },
+    {
+      "frage": "Was besagt die 20-20-20-Regel?",
+      "optionen": [
+        "20 Minuten arbeiten, 20 Minuten Pause, 20 cm Abstand",
+        "Alle 20 Minuten für 20 Sekunden in 20 Fuß (~6 m) Entfernung schauen",
+        "20-jährige Mitarbeitende erhalten 20 % höhere Bildschirmzulage",
+        "Bildschirme müssen 20°-Neigung haben"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "20-20-20-Regel: alle 20 Minuten für 20 Sekunden in etwa 6 m Entfernung schauen. Die einfachste Maßnahme gegen digitale Augenmüdigkeit."
+    },
+    {
+      "frage": "Wer zahlt die Bildschirmbrille, wenn der Sehtest sie als notwendig bestätigt?",
+      "optionen": [
+        "Krankenkasse",
+        "Arbeitnehmer:in selbst",
+        "Arbeitgeber (vollständig, soweit erforderlich)",
+        "Berufsgenossenschaft"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "§6 ArbMedVV: der Arbeitgeber trägt die Kosten der speziellen Sehhilfe für Bildschirmarbeit, soweit sie erforderlich ist."
+    },
+    {
+      "frage": "Welche Pflicht hat der Arbeitgeber bezüglich arbeitsmedizinischer Vorsorge bei Bildschirmarbeit?",
+      "optionen": [
+        "Er muss alle Beschäftigten zwingend untersuchen lassen",
+        "Er muss arbeitsmedizinische Vorsorge anbieten — Annahme freiwillig",
+        "Keine Pflicht — Vorsorge ist Privatsache",
+        "Nur bei Beschäftigten über 50 Jahre"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Bei Bildschirmarbeit besteht Angebotsvorsorge nach §5 ArbMedVV. Der Arbeitgeber muss aktiv anbieten — die Beschäftigten entscheiden selbst über die Annahme."
+    },
+    {
+      "frage": "Wie hoch ist die Mindest-Beleuchtungsstärke an Bildschirmarbeitsplätzen?",
+      "optionen": [
+        "100 lx",
+        "300 lx",
+        "500 lx",
+        "1000 lx"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "ASR A3.4: 500 lx am Bildschirmarbeitsplatz — gleichmäßig und blendfrei. Bei besonderen Sehaufgaben (CAD, Grafik) entsprechend mehr."
+    },
+    {
+      "frage": "Gelten die ergonomischen Anforderungen auch im Homeoffice?",
+      "optionen": [
+        "Nein, im Homeoffice ist alles Privatsache",
+        "Nur wenn der Arbeitsplatz fest eingerichtet ist (Telearbeit)",
+        "Ja, ArbStättV gilt für jeden Bildschirmarbeitsplatz",
+        "Nur wenn der Arbeitgeber ausdrücklich zustimmt"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "ArbStättV gilt für jeden Arbeitsplatz, an dem Beschäftigte für den Arbeitgeber tätig sind — auch im Homeoffice. Der Arbeitgeber bleibt verantwortlich für die Gefährdungsbeurteilung."
+    },
+    {
+      "frage": "Wie häufig sollte man bei Bildschirmarbeit aufstehen?",
+      "optionen": [
+        "Nur in der Mittagspause",
+        "Wenn man Lust hat",
+        "Mindestens einmal pro Stunde, kurz bewegen",
+        "Alle 3 Stunden"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Mindestens einmal pro Stunde aufstehen und 2 Minuten bewegen. Das reduziert das kardiovaskuläre Risiko und Muskel-Skelett-Beschwerden messbar."
+    },
+    {
+      "frage": "Welche Luftfeuchte ist im Büro empfohlen?",
+      "optionen": [
+        "10–30 % rF",
+        "40–60 % rF",
+        "70–90 % rF",
+        "Egal"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "40–60 % relative Luftfeuchte. Trockene Luft (< 30 %) verstärkt Augenreizung und Konzentrationsverlust — Heizungsluft im Winter ist häufig zu trocken."
+    },
+    {
+      "frage": "Welche Aussage zur Bildschirmbrille stimmt?",
+      "optionen": [
+        "Sie ist nur etwas für Beschäftigte über 50",
+        "Sie ist eine Spezialbrille für den 50–70-cm-Sehabstand",
+        "Sie wird nur zu 50 % vom Arbeitgeber getragen",
+        "Sie ist gleichzeitig Lese-, Fern- und Bildschirmbrille"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die Bildschirmbrille ist eine spezielle Konstruktion für den Bildschirm-Mittelabstand (50–70 cm). Normale Brillen und Gleitsichtbrillen sind dafür oft nicht optimal."
+    }
+  ]
+}

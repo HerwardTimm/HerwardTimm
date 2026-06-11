@@ -1,0 +1,380 @@
+{
+  "slug": "elektrosicherheit-laien",
+  "titel": "Elektrosicherheit für Laien",
+  "pflichtgrundlage": "DGUV V3, §12 ArbSchG, DGUV I 203-070",
+  "dauer_minuten": 45,
+  "anzahl_folien": 43,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Elektrosicherheit für Laien",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Elektrosicherheit für Laien\". Sicher mit Strom und elektrischen Betriebsmitteln umgehen. Diese Schulung ist Ihre Pflichtunterweisung nach DGUV V3  ·  §12 ArbSchG  ·  DGUV Information 203-070 und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Wirkung von Strom",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Wirkung von Strom. Wie elektrischer Strom auf den Körper wirkt und welche Gefahren entstehen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Was macht Strom mit dem Körper?",
+      "bild": "folie-05.png",
+      "sprechertext": "Die physiologische Wirkung des Stroms ist die Grundlage des Verständnisses. Entscheidend sind Stromstärke und Einwirkdauer, nicht nur die Spannung. Der 'Nicht-Loslass'-Effekt ab ca. 10 mA ist besonders tückisch: die Muskulatur verkrampft, das Opfer kann sich nicht selbst befreien. Ab ca. 50 mA durchs Herz droht Kammerflimmern. Auch der Lichtbogen ist gefährlich — er verursacht schwere Verbrennungen und Augenschäden, ohne dass man das Teil berührt. Haushaltsspannung ist nicht harmlos.\n\n▸ Trainer-Tipp: Der gefährlichste Irrtum ist 'das bisschen Haushaltsstrom'. 230 Volt aus der Steckdose haben schon viele Menschen getötet — vor allem, weil der Strom die Hand verkrampfen lässt und man nicht mehr loslassen kann."
+    },
+    {
+      "nummer": 6,
+      "titel": "Häufige elektrische Gefahren im Betrieb",
+      "bild": "folie-06.png",
+      "sprechertext": "Die Alltagsgefahren sind banal und gerade deshalb häufig. Defekte Leitungen, Überlastung und Provisorien sind die Klassiker. Feuchtigkeit erhöht das Risiko dramatisch, weil sie den Körperwiderstand senkt. Die abgewickelte Kabeltrommel ist ein typischer Brandauslöser. Laienreparaturen sind verboten — das eigenmächtige Öffnen elektrischer Geräte gehört zu den häufigsten vermeidbaren Unfallursachen.\n\n▸ Trainer-Tipp: Die meisten elektrischen Unfälle entstehen nicht an Hochspannung, sondern an alltäglichen Mängeln: das angeknackste Kabel, der überlastete Mehrfachstecker, das feuchte Verlängerungskabel im Hof."
+    },
+    {
+      "nummer": 7,
+      "titel": "Modul 2 — Grenzen des Laien",
+      "bild": "folie-07.png",
+      "sprechertext": "Modul 2 — Grenzen des Laien. Wer darf was — die klare Abgrenzung zwischen Laie, EuP und Elektrofachkraft. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 8,
+      "titel": "Wer darf was an Elektrik?",
+      "bild": "folie-08.png",
+      "sprechertext": "Die Abgrenzung der Rollen ist das Kernthema dieser Schulung. Der Laie darf elektrische Betriebsmittel bestimmungsgemäß nutzen und einfachste Handlungen wie Steckkontakte oder (spannungsfreien) Lampenwechsel ausführen. Alles, was in die Elektrik eingreift — Reparatur, Öffnen, Installation — ist der Elektrofachkraft vorbehalten. Die EuP ist ein Zwischending: für festgelegte Tätigkeiten unter Aufsicht einer EFK unterwiesen. Wir bieten dazu ein eigenes EuP-Modul.\n\n▸ Trainer-Tipp: Als Laie dürfen Sie ein Gerät einstecken und benutzen, eine Glühlampe bei ausgeschaltetem Strom wechseln — aber niemals eine Steckdose öffnen, ein Kabel reparieren oder ein Gerät aufschrauben. Das ist Sache der Elektrofachkraft."
+    },
+    {
+      "nummer": 9,
+      "titel": "Als Laie — erlaubt und verboten",
+      "bild": "folie-09.png",
+      "sprechertext": "Diese Liste konkretisiert die Laien-Grenzen. Besonders wichtig: das Überbrücken oder Verstärken von Sicherungen ist extrem gefährlich (Brandgefahr) und absolut verboten. Auch 'harmlose' Reparaturen wie das Abkleben eines Kabels sind tabu. Die einzige richtige Reaktion auf einen Elektrodefekt ist: Gerät außer Betrieb nehmen, kennzeichnen, melden, Fachkraft beauftragen.\n\n▸ Trainer-Tipp: Im Zweifel gilt: Finger weg und Elektrofachkraft rufen. Es gibt keine 'kleine' Elektroreparatur für Laien — schon das Wechseln einer Steckdose ist verboten und lebensgefährlich."
+    },
+    {
+      "nummer": 10,
+      "titel": "Modul 3 — Sicher im Alltag",
+      "bild": "folie-10.png",
+      "sprechertext": "Modul 3 — Sicher im Alltag. Geräte und Kabel prüfen, die DGUV-V3-Prüfung verstehen, Mängel melden. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 11,
+      "titel": "Geräte und Kabel vor Gebrauch prüfen",
+      "bild": "folie-11.png",
+      "sprechertext": "Die Sichtprüfung vor Gebrauch ist die zentrale Laien-Verantwortung. Sie ersetzt nicht die DGUV-V3-Prüfung, ergänzt sie aber im Alltag. Achten auf: beschädigte Kabel/Stecker, Brandspuren, lose Gehäuseteile, ungewöhnliche Geräusche/Gerüche. Die nicht abgewickelte Kabeltrommel ist ein häufiger Brandauslöser. In Feucht- und Außenbereichen sind FI-Schutzschalter (RCD) und geeignete Geräte Pflicht.\n\n▸ Trainer-Tipp: Diese 10-Sekunden-Sichtprüfung ist Ihre wichtigste Schutzmaßnahme als Laie. Sie dürfen das Gerät nicht reparieren — aber Sie können und müssen erkennen, ob es sicher aussieht."
+    },
+    {
+      "nummer": 12,
+      "titel": "Die DGUV-V3-Prüfung",
+      "bild": "folie-12.png",
+      "sprechertext": "Die DGUV-V3-Prüfung (früher BGV A3) ist Pflicht für elektrische Betriebsmittel. Die Intervalle ergeben sich aus der Gefährdungsbeurteilung — im Büro länger, auf Baustellen kurz. Beschäftigte prüfen nicht selbst, sind aber Teil des Systems: auf Prüfplaketten achten, ungeprüfte oder defekte Geräte melden. Die Prüfung wird dokumentiert; HerwardTimm e.K. bietet Organisation und Durchführung als Add-on-Leistung an.\n\n▸ Trainer-Tipp: Die DGUV-V3-Prüfung machen Fachleute — Ihr Beitrag ist, auf die Prüfplakette zu achten und Geräte ohne gültige Prüfung oder mit Mängeln zu melden. HerwardTimm e.K. organisiert die Prüfungen."
+    },
+    {
+      "nummer": 13,
+      "titel": "Modul 4 — Notfall & Regeln",
+      "bild": "folie-13.png",
+      "sprechertext": "Modul 4 — Notfall & Regeln. Richtig handeln beim Stromunfall und die fünf Sicherheitsregeln. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 14,
+      "titel": "Stromunfall — richtig handeln",
+      "bild": "folie-14.png",
+      "sprechertext": "Beim Stromunfall ist der Eigenschutz absolut vorrangig. Wer ein noch unter Strom stehendes Opfer berührt, wird selbst Teil des Stromkreises. Reihenfolge: Stromkreis sicher trennen (Stecker, Sicherung, Hauptschalter), dann erst befreien — notfalls mit nicht-leitendem Gegenstand (trockenes Holz, Kunststoff). Notruf 112. Wichtig: auch nach scheinbarer Erholung ärztlich überwachen lassen, da Herzrhythmusstörungen verzögert auftreten können.\n\n▸ Trainer-Tipp: Der wichtigste Schritt ist der erste: NICHT das Opfer anfassen, solange der Strom an ist — sonst gibt es ein zweites Opfer. Erst Strom abschalten, dann helfen."
+    },
+    {
+      "nummer": 15,
+      "titel": "Die fünf Sicherheitsregeln (für Fachkräfte)",
+      "bild": "folie-15.png",
+      "sprechertext": "Die fünf Sicherheitsregeln (DIN VDE 0105-100) sind die verbindliche Reihenfolge vor Arbeiten an elektrischen Anlagen — sie gelten für Elektrofachkräfte. Für Laien sind sie zum Verständnis wichtig: Sie zeigen, wie aufwendig sichere Elektroarbeit ist, und machen klar, warum Laien nicht eingreifen dürfen. Das eigenmächtige Arbeiten an Anlagen ohne diese Regeln ist lebensgefährlich.\n\n▸ Trainer-Tipp: Diese fünf Regeln sind die Grundlage sicherer Arbeit an Anlagen — sie gelten für Elektrofachkräfte. Für Sie als Laie ist wichtig zu wissen, DASS es sie gibt: Wer ohne sie an Strom arbeitet, handelt grob fahrlässig."
+    },
+    {
+      "nummer": 16,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-16.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei realistische Szenarien aus dem Betrieb. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 17,
+      "titel": "Fallbeispiel 1: Die schnelle Steckdose",
+      "bild": "folie-17.png",
+      "sprechertext": "Dieser Fall zeigt die häufigste und gefährlichste Laien-Grenzüberschreitung: die 'kleine' Elektroreparatur. Auch handwerklich geschickte Personen sind elektrotechnische Laien, wenn sie keine entsprechende Ausbildung haben. Das Öffnen einer Steckdose unter Spannung kann tödlich sein. Die einzig richtige Reaktion: melden und Fachkraft beauftragen.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 18,
+      "titel": "Fallbeispiel 2: Die überlastete Mehrfachsteckdose",
+      "bild": "folie-18.png",
+      "sprechertext": "Reihengeschaltete Mehrfachsteckdosen sind eine der häufigsten Brandursachen im Bürobereich. Wärme und Kunststoffgeruch sind akute Warnzeichen. Heizlüfter und Wasserkocher haben hohe Leistungsaufnahme und gehören nicht an Mehrfachsteckdosen. Private Geräte ohne Freigabe sind nicht geprüft und nicht versichert. Die Lehre: erkennen, sofort handeln, melden.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 19,
+      "titel": "Fallbeispiel 3: Der Stromschlag an der Bohrmaschine",
+      "bild": "folie-19.png",
+      "sprechertext": "Der Stromunfall mit 'Nicht-Loslassen' ist ein klassisches, lebensgefährliches Szenario. Der Reflex, das Opfer sofort wegzuziehen, ist tödlich gefährlich. Eigenschutz zuerst: Strom trennen. Auf feuchten Baustellen ist der FI-Schutzschalter (RCD) die entscheidende technische Schutzmaßnahme — er trennt den Strom bei Fehlerströmen in Millisekunden. Geprüfte Geräte und FI-Schutz hätten den Unfall sehr wahrscheinlich verhindert.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 20,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-20.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen aus allen Modulen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 21,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-21.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Ab ca. 50 V Wechselspannung (Berührungsspannung) wird es gefährlich. Haushaltsstrom mit 230 V ist potenziell tödlich."
+    },
+    {
+      "nummer": 22,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-22.png",
+      "sprechertext": "Ab ca. 50 V Wechselspannung (Berührungsspannung) wird es gefährlich. Haushaltsstrom mit 230 V ist potenziell tödlich."
+    },
+    {
+      "nummer": 23,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-23.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Laien dürfen Geräte bestimmungsgemäß nutzen und Stecker stecken/ziehen — aber nicht an der Elektrik arbeiten."
+    },
+    {
+      "nummer": 24,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-24.png",
+      "sprechertext": "Laien dürfen Geräte bestimmungsgemäß nutzen und Stecker stecken/ziehen — aber nicht an der Elektrik arbeiten."
+    },
+    {
+      "nummer": 25,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-25.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Ab ca. 10 mA verkrampft die Muskulatur so stark, dass man den Leiter nicht mehr loslassen kann — sehr gefährlich."
+    },
+    {
+      "nummer": 26,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-26.png",
+      "sprechertext": "Ab ca. 10 mA verkrampft die Muskulatur so stark, dass man den Leiter nicht mehr loslassen kann — sehr gefährlich."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Aufgewickelt staut sich die Wärme — die Trommel kann sich entzünden. Immer vollständig abwickeln."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Aufgewickelt staut sich die Wärme — die Trommel kann sich entzünden. Immer vollständig abwickeln."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die DGUV-V3-Prüfung machen befähigte Personen/Elektrofachkräfte. Laien achten auf die Prüfplakette und melden Mängel."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Die DGUV-V3-Prüfung machen befähigte Personen/Elektrofachkräfte. Laien achten auf die Prüfplakette und melden Mängel."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Sofort außer Betrieb nehmen, kennzeichnen und melden — Reparatur nur durch Elektrofachkraft."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Sofort außer Betrieb nehmen, kennzeichnen und melden — Reparatur nur durch Elektrofachkraft."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Eigenschutz: das Opfer nicht berühren, solange es unter Strom steht — zuerst den Stromkreis trennen."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "Eigenschutz: das Opfer nicht berühren, solange es unter Strom steht — zuerst den Stromkreis trennen."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Der FI-Schutzschalter (RCD) trennt bei Fehlerströmen in Millisekunden und schützt vor tödlichem Stromschlag."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Der FI-Schutzschalter (RCD) trennt bei Fehlerströmen in Millisekunden und schützt vor tödlichem Stromschlag."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Nein — Reihenschaltung überlastet die Leitung und ist eine häufige Brandursache. Hochlast-Geräte direkt an die Wandsteckdose."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "Nein — Reihenschaltung überlastet die Leitung und ist eine häufige Brandursache. Hochlast-Geräte direkt an die Wandsteckdose."
+    },
+    {
+      "nummer": 39,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-39.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Fünf Sicherheitsregeln: Freischalten, gegen Wiedereinschalten sichern, Spannungsfreiheit feststellen, Erden/Kurzschließen, benachbarte Teile abdecken."
+    },
+    {
+      "nummer": 40,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-40.png",
+      "sprechertext": "Fünf Sicherheitsregeln: Freischalten, gegen Wiedereinschalten sichern, Spannungsfreiheit feststellen, Erden/Kurzschließen, benachbarte Teile abdecken."
+    },
+    {
+      "nummer": 41,
+      "titel": "Zusammenfassung",
+      "bild": "folie-41.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 42,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-42.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 43,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-43.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Ab welcher Wechselspannung wird es für den Menschen gefährlich?",
+      "optionen": [
+        "ab 12 V",
+        "ab 50 V",
+        "ab 230 V",
+        "ab 1000 V"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Ab ca. 50 V Wechselspannung (Berührungsspannung) wird es gefährlich. Haushaltsstrom mit 230 V ist potenziell tödlich."
+    },
+    {
+      "frage": "Was darf ein elektrotechnischer Laie?",
+      "optionen": [
+        "Steckdosen reparieren",
+        "Geräte benutzen und Stecker stecken",
+        "Kabel verlängern",
+        "Sicherungen überbrücken"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Laien dürfen Geräte bestimmungsgemäß nutzen und Stecker stecken/ziehen — aber nicht an der Elektrik arbeiten."
+    },
+    {
+      "frage": "Was ist der gefährliche 'Nicht-Loslass'-Effekt?",
+      "optionen": [
+        "Das Gerät klemmt",
+        "Strom verkrampft die Muskeln, man kann nicht loslassen",
+        "Der Stecker hält fest",
+        "Nichts"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Ab ca. 10 mA verkrampft die Muskulatur so stark, dass man den Leiter nicht mehr loslassen kann — sehr gefährlich."
+    },
+    {
+      "frage": "Warum muss eine Kabeltrommel ganz abgewickelt werden?",
+      "optionen": [
+        "Sieht ordentlicher aus",
+        "Wegen Hitzestau und Brandgefahr",
+        "Damit das Kabel länger hält",
+        "Muss man nicht"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Aufgewickelt staut sich die Wärme — die Trommel kann sich entzünden. Immer vollständig abwickeln."
+    },
+    {
+      "frage": "Wer führt die DGUV-V3-Prüfung durch?",
+      "optionen": [
+        "Jeder Mitarbeiter",
+        "Befähigte Person/Elektrofachkraft",
+        "Der Hausmeister immer",
+        "Niemand"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die DGUV-V3-Prüfung machen befähigte Personen/Elektrofachkräfte. Laien achten auf die Prüfplakette und melden Mängel."
+    },
+    {
+      "frage": "Was tun Sie mit einem Gerät mit beschädigtem Kabel?",
+      "optionen": [
+        "Abkleben und weiternutzen",
+        "Außer Betrieb nehmen, kennzeichnen, melden",
+        "Vorsichtig benutzen",
+        "Selbst reparieren"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Sofort außer Betrieb nehmen, kennzeichnen und melden — Reparatur nur durch Elektrofachkraft."
+    },
+    {
+      "frage": "Was ist der ERSTE Schritt bei einem Stromunfall?",
+      "optionen": [
+        "Opfer wegziehen",
+        "Nicht berühren, zuerst Strom abschalten",
+        "Wasser holen",
+        "Sicherung verstärken"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Eigenschutz: das Opfer nicht berühren, solange es unter Strom steht — zuerst den Stromkreis trennen."
+    },
+    {
+      "frage": "Welche Schutzeinrichtung ist auf feuchten Baustellen entscheidend?",
+      "optionen": [
+        "Eine stärkere Sicherung",
+        "FI-Schutzschalter (RCD)",
+        "Ein längeres Kabel",
+        "Klebeband"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Der FI-Schutzschalter (RCD) trennt bei Fehlerströmen in Millisekunden und schützt vor tödlichem Stromschlag."
+    },
+    {
+      "frage": "Darf man Mehrfachsteckdosen in Reihe schalten ('Daisy-Chain')?",
+      "optionen": [
+        "Ja, immer",
+        "Nein, Überlastungs- und Brandgefahr",
+        "Nur im Büro",
+        "Nur kurz"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Nein — Reihenschaltung überlastet die Leitung und ist eine häufige Brandursache. Hochlast-Geräte direkt an die Wandsteckdose."
+    },
+    {
+      "frage": "Wie viele Sicherheitsregeln gelten vor Arbeiten an Anlagen (für Fachkräfte)?",
+      "optionen": [
+        "3",
+        "5",
+        "7",
+        "10"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Fünf Sicherheitsregeln: Freischalten, gegen Wiedereinschalten sichern, Spannungsfreiheit feststellen, Erden/Kurzschließen, benachbarte Teile abdecken."
+    }
+  ]
+}

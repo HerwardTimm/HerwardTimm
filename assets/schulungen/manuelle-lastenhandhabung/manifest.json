@@ -1,0 +1,416 @@
+{
+  "slug": "manuelle-lastenhandhabung",
+  "titel": "Manuelle Lastenhandhabung",
+  "pflichtgrundlage": "LasthandhabV, §5 ArbSchG, DGUV I 208-033",
+  "dauer_minuten": 45,
+  "anzahl_folien": 49,
+  "version": "v4 (Premium, 2026-05-25)",
+  "folien": [
+    {
+      "nummer": 1,
+      "titel": "Manuelle Lastenhandhabung",
+      "bild": "folie-01.png",
+      "sprechertext": "Begrüßung zur Schulung „Manuelle Lastenhandhabung\". Heben, Tragen, Schieben, Ziehen — gesund und sicher im Arbeitsalltag. Diese Schulung ist Ihre Pflichtunterweisung nach LasthandhabV  ·  §5 ArbSchG  ·  DGUV Information 208-033 und schließt mit einem Wissens-Check (10 Fragen) und einer Teilnahmebestätigung ab. Nehmen Sie sich für jede Folie Zeit – der Trainer-Kommentar im unteren Drittel jeder Inhalts-Folie erklärt den Inhalt in vollständigen Sätzen. Bei Verständnisfragen wenden Sie sich an Ihre Führungskraft oder direkt an HerwardTimm e.K."
+    },
+    {
+      "nummer": 2,
+      "titel": "Begrüßung & Lernziele",
+      "bild": "folie-02.png",
+      "sprechertext": "Bevor Sie inhaltlich einsteigen, lassen Sie die Lernziele bewusst wirken. Sie sind kein Beiwerk, sondern Maßstab. Jedes der Ziele wird in einem späteren Modul mit Praxisbeispielen und Vorschriften unterlegt. Nehmen Sie sich bei jedem Ziel kurz Zeit zu prüfen: Kann ich das HEUTE schon sicher erklären? Wenn Sie an irgendeiner Stelle unsicher sind, ist das genau das, was diese Schulung leistet. Notieren Sie sich gerne offene Fragen – wir nehmen sie am Schluss noch einmal auf.\n\n▸ Trainer-Tipp: Diese Lernziele sind das Versprechen dieser Schulung. Am Ende sollten Sie jedes davon ohne Nachschlagen erklären können. Wenn Sie an einer Stelle unsicher bleiben, notieren Sie sich die Folie und sprechen Sie Ihre Führungskraft oder direkt HerwardTimm e.K. an."
+    },
+    {
+      "nummer": 3,
+      "titel": "Aufbau der Schulung",
+      "bild": "folie-03.png",
+      "sprechertext": "Diese Schulung ist in mehrere Module gegliedert. Jedes Modul behandelt einen abgegrenzten Themenblock und endet mit kurzen Trainer-Hinweisen. Nach dem letzten Modul folgen drei ausgearbeitete Fallbeispiele, das Quiz mit 10 Fragen, eine Zusammenfassung und Ihre Teilnahmebestätigung. Die geschätzte Bearbeitungsdauer liegt bei 45–60 Minuten."
+    },
+    {
+      "nummer": 4,
+      "titel": "Modul 1 — Anatomie und Belastung",
+      "bild": "folie-04.png",
+      "sprechertext": "Modul 1 — Anatomie und Belastung. Wie die Wirbelsäule funktioniert und welche Belastungen sie aushält. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 5,
+      "titel": "Die Wirbelsäule — kurzes Anatomie-Bild",
+      "bild": "folie-05.png",
+      "sprechertext": "Diese kurze Anatomie ist wichtig, damit die spätere Hebetechnik plausibel wird. Wichtigste Punkt: Bandscheiben ernähren sich nicht über Blutgefäße, sondern durch Druckwechsel. Wer den ganzen Tag sitzt, sorgt für eine permanente Druckbelastung, die Bandscheiben austrocknet. Wer dynamisch arbeitet (Heben/Senken, Bewegung), versorgt sie. Klingt paradox – Heben ist gut für die Bandscheiben, wenn richtig gemacht.\n\n▸ Trainer-Tipp: Die Wirbelsäule ist ein Wunder der Evolution — aber sie hat Grenzen. Wer sie über Jahre falsch belastet, riskiert Bandscheibenvorfälle, Verschleiß und chronische Schmerzen."
+    },
+    {
+      "nummer": 6,
+      "titel": "Wie Druck und Beuge die Bandscheibe belasten",
+      "bild": "folie-06.png",
+      "sprechertext": "Diese Zahlen stammen aus Studien des Instituts für Arbeitsmedizin und sind biomechanisch gut belegt. Die wichtige Botschaft: nicht das Gewicht allein entscheidet, sondern wie es gehoben wird. Der häufigste Fehler ist Heben mit verdrehter Wirbelsäule – z. B. beim Aussteigen aus dem Auto mit schwerer Tasche. Genau dort entstehen die meisten Bandscheibenvorfälle, oft Jahre nach der eigentlichen 'Belastung'. Die Folie sollte sachlich, nicht alarmistisch wirken: mit Wissen und Technik ist Heben unbedenklich.\n\n▸ Trainer-Tipp: Die Zahlen sind nicht 'Schreckenszahlen', sondern biomechanisch gemessen. Sie zeigen: Technik ist alles. Mit korrekter Technik können auch 20 kg unbedenklich gehoben werden, mit falscher Technik werden 10 kg zur Gefährdung."
+    },
+    {
+      "nummer": 7,
+      "titel": "Risikofaktoren — wann wird Heben gefährlich?",
+      "bild": "folie-07.png",
+      "sprechertext": "Die Risikofaktoren sind im LASI-Leitfaden zur Leitmerkmalmethode (LMM) detailliert beschrieben. Beachten Sie besonders die Häufigkeit: Beschäftigte in Logistik und Lager heben oft 'kleine' Gewichte hunderte Male am Tag – kumulativ die größte Belastung. Persönliche Faktoren: Trainingszustand zählt. Wer regelmäßig Sport macht, vor allem Rumpfstabilisation, hat ein deutlich geringeres Verletzungsrisiko.\n\n▸ Trainer-Tipp: Risiko entsteht durch die Kombination der Faktoren. Ein einmaliges Heben einer 20-kg-Kiste ist meist unproblematisch — 200-mal am Tag eine 10-kg-Kiste deutlich riskanter."
+    },
+    {
+      "nummer": 8,
+      "titel": "Modul 2 — Rechtliche Grundlagen",
+      "bild": "folie-08.png",
+      "sprechertext": "Modul 2 — Rechtliche Grundlagen. LasthandhabV, Leitmerkmalmethode, Grenzwerte. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 9,
+      "titel": "LasthandhabV — was steht drin?",
+      "bild": "folie-09.png",
+      "sprechertext": "Die LasthandhabV ist eine relativ kurze Verordnung, aber von großer Bedeutung in Lager, Logistik, Reinigung, Pflege und Bau. Wichtig ist die Reihenfolge: erst Vermeidung prüfen (Hilfsmittel, Umorganisation), dann manuelle Handhabung mit optimaler Technik. Die LMM ist seit 2019 in einer überarbeiteten Version verfügbar und bezieht erstmals auch Schieben/Ziehen, Ganzkörperkräfte und Stützen detailliert ein.\n\n▸ Trainer-Tipp: Die wichtige Reihenfolge: VERMEIDEN vor TECHNIK. Wenn ein Gabelstapler verfügbar ist, muss der eingesetzt werden — auch wenn es 'eilig' wirkt. 'Mal eben tragen' ist regelmäßig der falsche Reflex."
+    },
+    {
+      "nummer": 10,
+      "titel": "Leitmerkmalmethode — Heben/Tragen, Risikoklassen",
+      "bild": "folie-10.png",
+      "sprechertext": "Die Leitmerkmalmethode (LMM) ist das in Deutschland anerkannte Verfahren zur Risikobewertung manueller Lastenhandhabung. Sie existiert in mehreren Varianten: Heben/Halten/Tragen, Schieben/Ziehen, Ganzkörperkräfte. Die Punktwertung basiert auf Gewicht, Häufigkeit, Körperhaltung, Ausführungsbedingungen und Arbeitsorganisation. Wichtige Eigenschaft: sie liefert eine reproduzierbare Bewertung, die im Auditfall belastbar ist. HerwardTimm e.K. nutzt sie standardmäßig in Gefährdungsbeurteilungen.\n\n▸ Trainer-Tipp: Die LMM ist kein Geheimwissen — sie ist als PDF bei der BAuA frei verfügbar und kann von jeder Führungskraft gemeinsam mit den Beschäftigten ausgefüllt werden. HerwardTimm e.K. unterstützt bei der Bewertung."
+    },
+    {
+      "nummer": 11,
+      "titel": "Geschlechts- und altersabhängige Grenzwerte",
+      "bild": "folie-11.png",
+      "sprechertext": "Die geschlechtsabhängigen Grenzwerte sind in Deutschland tradiert, in der internationalen Diskussion teilweise umstritten — biomechanisch gibt es Unterschiede in Körperbau und Hebeltechnik, aber individuelle Variation ist hoch. Sie dienen als Orientierung, ersetzen aber nicht die LMM-Bewertung. Wichtig sind besonders die strengen Werte für Schwangere und Jugendliche – hier gibt es klare gesetzliche Vorgaben (MuSchG, JArbSchG). HerwardTimm e.K. berät bei der Umsetzung im konkreten Betrieb.\n\n▸ Trainer-Tipp: Diese Grenzwerte sind keine starren Verbote. Sie sind die Schwellen, ab denen besonderer Schutz gilt. Im Zweifel: Hilfsmittel einsetzen oder zweite Person hinzuziehen."
+    },
+    {
+      "nummer": 12,
+      "titel": "Modul 3 — Richtige Technik",
+      "bild": "folie-12.png",
+      "sprechertext": "Modul 3 — Richtige Technik. Heben, Tragen, Schieben, Ziehen — Schritt für Schritt. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 13,
+      "titel": "Heben — die fünf Schritte",
+      "bild": "folie-13.png",
+      "sprechertext": "Die Fünf-Schritt-Methode ist Standardlehre in der Ergonomie. Wichtige Eckpunkte: Schritt 1 (Prüfen) wird oft übersprungen – ein kurzes Probieren mit einer Hand spart später viel Ärger. Schritt 3 (Greifen) ist entscheidend: in die Hocke gehen, NICHT aus dem Stand vornüber. Schritt 4 (Heben): Last muss NAH am Körper sein; jeder Zentimeter Abstand erhöht die Hebelwirkung. Schritt 5 (Tragen): Drehen Sie sich mit den Füßen, NIEMALS mit der Wirbelsäule – Drehbewegung ist die Hauptursache für Bandscheibenvorfälle.\n\n▸ Trainer-Tipp: Diese fünf Schritte klingen umständlich, dauern in der Praxis aber nur 2 Sekunden — und ersparen Ihrer Wirbelsäule jahrzehntelange Beschwerden."
+    },
+    {
+      "nummer": 14,
+      "titel": "Hebetechnik — Do's und Don't's",
+      "bild": "folie-14.png",
+      "sprechertext": "Die Do/Don't-Liste ist Standard der Ergonomie-Lehre. Erfahrungsgemäß ist das verdrehte Heben (Don't 4) der häufigste Fehler im Alltag: beim Aussteigen aus dem Auto mit der Einkaufstüte, beim Wegstellen einer Kiste über die Schulter, beim Aufheben einer Last vom Boden mit gleichzeitiger Drehung. Genau diese Bewegung ist biomechanisch hochriskant – Bandscheibenvorfälle entstehen oft bei alltäglich wirkenden Bewegungen, nicht bei vermeintlich 'schweren' Hebungen.\n\n▸ Trainer-Tipp: Wer drei dieser Don'ts ab heute weglässt, halbiert sein Rückenrisiko über die nächsten 10 Jahre. Das ist keine Übertreibung — biomechanisch gut belegt."
+    },
+    {
+      "nummer": 15,
+      "titel": "Tragen — was über das reine Heben hinaus zählt",
+      "bild": "folie-15.png",
+      "sprechertext": "Tragen ist ein eigener Risikofaktor mit eigenen Regeln. Bei kurzen Strecken überwiegt die Hebe-Belastung; bei langen Strecken (> 5 m) wird die statische Muskelarbeit zunehmend belastend. Faustregel: alle 10 m kurz absetzen und Pause machen. Tragegurte sind in Pflege und Möbeltransport Standard, in vielen Betrieben aber zu wenig genutzt – sie verteilen das Gewicht auf Schultern und Hüfte und entlasten die Lendenwirbel.\n\n▸ Trainer-Tipp: Tragen wird oft vergessen — wir konzentrieren uns auf das Heben. Aber das Tragen über eine Strecke ist energetisch und muskulär oft die größere Belastung."
+    },
+    {
+      "nummer": 16,
+      "titel": "Schieben und Ziehen — was ist günstiger?",
+      "bild": "folie-16.png",
+      "sprechertext": "Schieben vs. Ziehen ist ein häufig unterschätztes Thema. Schieben ist biomechanisch günstiger, weil die Kraft aus den Beinen über den Rumpf in die Last übertragen wird – die Wirbelsäule bleibt eher gerade. Ziehen erfordert Armkraft und führt oft zu einer Vorneigung des Rumpfes, die die Wirbelsäule belastet. Bei Rollwagen, Hubwagen, Schubkarren: möglichst schieben. Wenn ziehen unvermeidlich (z. B. Möbelstück um die Ecke), beide Hände, nahe am Körper, kontrolliert.\n\n▸ Trainer-Tipp: Wenn Sie wählen können: schieben. Wenn Sie ziehen müssen: nahe am Körper, beide Hände, beim Rückwärtsgehen den Weg prüfen."
+    },
+    {
+      "nummer": 17,
+      "titel": "Hilfsmittel — Vorrang vor manueller Hebung",
+      "bild": "folie-17.png",
+      "sprechertext": "Hilfsmittel sind die wirksamste Maßnahme nach TOP-Prinzip (Technik vor Organisation vor PSA). Die LasthandhabV verpflichtet den Arbeitgeber, Hilfsmittel zur Verfügung zu stellen, wenn manuelle Handhabung nicht vermieden werden kann. Häufiges Problem in der Praxis: Hilfsmittel sind vorhanden, aber unzugänglich gelagert oder defekt – damit werden sie nicht genutzt. Lösung: regelmäßige Begehung mit Sifa, Hilfsmittel-Inventur, Pflege- und Prüfintervalle. Bei Hubarbeitsbühnen und Gabelstaplern: spezielle Befähigung nach DGUV V68 / V70 erforderlich.\n\n▸ Trainer-Tipp: Hilfsmittel müssen erreichbar UND einsatzbereit sein. Wenn die Sackkarre im Lager 200 m entfernt steht, wird sie nicht genutzt — Lagerung am Einsatzort."
+    },
+    {
+      "nummer": 18,
+      "titel": "Modul 4 — Hilfsmittel und Pausen",
+      "bild": "folie-18.png",
+      "sprechertext": "Modul 4 — Hilfsmittel und Pausen. Wann Hilfsmittel? Wann gemeinsam? Wie sich ausgleichen? Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 19,
+      "titel": "Wann brauche ich eine zweite Person?",
+      "bild": "folie-19.png",
+      "sprechertext": "Diese Folie zielt auf die Mentalitätsfrage. Viele Beschäftigte heben allein, weil sie nicht warten wollen oder als 'schwach' erscheinen wollen. Aufgabe der Führungskraft: eine Kultur etablieren, in der zweite Person zu rufen normal und erwartet ist. Studien zeigen: Betriebe mit gelebter 'Zweite-Person-Kultur' haben deutlich weniger Rückenverletzungen. Hilfreich sind klare Regeln im Betrieb: Lasten über X kg immer zu zweit, mit dokumentierter Begründung in der Gefährdungsbeurteilung.\n\n▸ Trainer-Tipp: Allein-Heben aus 'Stolz' oder Eile ist die häufigste Ursache schwerer Bandscheibenvorfälle. Eine Minute warten, bis Hilfe da ist, ist günstiger als 6 Wochen Krankenhaus und Reha."
+    },
+    {
+      "nummer": 20,
+      "titel": "Pausen und Ausgleichsbewegung",
+      "bild": "folie-20.png",
+      "sprechertext": "Pausen und Ausgleich sind oft das Schwierigste, weil sie 'unproduktiv' wirken. Wichtig zu kommunizieren: Pause am Hebearbeitsplatz ist KEINE Pause vom Job, sie ist Bestandteil der Arbeitstechnik. Studien zeigen: regelmäßige Pausen mit Bewegung erhöhen die Tagesleistung netto, weil Verletzungen und Fehlzeiten sinken. Die Brücke ist eine einfache, sehr effektive Übung – kann jede:r überall machen.\n\n▸ Trainer-Tipp: Die Wirbelsäule ist ein dynamisches Gewebe — sie braucht Belastungswechsel. Reines Heben oder reines Sitzen sind beide schädlich; abwechseln ist Schlüssel."
+    },
+    {
+      "nummer": 21,
+      "titel": "Arbeitsmedizinische Vorsorge bei Belastung",
+      "bild": "folie-21.png",
+      "sprechertext": "Arbeitsmedizinische Vorsorge ist Schlüssel zur Früherkennung. Viele Mitarbeitende meiden sie aus Sorge, der Arbeitgeber könnte 'etwas erfahren' – das ist unbegründet, weil der Arzt zur Verschwiegenheit verpflichtet ist. Bei manueller Lastenhandhabung mit erheblicher Belastung gilt Pflichtvorsorge: Arbeitgeber MUSS anbieten und Beschäftigte MÜSSEN teilnehmen. Bei geringerer Belastung Angebotsvorsorge (freiwillig). Wunschvorsorge nach §11 ArbSchG kann immer beantragt werden – auch wenn keine formale Verpflichtung besteht.\n\n▸ Trainer-Tipp: Arbeitsmedizinische Vorsorge nutzt — kein 'Spähen' des Arbeitgebers. Diagnosen sind vertraulich, der Arbeitsschutz wird verbessert."
+    },
+    {
+      "nummer": 22,
+      "titel": "Modul 5 — Fallbeispiele & Reflexion",
+      "bild": "folie-22.png",
+      "sprechertext": "Modul 5 — Fallbeispiele & Reflexion. Drei realistische Szenarien aus dem Betrieb. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 23,
+      "titel": "Fallbeispiel 1: Der schnelle Karton vor der Tür",
+      "bild": "folie-23.png",
+      "sprechertext": "Diese Situation ist alltäglich und genau deshalb gefährlich. Der Karton ist 'gerade noch tragbar', der Zeitdruck verlockt zum 'Mal eben'. Wichtige Botschaft: 3 Minuten Sackkarre holen sind günstiger als 6 Wochen Krankenstand. Mentalitätsfrage – im Betrieb muss eine Kultur etabliert werden, in der Hilfsmittel-Holen als professionelles Verhalten gilt, nicht als Zeitverschwendung. Bei dauerhaft wiederholter Lieferung an diesen Punkt: Lagerort anpassen (Sackkarre näher), oder Anlieferung direkt an Verbrauchsort organisieren.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 24,
+      "titel": "Fallbeispiel 2: Frau Yilmaz in der Pflege",
+      "bild": "folie-24.png",
+      "sprechertext": "Die Pflegebranche ist ein Hotspot manueller Lastenhandhabung. Die kumulative Belastung über Jahre ist hoch, Hilfsmittel oft vorhanden, aber zu selten genutzt. Berufskrankheit BK 2108 (bandscheibenbedingte Erkrankungen der LWS durch langjähriges Heben/Tragen) ist anerkennbar – wer betroffen ist, sollte den Anspruch prüfen lassen. Wichtig: frühe Reaktion verhindert Chronifizierung. Arbeitsmedizinische Vorsorge soll nicht stigmatisieren, sondern Maßnahmen anstoßen. HerwardTimm e.K. unterstützt bei Gefährdungsbeurteilung Pflege.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 25,
+      "titel": "Fallbeispiel 3: Die Möbellieferung mit Treppe",
+      "bild": "folie-25.png",
+      "sprechertext": "Dieser Konflikt ist häufig: Vorgesetzte:r drängt aus Zeit- oder Kostengründen auf manuelle Handhabung, die gefährlich ist. Wichtige Punkte: der Vorgesetzte trägt die Hauptverantwortung – wenn etwas passiert, haftet er persönlich. Beschäftigte sind nach §15 ArbSchG verpflichtet, nicht zu gefährden – auch sich selbst nicht. Ablehnung ist möglich, sollte aber sachlich begründet (LMM, LasthandhabV) und schriftlich erfolgen. §17 ArbSchG schützt explizit. Bei wiederholten Konflikten: HerwardTimm e.K. einschalten zur Klärung.\n\n▸ Trainer-Tipp: Reflektieren Sie das Szenario ehrlich. Würden Sie in diesem Moment tatsächlich richtig handeln? Was bräuchten Sie an Wissen, Werkzeug oder Rückendeckung, um die Empfehlung umzusetzen?"
+    },
+    {
+      "nummer": 26,
+      "titel": "Modul 6 — Wissens-Check & Bestätigung",
+      "bild": "folie-26.png",
+      "sprechertext": "Modul 6 — Wissens-Check & Bestätigung. Zehn Fragen aus allen Modulen. Dieses Modul vertieft den Themenbereich mit mehreren Inhaltsfolien, Vorschriften-Hinweisen und Praxisbeispielen."
+    },
+    {
+      "nummer": 27,
+      "titel": "Wissens-Check  ·  Frage 1 von 10",
+      "bild": "folie-27.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Aus der Hocke, mit geradem Rücken und Last nah am Körper — die Beine entwickeln die Kraft, die Wirbelsäule wird geschont."
+    },
+    {
+      "nummer": 28,
+      "titel": "Wissens-Check  ·  Lösung Frage 1 von 10",
+      "bild": "folie-28.png",
+      "sprechertext": "Aus der Hocke, mit geradem Rücken und Last nah am Körper — die Beine entwickeln die Kraft, die Wirbelsäule wird geschont."
+    },
+    {
+      "nummer": 29,
+      "titel": "Wissens-Check  ·  Frage 2 von 10",
+      "bild": "folie-29.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die Verdrehung (Rotation) der Lendenwirbelsäule unter Last erzeugt Scherbelastungen, die Bandscheibenfasern reißen lassen — häufigste Ursache."
+    },
+    {
+      "nummer": 30,
+      "titel": "Wissens-Check  ·  Lösung Frage 2 von 10",
+      "bild": "folie-30.png",
+      "sprechertext": "Die Verdrehung (Rotation) der Lendenwirbelsäule unter Last erzeugt Scherbelastungen, die Bandscheibenfasern reißen lassen — häufigste Ursache."
+    },
+    {
+      "nummer": 31,
+      "titel": "Wissens-Check  ·  Frage 3 von 10",
+      "bild": "folie-31.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = C. Bis 30 kg gelegentlich (Männer, gesund, durchschnittlich). Bei häufigem Heben oder mit ungünstigen Bedingungen entsprechend weniger."
+    },
+    {
+      "nummer": 32,
+      "titel": "Wissens-Check  ·  Lösung Frage 3 von 10",
+      "bild": "folie-32.png",
+      "sprechertext": "Bis 30 kg gelegentlich (Männer, gesund, durchschnittlich). Bei häufigem Heben oder mit ungünstigen Bedingungen entsprechend weniger."
+    },
+    {
+      "nummer": 33,
+      "titel": "Wissens-Check  ·  Frage 4 von 10",
+      "bild": "folie-33.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = A. §11 MuSchG: regelmäßiges Heben über 5 kg ist Schwangeren verboten. Gelegentlich max. 10 kg. Strengere Werte als sonst — Schutz für Kind und Mutter."
+    },
+    {
+      "nummer": 34,
+      "titel": "Wissens-Check  ·  Lösung Frage 4 von 10",
+      "bild": "folie-34.png",
+      "sprechertext": "§11 MuSchG: regelmäßiges Heben über 5 kg ist Schwangeren verboten. Gelegentlich max. 10 kg. Strengere Werte als sonst — Schutz für Kind und Mutter."
+    },
+    {
+      "nummer": 35,
+      "titel": "Wissens-Check  ·  Frage 5 von 10",
+      "bild": "folie-35.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Die LMM ist das in Deutschland anerkannte Bewertungsverfahren für manuelle Lastenhandhabung — entwickelt von der Bundesanstalt für Arbeitsschutz und Arbeitsmedizin (BAuA)."
+    },
+    {
+      "nummer": 36,
+      "titel": "Wissens-Check  ·  Lösung Frage 5 von 10",
+      "bild": "folie-36.png",
+      "sprechertext": "Die LMM ist das in Deutschland anerkannte Bewertungsverfahren für manuelle Lastenhandhabung — entwickelt von der Bundesanstalt für Arbeitsschutz und Arbeitsmedizin (BAuA)."
+    },
+    {
+      "nummer": 37,
+      "titel": "Wissens-Check  ·  Frage 6 von 10",
+      "bild": "folie-37.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. §2 LasthandhabV: Vermeiden hat absoluten Vorrang. Erst wenn manuelle Handhabung unvermeidbar ist, kommen Schulung und Hilfsmittel."
+    },
+    {
+      "nummer": 38,
+      "titel": "Wissens-Check  ·  Lösung Frage 6 von 10",
+      "bild": "folie-38.png",
+      "sprechertext": "§2 LasthandhabV: Vermeiden hat absoluten Vorrang. Erst wenn manuelle Handhabung unvermeidbar ist, kommen Schulung und Hilfsmittel."
+    },
+    {
+      "nummer": 39,
+      "titel": "Wissens-Check  ·  Frage 7 von 10",
+      "bild": "folie-39.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Vornübergebeugtes Sitzen belastet die Lendenbandscheibe etwa 1,8-fach im Vergleich zu aufrechtem Stehen — Bürohaltung ist anstrengender als Stehen!"
+    },
+    {
+      "nummer": 40,
+      "titel": "Wissens-Check  ·  Lösung Frage 7 von 10",
+      "bild": "folie-40.png",
+      "sprechertext": "Vornübergebeugtes Sitzen belastet die Lendenbandscheibe etwa 1,8-fach im Vergleich zu aufrechtem Stehen — Bürohaltung ist anstrengender als Stehen!"
+    },
+    {
+      "nummer": 41,
+      "titel": "Wissens-Check  ·  Frage 8 von 10",
+      "bild": "folie-41.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Nahe am Körper für geringe Hebelbelastung, mit den Füßen drehen (nicht der Wirbelsäule), regelmäßige Pausen — alle 5–10 Minuten kurz absetzen und Schultern entspannen."
+    },
+    {
+      "nummer": 42,
+      "titel": "Wissens-Check  ·  Lösung Frage 8 von 10",
+      "bild": "folie-42.png",
+      "sprechertext": "Nahe am Körper für geringe Hebelbelastung, mit den Füßen drehen (nicht der Wirbelsäule), regelmäßige Pausen — alle 5–10 Minuten kurz absetzen und Schultern entspannen."
+    },
+    {
+      "nummer": 43,
+      "titel": "Wissens-Check  ·  Frage 9 von 10",
+      "bild": "folie-43.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = B. Schieben — die Kraft kommt aus den Beinen über den Rumpf in die Last, die Wirbelsäule bleibt gerade. Ziehen erfordert Armkraft und führt oft zu Rumpfvorneigung."
+    },
+    {
+      "nummer": 44,
+      "titel": "Wissens-Check  ·  Lösung Frage 9 von 10",
+      "bild": "folie-44.png",
+      "sprechertext": "Schieben — die Kraft kommt aus den Beinen über den Rumpf in die Last, die Wirbelsäule bleibt gerade. Ziehen erfordert Armkraft und führt oft zu Rumpfvorneigung."
+    },
+    {
+      "nummer": 45,
+      "titel": "Wissens-Check  ·  Frage 10 von 10",
+      "bild": "folie-45.png",
+      "sprechertext": "Trainer-Hinweis: Korrekte Antwort = A. BK 2108: bandscheibenbedingte Erkrankungen der Lendenwirbelsäule durch langjähriges Heben oder Tragen schwerer Lasten — vor allem in Pflege, Bau, Logistik."
+    },
+    {
+      "nummer": 46,
+      "titel": "Wissens-Check  ·  Lösung Frage 10 von 10",
+      "bild": "folie-46.png",
+      "sprechertext": "BK 2108: bandscheibenbedingte Erkrankungen der Lendenwirbelsäule durch langjähriges Heben oder Tragen schwerer Lasten — vor allem in Pflege, Bau, Logistik."
+    },
+    {
+      "nummer": 47,
+      "titel": "Zusammenfassung",
+      "bild": "folie-47.png",
+      "sprechertext": "Diese Zusammenfassung ist die Lese-Erinnerung – speichern Sie sie sich gerne in der Personalakte ab. Jeder einzelne Punkt entspricht einem Lernziel vom Anfang der Schulung. Wenn Sie alle Punkte sicher erklären können und das Quiz bestanden haben, sind Sie rechtssicher unterwiesen. Ihre Teilnahmebestätigung ist 12 Monate gültig.\n\n▸ Trainer-Tipp: Diese Kernpunkte sind das Skelett der Schulung. Wenn Sie einen davon nicht spontan erklären können, kehren Sie zur entsprechenden Folie zurück. Die Schulung ist erst dann wirklich abgeschlossen, wenn Sie alle Quiz-Fragen bestanden und die Teilnahmebestätigung erhalten haben."
+    },
+    {
+      "nummer": 48,
+      "titel": "Teilnahmebestätigung",
+      "bild": "folie-48.png",
+      "sprechertext": "Die Teilnahmebestätigung muss vom Vorgesetzten gegengezeichnet und in der Personalakte mindestens 1 Jahr aufbewahrt werden (DGUV V1 §4 Abs. 1). Bei Audits, Behördenprüfungen oder Unfalluntersuchungen ist sie der zentrale Nachweis erfüllter Unterweisungspflicht. Bewahren Sie sie zusätzlich für sich selbst auf — gerade bei einem Arbeitsplatzwechsel kann der Nachweis nützlich sein. HerwardTimm e.K. archiviert die Bestätigungen zusätzlich digital im Kundenportal."
+    },
+    {
+      "nummer": 49,
+      "titel": "Quellen & Rechtsgrundlagen",
+      "bild": "folie-49.png",
+      "sprechertext": "Diese Quellen sind die Rechtsgrundlage Ihrer Schulung. Sie können sie jederzeit kostenfrei im Volltext einsehen. Bei branchenspezifischen Spezialvorschriften — zum Beispiel TRBS, BetrSichV-Anhängen oder DGUV-Branchen-Informationen — ergänzen Sie bitte die für Ihren Betrieb einschlägige Regel. Bei Unsicherheit greifen Sie auf HerwardTimm e.K. als sicherheitstechnische Betreuung zurück.\n\n▸ Trainer-Tipp: Die genannten Volltexte sind über das Bundesministerium für Arbeit und Soziales (BMAS), die DGUV Publikationsdatenbank und das Bundesanzeiger-Verlagshaus kostenfrei erreichbar. Für branchenspezifische Vorschriften halten Sie zusätzlich Rücksprache mit Ihrer zuständigen Berufsgenossenschaft."
+    }
+  ],
+  "quiz": [
+    {
+      "frage": "Welche Hebetechnik schont die Wirbelsäule am besten?",
+      "optionen": [
+        "Mit gestreckten Beinen vornüber beugen",
+        "In die Hocke gehen, Rücken gerade, Last nah am Körper",
+        "Schnell mit Schwung heben",
+        "Verdreht, um schneller zu sein"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Aus der Hocke, mit geradem Rücken und Last nah am Körper — die Beine entwickeln die Kraft, die Wirbelsäule wird geschont."
+    },
+    {
+      "frage": "Was ist die häufigste Ursache für Bandscheibenvorfälle?",
+      "optionen": [
+        "Schweres Heben einer einzelnen Last",
+        "Verdrehung der Wirbelsäule beim Heben",
+        "Langes Sitzen ohne Bewegung",
+        "Sport"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die Verdrehung (Rotation) der Lendenwirbelsäule unter Last erzeugt Scherbelastungen, die Bandscheibenfasern reißen lassen — häufigste Ursache."
+    },
+    {
+      "frage": "Welcher Richtwert gilt für Männer beim gelegentlichen Heben?",
+      "optionen": [
+        "10 kg",
+        "20 kg",
+        "30 kg",
+        "50 kg"
+      ],
+      "korrekt_index": 2,
+      "erklaerung": "Bis 30 kg gelegentlich (Männer, gesund, durchschnittlich). Bei häufigem Heben oder mit ungünstigen Bedingungen entsprechend weniger."
+    },
+    {
+      "frage": "Welche Grenze gilt für Schwangere beim regelmäßigen Heben?",
+      "optionen": [
+        "5 kg",
+        "10 kg",
+        "15 kg",
+        "Beliebig"
+      ],
+      "korrekt_index": 0,
+      "erklaerung": "§11 MuSchG: regelmäßiges Heben über 5 kg ist Schwangeren verboten. Gelegentlich max. 10 kg. Strengere Werte als sonst — Schutz für Kind und Mutter."
+    },
+    {
+      "frage": "Was bedeutet die Leitmerkmalmethode (LMM)?",
+      "optionen": [
+        "Schweregradskala für Verletzungen",
+        "Bewertungsverfahren der BAuA für manuelle Lastenhandhabung",
+        "Versicherungstabelle der BG",
+        "Empfehlung für Sportübungen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Die LMM ist das in Deutschland anerkannte Bewertungsverfahren für manuelle Lastenhandhabung — entwickelt von der Bundesanstalt für Arbeitsschutz und Arbeitsmedizin (BAuA)."
+    },
+    {
+      "frage": "Was ist nach LasthandhabV §2 die erste Maßnahme?",
+      "optionen": [
+        "Mitarbeitende schulen",
+        "Manuelle Handhabung soweit möglich vermeiden",
+        "PSA bereitstellen",
+        "Versicherung abschließen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "§2 LasthandhabV: Vermeiden hat absoluten Vorrang. Erst wenn manuelle Handhabung unvermeidbar ist, kommen Schulung und Hilfsmittel."
+    },
+    {
+      "frage": "Wie verteilt sich der Druck auf Lendenbandscheibe bei aufrechtem Stehen vs. vornübergebeugtem Sitzen?",
+      "optionen": [
+        "Stehen mehr als Sitzen",
+        "Sitzen ungefähr doppelt so viel wie Stehen",
+        "Gleich viel",
+        "Stehen 1.000 kg"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Vornübergebeugtes Sitzen belastet die Lendenbandscheibe etwa 1,8-fach im Vergleich zu aufrechtem Stehen — Bürohaltung ist anstrengender als Stehen!"
+    },
+    {
+      "frage": "Was sollte beim Tragen einer Last über lange Strecken beachtet werden?",
+      "optionen": [
+        "Möglichst weit vom Körper halten (Gleichgewicht)",
+        "Nahe am Körper, mit den Füßen drehen, Pausen alle 5–10 Minuten",
+        "Mit Schwung gehen",
+        "Last über die Schulter werfen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Nahe am Körper für geringe Hebelbelastung, mit den Füßen drehen (nicht der Wirbelsäule), regelmäßige Pausen — alle 5–10 Minuten kurz absetzen und Schultern entspannen."
+    },
+    {
+      "frage": "Welches ist ergonomisch günstiger?",
+      "optionen": [
+        "Ziehen",
+        "Schieben",
+        "Beides gleich",
+        "Werfen"
+      ],
+      "korrekt_index": 1,
+      "erklaerung": "Schieben — die Kraft kommt aus den Beinen über den Rumpf in die Last, die Wirbelsäule bleibt gerade. Ziehen erfordert Armkraft und führt oft zu Rumpfvorneigung."
+    },
+    {
+      "frage": "Welche Berufskrankheit kann durch langjähriges Heben und Tragen entstehen?",
+      "optionen": [
+        "BK 2108 (bandscheibenbedingte Erkrankungen der LWS)",
+        "BK 5101 (Hauterkrankungen)",
+        "BK 2301 (Lärmschwerhörigkeit)",
+        "Keine — Berufskrankheit gibt es dafür nicht"
+      ],
+      "korrekt_index": 0,
+      "erklaerung": "BK 2108: bandscheibenbedingte Erkrankungen der Lendenwirbelsäule durch langjähriges Heben oder Tragen schwerer Lasten — vor allem in Pflege, Bau, Logistik."
+    }
+  ]
+}

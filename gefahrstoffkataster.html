@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gefahrstoffkataster ausfüllen · HerwardTimm</title>
+<meta name="description" content="Gefahrstoffkataster nach GefStoffV §6 online führen: Stoffe, Mengen, GHS-Einstufung, Lagerort und Sicherheitsdatenblatt erfassen, speichern und als PDF ausgeben.">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/tools.css">
+<script defer data-domain="herwardtimm.de" src="https://plausible.io/js/script.js"></script>
+</head>
+<body data-tool-key="ht-gefahrstoffkataster">
+
+<header class="site-header no-print">
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="assets/logo-dunkel.png" alt="HerwardTimm – Fachkraft für Arbeitssicherheit und Sifa-Beratung in Norddeutschland" width="180"></a>
+    <ul class="nav-menu">
+      <li><a href="dashboard.html">Mein Bereich</a></li>
+      <li><a href="werkzeuge.html">Werkzeuge</a></li>
+      <li><a href="schulungen.html" data-i18n="nav.schulungen">Schulungen</a></li>
+      <li class="nav-lang-item" data-lang-picker></li>
+    </ul>
+  </div>
+</header>
+
+<section class="tool-actions no-print">
+  <div class="container inner">
+    <div>
+      <a href="werkzeuge.html" class="btn-link" style="font-size:0.82rem; text-transform:uppercase; letter-spacing:0.08em;">← Alle Werkzeuge</a>
+      <div id="tool-status" class="tool-saved"></div>
+    </div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="btn btn-ghost btn-sm" onclick="toolReset()">Zurücksetzen</button>
+      <button class="btn btn-ghost btn-sm" onclick="toolExportCsv('gefahrstoffkataster')">CSV exportieren</button>
+      <button class="btn btn-primary btn-sm" onclick="toolSave()">Speichern</button>
+      <button class="btn btn-accent btn-sm" onclick="window.print()">Drucken / Als PDF speichern</button>
+    </div>
+  </div>
+</section>
+
+<section class="tool-wrap">
+  <div class="tool-page">
+    <div class="tool-eyebrow">HerwardTimm e.K. · Compliance-Werkzeug</div>
+    <div class="tool-title">Gefahrstoffkataster</div>
+    <p class="tool-intro">Verzeichnis der im Betrieb verwendeten Gefahrstoffe gemäß §6 Gefahrstoffverordnung (GefStoffV). Erfassen Sie jeden Gefahrstoff mit Menge, GHS-Einstufung, Lagerort und Verweis auf das Sicherheitsdatenblatt (SDB). Eingaben werden lokal in Ihrem Browser gespeichert.</p>
+
+    <div class="tool-grid" style="max-width:680px; margin-bottom:22px;">
+      <div class="lbl">Firma / Betrieb</div><div class="val"><input class="tf" data-k="firma" type="text"></div>
+      <div class="lbl">Standort / Bereich</div><div class="val"><input class="tf" data-k="standort" type="text"></div>
+      <div class="lbl">Stand (Datum)</div><div class="val"><input class="tf" data-k="datum" type="text" placeholder="TT.MM.JJJJ"></div>
+      <div class="lbl">Verantwortlich</div><div class="val"><input class="tf" data-k="verantwortlich" type="text"></div>
+    </div>
+
+    <div class="tool-sec">Erfasste Gefahrstoffe</div>
+    <p class="tool-footer-note no-print" style="margin:0 0 8px; border:none; padding:0;">Die Tabelle ist breit — bei Bedarf horizontal scrollen. Neue Felder: CAS-/EG-Nr., Aggregatzustand, Verwendungszweck, WGK, Substitutionsprüfung (§6 GefStoffV), Betriebsanweisung vorhanden, Unterweisung erforderlich.</p>
+    <div class="tool-table-wrap">
+      <table class="tool-table" style="min-width:1760px;">
+        <thead><tr>
+          <th style="width:9%;">Stoff / Produkt</th>
+          <th style="width:7%;">Hersteller</th>
+          <th style="width:6%;">CAS-/EG-Nr.</th>
+          <th style="width:5%;">Menge / Jahr</th>
+          <th style="width:6%;">Aggregatzustand</th>
+          <th style="width:8%;">Verwendungszweck</th>
+          <th style="width:9%;">GHS-Piktogramme</th>
+          <th style="width:5%;">Signalwort</th>
+          <th style="width:9%;">H-/P-Sätze</th>
+          <th style="width:4%;">WGK</th>
+          <th style="width:8%;">Substitutionsprüfung</th>
+          <th style="width:6%;">Lagerort</th>
+          <th style="width:5%;">SDB (Datum)</th>
+          <th style="width:5%;">Betriebsanweisung</th>
+          <th style="width:5%;">Unterweisung erf.</th>
+          <th style="width:2%;"></th>
+        </tr></thead>
+        <tbody id="tool-rows"></tbody>
+      </table>
+    </div>
+    <button class="btn btn-ghost btn-sm tool-addrow no-print" onclick="toolAddRow()">+ Gefahrstoff hinzufügen</button>
+
+    <template id="row-template">
+      <tr data-row>
+        <td><input class="tf" data-f="stoff" type="text"></td>
+        <td><input class="tf" data-f="hersteller" type="text"></td>
+        <td><input class="tf" data-f="cas" type="text" placeholder="z. B. 67-64-1"></td>
+        <td><input class="tf" data-f="menge" type="text"></td>
+        <td>
+          <select class="tf" data-f="aggregat">
+            <option value=""></option>
+            <option>fest</option>
+            <option>flüssig</option>
+            <option>gasförmig</option>
+            <option>Aerosol</option>
+          </select>
+        </td>
+        <td><input class="tf" data-f="zweck" type="text" placeholder="z. B. Reinigung"></td>
+        <td><input class="tf" data-f="ghs" type="text" placeholder="z. B. GHS02, GHS07"></td>
+        <td>
+          <select class="tf" data-f="signal">
+            <option value=""></option>
+            <option>Gefahr</option>
+            <option>Achtung</option>
+            <option>—</option>
+          </select>
+        </td>
+        <td><input class="tf" data-f="hpsaetze" type="text" placeholder="H225, P210 …"></td>
+        <td>
+          <select class="tf" data-f="wgk">
+            <option value=""></option>
+            <option>nwg</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>—</option>
+          </select>
+        </td>
+        <td>
+          <select class="tf" data-f="subst">
+            <option value=""></option>
+            <option>geprüft – ersetzt</option>
+            <option>geprüft – keine Alternative</option>
+            <option>offen</option>
+          </select>
+        </td>
+        <td><input class="tf" data-f="lagerort" type="text"></td>
+        <td><input class="tf" data-f="sdb" type="text" placeholder="vorh./Datum"></td>
+        <td>
+          <select class="tf" data-f="ba">
+            <option value=""></option>
+            <option>ja</option>
+            <option>nein</option>
+            <option>in Arbeit</option>
+          </select>
+        </td>
+        <td>
+          <select class="tf" data-f="unterw">
+            <option value=""></option>
+            <option>ja</option>
+            <option>nein</option>
+          </select>
+        </td>
+        <td><button class="tool-del no-print" title="Zeile löschen" onclick="toolDelRow(this)">✕</button></td>
+      </tr>
+    </template>
+
+    <p class="tool-footer-note">Aus dem Kataster leiten sich die <a href="betriebsanweisung.html">Betriebsanweisungen</a> (GefStoffV §14) ab. Diese Arbeitshilfe ersetzt keine Rechtsberatung im Einzelfall (Stand 2026). HerwardTimm e.K. · info@herwardtimm.de</p>
+  </div>
+</section>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script src="assets/tools.js"></script>
+</body>
+</html>
