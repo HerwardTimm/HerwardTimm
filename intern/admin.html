@@ -23,6 +23,23 @@
   .as-topbar .adm-act:hover { border-color: var(--sage); }
   .as-topbar .adm-act.primary { background: var(--gold); border-color: var(--gold); color: #2a1e05; font-weight: 600; }
   @media (max-width: 760px) { .as-topbar .adm-sync, .as-topbar .adm-act .adm-txt { display: none; } }
+  /* Admin-Suche in der Topbar */
+  .as-topbar .adm-search { position: relative; min-width: 150px; max-width: 220px; }
+  .as-topbar .adm-search input { width: 100%; padding: 8px 12px 8px 30px; border: 1px solid var(--border-soft); border-radius: 8px; font: inherit; font-size: .85rem; background: #fff; }
+  .as-topbar .adm-search .ic { position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--text-mute); font-size: .85rem; }
+  @media (max-width: 980px) { .as-topbar .adm-search { display: none; } }
+  /* Anfrage-Detail-Modal */
+  .adm-modal-bg { position: fixed; inset: 0; background: rgba(31,52,42,.5); z-index: 200; display: flex; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow: auto; }
+  .adm-modal { background: #fff; border-radius: 14px; max-width: 640px; width: 100%; padding: 26px 28px; box-shadow: 0 20px 60px rgba(0,0,0,.3); position: relative; }
+  .adm-modal__x { position: absolute; top: 12px; right: 16px; background: none; border: 0; font-size: 1.6rem; line-height: 1; color: var(--text-mute); cursor: pointer; }
+  .adm-modal__x:hover { color: var(--text); }
+  /* Compliance-Ampel */
+  .adm-amp-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .adm-amp { background: #fff; border: 1px solid var(--border-soft); border-radius: 10px; padding: 13px 16px; }
+  .adm-amp .v { font-size: 1.5rem; font-weight: 700; line-height: 1; }
+  .adm-amp .l { font-size: .74rem; color: var(--text-soft); margin-top: 5px; }
+  .firma-card .amp-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; vertical-align: middle; }
+  @media (max-width: 680px) { .adm-amp-cards { grid-template-columns: repeat(2, 1fr); } }
 </style>
 </head>
 <body>
@@ -361,6 +378,7 @@
       <div class="card" style="padding:24px 26px;">
         <h3 style="margin:0 0 4px;">Firmen-Übersicht</h3>
         <p class="text-muted" style="margin:0 0 18px; font-size:.86rem;">Wie viele Mitarbeitende einer Firma haben eine Pflichtschulung absolviert? Klick auf eine Firma öffnet die Detail-Sicht mit allen Mitarbeitenden und deren Schulungs-Status.</p>
+        <div id="firma-ampel" style="margin-bottom:18px;"></div>
         <div class="firma-grid" id="firma-grid"></div>
         <div id="firma-detail"></div>
       </div>
@@ -460,7 +478,7 @@
   ];
   const all = Store.get('anfragen', []).concat(demoAnfragen);
   document.getElementById('kpi-anfragen').textContent = all.length;
-  document.getElementById('anfragen-table').innerHTML = all.map(a => `
+  document.getElementById('anfragen-table').innerHTML = all.map((a, i) => `
     <tr>
       <td>${fmtDate(a.date)}</td>
       <td><strong>${a.firma}</strong></td>
@@ -470,7 +488,7 @@
       <td><span class="badge ${a.tier === 'S' ? 'badge--accent' : ''}">${a.tier === 'S' ? 'Unternehmermodell' : 'Tier ' + a.tier}</span></td>
       <td>${a.priceLow}–${a.priceHigh} €</td>
       <td><span class="badge ${a.status === 'Neu' ? 'badge--accent' : 'badge--success'}">${a.status}</span></td>
-      <td><a href="#" class="btn-link" style="font-size:.85rem;">Details →</a></td>
+      <td><a href="#" class="btn-link" style="font-size:.85rem;" onclick="event.preventDefault(); openAnfrageDetail(${i});">Details →</a></td>
     </tr>
   `).join('');
 
@@ -675,8 +693,104 @@
     document.getElementById('firma-detail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
+  /* ============================================================
+     Phase C · Anfrage-Detail-Ansicht (Modal)
+     ============================================================ */
+  function openAnfrageDetail(idx) {
+    const a = all[idx]; if (!a) return;
+    const rec = a.tier === 'S' ? 'Unternehmermodell — Dokumentenpaket' : (a.tierName || ('Tier ' + a.tier));
+    const freq = a.tier === 'S' ? ' / Jahr' : (a.tier === 2 ? ' / Monat' : ' / Quartal');
+    const steps = ['Eingegangen', 'Geprüft', 'Angebot raus', 'Termin gebucht', 'Abschluss'];
+    let cur = 1;
+    if (a.status === 'Neu') cur = 0;
+    else if (/Angebot/i.test(a.status)) cur = 2;
+    else if (/Termin/i.test(a.status)) cur = 3;
+    else if (/Erstgespräch/i.test(a.status)) cur = 1;
+    const tl = steps.map((s, i) => `
+      <div style="display:flex; align-items:center; gap:10px; padding:6px 0;">
+        <span style="width:18px;height:18px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font-size:.66rem;font-weight:700;background:${i <= cur ? 'rgba(76,122,94,.18)' : '#eef0f1'};color:${i <= cur ? '#2f5a3e' : '#9aa6a0'};">${i <= cur ? '✓' : (i + 1)}</span>
+        <span style="font-size:.9rem;color:${i <= cur ? 'var(--sage-darker)' : 'var(--text-mute)'};font-weight:${i === cur ? '600' : '400'};">${escHtml(s)}</span>
+      </div>`).join('');
+    const contact = (a.kontakt || a.email || a.telefon)
+      ? `${escHtml(a.kontakt || '')}${a.email ? '<br>' + escHtml(a.email) : ''}${a.telefon ? '<br>' + escHtml(a.telefon) : ''}`
+      : '<span class="text-muted">Kontaktdaten werden im öffentlichen Anfrage-Formular erfasst.</span>';
+    let host = document.getElementById('anfrage-modal-host');
+    if (!host) { host = document.createElement('div'); host.id = 'anfrage-modal-host'; document.body.appendChild(host); }
+    host.innerHTML = `
+      <div class="adm-modal-bg" onclick="if(event.target===this) closeAnfrageDetail()">
+        <div class="adm-modal" role="dialog" aria-modal="true">
+          <button class="adm-modal__x" onclick="closeAnfrageDetail()" aria-label="Schließen">×</button>
+          <div style="border-bottom:1px solid var(--border-soft); padding-bottom:14px; margin-bottom:16px;">
+            <div style="font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--text-mute);">Anfrage · ${escHtml(fmtDate(a.date))}</div>
+            <h2 style="margin:6px 0 8px; font-size:1.4rem;">${escHtml(a.firma)}</h2>
+            <span class="badge ${a.status === 'Neu' ? 'badge--accent' : 'badge--success'}">${escHtml(a.status)}</span>
+          </div>
+          <div class="adm-modal-cols" style="display:grid; grid-template-columns:1fr 1fr; gap:18px;">
+            <div>
+              <h4 style="margin:0 0 8px; font-size:.76rem; text-transform:uppercase; letter-spacing:.1em; color:var(--sage-mid);">Anfrage</h4>
+              <div style="font-size:.9rem; line-height:1.9;">
+                <div><span class="text-muted">Branche:</span> ${escHtml(a.branch || '—')}</div>
+                <div><span class="text-muted">Mitarbeitende:</span> ${a.employees}</div>
+                <div><span class="text-muted">Eingegangen:</span> ${escHtml(fmtDate(a.date))}</div>
+              </div>
+              <h4 style="margin:16px 0 8px; font-size:.76rem; text-transform:uppercase; letter-spacing:.1em; color:var(--sage-mid);">Kontakt</h4>
+              <div style="font-size:.9rem; line-height:1.6;">${contact}</div>
+            </div>
+            <div>
+              <h4 style="margin:0 0 8px; font-size:.76rem; text-transform:uppercase; letter-spacing:.1em; color:var(--sage-mid);">Empfehlung &amp; Preis</h4>
+              <div style="background:var(--sage-mint-soft); border-radius:10px; padding:14px 16px;">
+                <div style="font-weight:600; color:var(--sage-darker);">${escHtml(rec)}</div>
+                <div style="font-size:1.3rem; font-weight:700; color:var(--sage-dark); margin-top:6px;">${a.priceLow}–${a.priceHigh} €<span style="font-size:.8rem; color:var(--text-soft); font-weight:400;">${freq}</span></div>
+                ${a.setupFee ? `<div style="font-size:.82rem; color:var(--text-soft); margin-top:4px;">+ ${a.setupFee} € einmalige Erstausstattung</div>` : ''}
+              </div>
+              <h4 style="margin:16px 0 8px; font-size:.76rem; text-transform:uppercase; letter-spacing:.1em; color:var(--sage-mid);">Verlauf</h4>
+              ${tl}
+            </div>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; padding-top:16px; border-top:1px solid var(--border-soft);">
+            <button class="btn btn-primary btn-sm" onclick="toast('Angebot als Entwurf erstellt (Demo).','success'); closeAnfrageDetail();">Angebot senden</button>
+            <button class="btn btn-ghost btn-sm" onclick="toast('Termin-Buchung geöffnet (Demo).','info'); closeAnfrageDetail();">Termin buchen</button>
+            <button class="btn btn-ghost btn-sm" onclick="closeAnfrageDetail();">Schließen</button>
+          </div>
+        </div>
+      </div>`;
+  }
+  function closeAnfrageDetail() { const h = document.getElementById('anfrage-modal-host'); if (h) h.innerHTML = ''; }
+  window.openAnfrageDetail = openAnfrageDetail;
+  window.closeAnfrageDetail = closeAnfrageDetail;
+
+  /* Phase C · Compliance-Ampel für die Firmen-Übersicht */
+  function enhanceFirmenAmpel() {
+    const cards = document.querySelectorAll('#firma-grid .firma-card');
+    let gruen = 0, gelb = 0, rot = 0;
+    cards.forEach(card => {
+      const m = (card.textContent.match(/Brandschutz:\s*(\d+)\/(\d+)/) || []);
+      const done = parseInt(m[1] || '0'), tot = parseInt(m[2] || '0');
+      let color, kind;
+      if (tot > 0 && done >= tot) { color = '#5F7E5F'; kind = 'gruen'; gruen++; }
+      else if (done > 0) { color = '#C99B45'; kind = 'gelb'; gelb++; }
+      else { color = '#B03A2E'; kind = 'rot'; rot++; }
+      card.style.borderLeft = '3px solid ' + color;
+      const h = card.querySelector('h4');
+      if (h && !h.querySelector('.amp-dot')) {
+        const dot = document.createElement('span');
+        dot.className = 'amp-dot'; dot.style.background = color;
+        h.insertBefore(dot, h.firstChild);
+      }
+    });
+    const host = document.getElementById('firma-ampel');
+    if (host) host.innerHTML = `
+      <div class="adm-amp-cards">
+        <div class="adm-amp"><div class="v" style="color:var(--sage-dark);">${cards.length}</div><div class="l">Firmen gesamt</div></div>
+        <div class="adm-amp"><div class="v" style="color:#2f5a3e;">${gruen}</div><div class="l">Vollständig (grün)</div></div>
+        <div class="adm-amp"><div class="v" style="color:var(--gold-dark);">${gelb}</div><div class="l">Offen (gelb)</div></div>
+        <div class="adm-amp"><div class="v" style="color:var(--error);">${rot}</div><div class="l">Überfällig (rot)</div></div>
+      </div>`;
+  }
+
   renderAuditLog();
   renderFirmenUebersicht();
+  enhanceFirmenAmpel();
 </script>
 <!-- App-Shell („Plattform-Gefühl"): feste Sidebar + Topbar für den Verwalten-Bereich -->
 <script src="../assets/app-shell.js"></script>
@@ -738,10 +852,24 @@
       var frag = document.createElement('span');
       frag.style.cssText = 'display:flex; align-items:center; gap:10px; margin-left:auto;';
       frag.innerHTML =
+        '<span class="adm-search"><span class="ic">⌕</span><input type="search" id="adm-search" placeholder="Firma, Anfrage…" aria-label="Admin-Suche"></span>' +
         '<span class="adm-sync">Letzter Sync vor 4 Min</span>' +
         '<a class="adm-act" href="#" id="adm-export">⤓ <span class="adm-txt">Export</span></a>' +
         '<a class="adm-act primary" href="#anfragen" id="adm-new">+ <span class="adm-txt">Neue Anfrage</span></a>';
       bar.appendChild(frag);
+      // Globale Suche: filtert Tabellen-Zeilen / Firmen-Karten der sichtbaren Sektion
+      var si = document.getElementById('adm-search');
+      if (si) si.addEventListener('input', function () {
+        var q = si.value.trim().toLowerCase();
+        var panel = document.querySelector('.tab-panel:not(.hidden)');
+        if (!panel) return;
+        panel.querySelectorAll('tbody tr').forEach(function (tr) {
+          tr.style.display = (!q || tr.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+        panel.querySelectorAll('.firma-card').forEach(function (c) {
+          c.style.display = (!q || c.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
       var ex = document.getElementById('adm-export');
       if (ex) ex.addEventListener('click', function (e) { e.preventDefault(); if (window.exportData) window.exportData(); });
       var nw = document.getElementById('adm-new');
@@ -772,7 +900,7 @@
           '<td>' + a.employees + '</td><td>' + emp + '</td>' +
           '<td>' + a.priceLow + '–' + a.priceHigh + ' €</td>' +
           '<td>' + admPill(a.status) + '</td>' +
-          '<td><a href="#anfragen" class="btn-link" style="font-size:.84rem;">Details →</a></td></tr>';
+          '<td><a href="#" class="btn-link" style="font-size:.84rem;" onclick="event.preventDefault(); openAnfrageDetail(' + src.indexOf(a) + ');">Details →</a></td></tr>';
       }).join('');
     }
     document.querySelectorAll('#adm-pipe-chips .adm-chip').forEach(function (c) {
