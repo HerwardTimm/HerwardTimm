@@ -35,12 +35,20 @@
   ];
 
   const NAV_ADMIN = [
-    { head: 'Admin', items: [
-      { key: 'uebersicht', label: 'Übersicht', href: 'admin.html', ic: '◳' }
+    { head: 'Steuerung', items: [
+      { key: 'uebersicht', label: 'Übersicht',        href: '#uebersicht', ic: '◵' },
+      { key: 'anfragen',   label: 'Anfragen',         href: '#anfragen',   ic: '✉', badge: 'admin-anfragen' },
+      { key: 'pauschal',   label: 'Pauschal-Kunden',  href: '#pauschal',   ic: '◈' },
+      { key: 'schulungen', label: 'Schulungs-Käufer', href: '#schulungen', ic: '▦' }
+    ]},
+    { head: 'Analyse', items: [
+      { key: 'firmen', label: 'Firmen-Übersicht', href: '#firmen', ic: '◳' },
+      { key: 'stats',  label: 'Statistik',        href: '#stats',  ic: '▤' },
+      { key: 'audit',  label: 'Audit-Log',        href: '#audit',  ic: '⎘' }
     ]},
     { head: null, items: [
-      { key: 'kundenansicht', label: 'Kundenansicht', href: '../dashboard.html', ic: '◧' },
-      { key: 'abmelden',      label: 'Abmelden',      href: '../login.html',     ic: '⎋' }
+      { key: 'kundenansicht', label: 'Zur Kundenansicht', href: '../dashboard.html', ic: '⇄' },
+      { key: 'abmelden',      label: 'Abmelden',          href: '../login.html',     ic: '⎋' }
     ]}
   ];
 
@@ -96,8 +104,10 @@
         const a = el('a', { className: 'as-nav__link', href: item.href });
         if (item.key === cfg.active) a.classList.add('is-active');
         let badgeHtml = '';
-        if (item.badge === 'progressCount') {
-          const c = progressCount();
+        if (item.badge) {
+          let c = null;
+          if (item.badge === 'progressCount') c = progressCount();
+          else if (window.AS_BADGES && window.AS_BADGES[item.badge] != null) c = String(window.AS_BADGES[item.badge]);
           if (c) badgeHtml = `<span class="as-nav__badge">${c}</span>`;
         }
         a.innerHTML = `<span class="as-ic">${item.ic}</span>${esc(item.label)}${badgeHtml}`;

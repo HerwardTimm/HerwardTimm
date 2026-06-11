@@ -7,6 +7,23 @@
 <link rel="icon" type="image/png" href="../assets/favicon.png">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../assets/app-shell.css">
+<style>
+  /* Admin-Redesign: Kopf + alte Tab-Leiste entfallen (durch Shell ersetzt) */
+  body.as-active #admin-head,
+  body.as-active .tabs { display: none !important; }
+  /* Sektions-Panels füllen den Arbeitsbereich ohne doppelte Section-Abstände */
+  body.as-active .section--tight { padding-top: 22px; padding-bottom: 28px; }
+  /* Admin-Topbar-Aktionen (Sync/Export/Neue Anfrage) */
+  .as-topbar .adm-sync { font-size: .8rem; color: var(--text-mute); white-space: nowrap; }
+  .as-topbar .adm-act {
+    display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+    border-radius: 8px; padding: 8px 13px; font: inherit; font-size: .85rem; cursor: pointer;
+    border: 1px solid var(--border); background: #fff; color: var(--text); text-decoration: none;
+  }
+  .as-topbar .adm-act:hover { border-color: var(--sage); }
+  .as-topbar .adm-act.primary { background: var(--gold); border-color: var(--gold); color: #2a1e05; font-weight: 600; }
+  @media (max-width: 760px) { .as-topbar .adm-sync, .as-topbar .adm-act .adm-txt { display: none; } }
+</style>
 </head>
 <body>
 
@@ -28,7 +45,7 @@
   </div>
 </header>
 
-<section class="section section--tight" style="background: var(--sage-mint-soft); padding-top: 56px; padding-bottom: 48px;">
+<section id="admin-head" class="section section--tight" style="background: var(--sage-mint-soft); padding-top: 56px; padding-bottom: 48px;">
   <div class="container">
     <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 24px;">
       <div>
@@ -44,8 +61,8 @@
   </div>
 </section>
 
-<!-- ============ KPI ROW ============ -->
-<section class="section--tight">
+<!-- ============ KPI ROW · Sektion „Übersicht" ============ -->
+<section class="section--tight tab-panel" data-tab="uebersicht">
   <div class="container">
     <!-- A-B1: Die mit data-demo-kpi markierten Werte sind statische DEMO-Zahlen.
          Im Demo-Modus bleiben sie sichtbar (Hinweis unten). Im Live-Modus
@@ -152,7 +169,7 @@
     </style>
 
     <!-- ANFRAGEN -->
-    <div class="tab-panel" data-tab="anfragen">
+    <div class="tab-panel hidden" data-tab="anfragen">
       <div class="card" style="padding: 0; overflow: hidden;">
         <table class="table">
           <thead>
@@ -608,6 +625,79 @@
 </script>
 <!-- App-Shell („Plattform-Gefühl"): feste Sidebar + Topbar für den Verwalten-Bereich -->
 <script src="../assets/app-shell.js"></script>
-<script>mountAppShell({ variant: 'admin', active: 'uebersicht', crumb: 'Admin / Übersicht', title: 'Admin-Übersicht' });</script>
+<script>
+  /* ============================================================
+     Admin Phase A · Sektions-Navigation über die Shell-Sidebar
+     Die alten Tabs werden zu Sidebar-Sektionen; die Sidebar-Anker
+     (#uebersicht, #anfragen …) schalten die vorhandenen Panels.
+     ============================================================ */
+  // Anfragen-Badge für die Sidebar (echte aus localStorage + 6 Demo)
+  try {
+    var _anz = ((window.Store && Store.get('anfragen', [])) || []).length + 6;
+    window.AS_BADGES = Object.assign(window.AS_BADGES || {}, { 'admin-anfragen': _anz });
+  } catch (e) {}
+
+  mountAppShell({ variant: 'admin', active: 'uebersicht', crumb: 'Steuerung / Übersicht', title: 'Steuerung & Statistik' });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var SECTIONS = {
+      uebersicht: { crumb: 'Steuerung / Übersicht',        title: 'Steuerung & Statistik' },
+      anfragen:   { crumb: 'Steuerung / Anfragen',         title: 'Anfragen-Pipeline' },
+      pauschal:   { crumb: 'Steuerung / Pauschal-Kunden',  title: 'Pauschal-Kunden' },
+      schulungen: { crumb: 'Steuerung / Schulungs-Käufer', title: 'Schulungs-Käufer' },
+      firmen:     { crumb: 'Analyse / Firmen-Übersicht',   title: 'Firmen-Übersicht' },
+      stats:      { crumb: 'Analyse / Statistik',          title: 'Statistik' },
+      audit:      { crumb: 'Analyse / Audit-Log',          title: 'Audit-Log' }
+    };
+    function showSection(name) {
+      if (!SECTIONS[name]) name = 'uebersicht';
+      document.querySelectorAll('.tab-panel').forEach(function (p) {
+        p.classList.toggle('hidden', p.dataset.tab !== name);
+      });
+      document.querySelectorAll('.as-nav__link').forEach(function (a) {
+        a.classList.toggle('is-active', (a.getAttribute('href') || '') === '#' + name);
+      });
+      var crumbEl = document.querySelector('.as-topbar__crumb');
+      var titleEl = document.querySelector('.as-topbar__title');
+      if (crumbEl) crumbEl.textContent = SECTIONS[name].crumb;
+      if (titleEl) titleEl.textContent = SECTIONS[name].title;
+    }
+    window.adminShowSection = showSection;
+
+    document.querySelectorAll('.as-nav__link[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var name = a.getAttribute('href').slice(1);
+        if (history.replaceState) history.replaceState(null, '', '#' + name); else location.hash = name;
+        showSection(name);
+        document.body.classList.remove('as-drawer-open');
+      });
+    });
+    window.addEventListener('hashchange', function () {
+      var n = location.hash.slice(1); if (n) showSection(n);
+    });
+
+    // Topbar-Aktionen: Sync-Hinweis, Export, Neue Anfrage
+    var bar = document.querySelector('.as-topbar');
+    if (bar) {
+      var frag = document.createElement('span');
+      frag.style.cssText = 'display:flex; align-items:center; gap:10px; margin-left:auto;';
+      frag.innerHTML =
+        '<span class="adm-sync">Letzter Sync vor 4 Min</span>' +
+        '<a class="adm-act" href="#" id="adm-export">⤓ <span class="adm-txt">Export</span></a>' +
+        '<a class="adm-act primary" href="#anfragen" id="adm-new">+ <span class="adm-txt">Neue Anfrage</span></a>';
+      bar.appendChild(frag);
+      var ex = document.getElementById('adm-export');
+      if (ex) ex.addEventListener('click', function (e) { e.preventDefault(); if (window.exportData) window.exportData(); });
+      var nw = document.getElementById('adm-new');
+      if (nw) nw.addEventListener('click', function (e) {
+        e.preventDefault(); location.hash = 'anfragen'; showSection('anfragen');
+        if (window.toast) window.toast('Neue Anfragen kommen automatisch über das öffentliche Anfrage-Formular herein.', 'info', 3500);
+      });
+    }
+
+    showSection(location.hash.slice(1) || 'uebersicht');
+  });
+</script>
 </body>
 </html>
