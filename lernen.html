@@ -958,9 +958,23 @@ function buildSlide() {
         <h2 style="font-size: 2.4rem; margin-bottom: 8px; color: var(--sage-darker);">${escapeHtml(t('lernen.cert-glueckwunsch'))}</h2>
         <div class="score-num" style="font-family:'Cormorant Garamond',serif; font-size:3.6rem; font-weight:500; color: var(--gold-dark); line-height:1; margin: 6px 0 0;">${score}<span style="color:var(--text-mute); font-size:2rem;">/${QUIZ.length}</span></div>
         <div class="brand-divider" style="background: var(--gold); margin: 22px auto;"></div>
-        <p style="font-size: 1.05rem; color: var(--text-soft); max-width: 480px; margin: 8px auto 32px;">
+        <p style="font-size: 1.05rem; color: var(--text-soft); max-width: 480px; margin: 8px auto 24px;">
           ${escapeHtml(t('lernen.cert-score-text', { score: score, total: QUIZ.length, pct: pct }))}
         </p>
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; max-width:520px; margin:0 auto 30px;">
+          <div style="background:#fff; border:1px solid var(--border-soft); border-radius:10px; padding:14px 20px; min-width:118px;">
+            <div style="font-size:1.5rem; font-weight:700; color:var(--sage-dark); line-height:1;">${score}/${QUIZ.length}</div>
+            <div style="font-size:.72rem; color:var(--text-soft); text-transform:uppercase; letter-spacing:.04em; margin-top:5px;">Richtige Antworten</div>
+          </div>
+          <div style="background:#fff; border:1px solid var(--border-soft); border-radius:10px; padding:14px 20px; min-width:118px;">
+            <div style="font-size:1.5rem; font-weight:700; color:var(--sage-dark); line-height:1;">${pct} %</div>
+            <div style="font-size:.72rem; color:var(--text-soft); text-transform:uppercase; letter-spacing:.04em; margin-top:5px;">Ergebnis · best. ab 80 %</div>
+          </div>
+          <div style="background:#fff; border:1px solid var(--border-soft); border-radius:10px; padding:14px 20px; min-width:118px;">
+            <div style="font-size:1.5rem; font-weight:700; color:var(--sage-dark); line-height:1;">12 Mon.</div>
+            <div style="font-size:.72rem; color:var(--text-soft); text-transform:uppercase; letter-spacing:.04em; margin-top:5px;">Gültig bis ${(() => { const d = new Date(); d.setFullYear(d.getFullYear() + 1); return d.toLocaleDateString('de-DE'); })()}</div>
+          </div>
+        </div>
         <div style="max-width: 460px; margin: 0 auto;">
           ${(() => {
             const _p = window.getProfile ? window.getProfile() : null;
@@ -972,10 +986,23 @@ function buildSlide() {
                 <div style="font-weight: 600; color: var(--sage-darker); font-size: 1.05rem;">${escapeHtml(_name)}</div>
                 <div style="color: var(--text-soft); font-size: 0.9rem; margin-top: 2px;">${escapeHtml(_firma)}</div>
               </div>
-              <button class="btn btn-accent btn-lg btn-block" id="make-cert">Zertifikat erstellen und herunterladen</button>
+              <button class="btn btn-accent btn-lg btn-block" id="make-cert">Zertifikat herunterladen</button>
+              <a class="btn btn-ghost btn-block" href="schulungen.html" style="margin-top: 8px;">Zurück zum Katalog</a>
               <p class="text-muted" style="font-size: 0.78rem; text-align: center; margin-top: 12px; line-height: 1.5;">
                 Ihre Angaben stammen aus Ihrem Profil. Anpassungen vor der Erstellung sind unter <a href="meine-schulungen.html" style="color: var(--sage-dark);">Mein Bereich → Profil</a> möglich.
               </p>
+              <div style="margin-top: 22px; border: 1px solid var(--border); border-radius: 10px; padding: 22px; background: var(--cream); text-align: center; position: relative;">
+                <div style="position:absolute; inset:8px; border:1px solid var(--gold); pointer-events:none;"></div>
+                <div style="position:relative;">
+                  <div style="font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:var(--sage-mid);">HerwardTimm e.K.</div>
+                  <div style="font-family:'Cormorant Garamond',serif; letter-spacing:.14em; text-transform:uppercase; color:var(--sage-darker); margin-top:8px; font-size:1.05rem;">Teilnahmebestätigung</div>
+                  <div style="width:46px; height:1px; background:var(--gold); margin:10px auto;"></div>
+                  <div style="font-size:.82rem; color:var(--text-soft);">Hiermit bestätigt HerwardTimm e.K., dass</div>
+                  <div style="font-weight:600; color:var(--sage-darker); margin:4px 0; font-size:1.02rem;">${escapeHtml(_name)}</div>
+                  <div style="font-size:.82rem; color:var(--text-soft);">die Online-Schulung „${escapeHtml(MANIFEST.titel)}" vollständig durchlaufen und den Wissens-Check bestanden hat.</div>
+                  <div style="font-size:.74rem; color:var(--text-mute); margin-top:10px;">${new Date().toLocaleDateString('de-DE')} · ${pct} % · §12 ArbSchG · DGUV V1 · gültig 12 Monate</div>
+                </div>
+              </div>
             `;
           })()}
         </div>
