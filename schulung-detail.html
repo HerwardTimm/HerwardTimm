@@ -6,6 +6,45 @@
 <title>Schulungs-Detail · HerwardTimm</title>
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/app-shell.css">
+<style>
+  /* Plattform-Ansicht des Kurs-Details (nur eingeloggt) */
+  .pcd-hero { background:#fff; border:1px solid var(--border-soft); border-radius:14px; padding:26px 28px; margin-bottom:18px; }
+  .pcd-badges { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+  .pcd-badge { font-size:.74rem; font-weight:600; padding:4px 11px; border-radius:20px; }
+  .pcd-badge.pflicht { background:var(--sage-mint-soft); color:var(--sage-dark); }
+  .pcd-badge.lizenz  { background:rgba(76,122,94,.15); color:#2f5a3e; }
+  .pcd-badge.dguv    { background:rgba(201,155,69,.16); color:var(--gold-dark); }
+  .pcd-title { font-size:1.75rem; margin:0 0 6px; color:var(--sage-darker); line-height:1.15; }
+  .pcd-short { color:var(--text-soft); margin:0 0 16px; max-width:680px; line-height:1.55; }
+  .pcd-stats { display:flex; gap:28px; flex-wrap:wrap; padding-top:16px; border-top:1px solid var(--border-soft); }
+  .pcd-stats .s .n { font-size:1.25rem; font-weight:700; color:var(--sage-dark); line-height:1; }
+  .pcd-stats .s .l { font-size:.74rem; color:var(--text-soft); text-transform:uppercase; letter-spacing:.05em; margin-top:4px; display:block; }
+  .pcd-progress { background:var(--sage-mint-soft); border-radius:12px; padding:18px 22px; margin-bottom:24px; }
+  .pcd-progress__top { display:flex; align-items:baseline; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+  .pcd-progress__pct { font-size:1.5rem; font-weight:700; color:var(--sage-dark); }
+  .pcd-progress__meta { font-size:.84rem; color:var(--text-soft); }
+  .pcd-bar { height:8px; background:#fff; border-radius:4px; overflow:hidden; margin:12px 0 16px; }
+  .pcd-bar > span { display:block; height:100%; background:var(--sage-dark); border-radius:4px; transition:width .4s; }
+  .pcd-progress__actions { display:flex; gap:10px; flex-wrap:wrap; }
+  .pcd-mod { display:flex; align-items:center; gap:14px; padding:13px 0; border-bottom:1px solid var(--border-soft); }
+  .pcd-mod:last-child { border-bottom:0; }
+  .pcd-mod__ic { width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:.82rem; font-weight:700; flex:none; }
+  .pcd-mod__ic.done   { background:rgba(76,122,94,.18); color:#2f5a3e; }
+  .pcd-mod__ic.active { background:var(--gold); color:#2a1e05; }
+  .pcd-mod__ic.todo   { background:var(--sage-mint-soft); color:var(--text-soft); }
+  .pcd-mod__body { flex:1; min-width:0; }
+  .pcd-mod__t { font-weight:600; color:var(--sage-darker); font-size:.96rem; }
+  .pcd-mod__m { font-size:.82rem; color:var(--text-soft); margin-top:1px; }
+  .pcd-mod__status { margin-left:auto; font-size:.74rem; font-weight:600; white-space:nowrap; }
+  .pcd-mod__status.done   { color:#2f5a3e; }
+  .pcd-mod__status.active { color:var(--gold-dark); }
+  .pcd-mod__status.todo   { color:var(--text-mute); }
+  .pcd-nachweis .row { display:flex; justify-content:space-between; gap:14px; padding:10px 0; border-bottom:1px solid var(--border-soft); font-size:.9rem; }
+  .pcd-nachweis .row:last-child { border-bottom:0; }
+  .pcd-nachweis .row .k { color:var(--text-soft); }
+  .pcd-nachweis .row .v { color:var(--sage-darker); font-weight:600; text-align:right; }
+</style>
 </head>
 <body>
 
@@ -339,6 +378,119 @@ function checkExample(el, idx, correct) {
   }
 }
 window.checkExample = checkExample;
+</script>
+
+<!-- ============================================================
+     Phase 1 · Plattform-Ansicht des Kurs-Details
+     Nur für eingeloggte Nutzer: App-Shell + Fortschritt + Modul-
+     Status + Nachweis. Ausgeloggte Besucher sehen die Verkaufs-
+     seite unverändert (SEO/Funnel).
+     ============================================================ -->
+<script src="assets/app-shell.js"></script>
+<script>
+(function () {
+  if (!window.isLoggedIn || !window.isLoggedIn()) return; // ausgeloggt → Verkaufsseite
+
+  try {
+    const profile = window.getProfile && window.getProfile();
+    const email = profile ? profile.email : null;
+    const owned = ((window.Store && window.Store.get('purchases', [])) || []).some(c => c.id === course.id);
+    const prog = (email && window.getCourseProgress) ? window.getCourseProgress(email, slug) : 0;
+    const totalSlides = course.slides || 40;
+    const curSlide = Math.max(1, Math.round(prog / 100 * totalSlides));
+
+    // --- Verkaufs-Hero ausblenden ---
+    const salesHero = document.getElementById('detail-hero');
+    if (salesHero) salesHero.style.display = 'none';
+
+    // --- Plattform-Hero + Fortschritt (oben in den linken Inhalt) ---
+    const leftCol = document.querySelector('.section--tight .container > div');
+    const startLabel = prog > 0 ? 'Weiterlernen →' : 'Schulung starten →';
+    const progMeta = prog > 0
+      ? `Folie ${curSlide} von ${totalSlides} · ca. ${Math.max(1, Math.round((totalSlides - curSlide) * 0.8))} Min übrig`
+      : `${totalSlides} Folien · noch nicht begonnen`;
+
+    const hero = document.createElement('div');
+    hero.innerHTML = `
+      <div class="pcd-hero">
+        <div class="pcd-badges">
+          <span class="pcd-badge pflicht">${course.obligation || 'Pflichtschulung'}</span>
+          <span class="pcd-badge lizenz">${owned ? 'Lizenz aktiv' : 'Demo-Zugang'}</span>
+          <span class="pcd-badge dguv">${course.basis || 'DGUV'}</span>
+        </div>
+        <h1 class="pcd-title">${course.title}</h1>
+        <p class="pcd-short">${course.short || ''}</p>
+        <div class="pcd-stats">
+          <div class="s"><span class="n">${totalSlides}</span><span class="l">Folien</span></div>
+          <div class="s"><span class="n">${course.duration} Min</span><span class="l">Dauer</span></div>
+          <div class="s"><span class="n">5 Fragen</span><span class="l">Wissens-Check</span></div>
+          <div class="s"><span class="n">80 %</span><span class="l">Bestehen</span></div>
+        </div>
+      </div>
+      <div class="pcd-progress">
+        <div class="pcd-progress__top">
+          <span class="pcd-progress__pct">${prog} %</span>
+          <span class="pcd-progress__meta">${progMeta}</span>
+        </div>
+        <div class="pcd-bar"><span style="width:${prog}%"></span></div>
+        <div class="pcd-progress__actions">
+          <a class="btn btn-primary" href="lernen.html?schulung=${slug}">${startLabel}</a>
+          ${prog > 0 ? `<a class="btn btn-ghost" href="lernen.html?schulung=${slug}&restart=1">Von vorn beginnen</a>` : ''}
+        </div>
+      </div>
+    `;
+    if (leftCol) leftCol.insertBefore(hero, leftCol.firstChild);
+
+    // --- Erste H2 ("Was Sie lernen") + Beschreibung sind redundant zum Hero → ausblenden ---
+    const descP = document.getElementById('detail-description');
+    if (descP) { descP.style.display = 'none'; const h = descP.previousElementSibling; if (h && h.tagName === 'H2') h.style.display = 'none'; }
+
+    // --- Modul-Agenda mit Status (statt einfacher Themenliste) ---
+    const topics = course.topics || [];
+    const n = topics.length || 0;
+    const doneCount = Math.floor(prog / 100 * n);
+    const topicsHost = document.getElementById('detail-topics');
+    if (topicsHost && n) {
+      topicsHost.className = '';
+      topicsHost.style.listStyle = 'none';
+      topicsHost.style.padding = '0';
+      topicsHost.innerHTML = topics.map((t, i) => {
+        let cls, ic, label;
+        if (i < doneCount) { cls = 'done'; ic = '✓'; label = 'abgeschlossen'; }
+        else if (i === doneCount && prog < 100) { cls = 'active'; ic = '▶'; label = 'aktiv'; }
+        else { cls = 'todo'; ic = String(i + 1); label = 'offen'; }
+        return `<li class="pcd-mod">
+          <span class="pcd-mod__ic ${cls}">${ic}</span>
+          <span class="pcd-mod__body"><span class="pcd-mod__t">${t}</span><span class="pcd-mod__m">3–6 Folien · Trainer-Kommentar · Praxis-Box</span></span>
+          <span class="pcd-mod__status ${cls}">${label}</span>
+        </li>`;
+      }).join('');
+    }
+
+    // --- Aside zu „Nachweis"-Box umbauen ---
+    const aside = document.querySelector('.section--tight .container > aside');
+    if (aside) {
+      aside.innerHTML = `
+        <div class="card">
+          <h4 style="margin-top:0; font-family:'Inter',sans-serif; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--sage-mid);">Nachweis</h4>
+          <div class="pcd-nachweis">
+            <div class="row"><span class="k">Bestehen ab</span><span class="v">80 % im Quiz</span></div>
+            <div class="row"><span class="k">Zertifikat</span><span class="v">PDF, personalisiert</span></div>
+            <div class="row"><span class="k">Gültigkeit</span><span class="v">12 Monate</span></div>
+            <div class="row"><span class="k">Grundlage</span><span class="v">${course.basis || '—'}</span></div>
+          </div>
+          <a class="btn btn-primary btn-block btn-lg" href="lernen.html?schulung=${slug}" style="margin-top:16px;">${startLabel}</a>
+          <a class="btn btn-ghost btn-block" href="zertifikat.html" style="margin-top:8px;">Muster-Zertifikat ansehen</a>
+        </div>
+      `;
+    }
+
+    // --- App-Shell mounten (Kundenbereich) ---
+    if (window.mountAppShell) {
+      window.mountAppShell({ active: 'katalog', crumb: 'Lernen / Katalog', title: course.title });
+    }
+  } catch (e) { /* Im Fehlerfall bleibt die Verkaufsseite bestehen */ }
+})();
 </script>
 </body>
 </html>
