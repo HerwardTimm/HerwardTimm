@@ -94,6 +94,61 @@
     <p id="kpi-demo-note" class="text-muted" style="font-size:0.78rem; margin:10px 2px 0; letter-spacing:0.02em;">
       <strong>Demo-Kennzahlen.</strong> Umsatz, abgeschlossene Schulungen und aktive Pauschal-Kunden sind Beispielwerte zur Veranschaulichung — im Live-Betrieb werden hier echte Daten ausgewiesen (oder „—", solange keine Daten vorliegen). „Neue Anfragen" wird bereits live aus den eingegangenen Anfragen berechnet.
     </p>
+
+    <!-- ============ Phase B · Übersichts-Dashboard ============ -->
+    <style>
+      .adm-chip { background:#fff; border:1px solid var(--border-soft); border-radius:18px; padding:5px 13px; font:inherit; font-size:.78rem; color:var(--text-soft); cursor:pointer; }
+      .adm-chip.is-active { background:var(--sage-dark); border-color:var(--sage-dark); color:#fff; font-weight:600; }
+      .adm-task { display:flex; gap:12px; align-items:flex-start; padding:11px 0; border-bottom:1px solid var(--border-soft); }
+      .adm-task:last-child { border-bottom:0; }
+      .adm-task .dot { width:9px; height:9px; border-radius:50%; margin-top:6px; flex:none; }
+      .adm-task .t { font-weight:600; color:var(--sage-darker); font-size:.92rem; }
+      .adm-task .m { font-size:.8rem; color:var(--text-soft); margin-top:1px; }
+      .adm-task .when { margin-left:auto; font-size:.76rem; color:var(--text-mute); white-space:nowrap; }
+      .adm-mini-bar { flex:1; background:var(--sage-dark); border-radius:3px 3px 0 0; position:relative; min-height:4px; }
+      .adm-mini-bar > span { position:absolute; bottom:-17px; left:0; right:0; text-align:center; font-size:.64rem; color:var(--text-mute); }
+    </style>
+
+    <div style="display:grid; grid-template-columns:1.5fr 1fr; gap:18px; margin-top:22px; align-items:start;" class="adm-ov-grid">
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+          <h3 style="margin:0; font-size:1.05rem;">Aufgaben heute</h3>
+          <span class="badge badge--accent">3 offen</span>
+        </div>
+        <div id="adm-tasks"></div>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 14px; font-size:1.05rem;">Umsatz-Trend <span class="text-muted" style="font-weight:400; font-size:.8rem;">· 6 Mon. (T€)</span></h3>
+        <div style="display:flex; align-items:flex-end; gap:7px; height:64px; margin-bottom:20px;" id="adm-mini-rev"></div>
+        <div style="display:flex; gap:20px; padding-top:14px; border-top:1px solid var(--border-soft);">
+          <div><div style="font-size:1.3rem; font-weight:700; color:var(--sage-dark); line-height:1;">≈ 1.480 €</div><div style="font-size:.74rem; color:var(--text-soft); margin-top:3px;">Pipeline-Wert offen</div></div>
+          <div><div style="font-size:1.3rem; font-weight:700; color:var(--sage-dark); line-height:1;">42 %</div><div style="font-size:.74rem; color:var(--text-soft); margin-top:3px;">Conversion (90 T.)</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+        <h3 style="margin:0; font-size:1.05rem;">Letzte Aktivität</h3>
+        <a href="#audit" class="btn-link adm-nav-jump" style="font-size:.84rem;">Audit-Log →</a>
+      </div>
+      <div id="adm-activity"></div>
+    </div>
+
+    <div class="card" style="margin-top:18px; padding:0; overflow:hidden;">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; padding:18px 22px 4px;">
+        <h3 style="margin:0; font-size:1.05rem;">Anfragen-Pipeline</h3>
+        <div id="adm-pipe-chips" style="display:flex; gap:6px;">
+          <button class="adm-chip is-active" data-f="alle">Alle</button>
+          <button class="adm-chip" data-f="neu">Neu</button>
+          <button class="adm-chip" data-f="bearb">In Bearbeitung</button>
+        </div>
+      </div>
+      <table class="table" style="margin-top:10px;">
+        <thead><tr><th>Datum</th><th>Firma</th><th>Branche</th><th>MA</th><th>Empfehlung</th><th>Preis</th><th>Status</th><th></th></tr></thead>
+        <tbody id="adm-pipe-table"></tbody>
+      </table>
+    </div>
   </div>
 </section>
 
@@ -695,6 +750,86 @@
         if (window.toast) window.toast('Neue Anfragen kommen automatisch über das öffentliche Anfrage-Formular herein.', 'info', 3500);
       });
     }
+
+    // ---- Phase B · Übersichts-Dashboard ----
+    function admPill(s) {
+      var cls = s === 'Neu' ? 'todo' : (/(Erstgespräch|Termin)/.test(s) ? 'prog' : 'done');
+      return '<span class="status-pill ' + cls + '">' + (s === 'Neu' ? '● ' : '') + s + '</span>';
+    }
+    function renderPipeline(filter) {
+      var src = (typeof all !== 'undefined' ? all : []);
+      var rows = src.filter(function (a) {
+        if (filter === 'neu') return a.status === 'Neu';
+        if (filter === 'bearb') return a.status !== 'Neu';
+        return true;
+      });
+      var tb = document.getElementById('adm-pipe-table'); if (!tb) return;
+      tb.innerHTML = rows.map(function (a) {
+        var emp = (a.tier === 'S') ? 'Unternehmermodell' : 'Tier ' + a.tier;
+        return '<tr><td>' + (window.fmtDate ? fmtDate(a.date) : a.date) + '</td>' +
+          '<td><strong>' + a.firma + '</strong></td>' +
+          '<td>' + (a.branch || '').split(' /')[0] + '</td>' +
+          '<td>' + a.employees + '</td><td>' + emp + '</td>' +
+          '<td>' + a.priceLow + '–' + a.priceHigh + ' €</td>' +
+          '<td>' + admPill(a.status) + '</td>' +
+          '<td><a href="#anfragen" class="btn-link" style="font-size:.84rem;">Details →</a></td></tr>';
+      }).join('');
+    }
+    document.querySelectorAll('#adm-pipe-chips .adm-chip').forEach(function (c) {
+      c.addEventListener('click', function () {
+        document.querySelectorAll('#adm-pipe-chips .adm-chip').forEach(function (x) { x.classList.remove('is-active'); });
+        c.classList.add('is-active');
+        renderPipeline(c.dataset.f);
+      });
+    });
+    renderPipeline('alle');
+
+    (function () {
+      var data = [['Dez', 6.8], ['Jan', 8.2], ['Feb', 9.1], ['Mär', 10.4], ['Apr', 10.9], ['Mai', 12.5]];
+      var max = 12.5, host = document.getElementById('adm-mini-rev');
+      if (host) host.innerHTML = data.map(function (d) {
+        return '<div class="adm-mini-bar" style="height:' + Math.round(d[1] / max * 100) + '%"><span>' + d[0] + '</span></div>';
+      }).join('');
+    })();
+
+    (function () {
+      var tasks = [
+        { c: '#c99b45', t: 'Erstgespräch · Petersen Bau Holding', m: 'Bauhandwerk · 42 MA', when: 'heute · 14:30' },
+        { c: '#5f7066', t: 'Angebot nachfassen · Nordsee Catering', m: 'Gastronomie · 28 MA', when: 'seit 1 Tag' },
+        { c: '#b03a2e', t: '2 neue Anfragen prüfen', m: 'Behrens & Sohn · Timm Dachdeckerei', when: 'offen' }
+      ];
+      var host = document.getElementById('adm-tasks');
+      if (host) host.innerHTML = tasks.map(function (x) {
+        return '<div class="adm-task"><span class="dot" style="background:' + x.c + '"></span>' +
+          '<div><div class="t">' + x.t + '</div><div class="m">' + x.m + '</div></div>' +
+          '<span class="when">' + x.when + '</span></div>';
+      }).join('');
+    })();
+
+    (function () {
+      var host = document.getElementById('adm-activity'); if (!host) return;
+      var log = ((window.Store && Store.get('auditLog', [])) || []).slice()
+        .sort(function (a, b) { return (b.timestamp || '').localeCompare(a.timestamp || ''); }).slice(0, 5);
+      var items;
+      if (log.length) {
+        var L = { cert_generated: 'Zertifikat erstellt', login: 'Anmeldung', quiz_passed: 'Quiz bestanden', quiz_failed: 'Quiz nicht bestanden', slide_viewed: 'Folie angesehen', quiz_answered: 'Quiz-Antwort', profile_created: 'Profil angelegt', profile_updated: 'Profil aktualisiert' };
+        items = log.map(function (e) {
+          return { t: L[e.event_type] || e.event_type, m: (e.user_name || e.user_email || '—') + (e.user_firma ? ' · ' + e.user_firma : ''), when: '' };
+        });
+      } else {
+        items = [
+          { t: 'Zertifikat erstellt', m: 'A. Petersen · Verkehrssicherheit', when: 'vor 8 Min' },
+          { t: 'Schulung gekauft', m: 'Muster GmbH · Basis-Paket', when: 'vor 41 Min' },
+          { t: 'Neue Anfrage', m: 'Behrens & Sohn GmbH', when: 'vor 2 Std' },
+          { t: 'Kündigung', m: 'MM&Co. KG · Pauschalbetreuung', when: 'gestern' }
+        ];
+      }
+      host.innerHTML = items.map(function (x) {
+        return '<div class="adm-task"><span class="dot" style="background:var(--sage)"></span>' +
+          '<div><div class="t">' + x.t + '</div><div class="m">' + x.m + '</div></div>' +
+          (x.when ? '<span class="when">' + x.when + '</span>' : '') + '</div>';
+      }).join('');
+    })();
 
     showSection(location.hash.slice(1) || 'uebersicht');
   });
