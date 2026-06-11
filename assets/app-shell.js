@@ -39,8 +39,8 @@
       { key: 'uebersicht', label: 'Übersicht', href: 'admin.html', ic: '◳' }
     ]},
     { head: null, items: [
-      { key: 'kundenansicht', label: 'Kundenansicht', href: 'dashboard.html', ic: '◧' },
-      { key: 'abmelden',      label: 'Abmelden',      href: 'login.html',     ic: '⎋' }
+      { key: 'kundenansicht', label: 'Kundenansicht', href: '../dashboard.html', ic: '◧' },
+      { key: 'abmelden',      label: 'Abmelden',      href: '../login.html',     ic: '⎋' }
     ]}
   ];
 
@@ -113,7 +113,7 @@
     foot.appendChild(el('div', { className: 'as-user' },
       `<div class="as-user__avatar">${esc(initials(name))}</div>` +
       `<div style="min-width:0"><div class="as-user__name">${esc(name)}</div><div class="as-user__role">${esc(role)}</div></div>` +
-      `<a class="as-user__gear" href="dashboard.html#profil" title="Profil & Einstellungen" aria-label="Profil & Einstellungen">⚙</a>`));
+      `<a class="as-user__gear" href="${isAdmin ? '../dashboard.html#profil' : 'dashboard.html#profil'}" title="Profil & Einstellungen" aria-label="Profil & Einstellungen">⚙</a>`));
     aside.appendChild(foot);
 
     return aside;
