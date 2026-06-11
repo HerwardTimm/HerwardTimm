@@ -8,4 +8,4 @@ Disallow: /zertifikat.html
 Disallow: /admin.html
 Disallow: /lernen.html
 
-Sitemap: https://herwardtimm.de/sitemap.xml
+Sitemap: https://herwardtimm.com/sitemap.xml

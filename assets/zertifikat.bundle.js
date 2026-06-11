@@ -50,10 +50,10 @@
     localStorage.setItem(KEY, JSON.stringify(reg));
   } catch {
   }
-  var verifyUrlLive = "https://herwardtimm.de/verify.html?id=" + encodeURIComponent(certId);
+  var verifyUrlLive = "https://herwardtimm.com/verify.html?id=" + encodeURIComponent(certId);
   var verifyUrlLocal = "verify.html?id=" + encodeURIComponent(certId);
   var urlEl = byId("cert-verify-url");
-  if (urlEl) urlEl.innerHTML = '<a href="' + verifyUrlLocal + '" style="color:inherit;">herwardtimm.de/verify?id=' + certId + "</a>";
+  if (urlEl) urlEl.innerHTML = '<a href="' + verifyUrlLocal + '" style="color:inherit;">herwardtimm.com/verify?id=' + certId + "</a>";
   try {
     const q = qrcode(0, "M");
     q.addData(verifyUrlLive);
