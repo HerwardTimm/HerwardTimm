@@ -800,7 +800,7 @@ function calculateTier({ employees = 0, branch = '', hazards = [], sites = 1, mo
     // Unternehmermodell: einmalige Erstellung und Lieferung des Dokumentenpakets,
     // größenabhängig (mehr MA = mehr Dokumente). Danach nur noch der Jahrespreis
     // für die Aktualisierung.
-    setupFee = empCount > 50 ? 890 : (empCount > 10 ? 590 : 390);
+    setupFee = 699;
     setupLabel = 'Dokumentenpaket — einmalige Erstellung';
     setupNote = 'Erstmalige Erstellung und Lieferung aller Dokumente und Vorlagen für Ihren Betrieb';
   } else {
