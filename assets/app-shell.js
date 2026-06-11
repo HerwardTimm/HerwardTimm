@@ -15,24 +15,36 @@
 (function () {
   'use strict';
 
-  // Navigationsmodell — bewusst auf die real existierenden Seiten gemappt.
-  const NAV = [
+  // ====================================================================
+  //  ZWEI getrennte Navigationsmodelle — klare Trennung Kunde / Inhaber.
+  //  - KUNDE  (variant 'customer', Standard): Lern-/Schulungsbereich.
+  //           KEINE Links auf admin.html (Umsätze, Firmen, Audit-Log).
+  //  - ADMIN  (variant 'admin'): nur für den Inhaber (HerwardTimm).
+  //           Eigene, schlanke Navigation; getrennt vom Kundenbereich.
+  //  Die admin.html wird zusätzlich serverseitig per Passwort geschützt.
+  // ====================================================================
+  const NAV_CUSTOMER = [
     { head: 'Lernen', items: [
-      { key: 'mein-bereich',     label: 'Mein Bereich',     href: 'dashboard.html',          ic: '◧' },
-      { key: 'katalog',          label: 'Schulungs-Katalog', href: 'schulungen.html',        ic: '▦' },
-      { key: 'meine-schulungen', label: 'Meine Schulungen', href: 'meine-schulungen.html',   ic: '▤', badge: 'progressCount' },
-      { key: 'zertifikate',      label: 'Zertifikate',      href: 'dashboard.html#zertifikate', ic: '✦' }
-    ]},
-    { head: 'Verwalten', items: [
-      { key: 'uebersicht',  label: 'Übersicht',         href: 'admin.html',             ic: '◳' },
-      { key: 'mitarbeiter', label: 'Mitarbeiter',       href: 'admin.html#mitarbeiter', ic: '⦿' },
-      { key: 'lizenzen',    label: 'Lizenzen & Pakete', href: 'preise.html',            ic: '▥' },
-      { key: 'dokumente',   label: 'Dokumente',         href: 'admin.html#dokumente',   ic: '❒' }
+      { key: 'mein-bereich',     label: 'Mein Bereich',      href: 'dashboard.html',        ic: '◧' },
+      { key: 'katalog',          label: 'Schulungs-Katalog', href: 'schulungen.html',       ic: '▦' },
+      { key: 'meine-schulungen', label: 'Meine Schulungen',  href: 'meine-schulungen.html', ic: '▤', badge: 'progressCount' }
     ]},
     { head: null, items: [
       { key: 'hilfe', label: 'Hilfe & Support', href: 'anfrage.html', ic: '?' }
     ]}
   ];
+
+  const NAV_ADMIN = [
+    { head: 'Admin', items: [
+      { key: 'uebersicht', label: 'Übersicht', href: 'admin.html', ic: '◳' }
+    ]},
+    { head: null, items: [
+      { key: 'kundenansicht', label: 'Kundenansicht', href: 'dashboard.html', ic: '◧' },
+      { key: 'abmelden',      label: 'Abmelden',      href: 'login.html',     ic: '⎋' }
+    ]}
+  ];
+
+  function navFor(cfg) { return cfg.variant === 'admin' ? NAV_ADMIN : NAV_CUSTOMER; }
 
   function el(tag, attrs, html) {
     const n = document.createElement(tag);
@@ -62,21 +74,23 @@
   }
 
   function buildSidebar(cfg, profile) {
+    const isAdmin = cfg.variant === 'admin';
     const aside = el('aside', { className: 'as-sidebar', role: 'navigation', 'aria-label': 'Hauptnavigation' });
 
-    // Marke + Firmen-Konto
+    // Marke + Konto-Kontext (Kunde: Firmen-Konto · Admin: Inhaber-Bereich)
     const brand = el('div', { className: 'as-brand' });
-    brand.appendChild(el('a', { className: 'as-brand__logo', href: 'dashboard.html', style: 'text-decoration:none' },
+    brand.appendChild(el('a', { className: 'as-brand__logo', href: isAdmin ? 'admin.html' : 'dashboard.html', style: 'text-decoration:none' },
       '<span class="as-brand__mark">HT</span><span class="as-brand__name">HerwardTimm</span>'));
-    const firma = (profile && profile.firma) || 'Mein Konto';
+    const acctTitle = isAdmin ? 'HerwardTimm e.K.' : ((profile && profile.firma) || 'Mein Konto');
+    const acctRole  = isAdmin ? 'Admin · Inhaber' : 'Firmen-Konto';
     brand.appendChild(el('div', { className: 'as-account' },
-      `<div><div class="as-account__firma">${esc(firma)}</div><div class="as-account__role">Firmen-Konto</div></div>` +
+      `<div><div class="as-account__firma">${esc(acctTitle)}</div><div class="as-account__role">${esc(acctRole)}</div></div>` +
       `<span class="as-account__caret">▾</span>`));
     aside.appendChild(brand);
 
     // Navigation
     const nav = el('nav', { className: 'as-nav' });
-    NAV.forEach(group => {
+    navFor(cfg).forEach(group => {
       if (group.head) nav.appendChild(el('div', { className: 'as-nav__head' }, esc(group.head)));
       group.items.forEach(item => {
         const a = el('a', { className: 'as-nav__link', href: item.href });
@@ -120,22 +134,25 @@
 
     bar.appendChild(el('div', { className: 'as-spacer' }));
 
-    // Suche → leitet in den Katalog mit ?q=
-    const search = el('div', { className: 'as-search' });
-    search.appendChild(el('span', { className: 'as-search__ic' }, '⌕'));
-    const input = el('input', { type: 'search', placeholder: 'Schulung suchen…', 'aria-label': 'Schulung suchen' });
-    input.addEventListener('keydown', e => {
-      if (e.key === 'Enter') {
-        const q = input.value.trim();
-        location.href = 'schulungen.html' + (q ? ('?q=' + encodeURIComponent(q)) : '');
-      }
-    });
-    search.appendChild(input);
-    bar.appendChild(search);
+    // Suche + „Schulung kaufen" gehören in den KUNDENbereich, nicht in den Admin.
+    if (cfg.variant !== 'admin') {
+      // Suche → leitet in den Katalog mit ?q=
+      const search = el('div', { className: 'as-search' });
+      search.appendChild(el('span', { className: 'as-search__ic' }, '⌕'));
+      const input = el('input', { type: 'search', placeholder: 'Schulung suchen…', 'aria-label': 'Schulung suchen' });
+      input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+          const q = input.value.trim();
+          location.href = 'schulungen.html' + (q ? ('?q=' + encodeURIComponent(q)) : '');
+        }
+      });
+      search.appendChild(input);
+      bar.appendChild(search);
 
-    // „+ Schulung kaufen"
-    bar.appendChild(el('a', { className: 'as-buy', href: 'schulungen.html' },
-      '<span>＋</span><span class="as-buy__txt">Schulung kaufen</span>'));
+      // „+ Schulung kaufen"
+      bar.appendChild(el('a', { className: 'as-buy', href: 'schulungen.html' },
+        '<span>＋</span><span class="as-buy__txt">Schulung kaufen</span>'));
+    }
 
     return bar;
   }
